@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final project</title>
+</head>
+<body>
+  <h1>Collen Van Lent</h1>
+  <a href="#">One</a>
+  <a href="#">Two</a>
+  <a href="#">Three</a>
+  <a href="#">Your Choice</a>
+
+  <h3>Favorite Foods</h3>
+  <ul>
+    <li>Apple</li>
+    <li>Pizza</li>
+    <li>Crab</li>
+    <li>Cake</li>
+  </ul>
+
+  <h3>Achievements</h3>
+  <p>Progress in this course (90%) <progress value="92" max="100"></progress></p>
+  <p>Progress in life goal (15%) <progress value="15" max="100"></progress></p>
+
+  <h3>More about me</h3>
+  <details>
+    <summary>My Childhood</summary>
+    <p>I grew up in Ashtabula Ohio. I lived near Lake Erie and I really miss the sunsets over water</p>
+  </details>
+
+  <img src="http://www.intro-webdesign.com/images/newlogo.png" alt="LOGO">
+  <span>This page was created by Anh Tuan and Collen van Lent</span>
+</body>
+</html>
