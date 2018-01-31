@@ -44,3 +44,13 @@ button {
 button:hover {
 	background-color: #29b7e5 !important;
 }
+
+a {
+	color: #32cdff;
+	font-weight: bold !important;
+}
+
+a:hover {
+	color: #29b7e5;
+	text-decoration: none;
+}
