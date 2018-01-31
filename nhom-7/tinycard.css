@@ -1,0 +1,46 @@
+body {
+	font-family: 'PT Sans';
+	background-color: #eaecef;
+}
+
+.bg-primary {
+	background-color: #32cdff !important;
+}
+
+h2 {
+	color: white;
+	font-weight: bold;
+}
+
+.jumbotron-fluid {
+	background-color: #32cdff !important;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+h4 {
+	font-weight: bold;
+	color: #48494c;
+}
+
+.nav-link {
+	font-weight: bold;
+}
+
+input {
+	color: #898989 !important;
+	background-color: #e8e8e8 !important;
+}
+
+button {
+	background-color: #32cdff !important;
+	width: 100%;
+	border: none !important;
+	font-weight: bold !important;
+}
+
+button:hover {
+	background-color: #29b7e5 !important;
+}
