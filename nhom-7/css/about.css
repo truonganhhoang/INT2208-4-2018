@@ -17,6 +17,16 @@
     #duy-tab #duy-about {
         margin: 0 70px -3px 0!important;
     }
+    .main-content {
+        padding: 60px 10px !important;
+    }
+    #contact-content {
+        margin: 0 0 !important;
+        border-top: 1px solid #e8e8e8
+    }
+    .footer {
+        display: none !important;
+    }
 }
 
 *{
@@ -124,7 +134,7 @@ body{
 
 #contact {
     width: 100%;
-    margin: 74px auto;
+    margin: 50px auto;
     text-align: center;
     
 }
@@ -134,10 +144,10 @@ body{
 }
 
 .contact-item{
-    display: inline-block;
+    /* display: inline-block; */
     height: 3em;
     line-height: 3em;
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
     text-align: center;
     /*position: relative;*/
 }
@@ -174,8 +184,10 @@ body{
     cursor: pointer;
 }
 
-#language{
-    padding: 20px 35px !important;
+.language{
+    display: block;
+    padding: 5px auto !important;
+    text-align: center;
     margin: 20px 0 !important;
     color: black !important;
     /*color: rgb(196,196,196) !important;*/
