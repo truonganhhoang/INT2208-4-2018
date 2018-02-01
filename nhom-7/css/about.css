@@ -1,0 +1,124 @@
+/* This file completely made by Phạm Ngọc Duy */
+*{
+    font-family: sans-serif;
+    /*font-family: 'DINNextRoundedLTPro-Regular';*/
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color:  rgb(50, 205, 255);
+    font-weight: bold;
+}
+h1 {
+    font-size: 12pt;
+    margin-bottom: 15px;
+}
+p {
+    line-height: 2em;
+}
+body{
+    background-color: rgb(50, 205, 255);
+    z-index: 0;
+}
+#container {
+    width: 1024px;
+    margin: 15px auto;
+}
+#logo img {
+    height: 44px;
+}
+
+#main {
+    background-color: white;
+    z-index: 1;
+    border-radius: 20px;
+}
+#tab {
+    border-bottom: #e8e8e8 1px solid;
+}
+
+#tab a{
+    display: inline-block;
+    padding: 30px 0 20px 0;
+    text-decoration: none;
+    color: rgb(196,196,196);
+}
+#tab #about {
+    margin: 0 70px -3px 80px;
+    color: rgb(50, 205, 255);
+    border-bottom: rgb(50, 205, 255) 4px solid;
+}
+#main-content {
+    padding: 60px 80px;
+}
+.two-col {
+    margin-bottom: 60px;
+}
+
+.two-col .left-col{
+    display: block;
+    float: left;
+    width: 50%;
+    padding: 
+}
+.two-col .right-col {
+    display: block;
+    float: right;
+    width: 50%;
+}
+.clear-float{
+    clear: both;
+}
+#invester a{
+    display: inline-block;
+    margin: 30px 25px 0 0;
+    color: rgb(50, 205, 255);
+}
+
+#contact {
+    width: 100%;
+    margin: 74px auto;
+    text-align: center;
+    
+}
+#contact-content {
+    margin: 0 80px;
+    border-top: 1px solid #e8e8e8
+}
+
+.contact-item{
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    margin: 10px 20px;
+    text-align: center;
+    /*position: relative;*/
+}
+.contact-item a {
+    color: rgb(105, 109, 118);
+}
+/*
+.contact-item img {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    right:0px;
+    bottom: 0px;
+}*/
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer-item{
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    margin: 10px 20px;
+    text-align: center;
+}
+.footer-item a{
+    color: rgb(31,152,191);
+    text-transform: uppercase;
+}
