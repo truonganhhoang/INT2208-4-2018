@@ -13,7 +13,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
 		<div class="container">
 			<a href="" class="navbar-brand">
-				<img src="imgs/tinycard.png">
+				<img src="imgs/tinycard.png" alt="cap picture">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-demo" >
 		    <span class="navbar-toggler-icon"></span>
@@ -35,44 +35,247 @@
 					<h2 class="m-5">Learn anything with fun flashcards by Duolingo</h2>
 				</div>
 				<div class="col-md-4">
-					<img src="imgs/picture.png">
+					<img src="imgs/picture.png" alt="content picture">
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- content -->
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" id="content">
 			<div class="row">
 				<!-- first row -->
-				<div class="col-md-2 pl-5"><img src="imgs/purple-head.png"></div>
-				<div class="col-md-4 pt-2">
+				<div class="col-lg-2 pl-5"><img src="imgs/purple-head.png" alt="purple head"></div>
+				<div class="col-lg-4 pt-2">
 					<h4 class="mb-3">Search decks <i class="fa fa-search" aria-hidden="true"></i></h4>
-					<input type="search" class="form-control pt-2 pb-2" placeholder="e.g, Spanish, History...">
+					<input type="search" class="form-control pt-3 pb-3 first-row" placeholder="e.g, Spanish, History...">
 				</div>
-				<div class="col-md-2 pl-5"><img src="imgs/green-head.png"></div>
-				<div class="col-md-4 pt-2">
+				<div class="col-lg-2 pl-5"><img src="imgs/green-head.png" alt="green head"></div>
+				<div class="col-lg-4 pt-2">
 					<h4 class="mb-3">Create your own</h4>
-					<button class="btn btn-primary pt-2 pb-2">CREATE</button>
+					<button class="btn btn-primary pt-3 pb-3 first-row">CREATE</button>
 				</div>
 				<!-- second row -->
 				<h4 class="mr-auto ml-4 pl-4 pt-4">Decks we love</h4>
 				<a href="" class="pt-4 mr-3">SEE ALL</a>
 			</div>
-			<div class="row pt-3">
-				<!-- third row -->
-				<div class="card col-md-2 ml-4" style="width: 18rem;">
-				  <img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap">
-				  <div class="card-body">
-				    <a href="" class="card-title">Flag Semaphore</a>
-				    <a href="" class="card-info"><i class="far fa-star"></i> 288</a>
-				  </div>
+			<!-- next row -->
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			 	<div class="carousel-inner">
+				  	<div class="carousel-item active">
+						<div class="row pt-4">
+							<div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+						</div>	
+									
+					</div>
+					<!-- next item -->
+					<div class="carousel-item">
+						<div class="row pt-4">
+							<div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+						</div>	
+									
+					</div>
 				</div>
+				<!-- arrow -->
+				 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				    <i class="fas fa-chevron-left mr-5"></i>
+				 </a>
+				 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				    <i class="fas fa-chevron-right ml-5"></i>
+				 </a>
+			</div>
+			<div class="row">
+				<h4 class="mr-auto ml-4 pl-4 pt-4">Trending</h4>
+				<a href="" class="pt-4 mr-3">SEE ALL</a>
+			</div>
+			<!-- next row -->
+			<hr>
+			<div id="carousel-1" class="carousel slide" data-ride="carousel">
+			 	<div class="carousel-inner">
+				  	<div class="carousel-item active">
+						<div class="row pt-4">
+							<div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+						</div>	
+									
+					</div>
+					<!-- next item -->
+					<div class="carousel-item">
+						<div class="row pt-4">
+							<div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+							<div class="card col-lg-2 col-md-4" >
+								<a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/6db17494404dd1f65dd2dc5e71af0879" alt="Card image cap"></a>
+								<div class="card-body">
+									<a href="" class="card-title">Flag Semaphore</a>
+									<br>
+									<a href="" class="card-info"><i class="far fa-star"></i> 288</a>
+								</div>
+							</div>
+						</div>	
+									
+					</div>
+				</div>
+				<!-- arrow -->
+				 <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+				    <i class="fas fa-chevron-left mr-5"></i>
+				 </a>
+				 <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+				    <i class="fas fa-chevron-right ml-5"></i>
+				 </a>
 			</div>
 		</div>
 	</div>
 
+	
+
 <script  src="http://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="bootstrap.js" c></script>
+<script type="text/javascript" src="bootstrap.js"></script>
 </body>
 </html>
