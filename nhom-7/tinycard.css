@@ -2,6 +2,12 @@ body {
 	background-color: #eaecef;
 }
 
+*:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
+}
+
 .bg-primary {
 	background-color: #32cdff !important;
 }
@@ -29,18 +35,24 @@ h4 {
 }
 
 input {
-	color: #a0a0a0 !important;
+	color: grey !important;
 	background-color: #e8e8e8 !important;
+	font-weight: bold;
+	border: transparent !important;
 }
 
-button {
+.first-row {
+	border-radius: 10px !important;
+}
+
+.btn-primary {
 	background-color: #32cdff !important;
 	width: 100%;
 	border: none !important;
 	font-weight: bold !important;
 }
 
-button:hover {
+.btn-primary:hover {
 	background-color: #29b7e5 !important;
 }
 
@@ -84,4 +96,29 @@ h2, h4, p, .card-title, .card-info {
 a:hover {
 	text-decoration: none;
 	color: #c9cacc;
+}
+
+.fa-chevron-left, 
+.fa-chevron-right {
+	color: #0cbef7;
+	font-size: 25px;
+}
+
+hr.style-six {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#content {
+	border-radius: 15px;
+}
+
+li a {
+	color: white !important;
+}
+
+li a:hover {
+	color: #9edaed !important;
 }
