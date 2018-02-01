@@ -67,6 +67,14 @@ body{
     float: right;
     width: 50%;
 }
+#tiny-text, #duo-text {
+    position: relative;
+}
+#tiny-text img, #duo-text img{
+    position: absolute;
+    right:0px;    
+}
+
 .clear-float{
     clear: both;
 }
