@@ -39,6 +39,7 @@ a {
     text-decoration: none !important;
     color:  rgb(50, 205, 255);
     font-weight: bold;
+    font-size: 12pt !important;
 }
 img.center {
     display: block;
@@ -54,6 +55,7 @@ h1 {
     font-weight: bold !important;
 }
 p {
+    font-size: 12pt !important;
     line-height: 2em;
 }
 body{
