@@ -23,6 +23,7 @@ h2 {
 
 .jumbotron {
 	background-color: white;
+	width: 110%;
 }
 
 h4 {
@@ -113,6 +114,7 @@ hr.style-six {
 
 #content {
 	border-radius: 15px;
+
 }
 
 li a {
@@ -123,17 +125,30 @@ li a:hover {
 	color: #9edaed !important;
 }
 
+
+footer{
+	text-align: center;
+	width: 110%;
+}
+
+footer a {
+	color: #b5b6b7;
+}
+
+footer a:hover {
+	color: #b5b6b7;
+}
+
 @media (min-width: 700px){
 	.duy-under {
 		position: relative;
 	}
 	.duy-cover {
 		position: absolute;
-		top: 400px;
+		top: 450px;
 		margin-left: auto;
 		margin-right: auto;
 		left: 0;
-		right: 0;
+		right: 100px;
 	}
-
 }
