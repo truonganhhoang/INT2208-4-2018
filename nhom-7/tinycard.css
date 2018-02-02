@@ -122,3 +122,18 @@ li a {
 li a:hover {
 	color: #9edaed !important;
 }
+
+@media (min-width: 700px){
+	.duy-under {
+		position: relative;
+	}
+	.duy-cover {
+		position: absolute;
+		top: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+
+}
