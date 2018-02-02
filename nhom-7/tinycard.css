@@ -133,7 +133,7 @@ footer a:hover {
 	color: #b5b6b7;
 }
 
-@media (min-width: 700px){
+@media (min-width: 800px){
 	.duy-under {
 		position: relative;
 	}
@@ -147,6 +147,21 @@ footer a:hover {
 	}
 }
 
+}
+
+.duy-google-btn {
+	background-color: rgb(222,55,11);
+	width: 100%;
+}
+.duy-facebook-btn {
+	width: 100%;
+	background-color: rgb(57,86, 159);
+}
+
+.duy-signup-btn {
+	background-color: white !important;
+	color: #0cbef7;
+}
 div div div a img {
 	height: 170px;
 }
