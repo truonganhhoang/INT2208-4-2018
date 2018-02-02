@@ -137,3 +137,17 @@ li a:hover {
 	}
 
 }
+
+.duy-google-btn {
+	background-color: rgb(222,55,11);
+	width: 100%;
+}
+.duy-facebook-btn {
+	width: 100%;
+	background-color: rgb(57,86, 159);
+}
+
+.duy-signup-btn {
+	background-color: white !important;
+	color: #0cbef7;
+}
