@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tiny Card - Nhom 4</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- icon -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- bootstrap -->
@@ -20,56 +19,139 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="background-color:#F7F7F7">
+    <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
         <div class="container">
-           <a class="navbar-brand" href="">Tinycards_N4</a>
+            <a class="navbar-brand" href="">Tinycards_N4</a>
             <!-- search box -->
-            <form class="collapse navbar-collapse form-inline" id="navbarSearch">
+            <form class="collapse navbar-collapse form-inline" style="max-width:250px; max-height:50px" id="navbarSearch">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-success" type="submit">
                     <span class="ion-ios-search-strong"></span>
                 </button>
             </form>
             <!-- Home icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarText"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ion-ios-home-outline"></span>
-            </button>
+            <a class=" navbar-toggler ion-ios-home-outline" href="1.html" role="button"></a>
             <!-- search icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarText"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch"
+                aria-expanded="false">
                 <span class="ion-ios-search-strong"></span>
             </button>
             <!-- Create icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCreat" aria-controls="navbarText"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ion-android-add"></span>
-            </button>
+            <a class=" navbar-toggler ion-android-add" href="1-1.html" role="button"></a>
             <!-- Profile icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarProfile" aria-controls="navbarText"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="ion-android-contact"></span>
-            </button>
+            <a class=" navbar-toggler ion-android-contact" href="1-2.html" role="button"></a>
             <!-- Menu -->
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active" id="navbarHome">
+                    <li class="nav-item active">
                         <a class="nav-link ion-ios-home-outline" href="1.html"> Home
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item"  id="navbarCreate">
+                    <li class="nav-item">
                         <a class="nav-link ion-android-add " href="1-1.html"> Create </a>
                     </li>
-                    <li class="nav-item" id="navbarProfile">
-                        <a class="nav-link ion-android-contact" href="1-2.html" > Profile </a>
+                    <li class="nav-item">
+                        <a class="nav-link ion-android-contact" href="1-2.html"> Profile </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container">
+
+    <div class="container border-top" style="background-color:#FFFFFF">
+
+        <!-- carousel -->
+        <div id="carouselExampleControls" class="carousel slide my-5" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card mx-auto" style="width:auto">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: auto">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card mx-auto" style="width: auto">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="ion-android-arrow-dropleft-circle"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="ion-android-arrow-dropright-circle"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- favorite -->
+        <h2 class="mx-5">Your Favorites</h2>
+        <div class="row mx-3 my-3">
+            <div class="col-md-2">
+                <div class="card ml-2 mr-2" style="max-width: 130px;max-height:180px">
+                    <a href="1-2.html">
+                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                    </a>
+            
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card ml-2 mr-2" style="max-width: 130px;max-height:180px">
+                    <a href="1-2.html">
+                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                    </a>
+            
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card ml-2 mr-2" style="max-width: 130px;max-height:180px">
+                    <a href="1-2.html">
+                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                    </a>
+            
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card ml-2 mr-2" style="max-width: 130px;max-height:180px">
+                    <a href="1-2.html">
+                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                    </a>
+            
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card ml-2 mr-2" style="max-width: 130px;max-height:180px">
+                    <a href="1-2.html">
+                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                    </a>
+            
+                </div>
+            </div>
+            
+        </div>
+    </div>
     </div>
 </body>
 
