@@ -23,19 +23,22 @@
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="collapse navbar-collapse"  style="max-width:11em" href="" ><h3 style="color:#FFFFFF">Tinycards_N4</h3></a>
+            <a class="collapse navbar-collapse" style="max-width:11em" href="">
+                <h3 style="color:#FFFFFF">Tinycards_N4</h3>
+            </a>
             <!-- search box -->
             <form class="collapse navbar-collapse form-inline" style="max-width:250px; max-height:50px" id="navbarSearch">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-success" type="submit">
                     <span class="ion-ios-search-strong"></span>
                 </button>
+                </input>
             </form>
             <!-- Home icon -->
             <a class=" navbar-toggler ion-ios-home-outline" href="1.html" role="button"></a>
             <!-- search icon -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch"
-                aria-expanded="false">
+                aria-expanded="true">
                 <span class="ion-ios-search-strong"></span>
             </button>
             <!-- Create icon -->
@@ -108,11 +111,25 @@
         </div>
         <!-- favorite -->
         <div class="clearfix">
-            <h2 class="mx-5 float-left">Your favorites</h2>
-            <a class="btn btn-primary mr-5 float-right" href="#" role="button">see all</a>
+            <h4 class="mx-5 float-left d-block d-none d-sm-none">Your favorites</h4>
+            <!-- small screen -->
+            <div class="mx-2 d-block d-none d-sm-none">
+                <h4 class="float-left d-block" style="font-size:95%">Your favorites</h4>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:60%">SEE ALL</a>
+            </div>
+            <!-- medium screen -->
+            <div class="mx-3 d-sm-block d-none d-md-none">
+                <h3 class="float-left ">Your favorites</h3>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:85%">SEE ALL</a>
+            </div>
+            <!-- lagre screen -->
+            <div class=" mx-5 d-md-block d-none">
+                <h2 class=" float-left ">Your favorites</h2>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:100%">SEE ALL</a>
+            </div>
         </div>
         <div class="row mx-3 my-3">
-            <div class="col-md-2">
+            <div class="col">
                 <div class="card ml-2 mr-2">
                     <a href="1-2.html">
                         <img class="card-img-top" src="img.jpeg" alt="Card image cap">
@@ -127,7 +144,7 @@
 
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col">
                 <div class="card ml-2 mr-2">
                     <a href="1-2.html">
                         <img class="card-img-top" src="img.jpeg" alt="Card image cap">
@@ -142,7 +159,7 @@
 
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col d-none d-md-block">
                 <div class="card ml-2 mr-2">
                     <a href="1-2.html">
                         <img class="card-img-top" src="img.jpeg" alt="Card image cap">
@@ -157,7 +174,7 @@
 
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col d-none d-md-block">
                 <div class="card ml-2 mr-2">
                     <a href="1-2.html">
                         <img class="card-img-top" src="img.jpeg" alt="Card image cap">
@@ -172,7 +189,7 @@
 
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col d-none d-lg-block">
                 <div class="card ml-2 mr-2">
                     <a href="1-2.html">
                         <img class="card-img-top" src="img.jpeg" alt="Card image cap">
@@ -185,6 +202,21 @@
                         </span>
                     </a>
 
+                </div>
+            </div>
+            <div class="col d-none d-lg-block">
+                <div class="card ml-2 mr-2">
+                    <a href="1-2.html">
+                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                        <h5 class="card-title">Card title</h5>
+                        <span class="ion-ios-star-outline">
+                            <span class=" badge badge-light">6</span>
+                        </span>
+                        <span class="ion-ios-browsers-outline">
+                            <span class=" badge badge-light">6</span>
+                        </span>
+                    </a>
+            
                 </div>
             </div>
 
@@ -192,15 +224,48 @@
 
         <!-- People you follow -->
         <div class="clearfix">
-            <h2 class="mx-5 float-left">People you follow</h2>
-            <a class="btn btn-primary mr-5 float-right" href="#" role="button">FIND PEOPLE TO FOLLOW</a>
+            <!-- small screen -->
+            <div class="mx-2 d-block d-none d-sm-none">
+                <h4 class="float-left d-block" style="font-size:95%">People you follow</h4>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:60%">FIND PEOPLE TO FOLLOW</a>
+            </div>
+            <!-- medium screen -->
+            <div class="mx-3 d-sm-block d-none d-md-none">
+                <h3 class="float-left ">People you follow</h3>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:85%">FIND PEOPLE TO FOLLOW</a>
+            </div>
+            <!-- lagre screen -->
+            <div class=" mx-5 d-md-block d-none">
+                <h2 class=" float-left ">People you follow</h2>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:100%">FIND PEOPLE TO FOLLOW</a>
+            </div>
         </div>
-        <div class="carousel slide"></div>
+        <div class="carousel slide">
+
+        </div>
+
+
+
+
+
         <hr>
         <!-- Trending header -->
         <div class="clearfix">
-            <h2 class="mx-5 float-left">Trending</h2>
-            <a class="btn btn-primary mr-5 float-right" href="#" role="button">see all</a>
+            <!-- small screen -->
+            <div class="mx-2 d-block d-none d-sm-none" >
+                <h4 class=" float-left d-block" style="font-size:95%">Trending</h4>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:60%">SEE ALL</a>
+            </div>
+            <!-- medium screen -->
+            <div class="mx-3 d-sm-block d-none d-md-none">
+                <h3 class=" float-left ">Trending</h3>
+                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:85%">SEE ALL</a>
+            </div>            
+            <!-- lagre screen -->
+            <div class="mx-5 d-md-block d-none">
+                <h2 class=" float-left ">Trending</h2>
+                <a class="btn btn-primary  float-right" href="#" role="button" style="font-size:100%">SEE ALL</a>
+            </div>
         </div>
         <!-- Trending body -->
     </div>
