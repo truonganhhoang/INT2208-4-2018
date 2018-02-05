@@ -64,7 +64,7 @@
         </div>
     </nav>
 
-    <div class="container border my-5" style="background-color:#FFFFFF">
+    <div class="container border my-5" style="background-color:white">
 
         <!-- carousel -->
         <div id="carouselExampleControls" class="carousel slide my-5" data-ride="carousel">
@@ -110,116 +110,229 @@
             </a>
         </div>
         <!-- favorite -->
-        <div class="clearfix">
-            <h4 class="mx-5 float-left d-block d-none d-sm-none">Your favorites</h4>
-            <!-- small screen -->
-            <div class="mx-2 d-block d-none d-sm-none">
-                <h4 class="float-left d-block" style="font-size:95%">Your favorites</h4>
-                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:60%">SEE ALL</a>
-            </div>
-            <!-- medium screen -->
-            <div class="mx-3 d-sm-block d-none d-md-none">
-                <h3 class="float-left ">Your favorites</h3>
-                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:85%">SEE ALL</a>
-            </div>
-            <!-- lagre screen -->
-            <div class=" mx-5 d-md-block d-none">
-                <h2 class=" float-left ">Your favorites</h2>
-                <a class="btn btn-primary float-right" href="#" role="button" style="font-size:100%">SEE ALL</a>
-            </div>
-        </div>
-        <div class="row mx-3 my-3">
-            <div class="col">
-                <div class="card ml-2 mr-2">
-                    <a href="1-2.html">
-                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
-                        <h5 class="card-title">Card title</h5>
-                        <span class="ion-ios-star-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                        <span class="ion-ios-browsers-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                    </a>
-
+        <div id="favoriteBox">
+            <div class="clearfix">
+                <!-- small screen -->
+                <div class="mx-2 d-block d-sm-none">
+                    <h4 class="float-left" style="font-size:95%">Your favorites</h4>
+                    <a class="btn btn-primary float-right" href="#" role="button" style="font-size:60%">SEE ALL</a>
+                </div>
+                <!-- medium screen -->
+                <div class="mx-3 d-sm-block d-none d-md-none">
+                    <h3 class="float-left ">Your favorites</h3>
+                    <a class="btn btn-primary float-right" href="#" role="button" style="font-size:85%">SEE ALL</a>
+                </div>
+                <!-- lagre screen -->
+                <div class=" mx-5 d-md-block d-none">
+                    <h2 class=" float-left ">Your favorites</h2>
+                    <a class="btn btn-primary float-right" href="#" role="button" style="font-size:100%">SEE ALL</a>
                 </div>
             </div>
-            <div class="col">
-                <div class="card ml-2 mr-2">
-                    <a href="1-2.html">
-                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
-                        <h5 class="card-title">Card title</h5>
-                        <span class="ion-ios-star-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                        <span class="ion-ios-browsers-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                    </a>
-
-                </div>
-            </div>
-            <div class="col d-none d-md-block">
-                <div class="card ml-2 mr-2">
-                    <a href="1-2.html">
-                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
-                        <h5 class="card-title">Card title</h5>
-                        <span class="ion-ios-star-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                        <span class="ion-ios-browsers-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                    </a>
-
-                </div>
-            </div>
-            <div class="col d-none d-md-block">
-                <div class="card ml-2 mr-2">
-                    <a href="1-2.html">
-                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
-                        <h5 class="card-title">Card title</h5>
-                        <span class="ion-ios-star-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                        <span class="ion-ios-browsers-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                    </a>
-
-                </div>
-            </div>
-            <div class="col d-none d-lg-block">
-                <div class="card ml-2 mr-2">
-                    <a href="1-2.html">
-                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
-                        <h5 class="card-title">Card title</h5>
-                        <span class="ion-ios-star-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                        <span class="ion-ios-browsers-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                    </a>
-
-                </div>
-            </div>
-            <div class="col d-none d-lg-block">
-                <div class="card ml-2 mr-2">
-                    <a href="1-2.html">
-                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
-                        <h5 class="card-title">Card title</h5>
-                        <span class="ion-ios-star-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                        <span class="ion-ios-browsers-outline">
-                            <span class=" badge badge-light">6</span>
-                        </span>
-                    </a>
+            <div id="Favorite_Carousel" class=" carousel slide" data-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item container my-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
             
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class="badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-md-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-lg-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-lg-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                    <div class="carousel-item active container my-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class="badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-md-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-lg-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+                            <div class="col d-none d-lg-block">
+                                <div class="card ml-2 mr-2">
+                                    <a href="1-2.html">
+                                        <img class="card-img-top" src="img.jpeg" alt="Card image cap">
+                                        <h5 class="card-title">Card title</h5>
+                                        <span class="ion-ios-star-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                        <span class="ion-ios-browsers-outline">
+                                            <span class=" badge badge-light">6</span>
+                                        </span>
+                                    </a>
+            
+                                </div>
+                            </div>
+            
+                        </div>
+            
+                    </div>
                 </div>
+            
+                <a class="carousel-control-prev" style="color:blue;width:1em" href="#Favorite_Carousel" role="button" data-slide="prev">
+                    <span class="ion-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Prev</span>
+                </a>
+                <a class="carousel-control-next" style="color:blue;width:1em" href="#Favorite_Carousel" role="button" data-slide="next">
+                    <span class="ion-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-
         </div>
 
         <!-- People you follow -->
@@ -240,19 +353,12 @@
                 <a class="btn btn-primary float-right" href="#" role="button" style="font-size:100%">FIND PEOPLE TO FOLLOW</a>
             </div>
         </div>
-        <div class="carousel slide">
-
-        </div>
-
-
-
-
 
         <hr>
         <!-- Trending header -->
         <div class="clearfix">
             <!-- small screen -->
-            <div class="mx-2 d-block d-none d-sm-none" >
+            <div class="mx-2 d-block d-none d-sm-none">
                 <h4 class=" float-left d-block" style="font-size:95%">Trending</h4>
                 <a class="btn btn-primary float-right" href="#" role="button" style="font-size:60%">SEE ALL</a>
             </div>
@@ -260,7 +366,7 @@
             <div class="mx-3 d-sm-block d-none d-md-none">
                 <h3 class=" float-left ">Trending</h3>
                 <a class="btn btn-primary float-right" href="#" role="button" style="font-size:85%">SEE ALL</a>
-            </div>            
+            </div>
             <!-- lagre screen -->
             <div class="mx-5 d-md-block d-none">
                 <h2 class=" float-left ">Trending</h2>
@@ -268,6 +374,8 @@
             </div>
         </div>
         <!-- Trending body -->
+       
+
     </div>
 </body>
 
