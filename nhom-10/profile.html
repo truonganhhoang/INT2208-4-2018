@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Profile</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .glyphicon-margin-right {
+                margin-right: 8px;
+            }
+            #content {
+                margin-top: 30px;
+            }
+            #info {
+                text-align: center;
+                max-width: 500px;
+            }
+            #avatar {
+                border: solid 3px white;
+            }
+            #username {
+                margin: 20px 20px;
+                font-size: 20px;
+                font-weight: bolder;
+            }
+            #info>hr {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            .btn {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            #content {
+                text-align: center;
+            }
+            #stats {
+                max-width: 800px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Tinyfake</a>
+                </div>
+                <div class="navbar navbar-nav">
+
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-home glyphicon-margin-right"></span>Home</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-plus glyphicon-margin-right"></span>Create</a></li>
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user glyphicon-margin-right"></span>Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="header" class="row">
+            <div class="col-sm-12">
+
+            </div>
+        </nav>
+        <div id="content" class="container-fluid">
+            <div class="row">
+                    <div class="col-sm-4" id="info">
+                        <img src="avatar.jpg"  class="img-circle" id="avatar" width=150px height="auto">
+                        <div id="user-info">
+                            <div id="username">
+                                Tran Minh Hieu
+                            </div>
+                        </div>
+                        <!-- <div id="follow-info">
+                            <span>
+                                Followers: 100
+                            </span>
+                            <span>
+                                Following: 200
+                            </span>
+                        </div> -->
+                        <hr >
+                        <div id="action-button">
+                            <button type="button" class="btn btn-primary">Setting</button>
+                            <button type="button" class="btn btn-danger">Sign out</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 breadcrumb" id="stats">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#decks" data-toggle="pill">Decks<span class="badge">5</span></a></li>
+                            <li><a href="#followers" data-toggle="pill">Followers<span class="badge">20</span></a></li>
+                            <li><a href="#following" data-toggle="pill">Following<span class="badge">50</span></a></li>
+                        </ul>
+                        <hr>
+                        <div class="tab-content">
+                            <div id="decks" class="tab-pane fade in active">
+                                Decks!
+                            </div>
+                            <div id="followers" class="tab-pane fade">
+                                Followers!
+                            </div>
+                            <div id="following" class="tab-pane fade">
+                                Following!
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="footer" class="row">
+
+        </div>
+    </body>
+</html>
