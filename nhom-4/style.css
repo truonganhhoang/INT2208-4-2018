@@ -1,47 +1,20 @@
-.body {
-	background: grey;
-}
-.container {
+/* .container {
 	margin-top: 60px;
+} */
+.row {
+	margin-top: 64px;
 }
 .frame1 {
 	width: 240px;
 	height: 488px;
 
 }
-.frameavatar {
-	width: 240px;
-	height: 277px;
-}
-.frametext {
-	width: 240px;
-	height: 191px;
-}
-.frametext1 {
-	text-align: left;
-	width: 240px;
-	height: 40px;
-}
-.frametext2 {
-	width: 240px;
-	height: 22px;
-}
-.imformation_teacher {
-	width: 240px;
-	height: 32px;
-}
-.frame_imformation{
-	width: 194.67px;
-	height: 32px;
-}
 .col-md-8 {
-	width: 776px;
-	height: 730px;
-	background: white;
+	background: pink;
 }
 .mn_1 {
 	margin-top: 60px;
 }
-.mn_2 {
-	margin-top: 64px;
+.col {
+	margin-left: 60px;
 }
