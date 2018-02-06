@@ -18,37 +18,47 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-        <!-- bootstrap for pills -->
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <!-- bootstrap for pills -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
 
 <body style="background-color:#F7F7F7">
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary ">
         <div class="container">
-            <a class="collapse navbar-collapse" style="max-width:11em" href="">
+            <a class="collapse navbar-collapse" style="max-width:11em" href="1.html">
                 <h3 style="color:#FFFFFF">Tinycards_N4</h3>
             </a>
             <!-- search box -->
             <form class="collapse navbar-collapse form-inline" style="max-width:250px; max-height:50px" id="navbarSearch">
                 <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </input>
                 <button class="btn btn-success" type="submit">
                     <span class="ion-ios-search-strong"></span>
                 </button>
-                </input>
             </form>
+            <!-- <div id="navbarIcon"> -->
             <!-- Home icon -->
-            <a class=" navbar-toggler ion-ios-home-outline" href="1.html" role="button"></a>
+            <a class="mx-auto navbar-toggler ion-ios-home-outline" href="1.html" role="button" id="homeIcon"></a>
             <!-- search icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch"
-                aria-expanded="true" data-dismiss="navbar-toggler">
+            <button class=" mx-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch"
+                aria-expanded="true" data-dismiss="navbar-toggler" onclick="hideIcon()" id="searchIcon">
                 <span class="ion-ios-search-strong"></span>
             </button>
+            <script>
+                function hideIcon() {
+                    document.getElementById("homeIcon").style.display = "none";
+                    document.getElementById("searchIcon").style.display = "none";
+                    document.getElementById("createIcon").style.display = "none";
+                    document.getElementById("profileIcon").style.display = "none";
+                }
+            </script>
             <!-- Create icon -->
-            <a class="navbar-toggler ion-android-add" href="1-1.html" role="button"></a>
+            <a class="mx-auto navbar-toggler ion-android-add" href="1-1.html" role="button" id="createIcon"></a>
             <!-- Profile icon -->
-            <a class=" navbar-toggler ion-android-contact" href="1-3.html" role="button"></a>
+            <a class="mx-auto navbar-toggler ion-android-contact" href="1-3.html" role="button" id="profileIcon"></a>
+            <!-- </div> -->
             <!-- Menu -->
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
@@ -70,18 +80,25 @@
     <div class="container my-5">
         <div class="row">
             <!-- user info -->
-            <div class="col-md-3 my-5">              
-                    <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                        alt="Generic placeholder image" width="150" height="150">
-                    <h4>User's Name</h4>
-                    <p>
-                        <a class="btn btn-secondary" href="#" role="button">View details »</a>
-                    </p>               
+            <div class="col-md-4 my-5">
+                <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
+                    width="150px" height="150px">
+                <div>
+                    <h4 style="text-align:center">User's Name</h4>
+
+                    <p class="ml-4 float-left">Followers:
+                        <span class=" badge badge-light">6</span>
+                    </p>
+                    <p class="mr-4 float-right">Following:
+                        <span class=" badge badge-light">6</span>
+                    </p>
+
+                </div>
             </div>
             <!-- deck, follower, following -->
-            <div class="col-md-9 my-5" style="background-color:#FFFFFF">
+            <div class="col-md-8 my-5" style="background-color:#FFFFFF">
                 <ul class="nav nav-pills my-2">
-                    <li >
+                    <li>
                         <a id="Decks_btn" data-toggle="pill" href="#DecksTab" role="button" class="btn">DECKS</a>
                     </li>
                     <li class="ml-2">
@@ -90,7 +107,7 @@
                     <li class="ml-2">
                         <a data-toggle="pill" href="#FollowingTab" role="button" class="btn">FOLLOWING</a>
                     </li>
-                </ul>   
+                </ul>
                 <hr>
                 <!-- auto click decks button   -->
                 <script>
@@ -186,14 +203,14 @@
                                 </div>
                             </div>
                         </a>
-                        
+
                     </div>
                     <div id="FollowersTab" class="tab-pane fade">
                         <h3 style="color:cornflowerblue; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align:center">This user has no followers yet.</h3>
                     </div>
                     <div id="FollowingTab" class="tab-pane fade">
                         day la tab 3
-                    </div>                    
+                    </div>
                 </div>
             </div>
         </div>
