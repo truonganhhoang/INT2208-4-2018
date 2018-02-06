@@ -1,0 +1,181 @@
+body {
+    min-height: 1300px;
+    padding-top: 50px;
+    background-color: #eceee3;
+    height: 100%;
+    background: linear-gradient(180deg, darkturquoise 50%, #eceee3 50%);
+}
+
+.slogan {
+    margin-top: 170px;
+    margin-left: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.icon {
+    margin-right: 150px;
+    margin-top: -170px;
+}
+
+.example {
+    margin: 5px;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.navbar {
+    background-color: darkturquoise;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.img {
+    position: fixed;
+}
+
+.card {
+    margin-left: 35px;
+}
+
+input[type="text"] {
+    background-color: rgb(161, 228, 240);
+}
+
+input[type="text"]::-moz-placeholder {
+    color: white;
+    opacity: 10%;
+}
+
+.login {
+    font-weight: bold;
+    color: white;
+}
+
+.login:hover {
+    color: #d1d3ca;
+    /* opacity: 0.5; */
+}
+
+.but {
+    color: aqua;
+    background-color: white;
+    border-radius: 15%;
+    padding: 5px;
+    margin: 0px;
+    border: none;
+    height: 30px;
+    font-weight: bold;
+}
+
+.but:hover {
+    background-color: #d1d3ca;
+}
+
+.interface {
+    margin-top: 100px;
+    background-color: white;
+    height: 700px;
+    border-radius: 20px;
+    box-shadow: rgb(8, 5, 5);
+}
+
+
+/* .im1 {
+    margin-top: 100px;
+    margin-left: 50px;
+} */
+
+.search-box {
+    margin-top: 30px;
+    /* width: 400px; */
+}
+
+.search-decks {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(78, 71, 71);
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 30px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+.search {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.form-control {
+    width: 300px;
+    height: 40px;
+}
+
+.trending {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(78, 71, 71);
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 30px;
+    opacity: 0.8;
+}
+
+.trend {
+    padding-top: 200px;
+}
+
+.create {
+    /* margin-top: 10px; */
+    margin-right: 50px;
+}
+
+.but2 {
+    margin-top: 65px;
+}
+
+.btn {
+    height: 40px;
+    width: 200px;
+}
+
+.cre-but {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(78, 71, 71);
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left: 30px;
+    opacity: 0.8;
+}
+
+.im2 {
+    margin-right: 10px;
+}
+
+.see-all {
+    font-weight: bold;
+    color: aqua;
+    padding-right: 30px;
+}
+
+.footer-font {
+    margin-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(78, 71, 71);
+    font-weight: bolder;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.footer-margin {
+    margin-left: 30px;
+    margin-right: 30px;
+}
