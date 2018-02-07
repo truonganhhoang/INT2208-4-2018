@@ -1,0 +1,42 @@
+.header-main{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.luyen_tap{
+    margin: 30px auto;
+}
+.luyen_tap>a{
+    
+    padding: 10px;
+    text-decoration: none;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 25%;
+}
+.luyen_tap>a:hover{
+    background-color: rgb(29, 245, 245);
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.lesson{
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #EEE;
+    border-radius: 10px;
+    text-align: center;
+}
+.lesson >a, .header-main{
+    background-color: #1caff6;
+}
+.lesson > a{
+    margin: 20px;
+    padding: 7px 15px;
+    border-radius: 10px;
+    color: #FFF;
+}

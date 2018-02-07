@@ -1,0 +1,21 @@
+body{
+    background-color: #e9e9e9;
+}
+.header{
+    background-color: #1caff6;
+    color: #FFFFFF; 
+    padding: 10px 0px;
+}
+#logo{
+    font-size: 30pt;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-family: Courier, "Comic Sans MS";
+}
+.navbar-default .navbar-toggle{
+    border: none;
+}
+.navbar-default .navbar-nav>li>a{
+    color: #fff;
+    font-size: 13pt;
+}
