@@ -1,3 +1,1 @@
-# Công nghệ phần mềm
-
-Trần Văn Thắng
+Trần Văn Thắng 16021418
