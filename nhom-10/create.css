@@ -1,0 +1,61 @@
+*{margin: 0; padding: 0}
+
+.clearfix{
+	padding: 0 115px;
+	height: 60px;
+	background-color: #00C8FF;
+}
+.header{
+	border: none;
+}
+.menu{
+	height: 60px;
+}
+.content{
+	width: 100%;
+	margin-top: 50px;
+}
+.trai{
+	height: 479px;
+	width: 240px;
+	position: relative;
+	float: left;
+}
+.cover{
+	width: 240px;
+	height: 277px;
+	display: block;
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 0 2px 14px 0 rgba(0,0,0,.17);
+	margin-bottom: 34px;
+}
+.cover span{
+	display: block;
+	text-decoration: none;
+	position: absolute;
+	margin: 125px 65px;
+	font-size: 13px;
+	font-weight: bold;
+}
+.input{
+	height: 27px;
+	margin-bottom: 27px;
+}
+.input input{
+	border: none;
+}
+.phai{
+	width: 778px;
+	height: 389px;
+	float: left;
+	margin-left: 50px;
+	padding: 65px 125px;
+	border-radius: 30px;
+	background-color: #fff;
+	box-shadow: 0 2px 14px 0 rgba(0,0,0,.17);
+}
+.phai a{
+	float: left;
+	margin-right: 20px;
+}
