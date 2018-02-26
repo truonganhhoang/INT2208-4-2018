@@ -1,4 +1,4 @@
-# Nhóm 3 Doulingo
+# Nhóm 3 Duolingo
 * Trần Văn Thắng
 * Nguyễn Văn Phi
 * Nguyễn Minh Tâm
