@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Doulingo</title>
+    <title>Duolingo | Học English</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://d35aaqx5ub95lt.cloudfront.net/favicon.ico" />
 
     <!-- Latest compiled and minified CSS -->
@@ -18,13 +18,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/header.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/1.css" />
-    <script src="js/javascript.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-default header">
+    <nav class="navbar navbar-default" style="background-color: #1caff6;">
         <div class="container-fluid container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -34,14 +31,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="logo" href="1.html">doulingo</a>
+                <a class="navbar-brand" href="1.html" style="color:#FFF; font-family:Courier New; font-size:25pt; font-weight: bolder;">duolingo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Site language
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ngôn ngữ 
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -53,30 +50,38 @@
                             </li>
                         </ul>
                     </li>
-                    
+                    <li>
+                        <a href="#">Đăng ký</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container " >
+    <div class="container ">
         <div class="row">
-            <div class="col-xs-12 col-lg-4 col-centered ">
-                <form action="">
-                    <div class="title-form">
-                        <h1>Đăng nhập</h1>
-                        <p>Bạn cần đăng nhập để nhìn thấy trang này</p>
+            <div class="col-sm-4 col-centered"></div>
+            <div class="col-xs-12 col-sm-4 col-centered">
+                <div class="text-center">
+                    <h1>Đăng nhập</h1>
+                    <p>Bạn cần đăng nhập để nhìn thấy trang này.</p>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                     </div>
-                    <div>
-                        <input type="text" placeholder="Enter Username or Email" name="uname" required>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <button type="submit" class="button-submit">Login</button>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
                     </div>
-                    <div>
-                        <a href="#">quên mật khẩu</a>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <br />
+                        <a href="#">quên mật khẩu?</a>
                     </div>
+
                 </form>
             </div>
+            <div class="col-sm-4 col-centered"></div>
         </div>
 
 </body>
