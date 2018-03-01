@@ -1,0 +1,35 @@
+*:focus {
+	outline: none;
+	box-shadow: none !important;
+	border-color: transparent !important;
+}
+
+.bg-primary {
+	background-color: #32cdff !important;
+}
+
+ul a{
+	color: white;
+}
+
+ul form input {
+	width: 20rem !important;
+	border-radius: 8px !important;
+	font-weight: bold;
+	background-color: #6ad8fc !important;
+	border: none !important;
+}
+
+ul form input:focus {
+	background-color: white !important;
+	font-weight: normal;
+}
+
+ul form input::placeholder {
+	color: #eaf4f9 !important;
+}
+
+.clicked {
+	border-bottom: 1px solid white;
+	font-weight: bold;
+}
