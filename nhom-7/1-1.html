@@ -1,81 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tinycards - Flashcards by Duolingo</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	 crossorigin="anonymous">
-	 <link rel="icon" sizes="192x192" href="https://d17u0960v8a9bp.cloudfront.net/192x192.png">
-	 <link rel="stylesheet" href="css/1-1.css">
-	 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <title>Tinycards - Flashcards by Duolingo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="icon" sizes="192x192" href="https://d17u0960v8a9bp.cloudfront.net/192x192.png">
+    <link rel="stylesheet" href="css/1-1.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 </head>
 <body>
-	<!-- nav bar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-0 sticky-top">
-		<div class="container">
-			<a class="navbar-brand" href="#">
-		  		<img src="imgs/tinycard.PNG" alt="LOGO">
-			</a>
-			<!-- xem lai phan collapse -->
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <!-- left -->
-			    <ul class="navbar-nav mr-auto">
-				    <form class="form-inline">
-				      <input class="form-control py-2" type="search" placeholder="SEARCH" aria-label="Search">
-				    </form>
-			    </ul>
-			    <!-- right -->
-		    	<ul class="nav" id="navbarSupportedContent">
-				  <li class="nav-item clicked my-0 py-3">
-				    <a class="nav-link active" href="#">
-				    	<i class="fas fa-home"></i> HOME
-				    </a>
-				  </li>
-				  <li class="nav-item py-3 px-2">
-				    <a class="nav-link" href="#">
-				    	<i class="fas fa-plus"></i> CREATE
-				    </a>
-				  </li>
-				  <li class="nav-item py-3 px-2">
-				    <a class="nav-link" href="#">
-				    	<i class="far fa-user"></i> PROFILE
-				    </a>
-				  </li>
-				</ul>
-		  	</div>
-		</div>
-	</nav>
-	<!-- content -->
-	<div class="container mt-5">
-		<div class="jumbotron">
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="..." alt="First slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="..." alt="Second slide">
-			    </div>
-			    <div class="carousel-item">
-			      <img class="d-block w-100" src="..." alt="Third slide">
-			    </div>
-			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-		</div>
-	</div>
-<script  src="http://code.jquery.com/jquery-3.3.1.js"  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand row navbar-dark bg-primary py-0 sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-none d-lg-block" href="#">
+                <img src="imgs/tinycard.PNG" alt="LOGO">
+            </a>
+            <!-- xem lai phan collapse -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- left -->
+                <div class="navbar-nav mr-md-auto col-auto">
+                    <form class="form-inline">
+                        <input class="form-control py-2 d-inline d-none" type="search" placeholder="SEARCH" aria-label="Search">
+                    </form>
+                </div>
+                <!-- right -->
+                <ul class="nav col-auto offset-sm-2" id="navbarSupportedContent">
+                    <li class="nav-item clicked my-0 py-3 order-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-home"></i>
+                            <span class="d-none d-lg-inline">HOME</span>
+                        </a>
+                    </li>
+                    <li class="nav-item order-3 py-3 px-2">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-plus"></i>
+                            <span class="d-none d-lg-inline">CREATE</span>
+                        </a>
+                    </li>
+                    <li class="nav-item order-4 py-3 px-2">
+                        <a class="nav-link" href="#">
+                            <i class="far fa-user"></i>
+                            <span class="d-none d-lg-inline"> PROFILE</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- content -->
+    <div class="container mt-5">
+        <div class="jumbotron p-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="row" style="background-color: rgb(149, 21, 42);">
+                            <div class="col-md-6 offset-1 cap ">
+                                <h1>US state abbreviations</h1>
+                                <p>by Crystal Yoon</p>
+                            </div>
+                            <div class="col-md-4 offset-1 p-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/ac487eecf9b558b778663710d38b7035" alt="Card image cap">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="row" style="background-color: rgb(177, 118, 137);">
+                            <div class="col-md-6 offset-1 cap ">
+                                <h1>Frog Anatomy </h1>
+                                <p>by TinyScience</p>
+                            </div>
+                            <div class="col-md-4 offset-1 p-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/e6a591df72c7f2686d4a5561260c5c03" alt="Card image cap">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row" style="background-color: rgb(102, 116, 131);">
+                            <div class="col-md-6 offset-1 cap ">
+                                <h1>Chemistry colours</h1>
+                                <p>by Justin Schmidt</p>
+                            </div>
+                            <div class="col-md-4 offset-1 p-4">
+                                <div class="card">
+                                    <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/aba40980cfa910b14a6933b552f321cc" alt="Card image cap">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <footer class="mb-3 mt-5 pt-3">
+            <a href="about.html" class="m-4">ABOUT</a>
+            <a href="" class="m-4">SUPPORT</a>
+            <a href="" class="m-4">TERMS</a>
+            <a href="" class="m-4">DUOLINGO</a>
+            <a href="" class="m-4">FACEBOOK</a>
+            <a href="" class="m-4">TWITTER</a>
+            <a href="" class="m-4" id="language">
+                <img src="imgs/english.png"> ENGLISH
+            </a>
+        </footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
