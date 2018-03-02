@@ -46,7 +46,7 @@ div form input {
     font-weight: bold;
 }
 
-ul li:nth-of-type(2) a:hover {
+ul li:nth-of-type(1) a:hover {
     color: white !important;
 }
 
@@ -63,7 +63,7 @@ ul li:nth-of-type(2) a:hover {
 
 .card {
     width: 40%;
-    border: none;
+    border: hidden;
     box-shadow: 0 2px 9px rgba(0,0,0,.1);
     border-radius: 18px;
 }
@@ -76,9 +76,14 @@ ul li:nth-of-type(2) a:hover {
     height: 270px !important;
 }
 
-h1, p, footer {
+h1, p, footer, h4, h4 + a {
     text-shadow: 0px 1px 1px rgba(0,0,0,0.05), 0px 1px 1px rgba(0,0,0,0.05), 0px 1px 1px rgba(0,0,0,0.05);
 }
+
+    h4 + a:hover {
+        color: #29b7e5;
+        text-decoration: none;
+    }
 
 #carouselExampleIndicators, .jumbotron {
     border-radius: 18px !important;
@@ -107,4 +112,30 @@ a, #language {
     color: #32cdff;
     font-weight: bold !important;
     text-decoration: none !important;
+}
+
+.author {
+    font-weight: normal !important;
+}
+
+
+.card-title {
+    font-size: 14px;
+    color: #878787;
+    letter-spacing: 0.2px;
+}
+
+.card-info {
+    color: #c9cacc;
+    font-weight: bold;
+}
+
+.card-img-top, .jumbotron {
+    box-shadow: 0 2px 9px rgba(0,0,0,.1);
+    border-radius: 18px;
+}
+
+.content-card {
+    width: 100% !important;
+    box-shadow: none;
 }
