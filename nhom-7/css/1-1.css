@@ -46,7 +46,7 @@ div form input {
     font-weight: bold;
 }
 
-ul li:nth-of-type(1) a:hover {
+ul li:nth-of-type(2) a:hover {
     color: white !important;
 }
 
@@ -62,7 +62,7 @@ ul li:nth-of-type(1) a:hover {
     }
 
 .card {
-    width: 40%;
+    width: 60%;
     border: hidden;
     box-shadow: 0 2px 9px rgba(0,0,0,.1);
     border-radius: 18px;
@@ -71,10 +71,6 @@ ul li:nth-of-type(1) a:hover {
     .card img {
         border-radius: 18px
     }
-
-.carousel-item {
-    height: 270px !important;
-}
 
 h1, p, footer, h4, h4 + a {
     text-shadow: 0px 1px 1px rgba(0,0,0,0.05), 0px 1px 1px rgba(0,0,0,0.05), 0px 1px 1px rgba(0,0,0,0.05);
@@ -115,6 +111,7 @@ a, #language {
 }
 
 .author {
+    color: #e3ecf1;
     font-weight: normal !important;
 }
 
@@ -136,6 +133,22 @@ a, #language {
 }
 
 .content-card {
-    width: 100% !important;
     box-shadow: none;
+}
+
+div div div a img {
+    height: 170px;
+}
+
+.fa-chevron-left,
+.fa-chevron-right {
+    color: #0cbef7;
+    font-size: 25px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
