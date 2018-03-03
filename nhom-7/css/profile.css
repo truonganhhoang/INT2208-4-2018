@@ -58,12 +58,6 @@
         font-weight: bold;
     }
 
-
-/*Duy's Page Force style*/
-body {
-    background-color: rgb(247,247,247) !important;
-}
-
 /* Mod's bootstrap css*/
 .nav-tabs .nav-link {
     border: none;
