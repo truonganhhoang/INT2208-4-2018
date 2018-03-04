@@ -1,0 +1,195 @@
+<!-- This file completely made by Phạm Ngọc Duy -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TinyCards -- Flash Cards by Duolingo</title>
+    <link rel="shortcut icon" type="image/png" href="https://d17u0960v8a9bp.cloudfront.net/image/5c826d3d048819c3fc25ddaea0697433.png"
+    />
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="css/setting.css">
+    <script src="js/duy.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Phạm Ngọc Duy" />
+    <meta charset="UTF-8" />
+</head>
+
+
+<body style="background-color: rgb(247,247,247);">
+    <!-- NAV BAR -->
+    <div class="navbar navbar-dark row sticky-top text-center py-0 px-4 bg-primary" id="nav-bar">
+        <div class="container">
+            <a class="navbar-brand d-none d-lg-block col col-lg-auto order-lg-1" href="#">
+                <img src="imgs/tinycard.PNG" alt="LOGO">
+            </a>
+            <!--home-->
+            <a class="col col-lg-auto order-1 order-lg-3 text-white btn btn-primary" id="nav-home" href="1-1.html">
+                <i class="fa fa-home"></i>
+                <span class="d-none d-lg-inline">Home</span>
+            </a>
+            <!--search on mobile-->
+            <a id="nav-search-mobile" class="col col-lg-auto order-2 text-white btn btn-primary d-lg-none d-block" onclick="showHideSearch();">
+                <span class="d-block d-lg-none">
+                    <i class="fa fa-search"></i>
+                </span>
+            </a>
+            <!-- search on PC -->
+            <div class="col col-lg-auto order-lg-2 mr-lg-auto d-none d-lg-block" id="nav-search-pc">
+                <form class="my-2 my-lg-0" style="position: relative;">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="padding-left: 40px; padding-right: 40px;">
+                    <div style="position: absolute; top: 0 ; left: 15px; line-height: 38px;">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="d-none d-lg-none" id="close-search" style="position: absolute; top: 0 ; right: 15px; line-height: 38px;" onclick="showHideSearch();">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </form>
+            </div>
+            <!--create-->
+            <a class="col col-lg-auto order-3 order-lg-4 text-white btn btn-primary" id="nav-create">
+                <i class="fa fa-plus"></i>
+                <span class="d-none d-lg-inline">Create</span>
+            </a>
+            <!--profile-->
+            <a class="col col-lg-auto order-4 order-lg-5 text-white btn btn-primary" id="nav-profile" href="2.profile.html">
+                <i class="fa fa-user"></i>
+                <span class="d-none d-lg-inline">Phạm Ngọc Duy</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+
+    <div id="container" class="container mt-5">
+        <div class="row">
+            <div class="col-md-auto col-12 text-md-left text-center">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="edit-profile-tab" data-toggle="pill" href="#edit-profile" role="tab" aria-controls="edit-profile"
+                        aria-selected="true">EDIT PROFILE</a>
+                    <a class="nav-link" id="acc-setting-tab" data-toggle="pill" href="#account-setting" role="tab" aria-controls="account-setting"
+                        aria-selected="false">ACCOUNT SETTINGS</a>
+                    <a class="nav-link" id="notification-tab" data-toggle="pill" href="#notifications" role="tab" aria-controls="notifications"
+                        aria-selected="false">NOTIFICATIONS</a>
+                    <a class="nav-link" id="send-feedback-tab" data-toggle="pill" href="#send-feedback" role="tab" aria-controls="send-feedback"
+                        aria-selected="false">SEND FEEDBACK</a>
+                    <a class="nav-link" data-toggle="modal" data-target="#sign-out" href="#sign-out">
+                        SIGN OUT
+                    </a>
+                </div>
+            </div>
+            <div class="col-md col-12 round-container" style="padding: 40px;">
+                <div class="tab-content" id="tabContent">
+                    <div class="tab-pane fade show active" id="edit-profile" role="tabpanel" aria-labelledby="edit-profile-tab">
+                        <div class="row">
+                            <div class="col-md col-12 order-md-1 order-2">
+                                <div class="form-group">
+                                    <label class="title-label" for="txtName">NAME</label>
+                                    <input type="text" class="form-control" id="txtName" placeholder="Your Name...">
+                                </div>
+                                <div class="form-group">
+                                    <label class="title-label" for="txtUserName">USERNAME</label>
+                                    <input type="text" class="form-control" id="txtUserName" placeholder="Your Username...">
+                                </div>
+                                <div class="form-group">
+                                    <label class="title-label" for="txtBio">BIO</label>
+                                    <input type="text" class="form-control" id="txtBio" placeholder="Your Bio...">
+                                </div>
+                            </div>
+                            <div class="col-md-auto col-12 order-md-2 order-1 text-center">
+                                <div class="row justify-content-center">
+                                    <div class="position-relative col-auto">
+                                        <img id="avatar" src="./imgs/purple-head.PNG">
+                                        <button class="btn btn-light" style="border-radius: 50%; position: absolute; right: 20px; bottom: 0; width: 42px; height: 42px; color: #32cdff; box-shadow: 0 2px 20px 0 rgba(0,0,0,.2);">
+                                            <i class="fas fa-pencil-alt"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="account-setting" role="tabpanel" aria-labelledby="acc-setting-tab">
+                        <div class="form-group">
+                            <label class="title-label" for="txtEmail">EMAIL</label>
+                            <input type="email" class="form-control" id="txtEmail" placeholder="Your Email...">
+                        </div>
+                        <div class="form-group">
+                            <label class="title-label" for="txtPass">PASSWORD</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" id="txtPass" value="Fake Password" readonly>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-primary" type="button">CHANGE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="title-label"> SOUND</div>
+                            <input type="checkbox" id="checkBoxSound">
+                            <label for="checkBoxSound">
+                                <div class="radio">
+                                    <div class="radio__circle"></div>
+                                </div>Sound effects</label>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="notifications" role="tabpanel" aria-labelledby="notification-tab">
+                        <div>
+                            <div class="title-label">DAILY PRACTICE REMINDERS</div>
+                            <input type="checkbox" id="checkBoxReminder">
+                            <label for="checkBoxReminder">
+                                <div class="radio">
+                                    <div class="radio__circle"></div>
+                                </div>Receive daily practice reminder emails</label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="send-feedback" role="tabpanel" aria-labelledby="send-feedback-tab">
+                        <div class="form-group">
+                            <label class="title-label" for="textFeedBack">HAVE FEEDBACK? WE'D LOVE TO HEAR IT!</label>
+                            <input type="text" class="form-control" id="textFeedBack">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- sign out model -->
+    <div class="modal fade" id="sign-out" tabindex="-1" role="dialog" aria-labelledby="sign-outTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    Are you sure you want to sign out?
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-primary w-50">Sign out</button>
+                    <button type="button" class="btn btn-outline-secondary w-50" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

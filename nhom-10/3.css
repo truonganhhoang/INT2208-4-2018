@@ -1,0 +1,39 @@
+#content {
+    
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+#info {
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+#avatar {
+    border: solid 3px white;
+}
+#username {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#action-buttons {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.glyphicon {
+    margin-right: 8px;
+}
+.btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.has-shadow {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.tab-content {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+#stats>hr {
+    margin-top: 10px;
+}
