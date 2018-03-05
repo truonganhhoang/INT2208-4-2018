@@ -9,13 +9,9 @@
     <!-- icon -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </head>
 
@@ -27,12 +23,16 @@
                 <h3 style="color:#FFFFFF">Tinycards_N4</h3>
             </a>
             <!-- search box -->
-            <form class="collapse navbar-collapse form-inline" style="max-width:250px; max-height:50px" id="navbarSearch">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                </input>
-                <button class="btn btn-success" type="submit">
-                    <span class="ion-ios-search-strong"></span>
-                </button>
+            <form class="form-inline collapse navbar-collapse" id="navbarSearch">
+                <div class="form-group">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    </input>
+                    <div class="input-group-btn">
+                        <button class="btn btn-success" type="submit">
+                            <span class="ion-ios-search-strong"></span>
+                        </button>
+                    </div>
+                </div>
             </form>
             <!-- <div id="navbarIcon"> -->
             <!-- Home icon -->
