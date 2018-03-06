@@ -1,0 +1,154 @@
+*{margin:0 ;padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,p{margin: 0;padding:0px;}
+li{list-style: none;float:left;}
+a{text-decoration: none;color:#000;}
+a:hover{text-decoration: none;}
+.row{margin:0px;padding:0px;}
+@font-face{
+	font-family:Lato-Bold;
+	src:url('../fonts/Lato-Bold.ttf') format('truetype');
+	}
+@font-face{
+	font-family:Lato-Light;
+	src:url('../fonts/Lato-Light.ttf') format('truetype');
+	}
+@font-face{
+	font-family:Lato-Regular;
+	src:url('../fonts/Lato-Regular.ttf') format('truetype');
+	}
+@font-face{
+	font-family:Lato-Italic;
+	src:url('../fonts/Lato-Italic.ttf') format('truetype');
+	}
+.bold{
+	font-family: Lato-Bold;
+}
+.light{
+	font-family: Lato-Light;
+}
+.regular{
+	font-family: Lato-Regular;
+}
+.white{
+	color:white;
+}
+body{
+	background:#000;
+}
+
+.container-max{
+	
+	padding:0px;
+}
+.header-top{
+	background: #fff;
+}
+.logo{
+	padding:15px 0px 15px 30px;
+}
+.header-menu{
+	padding:28px 0px;
+	text-align:center;
+}
+.header-menu li{
+	padding:0px 5px;
+}
+.header-menu a{
+	padding:15px;
+	color:#000;
+}
+.header-menu a:hover{
+	background:#1bbc9b;
+	color:#fff;
+}
+
+.header-title{
+	background: url(../img/background.png) no-repeat;
+	text-align: center;
+}
+.title{
+	padding:80px 0px;
+}
+.title span{
+	font-size:55px;
+	padding:20px 0px;
+}
+.title p{
+	font-size: 18px;
+	padding:20px 0px;
+}
+.button{
+	background: #1bbc9b;
+	color:#fff;
+}
+
+#portfolio{
+	background:#fff;
+	text-align: center;
+	padding: 50px 0px;
+}
+.portfolio-title{
+	padding-bottom: 30px;
+}
+.portfolio-title p{
+	font-size:16px;
+}
+.portfolio-list-btn{
+	margin:0 20%;
+	padding-bottom: 25px;
+}
+.portfolio-btn {
+	padding:5px 0px;
+}
+.portfolio-btn a:hover{
+	color:#fff;
+}
+.portfolio-icon{
+	padding:15px 0px;
+}
+
+#contact{
+	background:#ecf0f1;
+	padding:50px 0px;
+}
+.contact-title{
+	text-align: center;
+	padding-bottom: 50px;
+}
+.form-left{
+	padding:0px 40px;
+}
+.form-left input{
+	width:40%;
+	float:left;
+	margin-bottom: 20px;
+}
+.form-email{
+	margin-left:20%;
+}
+.form-left textarea{
+	margin-bottom: 20px;
+}
+.form-left button{
+	float:right;
+}
+.form-right{
+	padding:0px;
+}
+.form-right p{
+	line-height: 28px;
+}
+
+.footer{
+	background:#2d3e50;
+	padding:20px 0px;
+}
+.footer-left{
+	font-size:14px;
+	color:#fff;
+}
+.footer-left p{
+	line-height: 45px;
+}
+
+
