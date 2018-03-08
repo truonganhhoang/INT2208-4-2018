@@ -163,3 +163,13 @@ footer a:hover {
 div div div a img {
 	height: 170px;
 }
+
+.duy-signup-btn:hover {
+	background-color: #f4f5f7 !important;
+	color: #0cbef7;
+}
+
+.login:hover {
+	background-color: #32cdff !important;
+	color: #8fdef7;
+}
