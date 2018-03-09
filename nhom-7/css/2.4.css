@@ -1,0 +1,51 @@
+﻿div form input {
+    width: 14rem !important;
+    border-radius: 8px !important;
+    font-weight: bold;
+    background-color: #6ad8fc !important;
+    border: none !important;
+}
+
+    div form input:focus {
+        background-color: white !important;
+        font-weight: normal;
+    }
+
+    div form input::placeholder {
+        color: #eaf4f9 !important;
+    }
+
+.bg-primary {
+    background-color: #32cdff !important;
+}
+
+ul a {
+    color: white;
+}
+
+    ul a:hover {
+        color: #8fdef7;
+    }
+
+body {
+    background-color: #f7f7f7;
+}
+
+.card-body, .jumbotron, .card-img-top, .multipleChoice {
+    background-color: white;
+    box-shadow: 0 2px 9px rgba(0,0,0,.1);
+    border-radius: 18px;
+}
+
+.card-body {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+#left-first {
+    transform: rotate(-4deg);
+}
+
+#right-first {
+    transform: rotate(4deg)
+}
