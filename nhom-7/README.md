@@ -10,3 +10,7 @@ link semat: https://docs.google.com/spreadsheets/d/1NIKzBaqmc1w2dQHGoO-Rl4WlRbVn
 
 2.2.1.html - setting page
 
+2.3.html - create page
+
+2.4.html - main function page
+
