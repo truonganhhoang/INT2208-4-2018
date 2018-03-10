@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -31,11 +31,11 @@
                     <li class="nav-item my-0 py-3 order-2 d-block d-sm-none col col-auto">
                         <a class="nav-link" href="#">
                             <i class="fas fa-search"></i>
-                            <span class="d-none d-lg-inline">HOME</span>
+                            <span class="d-none d-lg-inline"></span>
                         </a>
                     </li>
-                    <li class="nav-item clicked my-0 py-3 order-2 col col-auto">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item my-0 py-3 order-2 col col-auto">
+                        <a class="nav-link" href="2.html">
                             <i class="fas fa-home"></i>
                             <span class="d-none d-lg-inline">HOME</span>
                         </a>
@@ -59,51 +59,104 @@
     <!-- content -->
     <div class="container my-5">
         <div class="jumbotron">
-            <div class="progress mb-5" style="height: 7px">
-                <div class="progress-bar" role="progressbar" style="width: 0; background-color: #ffd600" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
             <div class="row">
+                <div class="pb-5 col-1">
+                    <button class="ml-5 mb-3 btn btn-light escape-btn p-0" href="#">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="progress mb-5 ml-lg-3 ml-5 mt-3 col-lg-10 col-sm-9 col-7 col-md-10 p-0" style="height: 7px; width: 85%">
+                    <div class="progress-bar" role="progressbar" style="width: 0; background-color: #ffd600" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="row d-none question-1">
                 <div class="col-3 offset-1 text-center">
                     <div class="card-body">
                         <h4 class="card-title text-muted">trunk</h4>
                     </div>
                 </div>
                 <div class="col-2 p-0 ml-5">
-                    <div class="multipleChoice mt-5 h-75" id="left-first">
-                        <a><img class="card-img-top h-100" alt="trunk" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985" alt="Card image cap"></a>
+                    <div class="multipleChoice mt-5 h-75 left">
+                        <a><img class="card-img-top h-100" alt="trunk" id="n-0" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985"></a>
                     </div>
                 </div>
                 <div class="col-2 p-0">
-                    <div class="multipleChoice h-75 mt-5" id="center-first">
-                        <a><img class="card-img-top h-100" alt="head" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="Card image cap"></a>
+                    <div class="multipleChoice h-75 mt-5 center">
+                        <a><img class="card-img-top h-100" alt="head" id="n-1" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514"></a>
                     </div>
                 </div>
                 <div class="col-2 p-0">
-                    <div class="multipleChoice h-75 mt-5" id="right-first">
-                        <a><img class="card-img-top h-100" alt="nose" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9" alt="Card image cap"></a>
+                    <div class="multipleChoice h-75 mt-5 right">
+                        <a><img class="card-img-top h-100" alt="nose" id="n-2" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9"></a>
                     </div>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row d-none question-1">
                 <div class="col-3 offset-1 text-center">
                     <div class="card-body">
                         <h4 class="card-title text-muted">head</h4>
                     </div>
                 </div>
                 <div class="col-2 p-0 ml-5">
-                    <div class="multipleChoice mt-5 h-75" id="left-first">
-                        <a><img class="card-img-top h-100" alt="trunk" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985" alt="Card image cap"></a>
+                    <div class="multipleChoice mt-5 h-75 left">
+                        <a><img class="card-img-top h-100" alt="trunk" id="n-3" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985" alt="Card image cap"></a>
                     </div>
                 </div>
                 <div class="col-2 p-0">
-                    <div class="multipleChoice h-75 mt-5" id="center-first">
-                        <a><img class="card-img-top h-100" alt="nose" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9" alt="Card image cap"></a>
+                    <div class="multipleChoice h-75 mt-5 center">
+                        <a><img class="card-img-top h-100" alt="limbs" id="n-4" src="https://d9np3dj86nsu2.cloudfront.net/image/643fab795ba562697468540d79b843d0" alt="Card image cap"></a>
                     </div>
                 </div>
                 <div class="col-2 p-0">
-                    <div class="multipleChoice h-75 mt-5" id="right-first">
-                        <a><img class="card-img-top h-100" alt="head" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="Card image cap"></a>
+                    <div class="multipleChoice h-75 mt-5 right">
+                        <a><img class="card-img-top h-100" alt="head" id="n-5" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="Card image cap"></a>
                     </div>
+                </div>
+            </div>
+            <div class="row d-none question-1">
+                <div class="col-3 offset-1 text-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-muted">nose</h4>
+                    </div>
+                </div>
+                <div class="col-2 p-0 ml-5">
+                    <div class="multipleChoice mt-5 h-75 left">
+                        <a><img class="card-img-top h-100" alt="nose" id="n-6" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9" alt="Card image cap"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 center">
+                        <a><img class="card-img-top h-100" alt="limbs" id="n-7" src="https://d9np3dj86nsu2.cloudfront.net/image/643fab795ba562697468540d79b843d0" alt="Card image cap"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 right">
+                        <a><img class="card-img-top h-100" alt="head" id="n-8" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none question-2">
+                <div class="col-3 offset-1 text-center">
+                    <img class="card-img-top h-100" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="head" />
+                </div>
+                <div class="col-8">
+                    <input type="text" class="w-75 ml-3 pb-2" name="name" value="" placeholder="Enter the answer"/>
+                </div>
+            </div>
+            <div class="row d-none question-2">
+                <div class="col-3 offset-1 text-center">
+                    <img class="card-img-top h-100" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985" alt="trunk" />
+                </div>
+                <div class="col-8">
+                    <input type="text" class="w-75 ml-3 pb-2" name="name" value="" placeholder="Enter the answer" />
+                </div>
+            </div>
+            <div class="row d-none question-2">
+                <div class="col-3 offset-1 text-center">
+                    <img class="card-img-top h-100" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9" alt="nose" />
+                </div>
+                <div class="col-8">
+                    <input type="text" class="w-75 ml-3 pb-2" name="name" value="" placeholder="Enter the answer" />
                 </div>
             </div>
         </div>
