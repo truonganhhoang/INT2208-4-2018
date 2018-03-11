@@ -9311,9 +9311,13 @@ input {
         font-family: sans-serif;
         font-size: 15px;
     }
+
     .onoffswitch {
-        position: relative; width: 50px;
-        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+        position: relative;
+        width: 50px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     .onoffswitch-checkbox {
@@ -9321,42 +9325,69 @@ input {
     }
 
     .onoffswitch-label {
-        display: block; overflow: hidden; cursor: pointer;
-        border: 2px solid #999999; border-radius: 20px;
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid #999999;
+        border-radius: 20px;
     }
 
     .onoffswitch-inner {
-        display: block; width: 200%; margin-left: -100%;
-        -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
-        -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+        display: block;
+        width: 200%;
+        margin-left: -100%;
+        -moz-transition: margin 0.3s ease-in 0s;
+        -webkit-transition: margin 0.3s ease-in 0s;
+        -o-transition: margin 0.3s ease-in 0s;
+        transition: margin 0.3s ease-in 0s;
     }
 
     .onoffswitch-inner:before, .onoffswitch-inner:after {
-        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 50px;
-        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+        display: block;
+        float: left;
+        width: 50%;
+        height: 30px;
+        padding: 0;
+        line-height: 50px;
+        font-size: 14px;
+        color: white;
+        font-family: Trebuchet, Arial, sans-serif;
+        font-weight: bold;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     .onoffswitch-inner:before {
         content: "";
         padding-left: 10px;
-        background-color: #2FCCFF; color: #FFFFFF;
+        background-color: #2FCCFF;
+        color: #FFFFFF;
     }
 
     .onoffswitch-inner:after {
         content: "";
         padding-right: 10px;
-        background-color: #EEEEEE; color: #999999;
+        background-color: #EEEEEE;
+        color: #999999;
         text-align: right;
     }
 
     .onoffswitch-switch {
-        display: block; width: 20px; margin: 6px;
+        display: block;
+        width: 20px;
+        margin: 6px;
         background: #FFFFFF;
-        border: 2px solid #999999; border-radius: 20px;
-        position: absolute; top: 0; bottom: 0; right: 20px;
-        -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
-        -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s;
+        border: 2px solid #999999;
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        -moz-transition: all 0.3s ease-in 0s;
+        -webkit-transition: all 0.3s ease-in 0s;
+        -o-transition: all 0.3s ease-in 0s;
+        transition: all 0.3s ease-in 0s;
     }
 
     .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
@@ -9366,6 +9397,7 @@ input {
     .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
         right: 0px;
     }
+
     .glyphicon {
         position: relative;
         top: 1px;
@@ -9377,9 +9409,56 @@ input {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale
     }
+
     .glyphicon-ok:before {
         content: "\e013"
     }
+
+    .glyphicon-plus:before {
+        content: "\2b"
+    }
+
     .glyphicon-remove:before {
         content: "\e014"
+    }
+
+    .glyphicon-home:before {
+        content: "\e021"
+    }
+    .image-preview-input {
+        position: relative;
+        overflow: hidden;
+        margin: 0px;
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+    }
+
+    .image-preview-input input[type=file] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+
+    .image-preview-input-title {
+        margin-left: 2px;
+    }
+    .favoritebut:before {
+        background-color: #fff;
+        color: #32cdff;
+        cursor: pointer;
+    }
+    .favoritebut:after {
+        color: #fff;
+        background-color: #32cdff;
+        border-color: #32cdff
+        border-radius: 10px;
+        cursor: pointer;
+
     }
