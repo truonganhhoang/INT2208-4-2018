@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA_Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/text.css" rel="stylesheet">
 </head>
 <body>
 	<div id="header">
@@ -17,7 +18,7 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
-			            </button>
+			        </button>
 			        <div id="container">
 				        <a class="navbar-brand" href="2.html">
 			            <img src="images/tiny1.png" width="40" height="34" class="img-responsive" alt="">
@@ -42,9 +43,9 @@
 				        </div>        
 			        </ul><!-- search -->
 			        <ul class="nav navbar-nav navbar-right">
-			            <li><a href="2.html">HOME</a></li>
-			            <li><a href="2.1.html">CREATE</a></li>
-			            <li><a href="2.2.html">NAME</a></li>
+			            <li><a href="2.html"><font color="white"><i class="glyphicon glyphicon-home"> </i>HOME</font></a></li>
+			            <li><a href="2.1.html"><font color="white"><i class="glyphicon glyphicon-plus"></i>CREATE</font></a></li>
+			            <li><a href="2.2.html"><font color="white"><i class="glyphicon glyphicon-user"> </i>NAME</font></a></li>
 			        </ul><!-- menu right -->
 	        	</div><!--/.nav-collapse -->
 	        </div>
@@ -56,19 +57,29 @@
 	<div id ="content">
 		<div class="container">
 			<div class="row">
-				<div class="panel panel-primary">
-				  <div class="panel-body">
-				    <p>Basic panel example</p>
+				<div class="col-md-4">
+				  <div class="card" onclick="flip()">
+				    <div class="front"><span>1</span></div>
+				    <div class="back"><span>2</span></div>
 				  </div>
-				</div>	
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-primary" onclick="change()">continue</button>
+				</div>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-secondary" onclick="load()">load</button>
+					<div><p>bấm để load dữ liệu học</p></div>
+				</div>
 			</div>
 		</div>
 	</div>
+
 
 	<div id="footer">
 		
 	</div>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/text.js"></script>
 </body>
 </html>
