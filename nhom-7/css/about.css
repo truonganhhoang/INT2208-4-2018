@@ -90,7 +90,7 @@ img.center {
         border: none;
         background: none;
     }
-    #duy-tab .active a{
+    .nav-tabs .duy-tab-item.active a{
         color: rgb(50, 205, 255) !important;
         border-bottom: rgb(50, 205, 255) 4px solid;
     }

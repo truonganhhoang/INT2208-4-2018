@@ -24,16 +24,16 @@
                 <img alt="TinyCards Logo" src="imgs/logo.png" style="height: 44px;"/> </a>
         </div>
         <div id="round-container" style="background-color: white;">
-            <ul id="duy-tab" class="nav nav-tabs">
+            <ul id="duy-tab" class="nav nav-tabs" role="tablist">
                 <li class="active duy-tab-item">
-                    <a data-toggle="tab" id="duy-about" class="normal-tab-item" href="#about-tab">About TinyCards</a>
+                    <a data-toggle="tab" id="duy-about" data-toggle="tab" class="normal-tab-item" href="#about-tab" role="tab" aria-controls="about-tab" aria-selected="true">About TinyCards</a>
                 </li>
-                <li class="duy-tab-item">
-                    <a data-toggle="tab" id="duy-press" class="normal-tab-item" href="#press-tab">Press Kit</a>
+                <li class="duy-tab-item ">
+                    <a data-toggle="tab" id="duy-press" data-toggle="tab" class="normal-tab-item" href="#press-tab" role="tab" aria-controls="press-tab" aria-selected="false">Press Kit</a>
                 </li>
             </ul>
             <div class="tab-content">
-                <div id="about-tab" class="tab-pane fade in active main-content">
+                <div id="about-tab" class="tab-pane fade show active main-content">
                     <div class="row">
                         <div class="col-md-6 col-12">
                             <h1> TinyCards</h1>

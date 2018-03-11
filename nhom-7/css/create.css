@@ -1,10 +1,15 @@
 /* Duy's REUSE-template */
 
     /* round container */
-    #round-container {
-        background-color: white;
+    .round-container {
         border-radius: 20px;
         box-shadow: 0 0 20px 5px rgba(0,0,0,.08);
+    } 
+    @media (max-width: 575px){
+        .round-container {
+            border-radius: 0;
+            box-shadow: 0 0 20px 5px rgba(0,0,0,.08);
+        }
     }
 
     /* checkbox SWITCH*/
@@ -39,17 +44,39 @@
     input[type="checkbox"]:checked + label .radio__circle {
         left: 20px /*width: (44-20)px - 2*margin(2px) */
     }
-    /* card */
-    .card {
-        height: 200px;
-        width: 170px !important;
-        font-size: 27px;
+    /* collection_avatar */
+    .card-cover {
+        margin-left: 6%;
+        width: 88%;
+        max-width: 264px;
+        max-height: 300px;
+        padding-top: 100%;
+        border-radius: 25px;
+        position: relative;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,.08);
+    }
+    .card-cover__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        border-radius: 25px;
 
         /*center text */
         text-align: center;
         vertical-align: middle;
-        line-height: 200px;
+        font-size: 12px;
     }
+
+    .card {
+        border-radius: 25px;
+        width: 220px;
+        height: 257px;
+    }
+
 
     /* Select list */
     select {
