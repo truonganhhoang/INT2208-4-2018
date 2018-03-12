@@ -1,4 +1,4 @@
-import { Component, OnInit,Output, EventEmitter,Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-learnpage',
@@ -10,8 +10,7 @@ export class LearnpageComponent implements OnInit {
   @Input() cards: any[];
   isFront = true;
   isBack = false;
-  i = 0;
-  // cards=this.cardArray;
+  i = 0; //currentCard
   theFront: string = "this is the front";
   theBack: string = "this is the back";
   isImgF: boolean;
@@ -50,21 +49,16 @@ export class LearnpageComponent implements OnInit {
     } else {
       this.i = -1;
     }
-    // console.log("da vao big card");
-    // console.log(this.cardArray);
-  }
-  
-  goToHomePage(){
-    this.waitForOtherPage.emit('homePage');
-  }
-  flip(){
     
   }
 
+  goToHomePage() {
+    this.waitForOtherPage.emit('homepage');
+  } 
+
   constructor() {
-    console.log("da vao learn page");
-    console.log(this.cards);
-   }
+
+  }
 
   ngOnInit() {
   }

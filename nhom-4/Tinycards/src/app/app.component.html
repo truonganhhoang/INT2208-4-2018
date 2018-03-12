@@ -15,9 +15,10 @@
 </head>
 
 <body>
-  <app-navigation-bar></app-navigation-bar>
+  <app-navigation-bar (waitForOtherPage)="goTo($event)" style="padding:20px"></app-navigation-bar>
   <div class="container my-5">
     <app-homepage  (waitForOtherPage)="goTo($event)" *ngIf="isHomePage"></app-homepage>
+    <app-profilepage (waitForOtherPage)="goTo($event)" *ngIf="isProfilePage"></app-profilepage>
     <app-learnpage [cards]="currentCard" (waitForOtherPage)="goTo($event)" *ngIf="isLearnPage"></app-learnpage>
   </div>
 </body>

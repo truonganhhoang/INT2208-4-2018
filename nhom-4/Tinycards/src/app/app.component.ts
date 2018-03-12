@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isHomePage = true;
   isLearnPage = false;
+  isProfilePage = false;
   currentCard: any[];
   cards1 = [
     { typeBack: 'text', typeFront: 'img', back: 'Paraket', front: 'https://d9np3dj86nsu2.cloudfront.net/image/8249e80335efb41dadbd5c8936755183' },
@@ -83,14 +84,20 @@ export class AppComponent {
   ]
 
   goTo(page: string) {
-    if (page === 'homePage') {
+    if (page === 'homepage') {
       this.isHomePage = true;
       this.isLearnPage = false;
-    }else{
+      this.isProfilePage = false;
+    } else if (page === 'profile') {
       this.isHomePage = false;
+      this.isLearnPage = false;
+      this.isProfilePage = true;
+    }else {
+      this.isHomePage = false;
+      this.isProfilePage = false;
       this.isLearnPage = true;
-      if(page=='cards1'){
-        this.currentCard=this.cards1;
+      if (page == 'cards1') {
+        this.currentCard = this.cards1;
       }
       if (page == 'cards2') {
         this.currentCard = this.cards2;
@@ -99,8 +106,5 @@ export class AppComponent {
         this.currentCard = this.cards3;
       }
     }
-    
-
   }
-
 }

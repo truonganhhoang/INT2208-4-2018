@@ -7,6 +7,7 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { CardComponent } from './card/card.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LearnpageComponent } from './learnpage/learnpage.component';
+import { ProfilepageComponent } from './profilepage/profilepage.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { LearnpageComponent } from './learnpage/learnpage.component';
     CardComponent,
     HomepageComponent,
     LearnpageComponent,
+    ProfilepageComponent,
   ],
   imports: [
     BrowserModule

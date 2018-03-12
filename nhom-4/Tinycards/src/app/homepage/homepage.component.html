@@ -1,5 +1,87 @@
-<div class="container row">
-    <app-card cardTitle="Birds" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/bf39a08c037663a0ffcdc058a929adc0" class="col-4" (click)="goToLearnPage('cards1')"></app-card>
-    <app-card cardTitle="Foods" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/7c97a2f4d56398fd4898cfa32e7fa505" class="col-4" (click)="goToLearnPage('cards2')"></app-card>
-    <app-card cardTitle="Animals" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/c7f32bc724ab723a65a18ac584dd4d9e" class="col-4" (click)="goToLearnPage('cards3')"></app-card>
+<div class="clearfix">
+    <!-- small screen -->
+    <div class="mx-2 d-block d-sm-none">
+        <h4 class="float-left" style="font-size:95%">Your favorites</h4>
+        <!-- <a class="btn btn-primary float-right mx-4" href="#" role="button" style="font-size:60%">SEE ALL</a> -->
+    </div>
+    <!-- medium screen -->
+    <div class="mx-3 d-sm-block d-none d-md-none">
+        <h3 class="float-left ">Your favorites</h3>
+        <!-- <a class="btn btn-primary float-right mx-4" href="#" role="button" style="font-size:85%">SEE ALL</a> -->
+    </div>
+    <!-- lagre screen -->
+    <div class=" mx-4 d-md-block d-none">
+        <h2 class=" float-left ">Your favorites</h2>
+        <!-- <a class="btn btn-primary float-right mr-4" href="#" role="button" style="font-size:100%">SEE ALL</a> -->
+    </div>
+</div>
+<div class="container">
+    <div id="Favorite_Carousel" class=" carousel slide" data-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item container">
+                <div class="row">
+                    <div class="col">
+                        <app-card cardTitle="Birds" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/bf39a08c037663a0ffcdc058a929adc0" class="col-4"
+                            (click)="goToLearnPage('cards1')"></app-card>
+                    </div>
+                    <div class="col">
+                        <app-card cardTitle="Foods" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/7c97a2f4d56398fd4898cfa32e7fa505" class="col-4"
+                            (click)="goToLearnPage('cards2')"></app-card>
+                    
+                    </div>
+                    <div class="col d-none d-sm-block">
+                        <app-card cardTitle="Animals" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/c7f32bc724ab723a65a18ac584dd4d9e" class="col-4"
+                            (click)="goToLearnPage('cards3')"></app-card>
+                    
+                    </div>
+                    <div class="col d-none d-lg-block">
+
+                    </div>
+                    <div class="col d-none d-lg-block">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="carousel-item active container">
+                <div class="row">
+                    <div class="col">
+                        <app-card cardTitle="Birds" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/bf39a08c037663a0ffcdc058a929adc0" class="col-4"
+                            (click)="goToLearnPage('cards1')"></app-card>
+                    </div>
+                    <div class="col">
+                        <app-card cardTitle="Foods" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/7c97a2f4d56398fd4898cfa32e7fa505" class="col-4"
+                            (click)="goToLearnPage('cards2')"></app-card>
+
+                    </div>
+                    <div class="col d-none d-sm-block">
+                        <app-card cardTitle="Animals" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/c7f32bc724ab723a65a18ac584dd4d9e" class="col-4"
+                            (click)="goToLearnPage('cards3')"></app-card>
+
+                    </div>
+                    <div class="col d-none d-md-block">
+
+                    </div>
+                    <div class="col d-none d-lg-block">
+
+                    </div>
+                    <div class="col d-none d-lg-block">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <a class="carousel-control-prev" style="color:blue;width:1em" href="#Favorite_Carousel" role="button" data-slide="prev">
+            <span class="ion-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Prev</span>
+        </a>
+        <a class="carousel-control-next" style="color:blue;width:1em" href="#Favorite_Carousel" role="button" data-slide="next">
+            <span class="ion-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 </div>
