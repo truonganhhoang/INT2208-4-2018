@@ -7,8 +7,8 @@ import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
   @Output() waitForOtherPage= new EventEmitter<string>();
-  goToLearnPage(){
-    this.waitForOtherPage.emit('learnPage')
+  goToLearnPage(cardID:string){
+    this.waitForOtherPage.emit(cardID)
   }
   constructor() { }
 

@@ -1,2 +1,5 @@
-<app-card (userClick)="goToLearnPage()"></app-card>
-<app-card></app-card>
+<div class="container row">
+    <app-card cardTitle="Birds" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/bf39a08c037663a0ffcdc058a929adc0" class="col-4" (click)="goToLearnPage('cards1')"></app-card>
+    <app-card cardTitle="Foods" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/7c97a2f4d56398fd4898cfa32e7fa505" class="col-4" (click)="goToLearnPage('cards2')"></app-card>
+    <app-card cardTitle="Animals" linkToImg="https://d9np3dj86nsu2.cloudfront.net/image/c7f32bc724ab723a65a18ac584dd4d9e" class="col-4" (click)="goToLearnPage('cards3')"></app-card>
+</div>

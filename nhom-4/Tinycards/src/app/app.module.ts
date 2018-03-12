@@ -7,7 +7,6 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { CardComponent } from './card/card.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LearnpageComponent } from './learnpage/learnpage.component';
-import { BigCardComponent } from './big-card/big-card.component';
 
 
 @NgModule({
@@ -17,7 +16,6 @@ import { BigCardComponent } from './big-card/big-card.component';
     CardComponent,
     HomepageComponent,
     LearnpageComponent,
-    BigCardComponent
   ],
   imports: [
     BrowserModule
