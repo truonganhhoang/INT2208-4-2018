@@ -3,14 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TinyCards - Profile</title>
+  <!-- Font Octicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css">  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<style>
 		*{margin: 0; padding: 0}
 
@@ -77,26 +83,30 @@
 	</style>
 </head>
 <body>
+	<!-- Navbar -->
+  <nav class="navbar navbar-dark bg-primary navbar-expand-sm">
+		<!-- Logo and brand name -->
+		<a href="#" class="navbar-brand">TinyCards</a>
+		<!-- Toggler/collapsible Button -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+		</button>
+		<!-- Navbar links -->
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item" style="margin: 0px 5px;">
+					<a href="1.html" class="nav-link"><span class="octicon octicon-home" style="margin-right: 5px;"></span>Home</a>
+				</li>
+				<li class="nav-item" style="margin: 0px 5px;">
+					<a href="#" class="nav-link"><span class="octicon octicon-plus" style="margin-right: 5px;"></span>Create</a>
+				</li>
+				<li class="nav-item" style="margin: 0px 5px;">
+					<a href="3.html" class="nav-link active"><span class="octicon octicon-person" style="margin-right: 5px;"></span>Profile</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 	<div class="clearfix">
-	<nav class="navbar">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">tinycards</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 men">
-	      <form class="navbar-form navbar-left">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="SEARCH">
-	        </div>
-	      </form>
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">HOME</a></li>
-	        <li><a href="#">CREATE</a></li>
-	        <button type="button" class="btn btn-default navbar-btn">SIGN UP</button>
-	      </ul>
-	    </div><!-- /.navbar-collapse -->
-	  </div><!-- /.container-fluid -->
-  	</nav>
   	<div class="content">
   		<div class="trai">
   			<a href="" class="cover">

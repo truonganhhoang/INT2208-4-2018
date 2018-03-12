@@ -1,107 +1,133 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Profile</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style>
-          #content {
-            padding: 0px 50px;
-            margin-top: 50px;
-          }
-          #info {
-              text-align: center;
-              max-width: 500px;
-              margin-bottom: 20px;
-          }
-          #avatar {
-              border: solid 3px white;
-          }
-          #username {
-              margin-top: 20px;
-              font-size: 20px;
-              font-weight: bolder;
-          }
-          #action-buttons {
-              margin-top: 25px;
-              margin-bottom: 10px;
-          }
-          .glyphicon {
-              margin-right: 8px;
-          }
-          .btn {
-              margin-left: 10px;
-              margin-right: 10px;
-          }
-          .has-shadow {
-              box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-          }
-          .tab-content {
-              padding-top: 10px;
-              padding-bottom: 25px;
-          }
-          #stats>hr {
-              margin-top: 10px;
-          }
-        </style>
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a href="#" class="navbar-brand">Tinyfake</a>
-                </div>
-                <form clss
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-plus"></span>Create</a></li>
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div id="content" class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 container-fluid" id="info">
-                    <img src="images/avatar.jpg"  class="img-circle has-shadow" id="avatar" width=150px height="auto">
-                    <div id="user-info">
-                        <div id="username">
-                            Tran Minh Hieu
-                        </div>
-                        <div id="id">
-                            <a href="#">@tranminhhieu</a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div id="action-buttons">
-                        <a class="btn btn-default has-shadow" href="3-1.html"><span class="glyphicon glyphicon-cog"></span>Settings</a>
-                        <button type="button" class="btn btn-danger has-shadow"><span class="glyphicon glyphicon-log-out"></span>Log out</button>
-                    </div>
-                </div>
-                <div class="col-md-8 breadcrumb has-shadow" id="stats">
-                    <ul class="nav nav-pills">
-                        <li class="active"><a href="#decks" data-toggle="pill">Decks<span class="badge">5</span></a></li>
-                        <li><a href="#followers" data-toggle="pill">Followers<span class="badge">20</span></a></li>
-                        <li><a href="#following" data-toggle="pill">Following<span class="badge">50</span></a></li>
-                    </ul>
-                    <hr>
-                    <div class="tab-content">
-                        <div id="decks" class="tab-pane fade in active">
-                            Decks!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, mollitia earum deserunt ut, soluta distinctio sit a neque voluptas quo architecto natus ducimus, illum voluptatibus nisi sed eos corporis sequi doloribus eius quisquam cupiditate ex maiores asperiores. Autem nam sequi excepturi consequuntur, sunt hic fugit fugiat minus quo ut quisquam quibusdam expedita porro voluptates delectus similique quasi! Quos sint sunt, dolorum maxime possimus similique esse, vero amet, fuga voluptatum incidunt rerum? Ullam labore velit consequuntur, quaerat sequi reprehenderit id unde illo enim voluptatem accusantium ut libero quasi veniam magni aliquid perferendis ratione eligendi explicabo maxime at? Est, corporis officiis nulla iure mollitia facilis quasi quos sint tenetur pariatur architecto vel ullam aspernatur nostrum eaque, eius culpa? Animi reprehenderit voluptatum ex expedita, fuga quibusdam exercitationem repellat nihil? Assumenda, natus laudantium sint saepe officia officiis temporibus illo ut iste, porro autem et maxime voluptates exercitationem ipsum cum soluta! Iste, facere voluptate a delectus similique nemo quibusdam ipsam illum minus velit, architecto perspiciatis. Sapiente autem sunt dolore illum? Repudiandae dignissimos similique cumque cupiditate eligendi dicta, natus neque praesentium porro saepe mollitia ipsa temporibus iusto quibusdam, suscipit quaerat tempora inventore minus quam ad architecto assumenda sit! Adipisci distinctio veritatis natus quia amet dignissimos laborum!
-                        </div>
-                        <div id="followers" class="tab-pane fade">
-                            Followers!
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ipsum corporis, molestiae vitae amet nulla iusto dicta hic? Deleniti ipsum quae suscipit nemo atque fugit architecto. Voluptates deserunt dicta aut ad earum nihil nemo accusamus, inventore quam sunt blanditiis tenetur dolorum cum at quas atque fugiat hic odit reiciendis similique rem! Perferendis quibusdam fugiat nihil eveniet ducimus quia, consequatur quod, atque tempore debitis doloremque odio illo sunt. Odit fuga sequi tempora explicabo fugit reiciendis magnam laudantium accusantium mollitia quam. Et voluptatem adipisci doloremque animi quos quasi. Ducimus ea soluta harum alias! Commodi sed incidunt mollitia nisi quis consequatur, dolor blanditiis.
-                        </div>
-                        <div id="following" class="tab-pane fade">
-                            Following!
-                        </div>
-                    </div>
-                </div>
-            </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TinyCards - Profile</title>
+  <!-- Font Octicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css">  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- My script -->
+  <script src="3.js"></script>
+</head>
+<body style="background: #f7f7f7;">
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-primary navbar-expand-sm">
+    <!-- Logo and brand name -->
+    <a href="#" class="navbar-brand">TinyCards</a>
+    <!-- Toggler/collapsible Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" style="margin: 0px 5px;">
+          <a href="1.html" class="nav-link"><span class="octicon octicon-home" style="margin-right: 5px;"></span>Home</a>
+        </li>
+        <li class="nav-item" style="margin: 0px 5px;">
+          <a href="2.html" class="nav-link"><span class="octicon octicon-plus" style="margin-right: 5px;"></span>Create</a>
+        </li>
+        <li class="nav-item" style="margin: 0px 5px;">
+          <a href="#" class="nav-link active"><span class="octicon octicon-person" style="margin-right: 5px;"></span>Profile</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Content -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Left-side panel -->
+      <div class="col-md-4 text-center mt-4">
+        <div class="row">
+          <!-- Avatar -->
+          <div class="col-md-12">
+            <img src="images/avatar.jpg" alt="Avatar" class="rounded-circle" style="height: 120px;">
+          </div>
+          <!-- Name, username, action buttons -->
+          <div class="col-lg-12 mt-3">
+            <p style="font-weight: bold; font-size: 18px;">Yellow Teeth</p>
+            <a href="#">@YellowTeeth</a>
+            <hr>
+          </div>
+          <!-- Action buttons -->
+          <div class="col-lg-12">
+            <a href="3-1.html" class="btn btn-outline-primary mx-2"><span class="octicon octicon-gear mr-1"></span>Settings</a>
+            <button type="button" class="btn btn-outline-danger mx-2" onclick="signOut()"><span class="octicon octicon-sign-out mr-1"></span>Sign out</button>
+          </div>
         </div>
-
-    </body>
-</html>
+      </div>
+      <!-- Right-side panel -->
+      <div class="col-md-8 mt-4">
+        <!-- Tab-bar -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#decks" role="tab">Decks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#followers" role="tab">Followers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#following" role="tab">Following</a>
+          </li>
+        </ul>
+        <!-- Tab-content -->
+        <div class="tab-content border border-top-0 rounded-bottom p-3" style="background: #ffffff;">
+          <div class="tab-pane fade" id="decks">
+            <p>You has no decks.</p>
+          </div>
+          <div class="tab-pane fade" id="followers">
+            <p>You has no followers yet.</p>
+          </div>
+          <div class="tab-pane fade show active container" id="following">
+            <!-- Sample -->
+            <div class="row">
+              <!-- Icon -->
+              <div class="">
+                <img src="images/avatar1.jpg" alt="Deck icon" class="rounded-circle" style="height: 50px;">
+              </div>
+              <!-- Name, status, description -->
+              <div class="ml-4 align-middle" style="line-height: 80%;">
+                <p style="font-size: 16px; font-weight: bold;">Angry Boy</p>
+                <p style="font-size: 14px;">Followers: 1M</p>
+                <p style="font-size: 14px;">Learn English, Spanish, German and more.</p>
+              </div>
+              <!-- Action button -->
+              <div class="ml-auto">
+                <button type="button" class="btn btn-success ml-auto" onclick="changeFollowBtnState(event);">Followed</button>
+              </div>
+            </div>
+            <hr>
+            <!-- Sample -->
+            <div class="row">
+              <!-- Icon -->
+              <div class="">
+                <img src="images/avatar2.jpg" alt="Deck icon" class="rounded-circle" style="height: 50px;">
+              </div>
+              <!-- Name, status, description -->
+              <div class="ml-4 align-middle" style="line-height: 80%;">
+                <p style="font-size: 16px; font-weight: bold;">Straight Guy</p>
+                <p style="font-size: 14px;">Followers: 2M</p>
+                <p style="font-size: 14px;">Learn Portuguese with love.</p>
+              </div>
+              <!-- Action button -->
+              <div class="ml-auto">
+                <button type="button" class="btn btn-success ml-auto" onclick="changeFollowBtnState(event);">Followed</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>   
