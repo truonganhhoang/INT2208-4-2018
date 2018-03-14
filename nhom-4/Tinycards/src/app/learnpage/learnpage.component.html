@@ -1,0 +1,21 @@
+<div style="background-color:whitesmoke" >
+  <button class="my-5 mx-5" (click)="goToHomePage();">X</button>
+  <div class="row">
+    <div class="col col-sm-offset-3"></div>
+    <div class="col">
+      <div (click)="flipThis()">
+        <div *ngIf="isFront">
+          <img *ngIf="isImgF" src={{theFront}} alt="can not find this image, sorry!">
+          <p  *ngIf="!isImgF">{{theFront}}</p>
+        </div>
+        <div *ngIf="isBack">
+          <img *ngIf="isImgB" src={{theBack}} alt="can not find this image, sorry!">
+          <p  *ngIf="!isImgB">{{theBack}}</p>
+        </div>
+      </div>
+      <button *ngIf="(this.i) > 0" class="my-3 float-left" (click)=" backCard();">Back</button>
+      <button *ngIf="(this.i) < (this.cards.length-1) " class="my-3 float-right" (click)="nextCard();">Next</button>
+    </div>
+    <div class="col col-sm-offset-3"></div>
+  </div>
+</div>
