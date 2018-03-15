@@ -84,10 +84,6 @@ body {
         background-color: inherit;
     }
 
-/* flip the pane when hovered */
-/*.flipper:hover{*/
-    /*transform: rotateY(180deg);*/
-/*}*/
 
 /* flip speed goes here */
 .flipper {

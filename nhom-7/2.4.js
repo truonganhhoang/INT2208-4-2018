@@ -1,29 +1,17 @@
-var choices = document.querySelectorAll(".multipleChoice a img");
-var progress = document.getElementsByClassName("progress-bar")[0];
-var rightAnswers1 = document.getElementsByTagName("h4");
-var rightAnswers2 = document.querySelectorAll(".question-2 img");
-var questions1 = document.getElementsByClassName("question-1");
-var questions2 = document.getElementsByClassName("question-2");
-var input = document.querySelectorAll(".question-2 input");
-var homeLink = document.querySelectorAll("li a")[1];
-var escapeBtn = document.getElementsByClassName("escape-btn")[0];
-// answer counter
+var choices = document.querySelectorAll(".multipleChoice a img"); // multiple choices
+var progress = document.getElementsByClassName("progress-bar")[0]; // progress bar
+var rightAnswers1 = document.getElementsByTagName("h4"); // right answers for question-1
+var rightAnswers2 = document.querySelectorAll(".question-2 img"); // right answers for question-2
+var questions1 = document.getElementsByClassName("question-1"); // question type 1
+var questions2 = document.getElementsByClassName("question-2"); // question type 2
+var input = document.querySelectorAll(".question-2 input"); // answer box for question-2
+var homeLink = document.querySelectorAll("li a")[1]; // home button
+var escapeBtn = document.getElementsByClassName("escape-btn")[0]; // x button
+var learningCards = document.getElementsByClassName("learning"); // learning cards
+var isFront = true; // is front side (learning card)
+// answer counter (used for counting answer in process)
 var countAnswer1 = 0;
 var countAnswer2 = 0;
-// trial
-var flipper = document.getElementsByClassName("flipper")[0];
-var isFront = true;
-
-flipper.addEventListener("click", function () {
-    if (isFront) {
-        this.style.transform = "rotateY(180deg)";
-    } else {
-        this.style.transform = "rotateY(0deg)";
-    }
-    this.children[0].classList.toggle("d-none");
-    this.children[1].classList.toggle("d-none");
-    isFront = !isFront;
-});
 
 main();
 
@@ -77,7 +65,24 @@ function main() {
     // add event for escape button
     escapeBtn.addEventListener("click", function () {
         homeLink.click();
-    })
+    });
+    // add event for learning cards
+    for (var i = 0; i < learningCards.length; i++) {
+        learningCards[i].children[1].addEventListener("click", function () {
+            if (isFront) {
+                this.style.transform = "rotateY(180deg)";
+            } else {
+                this.style.transform = "rotateY(0deg)";
+            }
+            this.children[0].classList.toggle("d-none");
+            this.children[1].classList.toggle("d-none");
+            isFront = !isFront;
+        });
+        // add event for continue button
+        learningCards[i].children[2].addEventListener("click", function () {
+
+        })
+    }
 }
 
 // move to next type of question
