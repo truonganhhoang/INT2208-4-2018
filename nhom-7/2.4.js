@@ -12,11 +12,14 @@ var isFront = true; // is front side (learning card)
 // answer counter (used for counting answer in process)
 var countAnswer1 = 0;
 var countAnswer2 = 0;
-
+// used for counting learning cards
+var countCards = 0;
+// trial
+var sound = new Audio("https://dictionary.cambridge.org/media/english/us_pron/n/noe/noes_/noes.mp3");
 main();
 
 function main() {
-    takeQuestion();
+    nextCard();
     // set time out after finishing lesson
     setInterval(function () {
         if (countAnswer2 === rightAnswers2.length && countAnswer1 === rightAnswers1.length) homeLink.click();
@@ -78,11 +81,17 @@ function main() {
             this.children[1].classList.toggle("d-none");
             isFront = !isFront;
         });
-        // add event for continue button
+        // add event for continue-button
         learningCards[i].children[2].addEventListener("click", function () {
-
+            countCards++;
+            nextCard();
         })
     }
+    // fix selector
+    learningCards[0].children[1].children[1].children[0].addEventListener("click", function () {
+        sound.play();
+        this.parentElement.parentElement.click();
+    })
 }
 
 // move to next type of question
@@ -94,6 +103,17 @@ function nextQuestion(questions_1, questions_2, countAnswer_1, countAnswer_2) {
         }
         else questions_1[i].classList.add("d-none");
     }
+}
+
+// move to next card
+function nextCard() {
+    for (var i = 0; i < learningCards.length; i++) {
+        if (i === countCards) {
+            isFront = true;
+            learningCards[i].classList.remove("d-none");
+        } else learningCards[i].classList.add("d-none");
+    }
+    if (countCards === learningCards.length) takeQuestion();
 }
 
 // take question for user
