@@ -11,7 +11,7 @@
 <body>
 	<div id="header">
 		<nav class="navbar navbar-default navbar-static-top" style="background-color: #33CCFE;">
-	      	<div class="container">
+	      	<div class="container-fluid">
 		        <div class="navbar-header">
 		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 			            <span class="sr-only">Toggle navigation</span>
@@ -54,21 +54,28 @@
 	</div>
 	
 
-	<div id ="content">
+	<div class ="content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-				  <div class="card" onclick="flip()">
-				    <div class="front"><span>1</span></div>
-				    <div class="back"><span>2</span></div>
-				  </div>
-				</div>
-				<div class="col-md-4">
+			<div class="col-md-2 col-md-offset-2">
+				<button type="load" class="btn btn-primary" onclick="load()">load data</button>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="col-md-6 col-md-offset-5">
+			  <div class="card" onclick="flip()">
+			    <div class="front"><span></span></div>
+			    <div class="back"><span></span></div>
+			  </div>
+			</div>
+
+		</div>
+
+		<div class="continueButton" align="center">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-6">
 					<button type="button" class="btn btn-primary" onclick="change()">continue</button>
-				</div>
-				<div class="col-md-4">
-					<button type="button" class="btn btn-secondary" onclick="load()">load</button>
-					<div><p>bấm để load dữ liệu học</p></div>
 				</div>
 			</div>
 		</div>
