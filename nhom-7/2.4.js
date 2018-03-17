@@ -1,4 +1,4 @@
-var choices = document.querySelectorAll(".multipleChoice a img"); // multiple choices
+var choices = document.querySelectorAll(".multipleChoice img"); // multiple choices
 var progress = document.getElementsByClassName("progress-bar")[0]; // progress bar
 var rightAnswers1 = document.getElementsByTagName("h4"); // right answers for question-1
 var rightAnswers2 = document.querySelectorAll(".question-2 img"); // right answers for question-2
@@ -8,6 +8,7 @@ var input = document.querySelectorAll(".question-2 input"); // answer box for qu
 var homeLink = document.querySelectorAll("li a")[1]; // home button
 var escapeBtn = document.getElementsByClassName("escape-btn")[0]; // x button
 var learningCards = document.getElementsByClassName("learning"); // learning cards
+var soundBtns = document.getElementsByClassName("sound-btn"); // sound buttons
 var isFront = true; // is front side (learning card)
 // answer counter (used for counting answer in process)
 var countAnswer1 = 0;
@@ -15,15 +16,20 @@ var countAnswer2 = 0;
 // used for counting learning cards
 var countCards = 0;
 // trial
-var sound = new Audio("https://dictionary.cambridge.org/media/english/us_pron/n/noe/noes_/noes.mp3");
+var sounds = [{
+    name: "nose",
+    sound: new Audio("https://dictionary.cambridge.org/media/english/us_pron/n/noe/noes_/noes.mp3")
+}, {
+    name: "trunk",
+    sound: new Audio("https://dictionary.cambridge.org/media/english/us_pron/t/tru/trunk/trunk.mp3")
+},{
+    name: "head",
+    sound: new Audio("https://dictionary.cambridge.org/media/english/us_pron/h/hea/head_/head.mp3")
+}];
+
 main();
 
 function main() {
-    nextCard();
-    // set time out after finishing lesson
-    setInterval(function () {
-        if (countAnswer2 === rightAnswers2.length && countAnswer1 === rightAnswers1.length) homeLink.click();
-    }, 2500);
     // add event for choices
     for (var i = 0; i < choices.length; i++) {
         choices[i].addEventListener("click", function () {
@@ -73,6 +79,7 @@ function main() {
     for (var i = 0; i < learningCards.length; i++) {
         learningCards[i].children[1].addEventListener("click", function () {
             if (isFront) {
+                this.children[1].children[0].click();
                 this.style.transform = "rotateY(180deg)";
             } else {
                 this.style.transform = "rotateY(0deg)";
@@ -85,19 +92,35 @@ function main() {
         learningCards[i].children[2].addEventListener("click", function () {
             countCards++;
             nextCard();
+        });
+    }
+    // add event for sound buttons
+    for (var i = 0; i < soundBtns.length; i++) {
+        soundBtns[i].addEventListener("click", function () {
+            // search matched sound
+            for (var i = 0; i < sounds.length; i++) {
+                if (this.parentElement.children[1].textContent === sounds[i].name) {
+                    sounds[i].sound.play();
+                }
+            }
+            this.parentElement.parentElement.click();
         })
     }
-    // fix selector
-    learningCards[0].children[1].children[1].children[0].addEventListener("click", function () {
-        sound.play();
-        this.parentElement.parentElement.click();
-    })
+
+    // events are added above, execution are below
+
+    nextCard();
+    // set time out after finishing lesson
+    setInterval(function () {
+        if (countAnswer2 === rightAnswers2.length && countAnswer1 === rightAnswers1.length) homeLink.click();
+    }, 2500);
 }
 
 // move to next type of question
 function nextQuestion(questions_1, questions_2, countAnswer_1, countAnswer_2) {
     for (var i = 0; i < questions_1.length; i++) {
         if (i === countAnswer_1) {
+            if (questions_1[i].classList.contains("question-1")) rightAnswers1[i].parentElement.children[0].click();
             questions_1[i].classList.remove("d-none");
             if (countAnswer_2 > 0) questions_2[countAnswer_2 - 1].classList.add("d-none");
         }
