@@ -1,0 +1,113 @@
+
+/* Mod's bootstrap css*/
+.bg-primary {
+    background: #32cdff !important;
+}
+
+a {
+    color: #32cdff;
+    font-weight: 500;
+}
+.btn-primary {
+    background-color: #32cdff;
+    border-color: #32cdff;
+}
+.btn-outline-primary {
+    color: #32cdff;
+    font-weight: 500;
+    background-color: transparent;
+    background-image: none;
+    border-color: #32cdff;
+}
+
+.btn.no-border {
+    border: 1px solid transparent!important;
+}
+
+/* Navbar */
+.navbar > .container > .nav-link.active {
+    border-bottom: 2px solid white !important;
+}
+
+#nav-search-pc > form > .form-control {
+    background-color: rgb(111, 220, 255);
+    border: 1px solid transparent;
+}
+#nav-search-pc > form > .form-control::placeholder {
+    color: white;
+}
+#nav-search-pc > form > .form-control:focus {
+    background-color: white;
+    color: black;
+}
+
+/* Nav tab */
+.nav-tabs .nav-link {
+    border: none;
+    border-width: 0 0 0 0;
+    color: rgb(196,196,196);
+    font-weight: bold;
+
+    padding: 25px 0px 10px 0px;
+    /*margin-left: 32px;
+    margin-right: 32px;*/
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #32cdff !important;
+    background-color: transparent !important;
+    border-bottom: 4px solid #32cdff !important;
+}
+
+/* Duy's REUSE-template */
+
+    /* round container */
+    .round-container {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,.08);
+    }
+    /* @media (max-width: 575px){
+        .round-container {
+            border-radius: 0;
+            box-shadow: 0 0 20px 5px rgba(0,0,0,.08);
+        }
+    } */
+
+    /* checkbox SWITCH*/
+    input[type="checkbox"] {
+        display:none;
+    }
+    input[type="checkbox"] + label .radio {
+        position: relative;
+        display:inline-block;
+        width:44px;
+        height:24px;
+        border-radius: 15px;
+        vertical-align:middle;
+        background: #c4c4c4;
+        cursor:pointer;
+    }
+    input[type="checkbox"]:checked + label .radio {
+        background: #32cdff;
+    }
+
+    input[type="checkbox"] + label .radio__circle {
+        margin: 0 2px;
+        position: absolute;
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background: white;
+        top: 2px; /* height: (24-20)/2 */
+        left: 0;
+        transition:all 0.25s ease-in-out;
+    }
+    input[type="checkbox"]:checked + label .radio__circle {
+        left: 20px /*width: (44-20)px - 2*margin(2px) */
+    }
+    /* Select list */
+    select {
+        border: none;
+        color: #32cdff;
+        font-weight: bold;
+    }

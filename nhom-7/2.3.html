@@ -23,6 +23,7 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script> -->
 
+    <link rel="stylesheet" href="css/duy.css">
     <link rel="stylesheet" href="css/create.css">
     <script src="js/duy.js"></script>
 
@@ -49,40 +50,41 @@
     <div class="navbar navbar-dark row sticky-top text-center py-0 px-4 bg-primary" id="nav-bar">
         <div class="container">
             <a class="navbar-brand d-none d-lg-block col col-lg-auto order-lg-1" href="#">
-                <img src="imgs/tinycard.PNG" alt="LOGO">
+                <img src="imgs/logo-icon.png" alt="(*.*)">
+                <img src="imgs/logo-text.png" alt="TinyCards">
             </a>
             <!--home-->
-            <a class="col col-lg-auto order-1 order-lg-3 text-white btn btn-primary" id="nav-home" href="2.html">
+            <a class="col col-lg-auto order-1 order-lg-3 text-white nav-link nav-item py-3" id="nav-home" href="2.html">
                 <i class="fa fa-home"></i>
-                <span class="d-none d-lg-inline">Home</span>
+                <span class="d-none d-lg-inline">HOME</span>
             </a>
             <!--search on mobile-->
-            <a id="nav-search-mobile" class="col col-lg-auto order-2 text-white btn btn-primary d-lg-none d-block" onclick="showHideSearch();">
+            <a id="nav-search-mobile" class="col col-lg-auto order-2 text-white d-lg-none d-block nav-link py-3" onclick="showHideSearch();">
                 <span class="d-block d-lg-none">
                     <i class="fa fa-search"></i>
                 </span>
             </a>
             <!-- search on PC -->
-            <div class="col col-lg-auto order-lg-2 mr-lg-auto d-none d-lg-block" id="nav-search-pc">
+            <div class="col col-lg-auto order-lg-2 mr-lg-auto d-none d-lg-block nav-link" id="nav-search-pc">
                 <form class="my-2 my-lg-0" style="position: relative;">
                     <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="padding-left: 40px; padding-right: 40px;">
-                    <div style="position: absolute; top: 0 ; left: 15px; line-height: 38px;">
+                    <div style="position: absolute; top: 0 ; left: 15px; line-height: 38px; color: #32cdff;">
                         <i class="fa fa-search"></i>
                     </div>
-                    <div class="d-none d-lg-none" id="close-search" style="position: absolute; top: 0 ; right: 15px; line-height: 38px;" onclick="showHideSearch();">
+                    <div class="d-none d-lg-none" id="close-search" style="position: absolute; top: 0 ; right: 15px; line-height: 38px; color: #32cdff;" onclick="showHideSearch();">
                         <i class="fa fa-times"></i>
                     </div>
                 </form>
             </div>
             <!--create-->
-            <a class="col col-lg-auto order-3 order-lg-4 text-white btn btn-primary active" id="nav-create">
+            <a class="col col-lg-auto order-3 order-lg-4 text-white nav-link active py-3" id="nav-create" href="2.3.html">
                 <i class="fa fa-plus"></i>
-                <span class="d-none d-lg-inline">Create</span>
+                <span class="d-none d-lg-inline">CREATE</span>
             </a>
             <!--profile-->
-            <a class="col col-lg-auto order-4 order-lg-5 text-white btn btn-primary" id="nav-profile" href="2.2.html">
+            <a class="col col-lg-auto order-4 order-lg-5 text-white nav-link py-3" id="nav-profile" href="2.2.html">
                 <i class="fa fa-user"></i>
-                <span class="d-none d-lg-inline">Phạm Ngọc Duy</span>
+                <span class="d-none d-lg-inline">PROFILE</span>
             </a>
         </div>
     </div>
@@ -147,63 +149,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-outline-primary w-100">Add fact</button>
+                            <button class="btn btn-outline-primary no-border w-100">Add fact</button>
                         </div>
                         <!-- action btn -->
                         <div class="col-auto" style="line-height: 257px; vertical-align: middle;">
-                            <button class="btn d-block">
+                            <button class="btn btn-outline-primary d-block no-border">
                                 <i class="fas fa-trash"></i>
                             </button>
-                            <button class="btn d-block">
+                            <button class="btn btn-outline-secondary d-block no-border">
                                 <i class="fas fa-arrow-up"></i>
                             </button>
-                            <button class="btn d-block">
+                            <button class="btn btn-outline-secondary d-block no-border">
                                 <i class="fas fa-arrow-down"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="p-4 row flex-row flex-nowrap justify-content-lg-center" style="overflow: auto;">
-                        <!-- card number -->
-                        <div class="col-auto" style="line-height: 257px; vertical-align: middle;">
-                            1
-                        </div>
-                        <!-- front -->
-                        <div class="col-auto">
-                            <input type="text" class="form-control text-center card" placeholder="Front">
-                        </div>
-                        <!-- back -->
-                        <div class="col-auto">
-                            <div class="card">
-                                <div class="row" style="height: 100%;">
-                                    <div class="position-relative col-12" style="height: 33%;">
-                                        <textarea class="form-control text-center" style="height: 100%;"> Back 1 </textarea>
-                                        <button class="close position-absolute" style="right: 20px; top: 0;"><span aria-hidden="true">&times;</span></button>
-                                    </div>
-                                    <div class="position-relative col-12" style="height: 33%;">
-                                        <textarea class="form-control text-center" style="height: 100%;"> Back 2 </textarea>
-                                        <button class="close position-absolute" style="right: 20px; top: 0;"><span aria-hidden="true">&times;</span></button>
-                                    </div>
-                                    <div class="position-relative col-12" style="height: 33%;">
-                                        <textarea class="form-control text-center" style="height: 100%;"> Back 3 </textarea>
-                                        <button class="close position-absolute" style="right: 20px; top: 0;"><span aria-hidden="true">&times;</span></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-outline-primary w-100">Add fact</button>
-                        </div>
-                        <!-- action btn -->
-                        <div class="col-auto" style="line-height: 257px; vertical-align: middle;">
-                            <button class="btn d-block">
-                                <i class="fas fa-trash"></i>
-                            </button>
-                            <button class="btn d-block">
-                                <i class="fas fa-arrow-up"></i>
-                            </button>
-                            <button class="btn d-block">
-                                <i class="fas fa-arrow-down"></i>
-                            </button>
-                        </div>
-                    </div>
+                    
                 </div>
 
                 <button class="btn btn-primary position-absolute" style="border-radius: 50%; right: -25px; top: 100px; height: 50px; width: 50px;">

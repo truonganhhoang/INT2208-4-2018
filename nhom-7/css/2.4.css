@@ -43,11 +43,6 @@ body {
     border-radius: 18px;
 }
 
-.card-body {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-
 .left {
     transform: rotate(-4deg);
 }
@@ -88,3 +83,25 @@ body {
         color: #aaa7a7;
         background-color: inherit;
     }
+
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+/* hide back of pane during swap - Ẩn các mặt sau (back face) khi hoán chuyển các mặt */
+.front, .back {
+    backface-visibility: hidden;
+}
+
+/* front pane, placed above back */
+.front {
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
