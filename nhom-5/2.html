@@ -11,7 +11,7 @@
 <body>
 	<div id="header">
 		<nav class="navbar navbar-default navbar-static-top" style="background-color: #33CCFE;">
-	      	<div class="container-fluid">
+	      	<div class="container">
 		        <div class="navbar-header">
 		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 			            <span class="sr-only">Toggle navigation</span>
@@ -58,15 +58,14 @@
 		<div class="container">
 			<div class="row">
 			<div class="col-md-2 col-md-offset-2">
-				<button type="load" class="btn btn-primary" onclick="load()">load data</button>
+				<button type="load" class="btn btn-default" onclick="load()">Load data</button>
 			</div>
 		</div>
 		<div class="row">
-			
-			<div class="col-md-6 col-md-offset-5">
+			<div class="col-md-4.5 col-md-offset-5">
 			  <div class="card" onclick="flip()">
-			    <div class="front"><span></span></div>
-			    <div class="back"><span></span></div>
+			    <div class="front"><span>-load to see-</span></div>
+			    <div class="back"><span>-load to see-</span></div>
 			  </div>
 			</div>
 
@@ -74,8 +73,11 @@
 
 		<div class="continueButton" align="center">
 			<div class="row">
-				<div class="col-md-6 col-md-offset-6">
-					<button type="button" class="btn btn-primary" onclick="change()">continue</button>
+				<div class="col-md-4 col-md-offset-4">
+					<button type="button" class="btn btn-primary" onclick="change()">Continue</button>
+				</div>
+				<div class="col-md-1">
+					<a href="2.1.html" target="_parent"><button type="button" class="btn btn-default" onclick="initChallenge()">Challenge</button></a>
 				</div>
 			</div>
 		</div>

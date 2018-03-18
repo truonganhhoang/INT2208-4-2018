@@ -51,12 +51,21 @@
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
 }
+.card #learnCard{
+    background: #33CCFE;
+    border-radius: 10px;
+}
 .continueButton{
     padding-top: 300px;
 }
-.container{
-    padding-top: 50px;
-    padding-bottom: 50px;
+.content{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 65px;
+    padding-right: 65px;
     border-radius: 5px;
     box-shadow: 4px 4px 8px 8px rgba(0,0,0,0.2);
 }
