@@ -1,15 +1,6 @@
-/*content: {
-    width: 200px;
-    height: 260px;
-    position: relative;
-    border: 1px solid #ccc;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    -o-perspective: 800px;
-    perspective: 800px;
-}*/
 .card {
-
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
     width: 200px;
     height: 260px;
     position: absolute;
@@ -39,9 +30,15 @@
     backface-visibility: hidden;
 }
 .card .front {
-  background: orange;
+    /*padding-top: 100px;*/
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    border-radius: 10px;
+    background: orange;
 }
 .card .back {
+    /*padding-top: 100px;*/
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+    border-radius: 10px;
     background: green;
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -53,4 +50,22 @@
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
+}
+.card #learnCard{
+    background: #33CCFE;
+    border-radius: 10px;
+}
+.continueButton{
+    padding-top: 300px;
+}
+.content{
+    margin: auto;
+    width: 95%;
+    height: 100%;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 65px;
+    padding-right: 65px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px 8px rgba(0,0,0,0.2);
 }

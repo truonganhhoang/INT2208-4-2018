@@ -1,4 +1,0 @@
-learn:học
-read:đọc
-english:tiếng anh
-peach:đào
