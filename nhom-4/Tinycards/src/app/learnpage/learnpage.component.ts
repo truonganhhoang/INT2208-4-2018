@@ -11,8 +11,8 @@ export class LearnpageComponent implements OnInit {
   isFront = true;
   isBack = false;
   i = 0; //currentCard
-  theFront: string = "this is the front";
-  theBack: string = "this is the back";
+  theFront: string = "This is the front of this card";
+  theBack: string = "This is the back of this card";
   isImgF: boolean;
   isImgB: boolean;
   flipThis() {

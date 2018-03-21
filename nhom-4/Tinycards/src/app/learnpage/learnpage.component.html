@@ -1,16 +1,20 @@
 <div style="background-color:whitesmoke" >
-  <button class="my-5 mx-5" (click)="goToHomePage();">X</button>
+  <button class="my-3 mx-5" (click)="goToHomePage();">X</button>
   <div class="row">
     <div class="col col-sm-offset-3"></div>
     <div class="col">
       <div (click)="flipThis()">
-        <div *ngIf="isFront">
+        <div *ngIf="isFront" class="area">
           <img *ngIf="isImgF" src={{theFront}} alt="can not find this image, sorry!">
-          <p  *ngIf="!isImgF">{{theFront}}</p>
+          <div class="bubble">
+            <p class="cardText"  *ngIf="!isImgF">{{theFront}}</p>
+          </div>
         </div>
-        <div *ngIf="isBack">
+        <div *ngIf="isBack" class="area">
           <img *ngIf="isImgB" src={{theBack}} alt="can not find this image, sorry!">
-          <p  *ngIf="!isImgB">{{theBack}}</p>
+          <div class="bubble">
+            <p class="cardText" *ngIf="!isImgB">{{theBack}}</p>
+          </div>
         </div>
       </div>
       <button *ngIf="(this.i) > 0" class="my-3 float-left" (click)=" backCard();">Back</button>
