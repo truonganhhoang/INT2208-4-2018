@@ -1,13 +1,31 @@
-p{
-    padding: 0px;
-    margin: 0px;
-  font-size:40px;
-  background-color: blanchedalmond;
-  text-align: center;
-  vertical-align: initial;
-  line-height: 350px;
+.area { 
+  width: 350px; 
+  height: 350px;
+  position: relative;
+  background-color:rgb(255, 255, 255);
+  border-radius: 13px;
 }
+
+.bubble { 
+  position: absolute; 
+  left: 20px; 
+  top: 20px; 
+  width: 310px; 
+  height: 310px; 
+  display: table; 
+}
+
+.bubble p {
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center; 
+
+}
+
 img{
+  border-radius: 13px;
   width:350px; 
   height:350px;
 }

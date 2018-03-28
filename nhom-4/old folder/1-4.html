@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		TinyCreate
+	</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- icon -->
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+
+
+</head>
+
+<body style="background-color: #E9E9FBFF">
+	<div>
+		<header>
+			<nav class="navbar fixed-top navbar-expand-md navbar-dark " style="background-color: #32cdff !important">
+				<div class="container ">
+					<a class="collapse navbar-collapse" style="max-width:11em" href="">
+						<img src="Tiny.png" alt="ERROR" width="169px" height="52px">
+					</a>
+					<!-- search box -->
+					<form class="collapse navbar-collapse form-inline" style="max-width:250px; max-height:50px" id="navbarSearch">
+						<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-success" type="submit">
+							<span class="ion-ios-search-strong"></span>
+						</button>
+						</input>
+					</form>
+					<!-- Home icon -->
+					<a class=" navbar-toggler ion-ios-home-outline" href="1.html" role="button"></a>
+					<!-- search icon -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch"
+					 aria-expanded="true">
+						<span class="ion-ios-search-strong"></span>
+					</button>
+					<!-- Create icon -->
+					<a class=" navbar-toggler ion-android-add" href="1-1.html" role="button"></a>
+					<!-- Profile icon -->
+					<a class=" navbar-toggler ion-android-contact" href="1-2.html" role="button"></a>
+					<!-- Menu -->
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item mx-auto">
+								<a class="nav-link ion-ios-home-outline" href="1.html"> Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link ion-android-add " href="1-1.html"> Create </a>
+							</li>
+							<li class="nav-item active">
+								<a class="nav-link ion-android-contact" href="1-3.html"> Profile </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="container my-5 content row" style="margin: auto;">
+
+			<div class="my-5 col-4" id="left">
+				<div>
+					<button class="rounded" style="width: 240px; height: 277px; margin: 6px; background-color: #FFFFFFFF; display: inline-block;">
+						<div class>
+							<div>
+								<img src="decoded (1).png" height="29px" width="27px">
+							</div>
+							<div>
+								<h6 style="color: #c4c4c4" class="_3i2yF">CHOOSE COVER (OPTIONAL)</h6>
+							</div>
+						</div>
+					</button>
+					<div>
+						<textarea type="text" placeholder="Enter title" maxlength="50" style="height: 41px; margin-top: 30px; width: 100%; color: #5c5c5c; display: block; line-height: 1.3; background-color: transparent; border: none;font-size: 27px;"></textarea>
+						<textarea type="text" placeholder="Enter description (optional)" maxlength="100" style="height: 29px;  margin-top: 30px; width: 100%; color: #5c5c5c; display: block; line-height: 1.3; background-color: transparent; border: none;font-size: 18px;"></textarea>
+					</div>
+				</div>
+				<br>
+				<div>
+					<div>
+						<div style="font-family: DINNextRoundedLTPro-Regular,sans-serif; font-size: 15px; text-align: left; width: 100%; color: #c4c4c4;">Draft auto-saved</div>
+					</div>
+					<div>
+						<button style="height: 42px; background-color: transparent; margin-right: 10px; text-align: center; width: 56px; cursor: pointer; border-radius: 10px">
+							<img src="decoded.png" alt="Deck Settings" height="25px" width="25px">
+						</button>
+						<button style="background-color: #32cdff; border: none; border-radius: 10px; color: #fff; cursor: pointer; padding: 6px 25px 4px; font-family: DINNextRoundedLTPro-Bold,sans-serif; text-transform: uppercase;">
+							Create
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class=" my-5 rounded col-8 container" id="right" style="background-color:#FFFFFF" style="border:20px; height: 778px; width: 838px;  ">
+				<div>
+					<div class="row align-items-center " style="margin: 10% ; position:absolute">
+						<div class="" style="text-align: center; font-size: 25px; display:inline">1</div>
+						<div class=" row justify-content-around " style="margin: auto; display:inline">
+							<button class="rounded" style="width: 240px; height: 277px; margin: 6px; background-color: #FFFFFFFF; display: inline-block; border-radius: 10px">
+								<div>
+									<form>
+										<input type="text" name="Front" placeholder="Front" style="border: none; text-align: center; font-size: 20px; color: #5c5c5c;">
+									</form>
+								</div>
+							</button>
+						</div>
+						<div class=" justify-content-around display:inline ">
+							<button class="rounded" style="width: 240px; height: 277px; margin: 6px; background-color: #FFFFFFFF; display: inline-block; ">
+								<div>
+									<form>
+										<input type="text" name="Back" placeholder="Back" style="border: none; text-align: center; font-size: 20px;color: #5c5c5c; ">
+									</form>
+								</div>
+							</button>
+						</div>
+						<div>
+							<img src="Tinycards.png">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+
+</html>
