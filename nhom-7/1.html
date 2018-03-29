@@ -10,7 +10,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://d17u0960v8a9bp.cloudfront.net/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="css/tinycard.css">
     <link rel="icon" sizes="192x192" href="https://d17u0960v8a9bp.cloudfront.net/192x192.png">
-    <script type='text/javascript' src='js/persist-min.js'></script>
 </head>
 
 <body>
@@ -55,22 +54,18 @@
                         data-dismiss="modal">SIGN UP
                 </button>
             </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="enter-username">Email or username</label>
-                    <input type="email" class="form-control" id="enter-username" placeholder="Email or username">
-                </div>
-                <div class="form-group">
-                    <label for="enter-password">Password</label>
-                    <input type="password" class="form-control" id="enter-password" placeholder="Password">
+            <form id="submit-login">
+                <div class="modal-body" id="login-info">
+                    <input type="text" class="form-control mb-3" id="username" required placeholder="Email or username">
+                    <input type="password" class="form-control" id="password" required placeholder="Password">
                 </div>
 
-                <!--<a class="text-center" href="#">FORGOT PASSWORD?</a>-->
+                    <!--<a class="text-center" href="#">FORGOT PASSWORD?</a>-->
 
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">LOG IN</button>
-            </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">LOG IN</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -86,13 +81,13 @@
                         data-dismiss="modal">LOGIN
                 </button>
             </div>
-            <form>
+            <form id="submit-signUp">
                 <div class="modal-body" id="signUp-info">
                     <input type="text" class="form-control mb-3" placeholder="Name" required>
                     <input type="email" class="form-control mb-3" placeholder="Email" required>
-                    <input type="password" class="form-control" placeholder="Password" required>
+                    <input type="password" class="form-control" placeholder="Password" minlength="6" required>
                 </div>
-                <div class="modal-footer" id="submit-signUp">
+                <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">SIGN UP</button>
                 </div>
             </form>
@@ -133,7 +128,7 @@
             </div>
             <div class="col-lg-4 pt-2">
                 <h4 class="mb-3">Create your own</h4>
-                <button class="btn btn-primary pt-3 pb-3 first-row">CREATE</button>
+                <button class="btn btn-primary pt-3 pb-3 first-row" data-toggle="modal" data-target="#loginModal">CREATE</button>
             </div>
             <!-- second row -->
             <h4 class="mr-auto ml-4 pl-4 pt-4">Decks we love</h4>
@@ -411,6 +406,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script src="js/1.js"></script>
+<script src="js/1-1.js"></script>
+<script src="js/1-2.js"></script>
 </body>
 </html>
