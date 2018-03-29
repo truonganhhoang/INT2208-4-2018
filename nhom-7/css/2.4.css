@@ -1,19 +1,23 @@
 div form input {
-    width: 14rem !important;
+    width: 20rem !important;
     border-radius: 8px !important;
     font-weight: bold;
     background-color: #6ad8fc !important;
     border: none !important;
 }
 
-    div form input:focus {
-        background-color: white !important;
-        font-weight: normal;
-    }
+div form input:focus {
+    background-color: white !important;
+    font-weight: normal;
+}
 
-    div form input::placeholder {
-        color: #eaf4f9 !important;
-    }
+div form:focus-within {
+    color: #32cdff !important;
+}
+
+div form input::placeholder {
+    color: #eaf4f9 !important;
+}
 
 .bg-primary {
     background-color: #32cdff !important;
@@ -23,23 +27,23 @@ ul a {
     color: white;
 }
 
-    ul a:hover {
-        color: #8fdef7;
-    }
+ul a:hover {
+    color: #8fdef7;
+}
 
 body {
     background-color: #f7f7f7;
 }
 
-    *:focus {
-        outline: none !important;
-        border-color: transparent;
-        box-shadow: none !important;
-    }
+*:focus {
+    outline: none !important;
+    border-color: transparent;
+    box-shadow: none !important;
+}
 
 .card-body, .jumbotron, .card-img-top, .multipleChoice {
     background-color: white;
-    box-shadow: 0 2px 9px rgba(0,0,0,.2);
+    box-shadow: 0 2px 9px rgba(0, 0, 0, .2);
     border-radius: 18px;
 }
 
@@ -67,7 +71,7 @@ body {
 @keyframes shake {
     from {
         transform: translate(-10px);
-    } 
+    }
     to {
         transform: translate(10px);
     }
@@ -79,11 +83,11 @@ body {
     font-size: 20px;
     border: none;
 }
-    .escape-btn:hover {
-        color: #aaa7a7;
-        background-color: inherit;
-    }
 
+.escape-btn:hover {
+    color: #aaa7a7;
+    background-color: inherit;
+}
 
 /* flip speed goes here */
 .flipper {
