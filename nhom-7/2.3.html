@@ -71,7 +71,8 @@
                     <div style="position: absolute; top: 0 ; left: 15px; line-height: 38px; color: #32cdff;">
                         <i class="fa fa-search"></i>
                     </div>
-                    <div class="d-none d-lg-none" id="close-search" style="position: absolute; top: 0 ; right: 15px; line-height: 38px; color: #32cdff;" onclick="showHideSearch();">
+                    <div class="d-none d-lg-none" id="close-search" style="position: absolute; top: 0 ; right: 15px; line-height: 38px; color: #32cdff;"
+                        onclick="showHideSearch();">
                         <i class="fa fa-times"></i>
                     </div>
                 </form>
@@ -94,28 +95,32 @@
     <div class="container mt-5">
         <div class="row">
             <!-- LEFT-PANEL-->
-            <div id="left-user-panel" class="col-lg-3 col-12 mb-3">
-                <!-- card avatar -->
-                <div class="card-cover mb-3">
-                    <button class="btn btn-primary w-100 card-cover__content">
-                        <div>img</div>
-                        CHOOSE COVER (OPTIONAL)
-                    </button>
-                </div>
-                <!-- input text -->
-                <div id="left-input-text" style="margin: 0 6%;">
-                    <input class="form-control form-control-lg" type="text" placeholder="Enter title">
-                    <input class="form-control mt-1" type="text" placeholder="Enter description (optional)">
-                    <div class="row mt-3">
-                        <div class="col-auto pr-1">
-                            <button class="btn btn-outline-primary">
-                                <i class="fas fa-cog"></i>
+            <div id="left-user-panel" class="col-lg-3 col-12 mb-3 position-relative">
+                <div class="position-absolute">
+                    <div class="position-fixed">
+                        <!-- card avatar -->
+                        <div class="card-cover mb-3">
+                            <button class="btn btn-primary w-100 card-cover__content">
+                                <div>img</div>
+                                CHOOSE COVER (OPTIONAL)
                             </button>
                         </div>
-                        <div class="col pl-1">
-                            <button class="btn btn-primary w-100">CREATE</button>
-                        </div>
+                        <!-- input text -->
+                        <div id="left-input-text" style="margin: 0 6%;">
+                            <input class="form-control form-control-lg" type="text" placeholder="Enter title">
+                            <input class="form-control mt-1" type="text" placeholder="Enter description (optional)">
+                            <div class="row mt-3">
+                                <div class="col-auto pr-1">
+                                    <button class="btn btn-outline-primary">
+                                        <i class="fas fa-cog"></i>
+                                    </button>
+                                </div>
+                                <div class="col pl-1">
+                                    <button class="btn btn-primary w-100">CREATE</button>
+                                </div>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,15 +142,21 @@
                                 <div class="row" style="height: 100%;">
                                     <div class="position-relative col-12" style="height: 33%;">
                                         <textarea class="form-control text-center" style="height: 100%;"> Back 1 </textarea>
-                                        <button class="close position-absolute" style="right: 20px; top: 0;"><span aria-hidden="true">&times;</span></button>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
                                     <div class="position-relative col-12" style="height: 33%;">
                                         <textarea class="form-control text-center" style="height: 100%;"> Back 2 </textarea>
-                                        <button class="close position-absolute" style="right: 20px; top: 0;"><span aria-hidden="true">&times;</span></button>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
                                     <div class="position-relative col-12" style="height: 33%;">
                                         <textarea class="form-control text-center" style="height: 100%;"> Back 3 </textarea>
-                                        <button class="close position-absolute" style="right: 20px; top: 0;"><span aria-hidden="true">&times;</span></button>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +175,103 @@
                             </button>
                         </div>
                     </div>
-                    
+                    <div class="p-4 row flex-row flex-nowrap justify-content-lg-center" style="overflow: auto;">
+                        <!-- card number -->
+                        <div class="col-auto" style="line-height: 257px; vertical-align: middle;">
+                            1
+                        </div>
+                        <!-- front -->
+                        <div class="col-auto">
+                            <input type="text" class="form-control text-center card" placeholder="Front">
+                        </div>
+                        <!-- back -->
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="row" style="height: 100%;">
+                                    <div class="position-relative col-12" style="height: 33%;">
+                                        <textarea class="form-control text-center" style="height: 100%;"> Back 1 </textarea>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="position-relative col-12" style="height: 33%;">
+                                        <textarea class="form-control text-center" style="height: 100%;"> Back 2 </textarea>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="position-relative col-12" style="height: 33%;">
+                                        <textarea class="form-control text-center" style="height: 100%;"> Back 3 </textarea>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-primary no-border w-100">Add fact</button>
+                        </div>
+                        <!-- action btn -->
+                        <div class="col-auto" style="line-height: 257px; vertical-align: middle;">
+                            <button class="btn btn-outline-primary d-block no-border">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary d-block no-border">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary d-block no-border">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-4 row flex-row flex-nowrap justify-content-lg-center" style="overflow: auto;">
+                        <!-- card number -->
+                        <div class="col-auto" style="line-height: 257px; vertical-align: middle;">
+                            1
+                        </div>
+                        <!-- front -->
+                        <div class="col-auto">
+                            <input type="text" class="form-control text-center card" placeholder="Front">
+                        </div>
+                        <!-- back -->
+                        <div class="col-auto">
+                            <div class="card">
+                                <div class="row" style="height: 100%;">
+                                    <div class="position-relative col-12" style="height: 33%;">
+                                        <textarea class="form-control text-center" style="height: 100%;"> Back 1 </textarea>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="position-relative col-12" style="height: 33%;">
+                                        <textarea class="form-control text-center" style="height: 100%;"> Back 2 </textarea>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="position-relative col-12" style="height: 33%;">
+                                        <textarea class="form-control text-center" style="height: 100%;"> Back 3 </textarea>
+                                        <button class="close position-absolute" style="right: 20px; top: 0;">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline-primary no-border w-100">Add fact</button>
+                        </div>
+                        <!-- action btn -->
+                        <div class="col-auto" style="line-height: 257px; vertical-align: middle;">
+                            <button class="btn btn-outline-primary d-block no-border">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary d-block no-border">
+                                <i class="fas fa-arrow-up"></i>
+                            </button>
+                            <button class="btn btn-outline-secondary d-block no-border">
+                                <i class="fas fa-arrow-down"></i>
+                            </button>
+                        </div>
+                    </div>
+
                 </div>
 
                 <button class="btn btn-primary position-absolute" style="border-radius: 50%; right: -25px; top: 100px; height: 50px; width: 50px;">
