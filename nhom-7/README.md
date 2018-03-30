@@ -14,3 +14,6 @@ link semat: https://docs.google.com/spreadsheets/d/1NIKzBaqmc1w2dQHGoO-Rl4WlRbVn
 
 2.4.html - main function page
 
+MongoDB:
+user: admin
+pass: passworld
