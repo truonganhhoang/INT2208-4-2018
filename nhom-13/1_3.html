@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doulingo</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" media="screen" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+</head>
+<style type="text/css">
+	#fixNav{
+		width: 100%;
+		height: 65px;
+		background-color: #0099ff;
+		display: block;
+		box-shadow: 0px 2px 5px rgba(0,0,0,0.5); /*Đổ bóng cho menu để nhìn ảo*/
+		position: fixed; /*Cho menu cố định*/	
+		}
+	#fixNav ul{
+	    margin-left: 50px;
+	    padding: 2px;
+	}
+	#fixNav ul li{
+	    list-style:none inside; /* bỏ dấu chấm ở trước */
+	    float: left;
+	    line-height: 45px; /*Cho text canh giữa menu*/
+	    color: #fff;
+	    padding: 0;
+	    margin-right:30px;  
+	}
+	#fixNav ul li a{
+	    text-transform: uppercase;
+	    padding: 0 10px;
+	    color: #fff;
+	    display: block;
+	    font-size: 1em;
+	    text-decoration: none;/* Bỏ dấu gạch chân */
+	}
+    /*CSS Style cho Submenu*/
+	#fixNav ul li ul {
+	    position: absolute;
+	    width: auto;
+	    display: none;
+	    background-color: #6699ff;
+	    border-bottom: 3px solid #0082bb;
+	    padding-left: 5px;
+	}
+	#fixNav ul li ul li{
+	    display: block;
+	    padding:0;
+	    margin: 0;
+	    float: none; /*Bỏ float cho li cấp thứ 2*/
+	}
+
+	#fixNav ul li:hover {
+	 
+	  background-color: #6699ff;
+	}
+	#fixNav ul li:hover ul{
+
+	  display: block;
+	}
+
+	p{
+	  padding-top: 80px;
+	  padding-bottom: 80px;
+	}
+	.nd{
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	}
+	.baihoc{
+	    width: 700px;
+	    height: 600px;
+	    margin-top: 70px;
+	    border: 2px solid #EEE;
+	    border-radius: 10px;
+	    background-color: white;
+	   
+	}
+	.hinh {
+		width: 90px;
+	    height: 30px;
+	    background: white;
+	    -moz-border-radius: 100px / 50px;
+	    -webkit-border-radius: 100px / 50px;
+	    border-radius: 100px / 80px;
+	    margin-left: 40px;
+	}
+</style>
+<body>
+	<nav id="fixNav" style="font-family: Times New Roman">
+		<ul>
+		    <li><a href="1_1.html"><h3><b><i>Doulingo</i></b></h3></a></li>
+		    <li><a href="#"><b>Trang Chủ</b></a></li>
+		    <li style="float: right;"><a href="1.html" >Đăng xuất</a></li>
+		</ul>
+	</nav>
+	<br><br>
+	<div style="width: 100%; height: 900px; background-color: #eee; font-family: times new roman">
+		<div class="nd">
+			<div class="baihoc">
+				<div style="height: 100px; background-color: #1caff6;border-radius: 5px;">
+					<table style="width: 230px; height:100px; color: white; margin-left: 50px ">
+						<tr>
+							<td rowspan="2"><img src="img/Capture1.PNG"></td>
+							<td><h3 style="margin-top: -5px">Cơ bản 1</h3></td>
+						</tr>
+						<tr><td><h4 style="margin-top: -35px">Cấp bậc : 1/5</h4></td></tr>
+					</table>
+				</div>
+				<div style="width: 180px; height: 230px; background-color: #00BFFF;border-radius: 5px; margin-top: 60px; margin-left: 30px;text-align: center; color: white">
+					<div><br><h3><b>Bài học 1/3</b></h3></div>
+					<div><h4>man, woman, i, am, a, boy, girt</h4></div>
+					<br><br>
+					<div class="hinh">
+						<a href="" style="color: black; font-size: 20px "><b>Bắt Đầu</b></a>
+					</div>
+					
+				</div>
+				<div style="width: 180px; height: 230px; background-color: #00BFFF;border-radius: 5px; margin-left: 255px; margin-top: -230px;text-align: center; color: white">
+					<div><br><h3><b>Bài học 2/3</b></h3></div>
+					<div><h4>he, is, she, an, apple, and, eat</h4></div>
+					<br><br>
+					<div class="hinh">
+						<a href="" style="color: black; font-size: 20px "><b>Bắt Đầu</b></a>
+					</div>
+				</div>
+				<div style="width: 180px; height: 230px; background-color: #00BFFF;border-radius: 5px; margin-left: 480px; margin-top: -230px;text-align: center; color: white">
+					<div><br><h3><b>Bài học 3/3</b></h3></div>
+					<div><h4>the, break, eats, drink, water</h4></div>
+					<br><br>
+					<div class="hinh">
+						<a href="" style="color: black; font-size: 20px "><b>Bắt Đầu</b></a>
+					</div>
+				</div>
+			</div>	
+
+			<div style="width: 500px; height: 400px; background-color: white; margin-top: 70px;border-radius: 5px;">
+				<div style="width: 100%; height: 35px; background-color: #1caff6; border-radius: 5px;">
+					<b style="color: white; font-size: 17px; margin-left: 10px">Đại từ</b>
+					<b style="color: white; font-size: 17px; margin-left: 150px">Cách dịch</b>
+				</div>
+				<table style="border: 0; width: 100%; margin-left: 15px" >
+					<tr style="height: 45px; font-size: 18px; ">
+						<td style="width: 200px;">I</td>
+						<td>Tôi</td>
+					</tr>
+					<tr style="height: 45px; font-size: 18px ">
+						<td style="width: 200px;">She</td>
+						<td>Cô ấy</td>
+					</tr>
+					<tr style="height: 45px; font-size: 18px ">
+						<td style="width: 200px;">He</td>
+						<td>Anh ấy</td>
+					</tr>
+					<tr style="height: 45px; font-size: 18px ">
+						<td style="width: 200px;">We</td>
+						<td>Chúng ta</td>
+					</tr>
+					<tr style="height: 45px; font-size: 18px ">
+						<td style="width: 200px;">It</td>
+						<td>Nó</td>
+					</tr>
+					<tr style="height: 45px; font-size: 18px ">
+						<td style="width: 200px;">They</td>
+						<td>Họ</td>
+					</tr>
+					<tr style="height: 45px; font-size: 18px ">
+						<td style="width: 200px;">You</td>
+						<td>Bạn</td>
+					</tr>
+					
+				</table>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
