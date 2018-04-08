@@ -1,0 +1,100 @@
+
+
+.main-container {
+  background-color: lightblue;
+  height: 520px;
+  width: 700px;
+  border: solid;
+  border-color: black;
+  border-radius: 15px;
+}
+
+.questionArea {
+  background-color: lightyellow;
+  width: 600px;
+  height: 100px;
+  margin-bottom: 10px;
+  border: 3px;
+  border-style: solid;
+  border-color: orange;
+  margin-top: 20px;
+  position: relative;
+  left: 33px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 90px;
+  word-wrap: break-word;
+}
+
+.timerArea {
+  text-align: center;
+  background-color: grey;
+  width: 350px;
+  height: 50px;
+  border: 3px;
+  border-style: solid;
+  border-color: orange;
+  position: relative;
+  left: 158px;
+  margin-bottom: 10px;
+
+}
+.startButton:hover {
+  background-color: yellow;
+}
+
+.startButton {
+  text-align: center;
+  line-height: 80px;
+  background-color: violet;
+  width: 350px;
+  height: 50px;
+  border: 3px;
+  border-style: solid;
+  border-color: orange;
+  position: relative;
+  left: 25px;
+  bottom: 5px;
+
+}
+
+#wins {
+  width: 100px;
+  height: 50px;
+  background-color: grey;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#losses {
+  width: 100px;
+  height: 50px;
+  background-color: grey;
+  position: relative;
+  left: 85px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.answerArea {
+  position: relative;
+  top: 5px;
+  left: 147px;
+  font-size: 24px;
+}
+
+.answerBlock:hover {
+  background-color: yellow;
+}
+
+.answerBlock {
+background-color: lightgreen;
+width: 400px;
+height: 50px;
+margin-bottom: 10px;
+border: 3px;
+border-style: solid;
+border-color: orange;
+}
