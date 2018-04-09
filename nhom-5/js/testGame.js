@@ -1,0 +1,134 @@
+
+
+  $(document).ready(function(){
+   
+
+    //Mang du lieu cho cau hoi
+    // ------------------------------------------
+    var triviaBucket = [
+
+   {
+    question: 'learn',
+    trueAnswer:'học',
+    falseOne: 'gà',
+    falseTwo: 'đẹp',
+    },
+
+  {
+    question: 'chicken',
+    trueAnswer: 'gà',
+    falseOne: 'đào',
+    falseTwo: 'hát',
+    },
+
+  {
+    question: 'sing',
+    trueAnswer: 'hát',
+    falseOne: 'đẹp',
+    falseTwo: 'học',
+    },
+
+  {
+    question: 'peach',
+    trueAnswer: 'đào',
+    falseOne: 'gà',
+    falseTwo: 'đẹp',
+    },
+
+  {
+    question: 'beautiful',
+    trueAnswer: 'đẹp',
+    falseOne: 'gà',
+    falseTwo: 'đào',
+    }
+
+ ];
+
+  //bien toan cuc
+  //------------------------------------------
+  var clickSwitch = true; //doi cau hoi
+  var index = 0;
+  var correct = 0;
+  var incorrect = 0;
+  var ans;
+  var started = false;
+  function incrementQuestion(){
+    if(index==4) {
+      index = 0;
+      correct = 0;
+      incorrect = 0;
+      $("#wins").html("Correct "+ correct);
+      $("#losses").html("Wrong! "+ incorrect);
+    }else index++;
+  }
+
+  //sinh cau hoi
+  //------------------------------------------
+  function populateQuestionArea(){
+    var ran = Math.floor(Math.random()*3+1);
+    console.log(ran);
+    $(".questionArea").html(triviaBucket[index].question);
+    if(ran == 1){
+      ans = '1';
+      $("#1").html(triviaBucket[index].trueAnswer);
+      $("#2").html(triviaBucket[index].falseOne);
+      $("#3").html(triviaBucket[index].falseTwo);
+    }else if(ran == 2){
+      ans = '2';
+      $("#2").html(triviaBucket[index].trueAnswer);
+      $("#1").html(triviaBucket[index].falseOne);
+      $("#3").html(triviaBucket[index].falseTwo);
+    }else if(ran == 3){
+      ans = '3';
+      $("#3").html(triviaBucket[index].trueAnswer);
+      $("#1").html(triviaBucket[index].falseOne);
+      $("#2").html(triviaBucket[index].falseTwo);
+    }
+  }
+  //------------------------------------------
+
+
+  //click nut Start
+  //------------------------------------------
+  $('#startButton').on("click", function(){
+    started = true;
+    index = 0;
+    correct = 0;
+    incorrect = 0;
+    $("#wins").html("Correct " + correct);
+    $("#losses").html("Wrong! " + incorrect);
+    populateQuestionArea();
+    console.log("clickswitch is now = " + clickSwitch);
+
+  });
+    //------------------------------------------
+
+
+    //click cau tra loi
+  $(document).on("click", ".answerBlock", function(){
+    var $this = this;
+
+    var clickIdentifier = $(this).attr('id');
+    if(started){
+      if (clickIdentifier == ans) {
+      // console.log('true!');
+        clickSwitch = false;
+        correct++;
+        $("#wins").html("Correct " + correct);
+            window.onbeforeunload = function(event)
+            {
+                return confirm("Confirm refresh");
+            };
+        incrementQuestion();
+        populateQuestionArea();
+        } else {
+        clickSwitch = false;
+        incorrect++;
+        $("#losses").html("Wrong! " + incorrect);
+        console.log(incorrect + " is the number of incorrect answers");
+      }
+    }
+  });
+
+  
+}); 

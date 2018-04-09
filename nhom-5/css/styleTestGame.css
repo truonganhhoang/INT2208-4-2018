@@ -1,22 +1,19 @@
 
 
 .main-container {
-  background-color: lightblue;
+  background-color: #33CCFE;
   height: 520px;
   width: 700px;
-  border: solid;
-  border-color: black;
   border-radius: 15px;
 }
 
 .questionArea {
-  background-color: lightyellow;
+  background-color: yellow;
   width: 600px;
   height: 100px;
   margin-bottom: 10px;
-  border: 3px;
-  border-style: solid;
-  border-color: orange;
+  box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.2);
+  border-radius: 10px;
   margin-top: 20px;
   position: relative;
   left: 33px;
@@ -26,21 +23,8 @@
   word-wrap: break-word;
 }
 
-.timerArea {
-  text-align: center;
-  background-color: grey;
-  width: 350px;
-  height: 50px;
-  border: 3px;
-  border-style: solid;
-  border-color: orange;
-  position: relative;
-  left: 158px;
-  margin-bottom: 10px;
-
-}
 .startButton:hover {
-  background-color: yellow;
+  background-color: orange;
 }
 
 .startButton {
@@ -49,13 +33,9 @@
   background-color: violet;
   width: 350px;
   height: 50px;
-  border: 3px;
-  border-style: solid;
-  border-color: orange;
   position: relative;
   left: 25px;
   bottom: 5px;
-
 }
 
 #wins {
@@ -79,6 +59,7 @@
 }
 
 .answerArea {
+  color: white;
   position: relative;
   top: 5px;
   left: 147px;
@@ -86,15 +67,13 @@
 }
 
 .answerBlock:hover {
-  background-color: yellow;
+  background-color: orange;
 }
 
 .answerBlock {
-background-color: lightgreen;
-width: 400px;
-height: 50px;
-margin-bottom: 10px;
-border: 3px;
-border-style: solid;
-border-color: orange;
+  font: white;
+  background-color: green;
+  width: 400px;
+  height: 50px;
+  margin-bottom: 10px;
 }
