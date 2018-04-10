@@ -12,5 +12,8 @@
   - Author: Tuan
 
 ---
+I think you should use an
+`<addr>` element here instead.
 
+---
 ![Flux Explained](https://assets-cdn.github.com/images/modules/open_graph/github-octocat.png)
