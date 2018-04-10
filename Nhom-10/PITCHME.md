@@ -1,10 +1,10 @@
 # Flux 
 
-An application architecture for React
-
+>An application architecture for React
+>-Trump said
 ---
 
-### Flux Design
+## Flux Design
 
 - Dispatcher: Manages Data Flow
 - Stores: Handle State & Logic
