@@ -11,7 +11,7 @@
     <style type="text/css">
         body{ background-color: #eee; }
         .nd{
-		    display: flex;
+		    display: flex; 
 		    flex-wrap: wrap;
 		    justify-content: space-around;
 	    }
@@ -22,6 +22,10 @@
 		    border-radius: 5px;
 		    background-color: white;
 		   
+		}
+		.img-thumbnail {
+			width: 170px;
+			height: 150px;
 		}
 	</style>
 <body>
@@ -37,13 +41,13 @@
 						<br>
 						<h4><b class="mau">1. Banana</b></h4>
 						<label>
-                            <input type="radio" name="q1" value="A"> <img src="img/chuoi.jpg" style="width: 130px; height: 120px">&emsp;
+                            <input type="radio" name="q1" value="A"> <img src="img/chuoi.jpg" class="img-thumbnail" >&emsp;
 						</label>
 						<label>
-						    <input type="radio" name="q1" value="B"> <img src="img/dau.jpg" style="width: 130px; height: 120px">&emsp;
+						    <input type="radio" name="q1" value="B"> <img src="img/dau.jpg" class="img-thumbnail">&emsp;
 						</label>
 						<label>
-						    <input type="radio" name="q1" value="C"> <img src="img/dua.jpg" style="width: 130px; height: 120px">
+						    <input type="radio" name="q1" value="C"> <img src="img/dua.jpg" class="img-thumbnail">
 						</label>
 						<br>
 						<h4><b class="mau">2. Tôi là một người đàn ông</b></h4>
@@ -82,13 +86,13 @@
 						<br>
 						<h4><b class="mau">4. Coconut</b></h4>
 						<label>
-                            <input type="radio" name="q4" value="A"> <img src="img/nhan.jpg" style="width: 130px; height: 120px">&emsp;
+                            <input type="radio" name="q4" value="A"> <img src="img/nhan.jpg" class="img-thumbnail">&emsp;
 						</label>
 						<label>
-						    <input type="radio" name="q4" value="B"> <img src="img/dau.jpg" style="width: 130px; height: 120px">&emsp;
+						    <input type="radio" name="q4" value="B"> <img src="img/dau.jpg" class="img-thumbnail">&emsp;
 						</label>
 						<label>
-						    <input type="radio" name="q4" value="C"> <img src="img/dua.jpg" style="width: 130px; height: 120px">
+						    <input type="radio" name="q4" value="C"> <img src="img/dua.jpg" class="img-thumbnail">
 						</label>
 						<br>
 						<h4><b class="mau">5. I am _ woman</b></h4>
@@ -146,7 +150,7 @@
 						        }
 						    }
 						    score = Math.round(score/numQues *100); 
-						    form.percentage.value = score + "/100đ" ; 
+						    form.percentage.value = score + "/100" ; 
 						    var correctAnswers = "";
 						    for (i=1; i<=numQues; i++) {
 						        correctAnswers += i + ". " + answers[i-1] + "\r\n";
