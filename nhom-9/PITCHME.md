@@ -3,8 +3,9 @@
 
 ##REST Development
 - **Reid Holmes** là viết tắt của từ Research, Extension and Irrigation Division Holmes
-
++++
 - Khoảng những năm 1970 xuất hiện 1 giải pháp truyền tin hướng có tên là RPC, nó là viết tắt của cụm từ Remote Procedure Calls (tạm dịch là các cuộc gọi thủ tục từ xa).
++++
 - Nhưng nó lại tồn tại rất nhiều vấn đề như:
  + Cần phải tìm ra làm thế nào để đặt tên cho điều bạn sẽ gọi.
  + ...để định dạng các thông số mà bạn muốn vượt qua điều đó
