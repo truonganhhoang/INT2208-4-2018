@@ -1,9 +1,8 @@
-+++
 # Flux 
 
 >_An application architecture for React_
 >-**Trump said**
----
++++
 
 ## Flux Design
 
