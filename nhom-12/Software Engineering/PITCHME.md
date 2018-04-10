@@ -13,7 +13,7 @@
 
 
 ---
-### Gói gọn những thay đổi 
+## Gói gọn những thay đổi 
 -Thiết kế hệ thống sao cho nó dễ dàng được mở rộng trong tương lai và do có các lỗi bên trong hệ thống, hồi quy được đưa ra để giải quyết chúng trong không gian bán cục bộ
 <br>
 -Để hệ thống có thể tồn tại lâu dài,chúng phải phù hợp với nhu cầu trong tương lai. Vì vậy, nên xây dựng các trừu tượng để có thể dễ dàng cải tiến hệ thống sau này
@@ -25,7 +25,7 @@
 	+Thêm quá nhiều trừu tượng gây ra những kết quả không mong muốn, nên cần xem xét những loại thay đổi trong tương lai bạn muốn hỗ trợ mà không cần thực hiện quá nhiều việc
 	
 ---
-### Đảm bảo việc lập trình giao diện
+## Đảm bảo việc lập trình giao diện
 -Thiết kế giao diện giúp tách riêng việc thực hiện với thiết kế, và đây là mục tiêu cốt lõi cho hệ thống.
 <br>
 +Có thể tái sử dụng các bộ phận trong hệ thống mà không phải lo lắng về việc triển khai thực hiện các bộ phận đó.
@@ -37,7 +37,7 @@
 -Các giao diện giúp thu gọn hệ thống 1 cách gọn gàng và dễ dàng sử dụng lại trong tương lai.
  
 ---
-### Ưu tiên các thành phần thừa kế
+## Ưu tiên các thành phần thừa kế
 -Giúp việc mã hóa tự dộng hơn tại runtime và dễ dàng thêm các tính năng mới.
 <br>
 +Trái ngược hơn so với các mẫu thiết kế khác khi tận dụng các thừa kế. 
@@ -54,7 +54,6 @@
 
 ---
 ## Khái quát các mẫu thiết kế
-# Những vấn đề của các mẫu thiết kế
 -Các mẫu thiết kế cung cấp 1 bộ hướng dẫn giúp hệ thống tránh được những vấn đề có thể tiến triển trong tương lai
 <br>
 -Tận dụng những hiểu biết về các mẫu thiết kế trước đó
