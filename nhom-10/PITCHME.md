@@ -1,10 +1,10 @@
 #THIẾT KẾ CẤP CAO
-(HIGH LEVEL DESIGN)
+- (HIGH LEVEL DESIGN)
 
 +++
 
 #SỰ TRỪU TƯỢNG
-(Abstraction)
+- (Abstraction)
 
 ![Abstraction image]
 (https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000027/87383661-mechanical-engineering-technology-vector-abstract-background-cybernetic-abstraction-with-innovative-.jpg)
@@ -13,7 +13,7 @@
 +++
 
 ##GIỚI THIỆU VỀ SỰ TRỪU TƯỢNG
-(Introduction to Abstraction)
+- (Introduction to Abstraction)
 
 +++
 ###Khái niệm
@@ -34,7 +34,7 @@
 ---
 
 ##PHÂN TÍCH
-(Decomposition)
+- (Decomposition)
 
 +++
 
@@ -70,16 +70,16 @@
 +++
 ####Bottom-up composition
 - tổng hợp từ dưới lên, chúng ta sẽ nghĩ về những yếu tố cấp thấp rồi chúng ta sẽ xây dựng  từ cấp thấp lên mức cao hơn
-  - ưu:
-    - giúp chúng ta xây dựng hệ thống từ sớm
-    - tập trung vào việc xây dựng mã tái sử dụng được
-  - nhược:
-    - sau khi xây dựng hệ thống đến cấp cao mới nhận ra chúng ta có thể đã tạo ra những chi tiết cài đặt gây ra sự không nhất quán, gây cản trở
+- ưu:
+  - giúp chúng ta xây dựng hệ thống từ sớm
+  - tập trung vào việc xây dựng mã tái sử dụng được
+- nhược:
+  - sau khi xây dựng hệ thống đến cấp cao mới nhận ra chúng ta có thể đã tạo ra những chi tiết cài đặt gây ra sự không nhất quán, gây cản trở
 
 ---
 
 ##ĐÓNG GÓI
-(encapsulation)
+- (encapsulation)
 
 +++
 
@@ -111,7 +111,7 @@ class SinhVien{
 ---
 
 ##BIỂU DIỄN KỸ THUẬT
-(Technical Representations)
+- (Technical Representations)
 
 +++
 ###Khái niệm
