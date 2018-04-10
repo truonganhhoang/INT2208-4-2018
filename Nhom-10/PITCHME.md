@@ -1,7 +1,7 @@
 # Flux 
 
->An application architecture for React
->-Trump said
+>_An application architecture for React_
+>-*Trump said*
 ---
 
 ## Flux Design
