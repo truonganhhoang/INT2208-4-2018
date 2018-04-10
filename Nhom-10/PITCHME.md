@@ -8,8 +8,8 @@
 
 - Dispatcher: Manages Data Flow
 - Stores: Handle State & Logic
- - Views: Render Data via React
- -Author: Tuan
+  - Views: Render Data via React
+  -Author: Tuan
 
 ---
 
