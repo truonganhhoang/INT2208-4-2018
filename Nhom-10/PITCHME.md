@@ -20,6 +20,6 @@ else{
   System.out.println("come and get your love");
 }
 ```
----?code=/1-2.html&lang=html
+---?code=Nhom-10/1-2.html&lang=html
 ---
 ![Flux Explained](https://assets-cdn.github.com/images/modules/open_graph/github-octocat.png)
