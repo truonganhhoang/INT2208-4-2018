@@ -32,7 +32,7 @@
 
 ### Khái niệm 
 
-- Phân tích (Decomposition) là quá trình phá vỡ một mô tả phứ tạp, cấp cao của một hẹ thống thành nhiều mảnh nhỏ dễ quản lý hơn.
+- Phân tích (Decomposition) là quá trình phá vỡ một mô tả phức tạp, cấp cao của một hệ thống thành nhiều mảnh nhỏ dễ quản lý hơn.
 +++
 
 ### Mục đính
@@ -137,4 +137,3 @@ class SinhVien{
 - API có thể được tái sử dụng giúp tiết kiệm thời gian công sức. giảm số lượng dòng code và giảm chi phí phát triển phần mềm
 - Các API sẽ được hỗ trợ lâu dài nên khi thiết kế API phải tuân thủ các nguyên tắc thiết kế API
 
-![Flux Explained](images/artist.png)
