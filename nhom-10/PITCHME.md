@@ -5,8 +5,7 @@
 # SỰ TRỪU TƯỢNG
 - (Abstraction)
 
-![Abstraction image]
-(https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000027/87383661-mechanical-engineering-technology-vector-abstract-background-cybernetic-abstraction-with-innovative-.jpg)
+![Abstraction image](https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000027/87383661-mechanical-engineering-technology-vector-abstract-background-cybernetic-abstraction-with-innovative-.jpg)
 +++
 
 ## GIỚI THIỆU VỀ SỰ TRỪU TƯỢNG
@@ -138,5 +137,4 @@ class SinhVien{
 - API có thể được tái sử dụng giúp tiết kiệm thời gian công sức. giảm số lượng dòng code và giảm chi phí phát triển phần mềm
 - Các API sẽ được hỗ trợ lâu dài nên khi thiết kế API phải tuân thủ các nguyên tắc thiết kế API
 
-![Flux Explained]
-(images/artist.png)
+![Flux Explained](images/artist.png)
