@@ -13,7 +13,6 @@
 
 
 ---
-
 ## Gói gọn những thay đổi 
 -Thiết kế hệ thống sao cho nó dễ dàng được mở rộng trong tương lai và do có các lỗi bên trong hệ thống, hồi quy được đưa ra để giải quyết chúng trong không gian bán cục bộ
 <br>
@@ -55,6 +54,7 @@
 
 ---
 ## Khái quát các mẫu thiết kế
+### Những vấn đề của các mẫu thiết kế
 -Các mẫu thiết kế cung cấp 1 bộ hướng dẫn giúp hệ thống tránh được những vấn đề có thể tiến triển trong tương lai
 <br>
 -Tận dụng những hiểu biết về các mẫu thiết kế trước đó
@@ -64,7 +64,8 @@
 -Đưa ra từ vựng chung và phổ biến nó giữa các nhà phát triển
 <br>
 -Nhấn mạnh đến cấu trúc hệ thống sao cho chúng có thể được sử dụng lại nhiều hơn, điều này thường bị bỏ qua khi xây dựng hệ thống trong thực tế
-<br>
+
+---
 -Trong nhiều trường hợp, các mẫu thiết kế không có ý nghĩa
 <br>
 -Mỗi khi thêm vào mẫu thiết kế mới, cũng có nghĩa là thêm 1 trừu tượng mới
@@ -72,9 +73,7 @@
 +Các trừu tượng làm hệ thống khó hiểu hơn với các nhà phát triển
 <br>
 +Những trừu tượng cho phép mở rộng một số khả năng. Nhưng nếu việc sử dụng chúng không bao giờ kết thúc, sẽ rất khó khăn để có thể hiểu và gỡ lỗi hệ thống
-
----
-
+<br>
 -Tất cả các mẫu thiết kế đều có 3 phần chính, và chúng đang cố gắng giải quyết một vấn đề mang tính đặc thù, giúp cải thiện vấn đề ấy.
 <br>
 -Tất cả các mẫu thiết kế đều dựa trên kinh nghiệm cũ của các nhà phát triển, nên chúng đều có 1 bộ ưu và nhược điểm riêng
