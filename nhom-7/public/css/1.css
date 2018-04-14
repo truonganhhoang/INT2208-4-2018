@@ -171,3 +171,8 @@ footer a:hover {
 	background-color: #32cdff !important;
 	color: #8fdef7;
 }
+
+.scroll{
+	overflow-y: auto;
+	overflow-x: hidden;
+}

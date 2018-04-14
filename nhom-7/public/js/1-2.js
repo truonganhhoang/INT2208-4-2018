@@ -1,10 +1,9 @@
-// var loginBtn = document.getElementById("login-btn");
 var matched = false;
-var decks = $(".decks");
 
 mainEvent1();
 
 function mainEvent1() {
+    checkWindowSize();
     // add events
 
     // check if user available
@@ -21,7 +20,23 @@ function mainEvent1() {
         matched = true;
     });
 
-    // add some classes in grid of decks
-    $(decks).children()[0].addClass("offset-md-2 offset-lg-1")
-    $(decks).children()[1].addClass("offset-md-1 offset-lg-0")
+    // remove container in window when it's smaller than 992px
+    $(window).resize(function () {
+        if ($(this).width() < 992) {
+            $(".duy-cover").removeClass("container");
+        } else $(".duy-cover").addClass("container")
+    });
+
+    // chage active carousel
+    $("#first-carousel").children()[0].classList.add("active", "scroll");
+    $("#second-carousel").children()[0].classList.add("active", "scroll");
+    $(".carousel").carousel({
+        interval: 200000
+    });
+}
+
+function checkWindowSize() {
+    if ($(this).width() < 992) {
+        $(".duy-cover").removeClass("container");
+    } else $(".duy-cover").addClass("container")
 }

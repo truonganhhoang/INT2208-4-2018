@@ -14,7 +14,7 @@
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-        <a href="" class="navbar-brand">
+        <a href="/" class="navbar-brand">
             <img src="imgs/tinycard.PNG" alt="cap picture">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-demo">
@@ -133,268 +133,92 @@
                 </button>
             </div>
             <!-- second row -->
-            <h4 class="mr-auto ml-4 pl-4 pt-4">Decks we love</h4>
+            <h4 class="mr-auto ml-3 pt-4">Decks we love</h4>
             <a href="" class="pt-4 mr-3">SEE ALL</a>
         </div>
         <!-- next row -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row pt-4 decks" style="height: 286px">
-                        <% for (var i = 0; i < decks.length; i++) { %>
-                        <div class="card col-lg-2 col-md-4">
-                            <a href="" class="h-100">
+            <div class="carousel-inner" id="first-carousel">
+                <% var trendingDecks = [] %>
+                <% for (i = 0; i < decks.length; i += 6) { %>
+                <div class="carousel-item">
+                    <div class="row pt-4" style="height: 300px">
+                        <% for (var j = 0; j < 6; j++) { %>
+                        <% if (decks[i + j]) { %>
+                        <div class="card col-lg-2 col-md-3 col-4">
+                            <a href="" style="height: 176px">
                                 <img class="card-img-top h-100"
-                                     src="<%=decks[0].themeImage%>"
-                                     alt="Card image cap">
+                                     src="<%= decks[i + j].themeImage %>"
+                                     alt="<%= decks[i + j].name %>">
                             </a>
-                            <div class="card-body">
-                                <a href="" class="card-title"><%=decks[0].name%></a>
+                            <div class="card-body p-0 mt-4">
+                                <a href="" class="card-title"><%= decks[i + j].name %></a>
                                 <br>
                                 <a href="" class="card-info">
-                                    <i class="far fa-star"></i> <%=decks[0].favourites%></a>
+                                    <i class="far fa-star"></i> <%= decks[i + j].favourites %>
+                                    <% if (decks[i + j].favourites > 1000)  trendingDecks.push(decks[i + j])%>
+                                </a>
                             </div>
                         </div>
                         <% } %>
+                        <% } %>
                     </div>
-                        <!--<div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/ffc7fb10309a6444b9a2dfb318d66c94"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">Sports in German</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 933</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card col-lg-2 col-md-4">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/346c4c66a771070f6e6eb0c1528fee71"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">Popular chess openings</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 35</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card col-lg-2 col-md-4">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/eab8f1a2ae68cb59b71596ebde6ff2e4"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">NFL Super Bowl Champions</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 85</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card col-lg-2 col-md-4">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/2d83100c81113ed919a4e9dbde61bf0a"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">Polyatomic Ions</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 45</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-
-                <!--</div>-->
-                <!--&lt;!&ndash;next item&ndash;&gt;-->
-                <!--<div class="carousel-item">-->
-                    <!--<div class="row pt-4">-->
-                        <!--<div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/644c3b1744da4d369a188f19b0ece80c"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">Countries of Asia</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 59K</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/a802d40f1fbab5ee11e903c24ce86299"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">Women of Art</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 919</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card col-lg-2 col-md-4">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/b16df54727474da8e54edd6d13f7f4dd"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">The Solar System</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 43K</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card col-lg-2 col-md-4">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/9084e2c9149927272195ee5f1f8aec9c"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">Greatest Rockstars</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 779</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="card col-lg-2 col-md-4">-->
-                            <!--<a href="2.html"><img class="card-img-top"-->
-                                                  <!--src="https://d9np3dj86nsu2.cloudfront.net/image/4c8b4bd54456bc8d1c3b8a9793f4a334"-->
-                                                  <!--alt="Card image cap"></a>-->
-                            <!--<div class="card-body">-->
-                                <!--<a href="" class="card-title">College Football FBS Teams</a>-->
-                                <!--<br>-->
-                                <!--<a href="" class="card-info"><i class="far fa-star"></i> 128</a>-->
-                            <!--</div>-->
-                        <!--</div>-->
-
                 </div>
+                <% } %>
             </div>
             <!-- arrow -->
-            <a class="carousel-control-prev" style="width: 5%" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" style="width: 1%" href="#carouselExampleControls" role="button"
+               data-slide="prev">
                 <i class="fas fa-chevron-left mr-5"></i>
             </a>
-            <a class="carousel-control-next" style="width: 5%" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" style="width: 1%" href="#carouselExampleControls" role="button"
+               data-slide="next">
                 <i class="fas fa-chevron-right ml-5"></i>
             </a>
         </div>
         <hr>
         <div class="row">
-            <h4 class="mr-auto ml-4 pl-4 pt-4">Trending</h4>
+            <h4 class="mr-auto ml-3 pt-4">Trending</h4>
             <a href="" class="pt-4 mr-3">SEE ALL</a>
         </div>
         <!-- next row -->
         <div id="carousel-1" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row pt-4">
-                        <div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/7db472b668b4a191b237069824043002"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">Duolinggo Spanish Podcast</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 313</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/fa695e8822f7b1c691ac5b8bb1d9991d"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">Animal Superstitions from Around the World</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 388</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/29667e730569a820dbd9a0278dadb32e"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">Types of fruits</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 2K</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/138e205a3755748ddf2331078a7d9c7f"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">Good Times, Bad Times Vocabulary</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 176</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/e36e8952cd4da13c7941770ff5fd92d9"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">Math</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 768</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- next item -->
+            <div class="carousel-inner" id="second-carousel">
+                <% for (i = 0; i < trendingDecks.length; i += 6) { %>
                 <div class="carousel-item">
-                    <div class="row pt-4">
-                        <div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/ac7889e6061a8523ed9355ae0b49c1f0"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">Resnaissance: Paré, Vesalius & Harvey</a>
+                    <div class="row pt-4" style="height: 300px">
+                        <% for (j = 0; j < 6; j++) { %>
+                        <% if (trendingDecks[i + j] && trendingDecks[i + j].favourites > 1000) { %> <%# can be deleted %>
+                        <div class="card col-lg-2 col-md-3 col-4">
+                            <a href="" style="height: 176px">
+                                <img class="card-img-top h-100"
+                                     src="<%= trendingDecks[i + j].themeImage %>"
+                                     alt="<%= trendingDecks[i + j].name %>">
+                            </a>
+                            <div class="card-body p-0 mt-4">
+                                <a href="" class="card-title"><%= trendingDecks[i + j].name %></a>
                                 <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 117</a>
+                                <a href="" class="card-info">
+                                    <i class="far fa-star"></i> <%= trendingDecks[i + j].favourites %></a>
                             </div>
                         </div>
-                        <div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/af636372283d2ea15b0fb68722d2d902"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">L'équipement</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 58</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/bb0e66c473836034bb9a4b5d2688814a"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">U.S. Presidents Quiz</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 1K</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/a918f336ed040ebf5eb92d6456495fe5"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">¿A dónde vas?</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 44</a>
-                            </div>
-                        </div>
-                        <div class="card col-lg-2 col-md-4">
-                            <a href="2.html"><img class="card-img-top"
-                                                  src="https://d9np3dj86nsu2.cloudfront.net/image/e73dd985d83cd80d82dd4539029de4bd"
-                                                  alt="Card image cap"></a>
-                            <div class="card-body">
-                                <a href="" class="card-title">Skeletal System</a>
-                                <br>
-                                <a href="" class="card-info"><i class="far fa-star"></i> 168</a>
-                            </div>
-                        </div>
+                        <% } %>
+                        <% } %>
                     </div>
-
                 </div>
+                <% } %>
             </div>
             <!-- arrow -->
-            <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+            <a class="carousel-control-prev" style="width: 1%" href="#carousel-1" role="button" data-slide="prev">
                 <i class="fas fa-chevron-left mr-5"></i>
             </a>
-            <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+            <a class="carousel-control-next" style="width: 1%" href="#carousel-1" role="button" data-slide="next">
                 <i class="fas fa-chevron-right ml-5"></i>
             </a>
         </div>
     </div>
     <footer class="mb-3 mt-5 pt-3">
-        <a href="1.2.html" class="m-4">ABOUT</a>
+        <a href="/press" class="m-4">ABOUT</a>
         <a href="" class="m-4">SUPPORT</a>
         <a href="" class="m-4">TERMS</a>
         <a href="" class="m-4">DUOLINGO</a>
@@ -404,7 +228,9 @@
             <img src="imgs/english.png"> ENGLISH
         </a>
     </footer>
+
 </div>
+<!--</div>-->
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"

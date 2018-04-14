@@ -8,7 +8,8 @@ var User                  = require("./models/User"),          // User model
     expressSession        = require("express-session"),        // user session
     passportLocalMongoose = require("passport-local-mongoose");// authentication
 
-mongoose.connect("mongodb://localhost/tinycards");
+var url = "mongodb+srv://admin:nopassword@cluster0-bmqym.mongodb.net";
+mongoose.connect(url, {dbName: 'tinycards'});
 
 var app = express();
 
@@ -29,8 +30,7 @@ passport.serializeUser(User.serializeUser());           // authentication
 passport.deserializeUser(User.deserializeUser());       // authentication
 
 // ROUTES
-// home
-
+// home (not logged in)
 app.get("/", isNotLoggedIn, function (req, res) {
     User.find({}, function (error, users) {
         if (!error) {
@@ -43,15 +43,25 @@ app.get("/", isNotLoggedIn, function (req, res) {
     })
 });
 
-app.get("/:username", isLoggedIn, function (req, res) {
+// home (after logged in)
+app.get("/user/:username", isLoggedIn, function (req, res) {
     if (req.params.username !== req._passport.session.user) {
-        return res.redirect("/" + req._passport.session.user);
+        return res.redirect("/user/" + req._passport.session.user);
     }
     User.findOne({username: req._passport.session.user}, function (error, user) {
         if (!error) {
-            res.render("2", {user: user});
-        } else console.log(error)
+            Deck.find({}, function (error1, decks) {
+                if (!error1) {
+                    res.render("2", {user: user, decks: decks});
+                } else res.send("SOWETHING WENT WRONG WHEN LOAD DECKS DATA!")
+            })
+        } else res.send("SOMETHING WENT WRONG WHEN LOAD USERS DATA!")
     })
+});
+
+// about page (duy)
+app.get("/press", function (req, res) {
+    res.render("1-2");
 });
 
 // handle user sign up
@@ -61,7 +71,7 @@ app.post("/register", function (req, res) {
             return res.send(error);
         }
         passport.authenticate("local")(req, res, function () {
-            res.redirect("/" + user.username);
+            res.redirect("/user/" + user.username);
         })
     })
 });
@@ -70,7 +80,12 @@ app.post("/register", function (req, res) {
 app.post("/login", passport.authenticate("local", {
     failureRedirect: "/"
 }), function(req, res){
-    res.redirect("/" + req.body.username);
+    res.redirect("/user/" + req.body.username);
+});
+
+// all other routes
+app.get("/*", function (req, res) {
+    res.redirect("/");
 });
 
 // middleware
@@ -84,7 +99,7 @@ function isNotLoggedIn(req, res, next) {
     if (req.isUnauthenticated()) {
         return next();
     }
-    res.redirect("/" + req._passport.session.user);
+    res.redirect("/user/" + req._passport.session.user);
 }
 
 // Running app
@@ -93,9 +108,9 @@ app.listen(3000, function () {
 });
 
 // add decks
-Deck.create({
-    name: "Harry Potter Quotes",
-    themeImage: "https://d9np3dj86nsu2.cloudfront.net/image/1df6d9ae25f8614222e016b836bdbbb8",
-    description: "One from each character that is either insightful, humorous, or memorable.",
-    favourites: 598
-});
+// Deck.create({
+//     name: "House",
+//     themeImage: "https://d9np3dj86nsu2.cloudfront.net/image/e53dcbd93f705d72c23fbac007760b84",
+//     description: '',
+//     favourites: 106
+// });
