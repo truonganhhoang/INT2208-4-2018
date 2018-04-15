@@ -66,7 +66,7 @@ app.get("/press", function (req, res) {
 
 // handle user sign up
 app.post("/register", function (req, res) {
-    User.register({username: req.body.username, email: req.body.email}, req.body.password, function (error, user) {
+    User.register({username: req.body.username, name: req.body.name.substr(0, 35), email: req.body.email}, req.body.password, function (error, user) {
         if (error) {
             return res.send(error);
         }
@@ -113,4 +113,17 @@ app.listen(3000, function () {
 //     themeImage: "https://d9np3dj86nsu2.cloudfront.net/image/e53dcbd93f705d72c23fbac007760b84",
 //     description: '',
 //     favourites: 106
+// });
+
+// User.findByUsername("dung").then(function(user){
+//     if (user){
+//         user.setPassword("123456", function(){
+//             user.save();
+//             // res.status(200).json({message: 'password reset successful'});
+//         });
+//     } else {
+//         // res.status(500).json({message: 'This user does not exist'});
+//     }
+// },function(err){
+//     console.error(err);
 // });

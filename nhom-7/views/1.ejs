@@ -82,7 +82,8 @@
             </div>
             <form id="submit-signUp" action="/register" method="post">
                 <div class="modal-body" id="signUp-info">
-                    <input type="text" class="form-control mb-3" name="username" placeholder="Name" required>
+                    <input type="text" class="form-control mb-3" maxlength="36" name="name" placeholder="Name" required>
+                    <input type="text" class="form-control mb-3" name="username" placeholder="Username" required>
                     <input type="email" class="form-control mb-3" name="email" placeholder="Email" required>
                     <input type="password" class="form-control" name="password" placeholder="Password" minlength="6"
                            required>
@@ -241,6 +242,7 @@
     var userdata = [];
     <% for (var i = 0; i < users.length; i++) { %>
     userdata.push({
+        name: "<%= users[i].name %>",
         username: "<%= users[i].username %>",
         email: "<%= users[i].email %>"
     })
