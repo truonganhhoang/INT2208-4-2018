@@ -1,5 +1,3 @@
-var matched = false;
-
 mainEvent1();
 
 function mainEvent1() {
@@ -8,16 +6,12 @@ function mainEvent1() {
 
     // check if user available
     $('#submit-login').submit(function (event) {
-        if (!matched) {
-            event.preventDefault();
-            var userName = $(this).find('#username')[0].value;
-            for (var i = 0; i < userdata.length; i++) {
-                if (userName === userdata[i].email) {
-                    $(this).find('#username')[0].value = userdata[i].username;
-                }
+        var userName = $(this).find('#username')[0].value;
+        for (var i = 0; i < userdata.length; i++) {
+            if (userName === userdata[i].email) {
+                $(this).find('#username')[0].value = userdata[i].username;
             }
         }
-        matched = true;
     });
 
     // remove container in window when it's smaller than 992px

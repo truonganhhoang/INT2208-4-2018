@@ -25,11 +25,11 @@ ul a:hover {
 }
 
 div form input {
-    width: 20rem !important;
     border-radius: 8px !important;
     font-weight: bold;
     background-color: #6ad8fc !important;
     border: none !important;
+
 }
 
 div form input:focus {
@@ -54,21 +54,9 @@ ul li:nth-of-type(2) a:hover {
     color: white !important;
 }
 
-.cap {
-    color: white;
-    padding-left: 40px;
-}
-
-.cap h1 {
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-top: 50px;
-}
-
 .card {
     width: 60%;
     border: hidden;
-    /*box-shadow: 0 2px 9px rgba(0, 0, 0, .1);*/
     border-radius: 18px;
 }
 

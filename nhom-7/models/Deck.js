@@ -2,6 +2,10 @@ var mongoose = require("mongoose");
 
 var DeckSchema = new mongoose.Schema({
     name: String,
+    author: {
+        type: mongoose.Schema.Types.ObjectId, // user's (author) id
+        ref: "User"
+    },
     description: String,
     themeImage: String,
     cards: [{
@@ -11,4 +15,4 @@ var DeckSchema = new mongoose.Schema({
     favourites: Number
 });
 
-module.exports = mongoose.model("Decks", DeckSchema);
+module.exports = mongoose.model("Deck", DeckSchema);

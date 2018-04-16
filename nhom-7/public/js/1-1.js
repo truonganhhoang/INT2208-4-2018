@@ -1,7 +1,5 @@
 var signUpForm = document.getElementById("submit-signUp"); // sign up form
 var newUserInfo = document.getElementById("signUp-info"); // new user information
-var signUpBtn = document.getElementById("signUp-btn");
-var existed = true; // check if this user existed
 // fix some carousel components' classes
 
 mainEvent();
@@ -9,16 +7,14 @@ mainEvent();
 function mainEvent() {
     //event
     $(signUpForm).submit(function (event) {
-        if (existed) event.preventDefault();
-        if (checkMatchinguser()) {
-            return handleMatchingUser();
-        }
-        existed = false;
+        if (newUserInfo.children.length === 5) event.preventDefault();
     });
 
     // remove alert if user press key in input box
     $(newUserInfo.children).keypress(function () {
-        if (newUserInfo.children.length === 5) {
+        if (checkMatchinguser()) {
+            return handleMatchingUser();
+        }if (newUserInfo.children.length === 5) {
             $(newUserInfo.children).last().remove();
         }
     })

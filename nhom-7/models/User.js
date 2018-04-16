@@ -4,6 +4,7 @@ var passportLocalMongoose = require("passport-local-mongoose"); // authenticatio
 var UserSchema = new mongoose.Schema({
     name: String,
     userName: String,
+    userAvatar: String,
     email: {
         type: String,
         unique: true
@@ -14,7 +15,7 @@ var UserSchema = new mongoose.Schema({
         favourite: Boolean,
         progress: Number,
         deck: {
-            type: mongoose.Schema.Types.ObjectId,       // deck's id
+            type: mongoose.Schema.Types.ObjectId, // deck's id
             ref: "Deck"
         }
     }]

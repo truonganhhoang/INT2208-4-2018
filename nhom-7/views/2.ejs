@@ -10,44 +10,43 @@
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand row navbar-dark bg-primary py-0 sticky-top">
-        <div class="container">
-            <a class="navbar-brand d-none d-lg-block col col-auto" href="/user/<%= user.username %>">
+    <nav class="navbar navbar-expand row navbar-dark bg-primary py-0 sticky-top" style="height: 60px">
+        <div class="container h-100">
+            <a class="navbar-brand d-none d-lg-block col col-auto" href="/home/<%= user.username %>">
                 <img src="/imgs/tinycard.PNG" alt="LOGO">
             </a>
             <!-- xem lai phan collapse -->
-            <div class="collapse navbar-collapse col col-auto">
+            <div class="collapse navbar-collapse col-auto p-0 h-100">
                 <!-- left -->
-                <div class="navbar-nav mr-sm-auto col-sm-auto col col-auto">
+                <div class="navbar-nav mr-sm-auto ">
                     <form class="form-inline d-sm-block d-none position-relative text-light">
                         <i class="fas fa-search position-absolute" style="left: 8px; top: 11px; font-size: larger; color: inherit"></i>
-                        <input class="form-control py-2 pl-5" type="search" placeholder="SEARCH" aria-label="Search">
+                        <input class="form-control py-2 pl-5" id="search" type="search" placeholder="SEARCH" aria-label="Search">
                     </form>
                 </div>
                 <!-- right -->
-                <ul class="nav col-auto col">
-                    <li class="nav-item my-0 py-3 order-2 d-block d-sm-none col col-auto">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-search"></i>
-                            <span class="d-none d-lg-inline">HOME</span>
-                        </a>
-                    </li>
-                    <li class="nav-item clicked my-0 py-3 order-2 col col-auto">
+                <ul class="nav h-100">
+                    <li class="media nav-item clicked justify-content-center align-items-center p-md-0 p-sm-4 p-3">
                         <a class="nav-link" href="#">
                             <i class="fas fa-home"></i>
-                            <span class="d-none d-lg-inline">HOME</span>
+                            <span class="d-none d-md-inline">HOME</span>
                         </a>
                     </li>
-                    <li class="nav-item order-3 py-3 px-2 col col-auto">
+                    <li class="media nav-item justify-content-center align-items-center p-sm-4 d-flex d-sm-none p-3">
+                        <a class="nav-link" href="#" data-target="#search">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
                         <a class="nav-link" href="2.3.html">
                             <i class="fas fa-plus"></i>
-                            <span class="d-none d-lg-inline">CREATE</span>
+                            <span class="d-none d-md-inline">CREATE</span>
                         </a>
                     </li>
-                    <li class="nav-item order-4 py-3 px-2 col col-auto">
+                    <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
                         <a class="nav-link" href="2.2.html">
                             <i class="far fa-user"></i>
-                            <span class="d-none d-lg-inline"><%=user.name.toUpperCase()%></span>
+                            <span class="d-none d-md-inline"><%=user.name.toUpperCase()%></span>
                         </a>
                     </li>
                 </ul>
@@ -64,52 +63,22 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="2.4.html">
-                            <div class="row" style="background-color: rgb(149, 21, 42);">
-                                <div class="col-sm-11 col-md-4 col-lg-6 offset-sm-1 cap ">
-                                    <h1>US state abbreviations</h1>
-                                    <p class="author">by Crystal Yoon</p>
-                                </div>
-                                <div class="col-sm-10 offset-2 col-md-5 offset-md-2 col-lg-4 offset-lg-1 p-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/ac487eecf9b558b778663710d38b7035" alt="Card image cap">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="carousel-inner" id="first-carousel">
+                    <% for (i = 0; i < 3 && decks.length >= 3; i++) { %>
                     <div class="carousel-item">
-                        <a href="2.4.html">
-                            <div class="row" style="background-color: rgb(177, 118, 137);">
-                                <div class="col-sm-11 col-md-4 col-lg-6 offset-sm-1 cap ">
-                                    <h1>Frog Anatomy </h1>
-                                    <p class="author">by TinyScience</p>
+                        <a href="" class="text-white">
+                            <div class="row position-relative" style="height: 225px">
+                                <div class="position-absolute deck-title" style="left: 60px; top:70px">
+                                    <h2 class="text-uppercase font-weight-bold" ><%= decks[i].name %></h2>
+                                    <p class="author">by <%= decks[i].author.name %></p>
                                 </div>
-                                <div class="col-sm-10 offset-2 col-md-5 offset-md-2 col-lg-4 offset-lg-1 p-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/e6a591df72c7f2686d4a5561260c5c03" alt="Card image cap">
-                                    </div>
+                                <div class="position-absolute img-ad-card" style="width: 150px; right: 60px; top: 30px;">
+                                    <img class="card-img-top h-100" src="<%= decks[i].themeImage %>" alt="Card image cap">
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="carousel-item">
-                        <a href="2.4.html">
-                            <div class="row" style="background-color: rgb(102, 116, 131);">
-                                <div class="col-sm-11 col-md-4 col-lg-6 offset-sm-1 cap ">
-                                    <h1>Chemistry colours</h1>
-                                    <p class="author">by Justin Schmidt</p>
-                                </div>
-                                <div class="col-sm-10 offset-2 col-md-5 offset-md-2 col-lg-4 offset-lg-1 p-4">
-                                    <div class="card">
-                                        <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/aba40980cfa910b14a6933b552f321cc" alt="Card image cap">
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <% } %>
                 </div>
                 <a class="carousel-control-prev d-none d-lg-flex" style="width: 5%" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon d-lg-block d-none" aria-hidden="true"></span>
@@ -161,15 +130,15 @@
                             <% for (var j = 0; j < 6; j++) { %>
                             <% if (trendingDecks[i + j]) { %> <%# can be deleted %>
                             <div class="card col-lg-2 col-md-3 col-4">
-                                <a href="" style="height: 176px">
+                                <a href="/deck/<%= decks[i + j]._id %>" style="height: 176px">
                                     <img class="card-img-top h-100"
                                          src="<%= trendingDecks[i + j].themeImage %>"
                                          alt="<%= trendingDecks[i + j].name %>">
                                 </a>
                                 <div class="card-body p-0 mt-4">
-                                    <a href="" class="card-title"><%= trendingDecks[i + j].name %></a>
+                                    <a href="/deck/<%= decks[i + j]._id %>" class="card-title"><%= trendingDecks[i + j].name %></a>
                                     <br>
-                                    <a href="" class="card-info">
+                                    <a href="/deck/<%= decks[i + j]._id %>" class="card-info">
                                         <i class="far fa-star"></i> <%= trendingDecks[i + j].favourites %></a>
                                 </div>
                             </div>
