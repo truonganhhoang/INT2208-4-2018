@@ -108,7 +108,7 @@ class SinhVien{
 - thiết kế một phương thức để sử dụng mà không cần hiểu chi tiết code bên trong gọi là INFORMATION HIDING 
 +++?color=hsla(20, 13%, 65%, .5)
 
-###Ví dụ
+### Ví dụ
 ![example]
 (http://images.slideplayer.com/27/8909444/slides/slide_3.jpg)
 +++?color=hsla(20, 13%, 65%, .5)
@@ -116,7 +116,6 @@ class SinhVien{
 - nhiều người cho rằng che giấu thông tin là về quy tắc còn đóng gói thiên về kỹ thuật
 
 ---?color=hsla(20, 13%, 65%, .5)
-
 # BIỂU DIỄN KỸ THUẬT
 (Technical Representations)
 +++?color=rgb(155, 255, 128)
@@ -157,7 +156,6 @@ class SinhVien{
 - Có thể có nhiều biểu diễn kỹ thuật khác nhau và mỗi biểu diễn kỹ thuật mang lại giá trị khác nhau.Một hệ thống có nhiều lớp biểu diễn kỹ thuật sẽ có sự minh bạch, rõ ràng trong việc xây dựng hệ thống.
 
 ---?color=rgba(255, 205, 228, .5) 
-
 # API
 
 - API là giao diện cho phép các phần tử của chương trình tương tác với nhau.
