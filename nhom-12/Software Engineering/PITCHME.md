@@ -1,5 +1,4 @@
 # Low level design(Thiết kế cấp thấp)
-![alt](
 ---
 
 ## Giới thiệu
