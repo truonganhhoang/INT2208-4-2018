@@ -104,39 +104,6 @@ a:hover{text-decoration: none;}
 .portfolio-icon{
 	padding:15px 0px;
 }
-
-#contact{
-	background:#ecf0f1;
-	padding:50px 0px;
-}
-.contact-title{
-	text-align: center;
-	padding-bottom: 50px;
-}
-.form-left{
-	padding:0px 40px;
-}
-.form-left input{
-	width:40%;
-	float:left;
-	margin-bottom: 20px;
-}
-.form-email{
-	margin-left:20%;
-}
-.form-left textarea{
-	margin-bottom: 20px;
-}
-.form-left button{
-	float:right;
-}
-.form-right{
-	padding:0px;
-}
-.form-right p{
-	line-height: 28px;
-}
-
 .footer{
 	background:#2d3e50;
 	padding:20px 0px;
@@ -150,8 +117,8 @@ a:hover{text-decoration: none;}
 }
 
 .info-card {
-    float: left;
-	margin: 10px;
+    	float: left;
+	margin: auto;
 	-webkit-perspective: 600px;
 }
 
@@ -187,4 +154,13 @@ a:hover{text-decoration: none;}
 
 .info-card:hover .front {
 	-webkit-transform: rotateY(180deg);
+}
+
+.body-grey {
+	background: #F7F7F7;
+}
+
+.bg-light {
+	background: #fff !important;
+	border-radius: 5%;
 }
