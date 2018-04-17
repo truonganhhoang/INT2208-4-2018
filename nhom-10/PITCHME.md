@@ -90,6 +90,7 @@ class SinhVien{
     }
 }
 ```
+
 ---?image=hsla(20, 13%, 65%, .5)
 
 ## CHE GIẤU THÔNG TIN
