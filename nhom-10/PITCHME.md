@@ -1,4 +1,3 @@
----
 # THIẾT KẾ CẤP CAO
 (HIGH LEVEL DESIGN)
 +++?color=rgb(255, 255, 128)
