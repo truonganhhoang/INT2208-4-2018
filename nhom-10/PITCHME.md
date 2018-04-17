@@ -3,7 +3,7 @@
 # THIẾT KẾ CẤP CAO
 - (HIGH LEVEL DESIGN)
 
-+++?image=(https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000027/87383661-mechanical-engineering-technology-vector-abstract-background-cybernetic-abstraction-with-innovative-.jpg)
++++?color=rgb(255, 255, 128)
 
 # SỰ TRỪU TƯỢNG
 - (Abstraction)
