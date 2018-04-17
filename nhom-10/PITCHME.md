@@ -156,6 +156,19 @@ class SinhVien{
 - Có thể có nhiều biểu diễn kỹ thuật khác nhau và mỗi biểu diễn kỹ thuật mang lại giá trị khác nhau.Một hệ thống có nhiều lớp biểu diễn kỹ thuật sẽ có sự minh bạch, rõ ràng trong việc xây dựng hệ thống.
 
 ---?color=rgba(255, 205, 228, .5) 
+## Động và tĩnh
+(Dynamic vs Static)
++++
+
+- Một hệ thống không chỉ cần có mã nguồn (source code) mà còn có cách thức hệ thống thi hành.
+- Chính sự thi hành mới thực sự tạo ra kết quả.
+- Người dùng chỉ quan tâm hệ thống thi hành như thế nào thay vì mã nguồn.
+  - => Cần đảm bảo rằng hệ thống hành sử đúng.
+
+- Do đó:
+  - Điều chúng ta cần quan tâm không chỉ là cấu trúc (tĩnh) mà còn là hành vi của hệ thống (động).
+
+---
 # API
 
 - API là giao diện cho phép các phần tử của chương trình tương tác với nhau.
