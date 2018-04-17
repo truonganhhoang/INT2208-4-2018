@@ -1,106 +1,111 @@
-
-### Low level design
-# Thiết kế cấp thấp
-
+# Low level design(Thiết kế cấp thấp)
+![alt](
 ---
 
-## Giới thiệu về mức thiết kế cấp thấp
-- Trước khi triển khai các thiết kế vững chắc, chúng ta cần suy nghĩ về những thiết kế ở mức độ thấp hơn. Các thiết kế sẽ được triển khai như thế nào khi được mã hóa bởi các nhà phát triển
-- Có 3 quy tắc phải luôn nhớ: 
-+ Gói gọn những thay đổi
-+ Đảm bảo việc lập trình giao diện
-+ Ưu tiên các thành phần thừa kế 
+## Giới thiệu
+- Gồm 3 quy tắc để vận hành
+1) Gói gọn những thay đổi 
+ - Áp dụng các quy tắc thiết kế trong thực hành
+ - Thiết kế hệ thống để nó có thể dễ dàng mở rộng,phù hợp với những yêu cầu trong tương lai 
 
+2) Đảm bảo việc thiết kế các giao diện
+ -Có thể tái sử dụng các phần trong hệ thống 
+ -Thu gọn hệ thống và dễ dàng sử dụng trong tương lai
 
+3) Ưu tiên các thành phần thừa kế
+- Các thành phần dễ phát triển hơn trong tương lai
+- Cho phép mềm dẻo, linh hoạt hơn tại runtime
 ---
-## Gói gọn những thay đổi 
--Thiết kế hệ thống sao cho nó dễ dàng được mở rộng trong tương lai và do có các lỗi bên trong hệ thống, hồi quy được đưa ra để giải quyết chúng trong không gian bán cục bộ
-<br>
--Để hệ thống có thể tồn tại lâu dài,chúng phải phù hợp với nhu cầu trong tương lai. Vì vậy, nên xây dựng các trừu tượng để có thể dễ dàng cải tiến hệ thống sau này
-<br>
-	+Rất khó khăn để xác định các nhu cầu trong tương lai.
-	<br>
-	+Không nên xây dựng hệ thống để hoàn thành mọi như cầu, vì nó khiến hệ thống khó hiểu
-	<br>
-	+Thêm quá nhiều trừu tượng gây ra những kết quả không mong muốn, nên cần xem xét những loại thay đổi trong tương lai bạn muốn hỗ trợ mà không cần thực hiện quá nhiều việc
-	
----
-## Đảm bảo việc lập trình giao diện
--Thiết kế giao diện giúp tách riêng việc thực hiện với thiết kế, và đây là mục tiêu cốt lõi cho hệ thống.
-<br>
-+Có thể tái sử dụng các bộ phận trong hệ thống mà không phải lo lắng về việc triển khai thực hiện các bộ phận đó.
-<br>
-+Nếu mã hóa, có thể tái sử dụng các gói giao diện mỏng mà không cần lo lắng về các chi tiết triển khai.
-<br>
--Các giao diện định nghĩa cho hệ thống một từ vựng cấp cao, giúp ta có thể hiểu sự kết hợp diễn ra trong hệ thống, và cao hơn là hiểu được cả hệ thống đó bằng cách nhìn vào nó
-<br>
--Các giao diện giúp thu gọn hệ thống 1 cách gọn gàng và dễ dàng sử dụng lại trong tương lai.
- 
----
-## Ưu tiên các thành phần thừa kế
--Giúp việc mã hóa tự dộng hơn tại runtime và dễ dàng thêm các tính năng mới.
-<br>
-+Trái ngược hơn so với các mẫu thiết kế khác khi tận dụng các thừa kế. 
-<br>
-+Các thành phần này dễ phát triển hơn trong tương lai vì mã hóa dựa trên thành phần mềm dẻo hơn mã hóa dựa trên thừa kế.
-<br>
--Cách hoạt động của thành phần là thông qua sự ủy thác
-<br>
-+Gọi 1 phương thức của đối tượng được cung cấp bởi 1 tham số, 1 trường trong 1 lớp. Và các phương thức ấy sẽ hoàn thành công việc cho bạn.
-<br>
--Các thành phần hướng bạn tới việc có nhiều lớp nhỏ hơn, các lớp có ràng buộc chặt chẽ hơn với bộ chức năng cụ thể
-<br>
--Cho phép mềm dẻo, linh hoạt hơn tại runtime bằng cách gọi các phương thức
 
----
 ## Khái quát các mẫu thiết kế
-### Những vấn đề của các mẫu thiết kế
--Các mẫu thiết kế cung cấp 1 bộ hướng dẫn giúp hệ thống tránh được những vấn đề có thể tiến triển trong tương lai
-<br>
--Tận dụng những hiểu biết về các mẫu thiết kế trước đó
-<br>
--Các mẫu thiết kế cũng giúp chúng ta xây dựng hệ thống với tính linh hoạt bằng nhiều cách khác nhau tùy vào tình hình
-<br>
--Đưa ra từ vựng chung và phổ biến nó giữa các nhà phát triển
-<br>
--Nhấn mạnh đến cấu trúc hệ thống sao cho chúng có thể được sử dụng lại nhiều hơn, điều này thường bị bỏ qua khi xây dựng hệ thống trong thực tế
+- Cung cấp 1 bộ quy tắc để hệ thống tránh được những vấn đề có thể tiến triển
+- Đưa ra 1 từ vựng chung để phổ biến giữa các nhà phát triển
+- Mỗi khi thêm một mẫu thiết kế tức là thêm một trừu tượng
+- Các mẫu thiết kế có 3 phần chính:
+1) Đều có 1 bộ ưu, nhược điểm chung liên kết với chúng
+	Phải chắc chắn có thể giải quyết các nhược điểm
+2) Có 1 từ vựng chung giữa các nhà phát triển, tránh việc rườm rà khi thảo luậ về các mẫu thiết kết
+3) Không nên áp dụng chúng 1 cách máy móc
+- Các mô hình nên được áp dụng trong các ngôn ngữ hướng đối tượng
+- Các mẫu thiết kế có 3 loại:
+1. Mẫu thiết kế khởi tạo: xây dựng object bằng cách mở rộng (extend)
+2. Mẫu thiết kế cấu trúc: tránh được những vấn đề tiến triển trong tương lai
+3. Mẫu thiết kế hành vi: giúp dễ dàng hơn trong việc thêm các hành vi vào hệ thống tại runtime
+---
+
+## Mẫu thiết kế singleton
+![alt](https://allaravel.com/wp-content/uploads/2017/07/singleton-pattern-uml.png)
+- Là mẫu thiết kế đơn giản nhất
+- là một mô hình thiết kế khởi tạo
+- Để sử dụng rộng rãi một đối tượng (object) trong hệ thống nhưng không truyền thể hiện (instance) của object tới nơi muốn sử dụng, hoặc chỉ muốn có một thể hiện duy nhất của object
+- Không thể gọi constructor vì nó được xây dựng riêng biệt (private), mà phải gọi phương thức tĩnh getInstance để trả về thể hiện của đối tượng
+- Nếu đối tượng chưa được gắn, hoặc các trường (field) là null, nó sẽ gọi hàm khởi tạo riêng
+- Sẽ phát sinh một số phức tạp nếu sử dụng nó với ngôn ngữ đa luồng  
+- Thường được sử dụng trong các mẫu thiết kế khác
+- Là một biến toàn cục, cần xem xét nếu muốn phổ biến trong toàn bộ thiết kế vì chúng tỏ ra yếu kém trong việc theo dõi tình trạng của hệ thống
+- Vai trò của phương thức tĩnh khá hạn chế và cố định
+- Khiến việc kiểm tra code khó hơn 
+---
+
+## Mẫu thiết kế chiến lược (Strategy)
+![alt](https://allaravel.com/wp-content/uploads/2017/07/Strategy-pattern-uml.png)
+- Có thể thay đổi cơ chế hoạt động của một ứng dụng dựa trên những nhu cầu mới
+- Cung cấp cơ chế cho việc tóm lược các thuật toán để cho phép mở rộng trong tương lai
+- Cung cấp một giao diện chiến lược mới để có thể tiến hành bổ sung các chức năng mới cho hệ thống
+- Chỉ phụ thuộc vào giao diện nên nó không tương tác với các trường hợp cụ thể
+- Những gì mà mẫu thiết kế làm là ẩn các thông tin cụ thể của triển khai thuật toán khỏi client
+- Tách rời các client ra khỏi những thay đổi của thuật toán trong hệ thống
+- Khi muốn bỏ sung thuật toán mới, chỉ cần triển khai các giao diện và thêm chúng
+- Các mãu thiết kế chiến lược có thể thay đổi để bổ sung đặc tính mới, chứ không phải thay đổi chúng
+- Bao gồm các mô hình chiến lược, các giao diện cấp cao (high-level) khai báo cấu trúc của các thuật toán sẽ được thực hiện theo mô hình
+- Khi đóng mô hình để sửa đổi, cần thông qua một ngữ cảnh. Đối tượng ngữ cảnh sẽ tham chiếu đến chiến lược di chuyển, và trường này sẽ không thay đổi tại runtime
+- Khi có yêu cầu từ client, các trường sẽ được chuyển tiếp vào chiến lược (strategy) thích hợp
+- Cần có một kỹ thuật để che dấu bối cảnh (context) và client khỏi các chiến lược mới để không vi phạm phần sửa đổi mở rộng
+---
+
+## Mẫu thiết kế trạng thái (State)
+![alt](https://i2.wp.com/www.dofactory.com/images/diagrams/net/proxy.gif)
+- Thay đổi hành vi của chương trình theo cơ chế động
+- Đóng gói trạng thái bên trong các đối tượng trạng thái và cho phép chúng quản lý sự chuyển đổi giữa các trạng thái khác nhau
+- Không phải sửa đổi các client khác nhau phụ thuộc vào trạng thái đã tồn tại trước đó
+- Dễ dàng mở rộng các tiện ích, bổ sung các trạng thái
+- Phản ứng đến sự thay đổi trạng thái tại runtime
+- Mang lại một cơ chế làm các trạng thái độc lập hơn và có thể tự chứa chính nó
+- Có thể nắm bắt các trạng thái chuyển của hệ thống tại runtime với một sơ đồ trạng thái
+- Đem lại sự linh hoạt trong việc quản lý chuyển đổi trạng thái của hệ thống
+---
+
+## Mẫu thiết kế trạng thái và chiến lược
 
 ---
--Trong nhiều trường hợp, các mẫu thiết kế không có ý nghĩa
-<br>
--Mỗi khi thêm vào mẫu thiết kế mới, cũng có nghĩa là thêm 1 trừu tượng mới
-<br>
-+Các trừu tượng làm hệ thống khó hiểu hơn với các nhà phát triển
-<br>
-+Những trừu tượng cho phép mở rộng một số khả năng. Nhưng nếu việc sử dụng chúng không bao giờ kết thúc, sẽ rất khó khăn để có thể hiểu và gỡ lỗi hệ thống
-<br>
--Tất cả các mẫu thiết kế đều có 3 phần chính, và chúng đang cố gắng giải quyết một vấn đề mang tính đặc thù, giúp cải thiện vấn đề ấy.
-<br>
--Tất cả các mẫu thiết kế đều dựa trên kinh nghiệm cũ của các nhà phát triển, nên chúng đều có 1 bộ ưu và nhược điểm riêng
-<br>
-+Nghĩ về các ưu điểm và xem chúng có đem lại lợi ích mà bạn quan tâm hay không
-<br>
-+Xem xét có đủ khả năng giải quyết những bất lợi xảy ra, vì mọi mô hình đều có những khuyết điểm
-<br>
-+Một trong những ưu điểm của các mẫu thiết kế là có 1 từ vựng chung, các nhà thiết kế có thể tập trung vào thiết kế của chính họ. Vì họ có thể làm rõ vai trò của từng lớp đặc thù trong mô hình của chính nó.
-<br>
-+Làm cho các cuộc thảo luận về việc thiết kế bớt rườm rà
 
+## Mẫu thiết kế mặt ngoài (Facade)
+![alt](http://aptech.fpt.edu.vn/images/CongNghe07-04-06_pic1_large.gif)
+- Là mô hình cấu trúc giúp client sử dụng hệ thống con dễ dàng hơn bằng cách làm giảm sự phức tạp của nó
+- Client không cần học cách sử dụng các kiểu khai báo một cách độc lập, mà chỉ cần tương tác với mặt ngoài của chính nó
+- Lấy các giao diện (interface) làm tham số (parameter) và trả lại các loaị giao diện trong kết quả, để sử dụng lại client mà không cần dùng toàn bộ hệ thống con
+- Việc tái sử dụng mã (code) cũng dễ dàng hơn
+- Về nguyên tắc thiết kế cấp thấp, nó khuyến khích sự kết hợp giữa client và hệ thống con
+- Về nguyên tắc thiết kế chắc chắn, nó vi phạm nguyên tắc trách nhiệm đơn lẻ, nên cần cân nhắc các loại hình hỗ trợ muốn có trong tương lai
 ---
--Không nên áp dụng các mẫu thiết kế 1 cách máy móc
-<br>
--Khi thêm 1 mẫu thiết kế vào hệ thống, nên tiến hành thiết kế nó trước hoặc tái cấu trúc nó 1 cách cẩn thận vào hệ thống hiện có
-<br>
--Phải hiểu được bạn đang cố gắng làm gì
-<br>
--Các mẫu thiết kế là một ngôn ngữ độc lập, chúng nên được ứng dụng cho các ngôn ngữ hướng đối tượng.
-<br>
--Các mẫu thiết kế chi làm 3 loại cấp cao:
-<br>
-+Các mẫu thiết kế sáng tạo, giúp xây dựng các vật thể bằng cách mở rộng
-<br>
-+Các mấu thiết kế cấu trúc, giúp cấu trúc của hệ thống tránh được những vấn đề sau này
-<br>
-+Các mẫu thiết kế hành vi, giúp dễ dàng hơn trong việc thêm các hành vi vào hệ thống tại runtime
+
+## Mẫu thiết kế trang trí (Decorator)
+![alt](https://allaravel.com/wp-content/uploads/2017/07/decorator-pattern-uml.png)
+- Cho phép thêm các kết hợp tùy ý của các hành vi vào các thể hiện riêng của đối tượng
+- Kết hợp các hành vi có thể có mà không cần biên soạn trước
+- Mục đích là gói các hành vi mới vào một thể hiện của đối tượng
+- Có khả năng tạo ra các hành vi mới tại runtime
+- Có sự phụ thuộc vào các thành phần, sử dụng chúng để mở rộng hệ thống
+- Cách gói các thành phần là tạo một decorator mới và truyền nó vào đối tượng đã tồn tại trong hàm khởi tạo (constructor)
+- Gói gọn và sắp xếp các hành vi một cách độc lập, mà không phải tạo ra các lớp phụ độc lập khác
+- Có thể thay đổi tại runtime
+- Hỗ trợ nguyên tắc mở/đóng (open/close)
+- Việc gỡ lỗi cũng cần đòi hỏi sự khéo léo, vì khó có thể thấy sự lớp đối tượng bên trong nó
+---
+
+## Mẫu thiết kế MVC (Model View Controller)
+![alt](https://i.stack.imgur.com/E5ynk.png)
+- 
+
 
 
