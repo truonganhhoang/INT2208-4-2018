@@ -49,7 +49,7 @@ app.get("/home/:username", isLoggedIn, function (req, res) {
     if (req.params.username !== req._passport.session.user) {
         return res.redirect("/home/" + req._passport.session.user);
     }
-    User.findOne({username: req._passport.session.user}, function (error, user) {
+    User.findOne({username: req._passport.session.user}).populate("learningData.deck").exec(function (error, user) {
         if (!error) {
             Deck.find({}).populate("author").exec(function (error1, decks) {
                 if (!error1) {
@@ -58,7 +58,7 @@ app.get("/home/:username", isLoggedIn, function (req, res) {
                 } else res.send("SOWETHING WENT WRONG WHEN LOAD DECKS DATA!")
             })
         } else res.send("SOMETHING WENT WRONG WHEN LOAD USERS DATA!")
-    })
+    });
 });
 
 // about page (duy)
@@ -159,3 +159,21 @@ app.listen(3000, function () {
 });
 
 // add decks
+
+// app.get("/api/deck/:id", function (req, res) {
+//     Deck.findOne({ _id: req.params.id }).populate("author").exec(function (error, deck) {
+//         if (!error) {
+//             User.findOne({ username: deck.author.username }).populate("learningData.deck").exec(function (error1, author) {
+//                 if (!error1) {
+//                     res.send(deck);
+//                 } else {
+//                     res.send({
+//                         err: "id_not_found",
+//                         message: "IO ERROR: deck id "
+//                     });
+//                     console.log(error1);
+//                 }
+//             })
+//         } else console.log(error);
+//     });
+// });

@@ -1,3 +1,7 @@
+var secondCarousel = $("#second-carousel");
+var firstCarousel = $("#first-carousel");
+
+
 mainEvent1();
 
 function mainEvent1() {
@@ -22,8 +26,16 @@ function mainEvent1() {
     });
 
     // chage active carousel
-    $("#first-carousel").children()[0].classList.add("active", "scroll");
-    $("#second-carousel").children()[0].classList.add("active", "scroll");
+    // first carousel
+    $(firstCarousel).children()[0].classList.add("active", "scroll");
+    if ($(firstCarousel).children().length < 2) {
+        $(firstCarousel).siblings().addClass("d-none");
+    } else $(firstCarousel).siblings().remove("d-none");
+    // second carousel
+    $(secondCarousel).children()[0].classList.add("active", "scroll");
+    if ($(secondCarousel).children().length < 2) {
+        $(secondCarousel).siblings().addClass("d-none");
+    } else $(secondCarousel).siblings().remove("d-none");
     $(".carousel").carousel({
         interval: 200000
     });

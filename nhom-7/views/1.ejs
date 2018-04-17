@@ -140,24 +140,25 @@
         <!-- next row -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" id="first-carousel">
-                <% var trendingDecks = [] %>
-                <% for (i = 0; i < decks.length; i += 6) { %>
+                <% var trendingDecks = [], lovedDecks = [] %>
+                <% for (i = 0; i < decks.length; i++ ) { if (decks[i].favourites > 500) lovedDecks.push(decks[i]) } %>
+                <% for (i = 0; i < lovedDecks.length; i += 6) { %>
                 <div class="carousel-item">
                     <div class="row pt-4" style="height: 300px">
                         <% for (var j = 0; j < 6; j++) { %>
-                        <% if (decks[i + j]) { %>
+                        <% if (lovedDecks[i + j]) { %>
                         <div class="card col-lg-2 col-md-3 col-4">
-                            <a href="/deck/<%= decks[i + j]._id %>" style="height: 176px">
+                            <a href="/deck/<%= lovedDecks[i + j]._id %>" style="height: 176px">
                                 <img class="card-img-top h-100"
-                                     src="<%= decks[i + j].themeImage %>"
-                                     alt="<%= decks[i + j].name %>">
+                                     src="<%= lovedDecks[i + j].themeImage %>"
+                                     alt="<%= lovedDecks[i + j].name %>">
                             </a>
                             <div class="card-body p-0 mt-4">
-                                <a href="/deck/<%= decks[i + j]._id %>" class="card-title"><%= decks[i + j].name %></a>
+                                <a href="/deck/<%= lovedDecks[i + j]._id %>" class="card-title"><%= lovedDecks[i + j].name %></a>
                                 <br>
-                                <a href="/deck/<%= decks[i + j]._id %>" class="card-info">
+                                <a href="/deck/<%= lovedDecks[i + j]._id %>" class="card-info">
                                     <i class="far fa-star"></i> <%= decks[i + j].favourites %>
-                                    <% if (decks[i + j].favourites > 1000)  trendingDecks.push(decks[i + j])%>
+                                    <% if (lovedDecks[i + j].favourites > 1000)  trendingDecks.push(lovedDecks[i + j])%>
                                 </a>
                             </div>
                         </div>
@@ -168,11 +169,11 @@
                 <% } %>
             </div>
             <!-- arrow -->
-            <a class="carousel-control-prev" style="width: 1%" href="#carouselExampleControls" role="button"
+            <a class="carousel-control-prev h-75" style="width: 1%" href="#carouselExampleControls" role="button"
                data-slide="prev">
                 <i class="fas fa-chevron-left mr-5"></i>
             </a>
-            <a class="carousel-control-next" style="width: 1%" href="#carouselExampleControls" role="button"
+            <a class="carousel-control-next h-75" style="width: 1%" href="#carouselExampleControls" role="button"
                data-slide="next">
                 <i class="fas fa-chevron-right ml-5"></i>
             </a>
@@ -210,10 +211,10 @@
                 <% } %>
             </div>
             <!-- arrow -->
-            <a class="carousel-control-prev" style="width: 1%" href="#carousel-1" role="button" data-slide="prev">
+            <a class="carousel-control-prev h-75" style="width: 1%" href="#carousel-1" role="button" data-slide="prev">
                 <i class="fas fa-chevron-left mr-5"></i>
             </a>
-            <a class="carousel-control-next" style="width: 1%" href="#carousel-1" role="button" data-slide="next">
+            <a class="carousel-control-next h-75" style="width: 1%" href="#carousel-1" role="button" data-slide="next">
                 <i class="fas fa-chevron-right ml-5"></i>
             </a>
         </div>

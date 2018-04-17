@@ -10,7 +10,9 @@ var DeckSchema = new mongoose.Schema({
     themeImage: String,
     cards: [{
         front: String,
-        back: String
+        back: [
+            String
+        ]
     }],
     favourites: Number
 });

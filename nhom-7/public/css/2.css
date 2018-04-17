@@ -75,6 +75,11 @@ h4 + a:hover {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #c9cacc;
+}
+
 #carouselExampleIndicators, .jumbotron {
     border-radius: 18px !important;
 }
