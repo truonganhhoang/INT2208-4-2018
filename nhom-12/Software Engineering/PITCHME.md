@@ -4,16 +4,16 @@
 ## Giới thiệu
 - Gồm 3 quy tắc để vận hành
 1) Gói gọn những thay đổi 
- - Áp dụng các quy tắc thiết kế trong thực hành
- - Thiết kế hệ thống để nó có thể dễ dàng mở rộng,phù hợp với những yêu cầu trong tương lai 
+ 	- Áp dụng các quy tắc thiết kế trong thực hành
+ 	- Thiết kế hệ thống để nó có thể dễ dàng mở rộng,phù hợp với những yêu cầu trong tương lai 
 
 2) Đảm bảo việc thiết kế các giao diện
- -Có thể tái sử dụng các phần trong hệ thống 
- -Thu gọn hệ thống và dễ dàng sử dụng trong tương lai
+ 	- Có thể tái sử dụng các phần trong hệ thống 
+ 	- Thu gọn hệ thống và dễ dàng sử dụng trong tương lai
 
 3) Ưu tiên các thành phần thừa kế
-- Các thành phần dễ phát triển hơn trong tương lai
-- Cho phép mềm dẻo, linh hoạt hơn tại runtime
+	- Các thành phần dễ phát triển hơn trong tương lai
+	- Cho phép mềm dẻo, linh hoạt hơn tại runtime
 ---
 
 ## Khái quát các mẫu thiết kế
@@ -27,9 +27,9 @@
 3) Không nên áp dụng chúng 1 cách máy móc
 - Các mô hình nên được áp dụng trong các ngôn ngữ hướng đối tượng
 - Các mẫu thiết kế có 3 loại:
-1. Mẫu thiết kế khởi tạo: xây dựng object bằng cách mở rộng (extend)
-2. Mẫu thiết kế cấu trúc: tránh được những vấn đề tiến triển trong tương lai
-3. Mẫu thiết kế hành vi: giúp dễ dàng hơn trong việc thêm các hành vi vào hệ thống tại runtime
+	- Mẫu thiết kế khởi tạo: xây dựng object bằng cách mở rộng (extend)
+	- Mẫu thiết kế cấu trúc: tránh được những vấn đề tiến triển trong tương lai
+	- Mẫu thiết kế hành vi: giúp dễ dàng hơn trong việc thêm các hành vi vào hệ thống tại runtime
 ---
 
 ## Mẫu thiết kế singleton
@@ -75,7 +75,17 @@
 ---
 
 ## Mẫu thiết kế trạng thái và chiến lược
-
+- Giống nhau:
+	- Về cấu trúc là cơ bản giống nhau, cả 2 cùng sử dụng thừa kế
+	- Tách riêng client khỏi những thay đổi trong tương lai
+- Khác nhau:
+1)
+	- Mẫu thiết kế chiến lược sử dụng giao diện để gói gọn các thuật toán, có thể mở rộng chúng bằng cách triển khai các thuật toán mới
+  	- Mẫu thiết kế trạng thái sử dụng giao diện trạng thái để nắm bắt chúng
+2) 
+	- Mẫu thiết kế trạng thái cho phép các trạng thái tự động thay đổi tại runtime. Nó sử dụng tham chiếu ngữ cảnh để gọi trạng thái thiết lập
+	- Mẫu thiết kế chiến lược với các thuật toán được thiết lập khi bắt đầu và được sử dụng trong suốt quá trình thực hiện của hệ thống
+- Khi bạn muốn chuyển tiếp nhiều, hãy sử dụng mẫu thiết kế trạng thái. Còn khi muốn sử dụng cùng một chiến lược (strategy) trong suốt quá trình thực hiện, hãy sử dụng mẫu thiết kế chiến lược.
 ---
 
 ## Mẫu thiết kế mặt ngoài (Facade)
@@ -104,7 +114,7 @@
 
 ## Mẫu thiết kế MVC (Model View Controller)
 ![alt](https://i.stack.imgur.com/E5ynk.png)
-- 
+
 
 
 
