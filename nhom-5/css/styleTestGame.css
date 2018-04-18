@@ -1,4 +1,6 @@
-
+.container{
+  position: relative;
+}
 
 .main-container {
   background-color: #33CCFE;
@@ -76,4 +78,24 @@
   width: 400px;
   height: 50px;
   margin-bottom: 10px;
+}
+#chucmung{
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+#header{
+  position: relative;
+}
+.item div{
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  left: 200px;
+}
+.carousel{
+  position: relative;
+}
+.div{
+  position: relative;
 }

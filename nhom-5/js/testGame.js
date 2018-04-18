@@ -52,13 +52,17 @@
   var incorrect = 0;
   var ans;
   var started = false;
+  var rightSong = new Audio();
+  rightSong.type = 'audio/mpeg';
+  rightSong.src = 'music/dung.mp3';
+  var wrongSong = new Audio();
+  wrongSong.type = 'audio/mpeg';
+  wrongSong.src = 'music/sai.mp3';
   function incrementQuestion(){
     if(index==4) {
-      index = 0;
-      correct = 0;
-      incorrect = 0;
-      $("#wins").html("Correct "+ correct);
-      $("#losses").html("Wrong! "+ incorrect);
+      setTimeout(function(){
+        window.location.href = "2.2.html";
+      },1000);
     }else index++;
   }
 
@@ -112,16 +116,21 @@
     if(started){
       if (clickIdentifier == ans) {
       // console.log('true!');
+        rightSong.play();
+        
         clickSwitch = false;
         correct++;
         $("#wins").html("Correct " + correct);
-            window.onbeforeunload = function(event)
-            {
-                return confirm("Confirm refresh");
-            };
-        incrementQuestion();
-        populateQuestionArea();
+            // window.onbeforeunload = function(event)
+            // {
+            //     return confirm("Confirm refresh");
+            // };
+        setTimeout(function(){
+          incrementQuestion();
+          populateQuestionArea();
+        },1000);
         } else {
+        wrongSong.play();
         clickSwitch = false;
         incorrect++;
         $("#losses").html("Wrong! " + incorrect);

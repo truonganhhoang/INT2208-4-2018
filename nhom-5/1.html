@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>2</title>
+	<title>1</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA_Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/styleLearn.css" rel="stylesheet">
-	<link href="css/styleTestGame.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styleTestGame.css">
+
 </head>
 <body>
 	<div id="header">
@@ -37,29 +38,35 @@
 	        	</div><!--/.nav-collapse -->
 	        </div>
     	</nav> 
-
-	</div>
-	
-
-	<div class ="content">
-		<div class="learn" align="center">
-			  <div class="card" onclick="flip()" align="center">
-			    <div class="front">learn</div>
-			    <div class="back">học</div>
-			  </div>
+    </div>
+	<div class="container">
+		<div id="wrapper_carousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="item active"><a href="2.html"><img src="images/laputa1.jpg"></a></div>
+				<div class="item"><a href="2.html"><img src="images/laputa2.jpg"></div>
+				<div class="item"><a href="2.html"><img src="images/laputa3.jpg"></div>
+			</div>
 		</div>
+		<a class="left carousel-control" href="#wrapper_carousel" role="button" data-slide="prev">
 
-		<div class="continueButton" align="center">
-			<button type="button" class="btn btn-primary" onclick="change()">Continue</button>
-		</div>
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+		<span class="sr-only">Previous</span>
+
+		</a>
+
+		<a class="right carousel-control" href="#wrapper_carousel" role="button" data-slide="next">
+
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+		<span class="sr-only">Next</span>
+
+		</a>
 	</div>
 
-
-	<div id="footer" align="center">
-		<!-- <div class="panel">Nhom 5</div> -->
-	</div>
 	<script src="js/jquery-1.11.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/learn.js"></script>
+	<script src="js/testGame.js"></script>
 </body>
 </html>
