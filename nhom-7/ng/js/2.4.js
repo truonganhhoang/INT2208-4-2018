@@ -150,3 +150,4 @@ function takeQuestion() {
 function randomQuestion() {
     return Math.floor(Math.random() * 2 + 1);
 }
+

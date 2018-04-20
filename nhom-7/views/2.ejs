@@ -21,7 +21,7 @@
                 <div class="navbar-nav mr-sm-auto ">
                     <form class="form-inline d-sm-block d-none position-relative text-light">
                         <i class="fas fa-search position-absolute" style="left: 8px; top: 11px; font-size: larger; color: inherit"></i>
-                        <input class="form-control py-2 pl-5" id="search" type="search" placeholder="SEARCH" aria-label="Search">
+                        <input class="form-control py-2 pl-5" style="width: 271px" id="search" type="search" placeholder="SEARCH" aria-label="Search">
                     </form>
                 </div>
                 <!-- right -->
@@ -38,13 +38,13 @@
                         </a>
                     </li>
                     <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="/create">
                             <i class="fas fa-plus"></i>
                             <span class="d-none d-md-inline">CREATE</span>
                         </a>
                     </li>
                     <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="/profile">
                             <i class="far fa-user"></i>
                             <span class="d-none d-md-inline"><%=user.name.toUpperCase()%></span>
                         </a>
@@ -149,17 +149,17 @@
                     <div class="carousel-item">
                         <div class="row pt-4" style="height: 300px">
                             <% for (var j = 0; j < 6; j++) { %>
-                            <% if (trendingDecks[i + j]) { %> <%# can be deleted %>
+                            <% if (trendingDecks[i + j]) { %> <%# can delete %>
                             <div class="card col-lg-2 col-md-2 col-sm-3 col-4 text-white">
-                                <a href="/deck/<%= decks[i + j]._id %>" style="height: 166px">
+                                <a href="/deck/<%= trendingDecks[i + j]._id %>" style="height: 166px">
                                     <img class="card-img-top h-100 trending-deck"
                                          src="<%= trendingDecks[i + j].themeImage %>"
                                          alt="<%= trendingDecks[i + j].name %>">
                                 </a>
                                 <div class="card-body p-0 mt-4">
-                                    <a href="/deck/<%= decks[i + j]._id %>" class="card-title"><%= trendingDecks[i + j].name %></a>
+                                    <a href="/deck/<%= trendingDecks[i + j]._id %>" class="card-title"><%= trendingDecks[i + j].name %></a>
                                     <br>
-                                    <a href="/deck/<%= decks[i + j]._id %>" class="card-info">
+                                    <a href="/deck/<%= trendingDecks[i + j]._id %>" class="card-info">
                                         <i class="far fa-star"></i> <%= trendingDecks[i + j].favourites %></a>
                                 </div>
                             </div>

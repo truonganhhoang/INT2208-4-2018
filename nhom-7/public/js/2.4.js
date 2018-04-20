@@ -1,41 +1,45 @@
-var choices = document.querySelectorAll(".multipleChoice img"); // multiple choices
-var progress = document.getElementsByClassName("progress-bar")[0]; // progress bar
-var rightAnswers1 = document.getElementsByTagName("h4"); // right answers for question-1
-var rightAnswers2 = document.querySelectorAll(".question-2 img"); // right answers for question-2
-var questions1 = document.getElementsByClassName("question-1"); // question type 1
-var questions2 = document.getElementsByClassName("question-2"); // question type 2
-var input = document.querySelectorAll(".question-2 input"); // answer box for question-2
-var homeLink = document.querySelectorAll("li a")[1]; // home button
-var escapeBtn = document.getElementsByClassName("escape-btn")[0]; // x button
-var learningCards = document.getElementsByClassName("learning"); // learning cards
-var soundBtns = document.getElementsByClassName("sound-btn"); // sound buttons
+var choices         = document.querySelectorAll(".multipleChoice img"); // multiple choices
+var progress        = document.getElementsByClassName("progress-bar")[0]; // progress bar
+var rightAnswers1   = document.getElementsByTagName("h4"); // right answers for question-1
+var rightAnswers2   = document.querySelectorAll(".question-2 img"); // right answers for question-2
+var rightAnswers2_1 = document.querySelectorAll(".question-2 .h4"); // right answers for question-2_1
+var questions1      = document.getElementsByClassName("question-1"); // question type 1
+var questions2      = document.getElementsByClassName("question-2"); // question type 2
+var input           = document.querySelectorAll(".question-2 input"); // answer box for question-2
+var homeLink        = document.querySelectorAll("li a")[0]; // home button
+var escapeBtn       = document.getElementsByClassName("escape-btn")[0]; // x button
+var learningCards   = document.getElementsByClassName("learning"); // learning cards
+var soundBtns       = document.getElementsByClassName("sound-btn"); // sound buttons
+
 var isFront = true; // is front side (learning card)
 // answer counter (used for counting answer in process)
 var countAnswer1 = 0;
 var countAnswer2 = 0;
 // used for counting learning cards
 var countCards = 0;
-// trial
-var sounds = [{
-    name: "nose",
-    sound: new Audio("https://dictionary.cambridge.org/media/english/us_pron/n/noe/noes_/noes.mp3")
-}, {
-    name: "trunk",
-    sound: new Audio("https://dictionary.cambridge.org/media/english/us_pron/t/tru/trunk/trunk.mp3")
-},{
-    name: "head",
-    sound: new Audio("https://dictionary.cambridge.org/media/english/us_pron/h/hea/head_/head.mp3")
-}];
 
 main();
 
 function main() {
+    // add some style for choices
+    if (choices.length === 9) {
+        for (i = 0; i < choices.length; i+=3) {
+            choices[i].parentElement.classList.add("left");
+            choices[i].parentElement.parentElement.classList.add("ml-5");
+            choices[i + 2].parentElement.classList.add("right");
+        }
+    } else {
+        for (i = 0; i < choices.length; i+=2) {
+            choices[i].parentElement.classList.add("left");
+            choices[i].parentElement.parentElement.classList.add("ml-5");
+        }
+    }
     // add event for choices
     for (var i = 0; i < choices.length; i++) {
         choices[i].addEventListener("click", function () {
             if (countAnswer1 < questions1.length) {
                 if (this.getAttribute("alt") === rightAnswers1[countAnswer1].textContent) {
-                    progress.style.width = (String)((100 / (rightAnswers2.length + rightAnswers1.length)) * (countAnswer1 + countAnswer2 + 1) + "%");
+                    progress.style.width = (String)((100 / (rightAnswers2_1.length + rightAnswers2.length + rightAnswers1.length)) * (countAnswer1 + countAnswer2 + 1) + "%");
                     countAnswer1++;
                     // move to next question
                     takeQuestion();
@@ -56,54 +60,63 @@ function main() {
             this.style.boxShadow = "0 2px 9px rgba(0,0,0,.1)";
         })
     }
-    // add event for input
-    for (var i = 0; i < input.length; i++) {
+    // question type text in - if it's short
+    // fix
+    for (i = 0; i < input.length; i++) {
         input[i].addEventListener("keyup", function (event) {
             if (event.keyCode === 13 && countAnswer2 < questions2.length) {
-                if (this.value === rightAnswers2[countAnswer2].getAttribute("alt")) {
-                    progress.style.width = (String)((100 / (rightAnswers2.length + rightAnswers1.length)) * (countAnswer1 + countAnswer2 + 1) + "%");
-                    countAnswer2++;
-                    // move to next question
-                    takeQuestion();
+                if (rightAnswers2.length) {
+                    if (this.value.toLowerCase() === rightAnswers2[countAnswer2].getAttribute("alt").toLowerCase()) {
+                        progress.style.width = (String)((100 / (rightAnswers2_1.length + rightAnswers2.length + rightAnswers1.length)) * (countAnswer1 + countAnswer2 + 1) + "%");
+                        countAnswer2++;
+                        // move to next question
+                        takeQuestion();
+                    } else {
+                        this.style.borderBottom = "2px solid #ca6767";
+                    }
                 } else {
-                    this.style.borderBottom = "2px solid #ca6767";
+                    if (this.value.toLowerCase() === rightAnswers2_1[countAnswer2].title.toLowerCase()) {
+                        progress.style.width = (String)((100 / (rightAnswers2_1.length + rightAnswers2.length + rightAnswers1.length)) * (countAnswer1 + countAnswer2 + 1) + "%");
+                        countAnswer2++;
+                        // move to next question
+                        takeQuestion();
+                    } else {
+                        this.style.borderBottom = "2px solid #ca6767";
+                    }
                 }
             }
         })
     }
-    // add event for escape button
+    // quit and redirect to home page
     escapeBtn.addEventListener("click", function () {
         homeLink.click();
     });
-    // add event for learning cards
-    for (var i = 0; i < learningCards.length; i++) {
-        learningCards[i].children[1].addEventListener("click", function () {
-            if (isFront) {
-                this.children[1].children[0].click();
-                this.style.transform = "rotateY(180deg)";
-            } else {
-                this.style.transform = "rotateY(0deg)";
-            }
-            this.children[0].classList.toggle("d-none");
-            this.children[1].classList.toggle("d-none");
-            isFront = !isFront;
-        });
-        // add event for continue-button
+    // rotate to the back
+    $(learningCards).find(".front").click(function () {
+        $(this).parents()[1].classList.add("hover");
+        $($(this).parents()[0]).find(".sound-btn").click();
+        isFront = !isFront;
+    });
+    // rotate to the front
+    $(learningCards).find(".back > div").click(function () {
+        $(this).parents()[2].classList.remove("hover");
+        isFront = !isFront;
+    });
+
+    for (i = 0; i < learningCards.length; i++) {
+        // move to next card
         learningCards[i].children[2].addEventListener("click", function () {
             countCards++;
             nextCard();
         });
     }
-    // add event for sound buttons
-    for (var i = 0; i < soundBtns.length; i++) {
+
+    for (i = 0; i < soundBtns.length; i++) {
+        // speak the word if it's short, on the contrary -> don't
+        // fix
         soundBtns[i].addEventListener("click", function () {
-            // search matched sound
-            for (var i = 0; i < sounds.length; i++) {
-                if (this.parentElement.children[1].textContent === sounds[i].name) {
-                    sounds[i].sound.play();
-                }
-            }
-            this.parentElement.parentElement.click();
+            responsiveVoice.speak(this.parentElement.children[1].textContent, "UK English Male");
+            console.clear();
         })
     }
 
@@ -112,7 +125,7 @@ function main() {
     nextCard();
     // set time out after finishing lesson
     setInterval(function () {
-        if (countAnswer2 === rightAnswers2.length && countAnswer1 === rightAnswers1.length) homeLink.click();
+        if (countAnswer2 === (rightAnswers2.length + rightAnswers2_1.length) && countAnswer1 === rightAnswers1.length) homeLink.click();
     }, 2500);
 }
 
@@ -129,6 +142,7 @@ function nextQuestion(questions_1, questions_2, countAnswer_1, countAnswer_2) {
 }
 
 // move to next card
+// or take question randomly using currentCard variable to check the range of question
 function nextCard() {
     for (var i = 0; i < learningCards.length; i++) {
         if (i === countCards) {

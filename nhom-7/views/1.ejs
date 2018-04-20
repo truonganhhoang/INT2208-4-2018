@@ -192,15 +192,15 @@
                         <% for (j = 0; j < 6; j++) { %>
                         <% if (trendingDecks[i + j] && trendingDecks[i + j].favourites > 1000) { %> <%# can be deleted %>
                         <div class="card col-lg-2 col-md-3 col-4">
-                            <a href="/deck/<%= decks[i + j]._id %>" style="height: 176px">
+                            <a href="/deck/<%= trendingDecks[i + j]._id %>" style="height: 176px">
                                 <img class="card-img-top h-100"
                                      src="<%= trendingDecks[i + j].themeImage %>"
                                      alt="<%= trendingDecks[i + j].name %>">
                             </a>
                             <div class="card-body p-0 mt-4">
-                                <a href="/deck/<%= decks[i + j]._id %>" class="card-title"><%= trendingDecks[i + j].name %></a>
+                                <a href="/deck/<%= trendingDecks[i + j]._id %>" class="card-title"><%= trendingDecks[i + j].name %></a>
                                 <br>
-                                <a href="/deck/<%= decks[i + j]._id %>" class="card-info">
+                                <a href="/deck/<%= trendingDecks[i + j]._id %>" class="card-info">
                                     <i class="far fa-star"></i> <%= trendingDecks[i + j].favourites %></a>
                             </div>
                         </div>

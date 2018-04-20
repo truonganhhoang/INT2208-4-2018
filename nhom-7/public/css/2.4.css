@@ -1,5 +1,4 @@
 div form input {
-    width: 20rem !important;
     border-radius: 8px !important;
     font-weight: bold;
     background-color: #6ad8fc !important;
@@ -47,6 +46,26 @@ body {
     border-radius: 18px;
 }
 
+a, #language {
+    color: #32cdff;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #b5b6b7;
+}
+
+footer a:hover {
+    color: #b5b6b7;
+}
+
+
 .left {
     transform: rotate(-4deg);
 }
@@ -89,23 +108,49 @@ body {
     background-color: inherit;
 }
 
+.card-container {
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+/* flip the pane when hovered */
+.card-container:not(.manual-flip):hover .card,
+.card-container.hover.manual-flip .card{
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
 /* flip speed goes here */
-.flipper {
-    transition: 0.5s;
+.card {
+    -webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    -o-transition: -o-transform .5s;
+    transition: transform .5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    border-radius: 18px;
 }
 
-/* hide back of pane during swap - Ẩn các mặt sau (back face) khi hoán chuyển các mặt */
+/* hide back of pane during swap */
 .front, .back {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
     backface-visibility: hidden;
-}
-
-/* front pane, placed above back */
-.front {
-    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* back, initially hidden pane */
 .back {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
 }

@@ -27,8 +27,8 @@ function main() {
         $(secondCarousel).siblings().addClass("d-none");
     } else $(secondCarousel).siblings().remove("d-none");
     // third carousel
-    $(thirdCarousel).children()[0].classList.add("active", "scroll");
-    if ($(thirdCarousel).children().length < 2) {
+    if ($(thirdCarousel).children().length) $(thirdCarousel).children()[0].classList.add("active", "scroll");
+        if ($(thirdCarousel).children().length < 2) {
         $(thirdCarousel).siblings().addClass("d-none");
     } else $(thirdCarousel).siblings().remove("d-none");
     $("#carousel-2").carousel({
@@ -45,7 +45,7 @@ function checkWindowSize() {
 
 // change nav-bar, deck-title font-size and image size according to screen size
 function changeToFit() { //fix
-    if (($(window).width() < 576)) {
+    if (($(window).width() < 559)) {
         for (i = 0; i < trendingDecks.length; i++) {
             trendingDecks[i].parentElement.style.height = "134px";
         }
@@ -57,15 +57,15 @@ function changeToFit() { //fix
             changeFlowItemToFitSmallWindow(i)
         }
         // nav bar
+        removeAbsolutePosition();
         userBar.style.width = "100%";
         for (i = 0; i < userBar.children.length; i++) {
             userBar.children[i].style.width = String($(window).width() / 4) + "px";
         }
     } else if (($(window).width() < 700)) {
         // nav bar
-        userBar.classList.remove("position-absolute");
-        userBar.style.right = "0px";
-        userBar.style.width = "";
+        spreadNavBar();
+        removeAbsolutePosition();
         for (i = 0; i < trendingDecks.length; i++) {
             trendingDecks[i].parentElement.style.height = "134px";
         }
@@ -74,9 +74,7 @@ function changeToFit() { //fix
         }
         // carousel
         for (i = 0; i < authorDeck.length; i++) {
-            authorDeck[i].style.fontSize = "15px";
-            deckTitle[i].children[0].classList.remove("h5");
-            deckTitle[i].style.maxWidth = "50%";
+            spreadCarousel(i);
             changeFlowItemToFitSmallWindow(i)
         }
     } else if ($(window).width() < 977) {
@@ -84,10 +82,12 @@ function changeToFit() { //fix
             trendingDecks[i].parentElement.style.height = "134px";
         }
         // nav bar
+        spreadNavBar();
         userBar.classList.add("position-absolute");
         userBar.style.right = "-80px";
         // carousel
         for (i = 0; i < imageFlowCard.length; i++) {
+            spreadCarousel(i);
             changeFlowItemToFitSmallWindow(i);
         }
     } else if ($(window).width() < 1200) {
@@ -96,18 +96,23 @@ function changeToFit() { //fix
             trendingDecks[i].parentElement.style.height = "134px";
         }
         // navbar
-        userBar.classList.remove("position-absolute");
-        userBar.style.right = "0px";
+        spreadNavBar();
+        removeAbsolutePosition();
         for (var i = 0; i < imageFlowCard.length; i++) {
             // carousel
+            spreadCarousel(i);
             changeFlowItemToFitLargeWindow(i);
         }
     } else {
+        // navbar
+        spreadNavBar();
+        removeAbsolutePosition();
         for (i = 0; i < trendingDecks.length; i++) {
             trendingDecks[i].parentElement.style.height = "166px";
         }
         for (i = 0; i < imageFlowCard.length; i++) {
             // carousel
+            spreadCarousel(i);
             changeFlowItemToFitLargeWindow(i);
         }
     }
@@ -142,4 +147,25 @@ function changeFlowItemToFitLargeWindow(i) {
     imageFlowCard[i].style.top = "30px";
     deckTitle[i].style.maxWidth = "50%";
 
+}
+
+// set nav bar back fit bigger size (> 576px)
+function spreadNavBar() {
+    for (i = 0; i < userBar.children.length; i++) {
+        userBar.children[i].style.width = "";
+    }
+    userBar.style.width = "";
+}
+
+// remove absolute position for nav bar
+function removeAbsolutePosition() {
+    userBar.classList.remove("position-absolute");
+    userBar.style.right = "0px";
+}
+
+// change carousel elements fit the bigger window size
+function spreadCarousel(i) {
+    authorDeck[i].style.fontSize = "15px";
+    deckTitle[i].children[0].classList.remove("h5");
+    deckTitle[i].style.maxWidth = "50%";
 }
