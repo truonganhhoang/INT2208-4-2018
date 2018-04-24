@@ -46,6 +46,27 @@ body {
     border-radius: 18px;
 }
 
+.multipleChoice-2 {
+    border-radius: 18px;
+    height: 86px;
+    font-size: 17px;
+    white-space: normal ;
+    border: 2.5px solid #89e4ff;
+    color: #32cdff;
+    background: transparent;
+}
+
+.multipleChoice-2:hover, .multipleChoice-2:focus {
+    border: 2.5px solid #0bbdff !important;
+    background: transparent !important;
+    color: #32cdff !important;
+}
+
+.multipleChoice-2:disabled:hover {
+    border-color: #ca6767 !important;
+    color: #ca6767 !important;
+}
+
 a, #language {
     color: #32cdff;
     font-weight: bold !important;
@@ -64,7 +85,6 @@ footer a {
 footer a:hover {
     color: #b5b6b7;
 }
-
 
 .left {
     transform: rotate(-4deg);

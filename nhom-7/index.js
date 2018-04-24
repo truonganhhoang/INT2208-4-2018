@@ -93,6 +93,93 @@ app.get("/learn/:deckID", isLoggedIn, function (req, res) {
     });
 });
 
+// update learning data route
+app.post("/learn/:deckID", isLoggedIn, function (req, res) {
+    User.findOne({username: req._passport.session.user}, function (error, user) {
+        if (!error) {
+            // update learningData when deck is deleted!
+            Deck.findById(req.params.deckID, function (error, deck) {
+                if (!error && deck) {
+                    var found = false;
+                    var position;
+                    // get data updated from request
+                    var updatedData = Object.entries(req.body);
+                    for (i = 0; i < updatedData.length; i++) {
+                        updatedData[i][1] = updatedData[i][1].split(",");
+                    }
+                    // found deck in learning data
+                    if (user.learningData.length) {
+                        user.learningData.forEach(function (data, index) {
+                            if (String(data.deck) === String(deck._id)) {
+                                found = true;
+                                position = index;
+                            }
+                        });
+                    }
+                    // not found deck in learning data
+                    if (!found) {
+                        user.learningData.push({
+                            favourite: false,
+                            deck: deck
+                        });
+                        position = user.learningData.length - 1;
+                    }
+                    // update new progress user have just made
+                    for (var i = 0; i < updatedData.length; i++) {
+                        var existed = false;    // check if card existed in old progress
+                        // if data ever existed (cards in deck weren't edited) - check card's id and front card
+                        for (var j = 0; j < user.learningData[position].progress.length; j++) {
+                            if (user.learningData[position].progress[j].cardId === updatedData[i][0] &&
+                                user.learningData[position].progress[j].front === updatedData[i][1][0])
+                            {
+                                user.learningData[position].progress[j].correct = updatedData[i][1][1];
+                                existed = true;
+                            } // check front card if id not match
+                            else if (user.learningData[position].progress[j].front === updatedData[i][1][0]) {
+                                user.learningData[position].progress[j].correct = updatedData[i][1][1];
+                                user.learningData[position].progress[j].cardId = updatedData[i][0];
+                                existed = true;
+                            }
+                        }
+                        if (existed) continue;
+                        // new data
+                        user.learningData[position].progress.push({
+                            front: updatedData[i][1][0],
+                            cardId: updatedData[i][0],
+                            correct: Number(updatedData[i][1][1])
+                        });
+                    }
+                    // check if old cards (those were deleted in deck) are in learning data
+                    if (found) {
+                        for (i = 0; i < user.learningData[position].progress.length; i++) {
+                            existed = false; // check if card still exist in the deck
+                            for (j = 0; j < deck.cards.length; j++) {
+                                // check id and front card
+                                if (user.learningData[position].progress[i].cardId === String(deck.cards[j]._id) &&
+                                    user.learningData[position].progress[i].front === deck.cards[j].front) {
+                                    existed = true;
+                                    break;
+                                } // check front card if id not match
+                                else if (user.learningData[position].progress[i].front === deck.cards[j].front) {
+                                    user.learningData[position].progress[i].cardId = String(deck.cards[j]._id);
+                                    existed = true;
+                                    break;
+                                }
+                            }
+                            if (!existed) {
+                                user.learningData[position].progress.splice(i, 1);
+                                i--;
+                            }
+                        }
+                    }
+                    user.save();
+                    res.send("Update data completed!")
+                } else console.log(error);
+            })
+        } else console.log(error);
+    })
+});
+
 // DUY multer
 var storage = multer.diskStorage({ //multers disk storage settings
     destination: function (req, file, cb) {
@@ -345,11 +432,3 @@ function isNotLoggedIn2(req, res, next) {
 app.listen(3000, function () {
     console.log("App is running!");
 });
-
-// add decks
-// Deck.create({
-//     name: "House",
-//     themeImage: "https://d9np3dj86nsu2.cloudfront.net/image/e53dcbd93f705d72c23fbac007760b84",
-//     description: '',
-//     favourites: 106
-// });

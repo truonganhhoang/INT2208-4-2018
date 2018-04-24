@@ -13,7 +13,11 @@ var UserSchema = new mongoose.Schema({
     bio: String,
     learningData: [{
         favourite: Boolean,
-        progress: Number,
+        progress: [{
+            front: String,
+            cardId: String,
+            correct: Number
+        }],
         deck: {
             type: mongoose.Schema.Types.ObjectId, // deck's id
             ref: "Deck"
