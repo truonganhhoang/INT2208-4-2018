@@ -39,6 +39,22 @@ input {
 	background-color: #e8e8e8 !important;
 	font-weight: bold;
 	border: transparent !important;
+	border-radius: unset !important;
+}
+
+#submit-login input:focus, #submit-signUp input:focus {
+	background-color: white !important;
+	border-bottom: 2px solid #32cdff !important;
+}
+
+#submit-login input, #submit-signUp input {
+	background-color: white !important;
+	border-bottom: 2px solid #b7c3bc !important;
+
+}
+
+#submit-login input::placeholder, #submit-signUp input::placeholder {
+	color: #b7c3bc;
 }
 
 .first-row {

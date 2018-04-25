@@ -56,8 +56,7 @@ function main() {
                     countAnswer1++;
                     countAnswer1_1++;
                     // move to next question
-                    if ((countAnswer1 + countAnswer2) === 2) nextCard();
-                    else takeQuestion();
+                    takeQuestion();
                 } else {
                     // minus 1 grade
                     if (!rightAnswers1[countAnswer1].parentElement.classList.contains("shaking")) {
@@ -85,8 +84,7 @@ function main() {
         input[i].addEventListener("keyup", function (event) {
             if (event.keyCode === 13 && countAnswer2 < questions2.length) { // this line prevent reviewing again when user type false answer
                 if ($(this.parentElement.parentElement).find("img").length) {
-                    // short this func
-                    if (this.value.toLowerCase() === rightAnswers2[countAnswer2_1].getAttribute("alt").toLowerCase()) {
+                    if (this.value.toLowerCase().trim() === rightAnswers2[countAnswer2_1].getAttribute("alt").toLowerCase()) {
                         updateProgress();
                         // plus 1 grade
                         if (this.style.borderBottom !== "2px solid rgb(202, 103, 103)") {
@@ -97,18 +95,19 @@ function main() {
                         countAnswer2++;
                         countAnswer2_1++;
                         // move to next question
-                        if ((countAnswer1 + countAnswer2) === 2) nextCard();
-                        else takeQuestion();
+                        takeQuestion();
                     } else {
                         // minus 1 grade
                         if (this.style.borderBottom !== "2px solid rgb(202, 103, 103)") {
                             this.style.borderBottom = "2px solid rgb(202, 103, 103)";
+                            this.value = "";
+                            this.placeholder = "type \"" + rightAnswers2[countAnswer2_1].alt + "\"";
                             checkCorrectness.set(rightAnswers2[countAnswer2_1].id,
                                 [rightAnswers2[countAnswer2_1].src, checkCorrectness.get(rightAnswers2[countAnswer2_1].id)[1] - 1]);
                         }
                     }
                 } else {
-                    if (this.value.toLowerCase() === rightAnswers2_1[countAnswer2_2].getAttribute("about").toLowerCase()) {
+                    if (this.value.toLowerCase().trim() === rightAnswers2_1[countAnswer2_2].getAttribute("about").toLowerCase()) {
                         updateProgress();
                         // plus 1 grade
                         if (this.style.borderBottom !== "2px solid rgb(202, 103, 103)") {
@@ -119,12 +118,13 @@ function main() {
                         countAnswer2++;
                         countAnswer2_2++;
                         // move to next question
-                        if ((countAnswer1 + countAnswer2) === 2) nextCard();
-                        else takeQuestion();
+                        takeQuestion();
                     } else {
                         // minus 1 grade
                         if (this.style.borderBottom !== "2px solid rgb(202, 103, 103)") {
                             this.style.borderBottom = "2px solid rgb(202, 103, 103)";
+                            this.value = "";
+                            this.placeholder = "type \"" + rightAnswers2_1[countAnswer2_2].getAttribute("about") + "\"";
                             checkCorrectness.set(rightAnswers2_1[countAnswer2_2].id,
                                 [rightAnswers2_1[countAnswer2_2].textContent.trim(), checkCorrectness.get(rightAnswers2_1[countAnswer2_2].id)[1] - 1]);
                         }
@@ -149,30 +149,26 @@ function main() {
     $(choices2).click(function () {
         if (this.parentElement.parentElement.classList.contains("question-2")) {
             if ($(this.parentElement.parentElement).find("img").length) {
-                // func(this, rightAnswers2, countAnswer2_1, "alt")
+                // responseToChoice_3(this, rightAnswers2, countAnswer2_1, "alt");
                 if (this.innerText.toLowerCase() === rightAnswers2[countAnswer2_1].getAttribute("alt").toLowerCase()) {
-                    updateProgress();
                     // plus 1 grade
                     solveRightChoice(this, rightAnswers2, countAnswer2_1, true);
                     countAnswer2++;
                     countAnswer2_1++;
                     // move to next question
-                    if ((countAnswer1 + countAnswer2) === 2) nextCard();
-                    else takeQuestion();
+                    takeQuestion();
                 } else {
                     // minus 1 grade
                     solveFalseChoice(this, rightAnswers2, countAnswer2_1, true);
                 }
             } else {
                 if (this.innerText.toLowerCase() === rightAnswers2_1[countAnswer2_2].getAttribute("about").toLowerCase()) {
-                    updateProgress();
                     // plus 1 grade
                     solveRightChoice(this, rightAnswers2_1, countAnswer2_2, false);
                     countAnswer2++;
                     countAnswer2_2++;
                     // move to next question
-                    if ((countAnswer1 + countAnswer2) === 2) nextCard();
-                    else takeQuestion();
+                    takeQuestion();
                 } else {
                     // minus 1 grade
                     solveFalseChoice(this, rightAnswers2_1, countAnswer2_2, false);
@@ -181,28 +177,24 @@ function main() {
         } else {
             if ($(this.parentElement.parentElement).find("img").length) {
                 if (this.innerText.toLowerCase() === rightAnswers1_3[countAnswer1_1].getAttribute("alt").toLowerCase()) {
-                    updateProgress();
                     // plus 1 grade
                     solveRightChoice(this, rightAnswers1_3, countAnswer1_1, true);
                     countAnswer1++;
                     countAnswer1_1++;
                     // move to next question
-                    if ((countAnswer1 + countAnswer2) === 2) nextCard();
-                    else takeQuestion();
+                    takeQuestion();
                 } else {
                     // minus 1 grade
                     solveFalseChoice(this, rightAnswers1_3, countAnswer1_1, true);
                 }
             } else {
                 if (this.innerText.toLowerCase() === rightAnswers1_3_1[countAnswer1_2].getAttribute("about").toLowerCase()) {
-                    updateProgress();
                     // plus 1 grade
                     solveRightChoice(this, rightAnswers1_3_1, countAnswer1_2, false);
                     countAnswer1++;
                     countAnswer1_2++;
                     // move to next question
-                    if ((countAnswer1 + countAnswer2) === 2) nextCard();
-                    else takeQuestion();
+                    takeQuestion();
                 } else {
                     // minus 1 grade
                     solveFalseChoice(this, rightAnswers1_3_1, countAnswer1_2, false);
@@ -243,14 +235,14 @@ function main() {
         })
     }
 
-    // events are added above, execution are below
+    // main events are added above, definitions are below
 
     nextCard();
     // set time out after finishing lesson
     setInterval(function () {
         if (countAnswer2 === (rightAnswers2.length + rightAnswers2_1.length)
             && countAnswer1 === (rightAnswers1.length + rightAnswers1_3.length + rightAnswers1_3_1.length )) finished = true;
-    }, 2500);
+    }, 2000);
 }
 
 // move to next type of question
@@ -287,8 +279,13 @@ function nextCard() {
     if (countCards === learningCards.length) takeQuestion();
 }
 
-// take question for user
+// take question for user or take card
 function takeQuestion() {
+    // take card
+    if ((countAnswer1 + countAnswer2) === 2 && countCards === 2 && learningCards.length > 2) {
+        return nextCard();
+    }
+    // take question
     if (randomQuestion() === 1 && countAnswer1 < questions1.length) nextQuestion(questions1, questions2, countAnswer1, countAnswer2);
     else if (countAnswer2 < questions2.length) nextQuestion(questions2, questions1, countAnswer2, countAnswer1);
     else nextQuestion(questions1, questions2, countAnswer1, countAnswer2);
@@ -301,6 +298,7 @@ function randomQuestion() {
 
 // solve right choice for multiple answers type 2 (question-3)
 function solveRightChoice(choice, rightAnswers, countAnswer, haveImage) {
+    updateProgress();
     if (haveImage) {
         if (!rightAnswers[countAnswer].classList.contains("shaking")) {
             checkCorrectness.set(rightAnswers[countAnswer].id,

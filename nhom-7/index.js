@@ -98,84 +98,9 @@ app.post("/learn/:deckID", isLoggedIn, function (req, res) {
     User.findOne({username: req._passport.session.user}, function (error, user) {
         if (!error) {
             // update learningData when deck is deleted!
-            Deck.findById(req.params.deckID, function (error, deck) {
-                if (!error && deck) {
-                    var found = false;
-                    var position;
-                    // get data updated from request
-                    var updatedData = Object.entries(req.body);
-                    for (i = 0; i < updatedData.length; i++) {
-                        updatedData[i][1] = updatedData[i][1].split(",");
-                    }
-                    // found deck in learning data
-                    if (user.learningData.length) {
-                        user.learningData.forEach(function (data, index) {
-                            if (String(data.deck) === String(deck._id)) {
-                                found = true;
-                                position = index;
-                            }
-                        });
-                    }
-                    // not found deck in learning data
-                    if (!found) {
-                        user.learningData.push({
-                            favourite: false,
-                            deck: deck
-                        });
-                        position = user.learningData.length - 1;
-                    }
-                    // update new progress user have just made
-                    for (var i = 0; i < updatedData.length; i++) {
-                        var existed = false;    // check if card existed in old progress
-                        // if data ever existed (cards in deck weren't edited) - check card's id and front card
-                        for (var j = 0; j < user.learningData[position].progress.length; j++) {
-                            if (user.learningData[position].progress[j].cardId === updatedData[i][0] &&
-                                user.learningData[position].progress[j].front === updatedData[i][1][0])
-                            {
-                                user.learningData[position].progress[j].correct = updatedData[i][1][1];
-                                existed = true;
-                            } // check front card if id not match
-                            else if (user.learningData[position].progress[j].front === updatedData[i][1][0]) {
-                                user.learningData[position].progress[j].correct = updatedData[i][1][1];
-                                user.learningData[position].progress[j].cardId = updatedData[i][0];
-                                existed = true;
-                            }
-                        }
-                        if (existed) continue;
-                        // new data
-                        user.learningData[position].progress.push({
-                            front: updatedData[i][1][0],
-                            cardId: updatedData[i][0],
-                            correct: Number(updatedData[i][1][1])
-                        });
-                    }
-                    // check if old cards (those were deleted in deck) are in learning data
-                    if (found) {
-                        for (i = 0; i < user.learningData[position].progress.length; i++) {
-                            existed = false; // check if card still exist in the deck
-                            for (j = 0; j < deck.cards.length; j++) {
-                                // check id and front card
-                                if (user.learningData[position].progress[i].cardId === String(deck.cards[j]._id) &&
-                                    user.learningData[position].progress[i].front === deck.cards[j].front) {
-                                    existed = true;
-                                    break;
-                                } // check front card if id not match
-                                else if (user.learningData[position].progress[i].front === deck.cards[j].front) {
-                                    user.learningData[position].progress[i].cardId = String(deck.cards[j]._id);
-                                    existed = true;
-                                    break;
-                                }
-                            }
-                            if (!existed) {
-                                user.learningData[position].progress.splice(i, 1);
-                                i--;
-                            }
-                        }
-                    }
-                    user.save();
-                    res.send("Update data completed!")
-                } else console.log(error);
-            })
+            deleteUnavailableDecks(user, req, res);
+            // update new learningData after deleting unavailable decks
+            updateNewLearningData(user, req, res);
         } else console.log(error);
     })
 });
@@ -406,7 +331,6 @@ app.all('*', function (req, res) {
     res.status(200).sendFile(__dirname + "/public/ng/index.html");
 });
 
-
 // middleware
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) {
@@ -426,6 +350,109 @@ function isNotLoggedIn2(req, res, next) {
         return next();
     }
     res.status(200).sendFile(__dirname + "/public/ng/index.html");
+}
+
+// delete unavailable decks
+function deleteUnavailableDecks(user, req, res) {
+    Deck.find({}, function (error, decks) {
+        if (!error && decks) {
+            for (var i = 0; i < user.learningData.length; i++) {
+                var existed = false;
+                for (var j = 0; j < decks.length; j++) {
+                    if (String(decks[j]._id) === String(user.learningData[i].deck)) {
+                        existed = true;
+                        break;
+                    }
+                }
+                if (!existed) {
+                    user.learningData.splice(i, 1);
+                    i--;
+                }
+            }
+        } else console.log(error);
+    })
+}
+
+// update current user's learning Data
+function updateNewLearningData(user, req, res) {
+    Deck.findById(req.params.deckID, function (error, deck) {
+        if (!error && deck) {
+            var found = false;
+            var position;
+            // get data updated from request
+            var updatedData = Object.entries(req.body);
+            for (i = 0; i < updatedData.length; i++) {
+                updatedData[i][1] = updatedData[i][1].split(",");
+            }
+            // found deck in learning data
+            if (user.learningData.length) {
+                user.learningData.forEach(function (data, index) {
+                    if (String(data.deck) === String(deck._id)) {
+                        found = true;
+                        position = index;
+                    }
+                });
+            }
+            // not found deck in learning data
+            if (!found) {
+                user.learningData.push({
+                    favourite: false,
+                    deck: deck
+                });
+                position = user.learningData.length - 1;
+            }
+            // update new progress user have just made
+            for (var i = 0; i < updatedData.length; i++) {
+                var existed = false;    // check if card existed in old progress
+                // if data ever existed (cards in deck weren't edited) - check card's id and front card
+                for (var j = 0; j < user.learningData[position].progress.length; j++) {
+                    if (user.learningData[position].progress[j].cardId === updatedData[i][0] &&
+                        user.learningData[position].progress[j].front === updatedData[i][1][0])
+                    {
+                        user.learningData[position].progress[j].correct = updatedData[i][1][1];
+                        existed = true;
+                    } // check front card if id not match
+                    else if (user.learningData[position].progress[j].front === updatedData[i][1][0]) {
+                        user.learningData[position].progress[j].correct = updatedData[i][1][1];
+                        user.learningData[position].progress[j].cardId = updatedData[i][0];
+                        existed = true;
+                    }
+                }
+                if (existed) continue;
+                // new data
+                user.learningData[position].progress.push({
+                    front: updatedData[i][1][0],
+                    cardId: updatedData[i][0],
+                    correct: Number(updatedData[i][1][1])
+                });
+            }
+            // check if old cards (those were deleted in deck) are in learning data
+            if (found) {
+                for (i = 0; i < user.learningData[position].progress.length; i++) {
+                    existed = false; // check if card still exist in the deck
+                    for (j = 0; j < deck.cards.length; j++) {
+                        // check id and front card
+                        if (user.learningData[position].progress[i].cardId === String(deck.cards[j]._id) &&
+                            user.learningData[position].progress[i].front === deck.cards[j].front) {
+                            existed = true;
+                            break;
+                        } // check front card if id not match
+                        else if (user.learningData[position].progress[i].front === deck.cards[j].front) {
+                            user.learningData[position].progress[i].cardId = String(deck.cards[j]._id);
+                            existed = true;
+                            break;
+                        }
+                    }
+                    if (!existed) {
+                        user.learningData[position].progress.splice(i, 1);
+                        i--;
+                    }
+                }
+            }
+            user.save();
+            res.send("Update data completed!")
+        } else console.log(error);
+    })
 }
 
 // Running app
