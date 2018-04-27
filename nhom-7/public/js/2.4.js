@@ -33,13 +33,13 @@ function main() {
     if (choices.length === 9) {
         for (i = 0; i < choices.length; i+=3) {
             choices[i].parentElement.classList.add("left");
-            choices[i].parentElement.parentElement.classList.add("ml-5");
+            choices[i].parentElement.parentElement.classList.add("offset-md-1");
             choices[i + 2].parentElement.classList.add("right");
         }
     } else {
         for (i = 0; i < choices.length; i+=2) {
             choices[i].parentElement.classList.add("left");
-            choices[i].parentElement.parentElement.classList.add("ml-5");
+            choices[i].parentElement.parentElement.classList.add("offset-md-1");
         }
     }
     // add event for choices

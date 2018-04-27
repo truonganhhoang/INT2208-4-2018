@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tinycards</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -58,8 +59,8 @@
 </nav>
 
 <!-- content -->
-<div class="container mt-5">
-    <div class="jumbotron">
+<div class="container mt-5" id="learning-content">
+    <div class="jumbotron mb-0">
         <!--progress row-->
         <div class="row">
             <div class="pb-5 col-1">
@@ -68,7 +69,7 @@
                 </button>
             </div>
             <div class="progress mb-5 ml-lg-3 ml-5 mt-3 col-lg-10 col-sm-9 col-7 col-md-10 p-0"
-                 style="height: 7px; width: 85%">
+                 style="height: 7px">
                 <div class="progress-bar" role="progressbar" style="width: 0; background-color: #ffd600"
                      aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
@@ -78,8 +79,9 @@
             startingCard: if the deck is in learningData
                           we can start by the end of the last lesson we've learned so far
                           or we can start by 0 -->
-            idCreasing: increase the id number for multiple choice question (question 1, question 3) %>
-        <% var currrentData, startingCard, idIncreasing = 0; %>
+            idCreasing: increase the id number for multiple choice question (question 1, question 3)
+            cardRows: class used for row of cards in multiple choice question (question 1)%>
+        <% var currrentData, startingCard, idIncreasing = 0, cardsRow = 0; %>
         <% for (var i = 0; i < user.learningData.length; i++) if (String(user.learningData[i].deck) === String(deck._id)) currrentData = user.learningData[i]%>
         <% if (currrentData === undefined) startingCard = 0; else { %>
         <% for (j = 0; j < currrentData.progress.length; j++) { %>
@@ -97,7 +99,7 @@
             <div class="text-uppercase text-warning text-center mb-4">
                 <h5>Review card</h5>
             </div>
-            <div class="m-auto w-25 card-container manual-flip" style="height: 275px">
+            <div class="m-auto card-container manual-flip" style="height: 295px; width: 263px">
                     <div class="card h-100">
                         <div class="front h-100 w-100">
                             <!-- check if front face is image or text -->
@@ -128,8 +130,8 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary w-25 d-block mt-3 mx-auto text-uppercase font-weight-bold"
-                    style="background: #32cdff; border: none">
+            <button class="btn btn-primary d-block mt-3 mx-auto text-uppercase font-weight-bold"
+                    style="background: #32cdff; border: none; width: 263px;">
                 continue
             </button>
         </div>
@@ -143,8 +145,8 @@
         <% cards = [startingCard, startingCard + 1] %>
         <% } %>
         <div class="row d-none question-1">
-            <div class="col-3 offset-1 text-center">
-                <div class="card-body h-100 p-1 position-relative">
+            <div class="col-lg-4 col-xl-3 m-auto m-lg-0 ml-lg-5 text-center" style="height: 275px; width: 263px;">
+                <div class="card-body h-100 p-1 position-relative" >
                     <button class="btn btn-light d-flex ml-auto p-0 position-absolute sound-btn"
                             style="color: #32cdff; right: 5px">
                         <i class="fas fa-volume-up"></i>
@@ -154,21 +156,21 @@
                 </div>
             </div>
             <% for (j = 0; j < cards.length; j++) { %>
-            <div class="col-2 p-0">
-                <div class="multipleChoice mt-5 h-75">
+            <div class="col-4 col-md-3 col-lg-2 p-0 r-<%= cardsRow %>">
+                <div class="multipleChoice mt-5" style="height: 75%;">
                     <img class="card-img-top h-100" alt="<%= deck.cards[cards[position]].back[0] %>" id="n-<%= idIncreasing++ %>"
                          src="<%= deck.cards[cards[position]].front %>" about="<%= deck.cards[i].front %>">
                     <% cards.splice(position, 1); position = Math.floor(Math.random() * (startingCard + cards.length)); j-- %>
                 </div>
             </div>
-            <% } %>
+            <% } cardsRow++; %>
         </div>
         <% } %>
         <% } %>
         <%# question type 2 - for short text %>
         <% if (deck.cards[i].back[0].split(" ").length < 4) { %>
         <div class="row d-none question-2">
-            <div class="col-3 offset-1 text-center" style="height: 275px;">
+            <div class="m-auto m-lg-0 ml-lg-5 col-xl-3 col-lg-4 text-center" style="height: 275px; width: 263px;">
                 <% if (deck.cards[i].front.includes("http")) { %>
                 <img class="card-img-top h-100"
                      src="<%= deck.cards[i].front %>" alt="<%= deck.cards[i].back[0] %>" id="<%= deck.cards[i]._id %>"/>
@@ -178,8 +180,8 @@
                     <%= deck.cards[i].front %></div>
                 <% } %>
             </div>
-            <div class="col-8">
-                <input type="text" class="w-75 ml-3 pb-2" name="name" placeholder="Enter the answer"/>
+            <div class="m-auto m-lg-0 col-xl-8 col-lg-7">
+                <input type="text" class="ml-lg-3 pb-2" name="name" placeholder="Enter the answer"/>
             </div>
         </div>
         <% } %>
@@ -192,7 +194,7 @@
         <% cards = [startingCard, startingCard + 1] %>
         <% } %>
         <div class="row d-none question-3">
-            <div class="col-3 offset-1 text-center" style="height: 275px;">
+            <div class="m-auto col-lg-3 text-center" style="height: 275px; width: 263px">
                 <% if (deck.cards[i].front.includes("http")) { %>
                 <img class="card-img-top h-100"
                      src="<%= deck.cards[i].front %>" alt="<%= deck.cards[i].back[0] %>" id="<%= deck.cards[i]._id %>"/>
@@ -202,9 +204,9 @@
                     <%= deck.cards[i].front %></div>
                 <% } %>
             </div>
-            <div class="col-8">
+            <div class="col-lg-8 mt-2">
                 <% for (j = 0; j < cards.length; j++) { %>
-                <button class="btn btn-outline-primary multipleChoice-2 btn-block w-75 ml-5 font-weight-bold p-0" id="<%= idIncreasing++ %>">
+                <button class="mx-auto btn btn-outline-primary multipleChoice-2 btn-block font-weight-bold p-0" id="<%= idIncreasing++ %>">
                     <%= deck.cards[cards[position]].back[0] %>
                     <% cards.splice(position, 1); position = Math.floor(Math.random() * (startingCard + cards.length)); j-- %>
                 </button>
@@ -215,17 +217,6 @@
         <% } %>
         <% } %>
     </div>
-    <footer class="mb-3 mt-5 pt-3">
-        <a href="/press" class="m-4">ABOUT</a>
-        <a href="" class="m-4">SUPPORT</a>
-        <a href="" class="m-4">TERMS</a>
-        <a href="" class="m-4">DUOLINGO</a>
-        <a href="" class="m-4">FACEBOOK</a>
-        <a href="" class="m-4">TWITTER</a>
-        <a href="" class="m-4" id="language">
-            <img src="/imgs/english.png"> ENGLISH
-        </a>
-    </footer>
 </div>
 
 <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>

@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tinycards - Flashcards by Duolingo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -91,9 +92,9 @@
                 </a>
             </div>
             <!-- next row -->
-            <div class="row">
-                <h4 class="col-8 col-md-10 col-lg-10 pt-4 pl-5">Your favorites</h4>
-                <a href="" class="offset-1 col-3 offset-md-0 col-md-2 col-lg-2 pl-lg-5 pt-4">SEE ALL</a>
+            <div class="row mx-lg-5">
+                <h4 class="mr-auto ml-3 pt-4">Your favourites</h4>
+                <a href="" class="pt-4 mr-3">SEE ALL</a>
             </div>
             <div id="carousel-3" class="carousel slide px-5 pb-5" data-ride="carousel">
                 <div class="carousel-inner" id="third-carousel">
@@ -137,11 +138,11 @@
             </div>
             <!-- next row -->
             <hr />
-            <div class="row">
-                <h4 class="col-8 col-md-10 col-lg-10 pt-4 pl-5">Trending</h4>
-                <a href="" class="offset-1 col-3 offset-md-0 col-md-2 col-lg-2 pl-lg-5 pt-4">SEE ALL</a>
+            <div class="row mx-lg-5">
+                <h4 class="mr-auto ml-3 pt-4">Trending</h4>
+                <a href="" class="pt-4 mr-3">SEE ALL</a>
             </div>
-            <div id="carousel-2" class="carousel slide px-5 pb-5" data-ride="carousel">
+            <div id="carousel-2" class="carousel slide px-lg-5 pb-lg-5" data-ride="carousel">
                 <div class="carousel-inner" id="second-carousel">
                     <% var trendingDecks = [] %>
                     <% for (var i = 0; i < decks.length; i++) { if(decks[i].favourites > 1000) trendingDecks.push(decks[i])} %>
@@ -150,7 +151,7 @@
                         <div class="row pt-4" style="height: 300px">
                             <% for (var j = 0; j < 6; j++) { %>
                             <% if (trendingDecks[i + j]) { %> <%# can delete %>
-                            <div class="card col-lg-2 col-md-2 col-sm-3 col-4 text-white">
+                            <div class="card col-md-2 col-sm-3 col-4">
                                 <a href="/deck/<%= trendingDecks[i + j]._id %>" style="height: 166px">
                                     <img class="card-img-top h-100 trending-deck"
                                          src="<%= trendingDecks[i + j].themeImage %>"
