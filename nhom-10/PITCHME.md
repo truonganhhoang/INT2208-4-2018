@@ -158,7 +158,7 @@ class SinhVien{
 - nhiều người cho rằng che giấu thông tin là về quy tắc còn đóng gói thiên về kỹ thuật
 
 ---?color=hsla(20, 13%, 65%, .5)
-# BIỂU DIỄN KỸ THUẬT
+## BIỂU DIỄN KỸ THUẬT
 (Technical Representations)
 +++?color=rgb(155, 255, 128)
 
@@ -188,7 +188,7 @@ class SinhVien{
   - Đặc tả là những chỉ là những dòng văn bản.
   - Sơ đồ thì cần phải cụ thể, trực quan hơn nhiều.
 
-#### Biểu đồ Thiết kế
+#### Sơ đồ Thiết kế
 - Sơ đồ thiết kế có thể là biểu đồ UML hay một số loại sơ đồ khác.
 - Đây cũng (có thể) là một quá trình lặp đi lặp lại để tạo ra các kết quả tốt nhất.
 +++?color=rgb(155, 255, 128)
@@ -200,11 +200,8 @@ class SinhVien{
 +++?color=rgb(155, 255, 128)
 
 #### Lưu ý
-
 - Cần nhớ rằng, các quá trình trên là lặp đi lặp lại, chỉnh sửa đến khi đạt kết quả tốt.
-
 - Có thể có nhiều biểu diễn kỹ thuật khác nhau và mỗi biểu diễn kỹ thuật mang lại giá trị khác nhau.Một hệ thống có nhiều lớp biểu diễn kỹ thuật sẽ có sự minh bạch, rõ ràng trong việc xây dựng hệ thống.
-
 ---?color=rgba(255, 205, 228, .5) 
 ## Động và tĩnh
 (Dynamic vs Static)
