@@ -1,0 +1,194 @@
+body {
+	background-color: #f7f7f7;
+}
+
+*:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: transparent !important;
+}
+
+.bg-primary {
+	background-color: #32cdff !important;
+}
+
+h2 {
+	color: white;
+	font-weight: bold;
+}
+
+.jumbotron-fluid {
+	background-color: #32cdff !important;
+}
+
+.jumbotron {
+	background-color: white;
+}
+
+h4 {
+	font-weight: bold;
+	color: #48494c;
+}
+
+.nav-link {
+	font-weight: bold;
+}
+
+input {
+	color: grey !important;
+	background-color: #e8e8e8 !important;
+	font-weight: bold;
+	border: transparent !important;
+	border-radius: unset !important;
+}
+
+#submit-login input:focus, #submit-signUp input:focus {
+	background-color: white !important;
+	border-bottom: 2px solid #32cdff !important;
+}
+
+#submit-login input, #submit-signUp input {
+	background-color: white !important;
+	border-bottom: 2px solid #b7c3bc !important;
+
+}
+
+#submit-login input::placeholder, #submit-signUp input::placeholder {
+	color: #b7c3bc;
+}
+
+.first-row {
+	border-radius: 10px !important;
+}
+
+.btn-primary {
+	background-color: #32cdff !important;
+	width: 100%;
+	border: none !important;
+	font-weight: bold !important;
+}
+
+.btn-primary:hover {
+	background-color: #29b7e5 !important;
+}
+
+a, #language {
+	color: #32cdff;
+	font-weight: bold !important;
+}
+
+.card-img-top,  .duy-cover .jumbotron {
+    box-shadow: 0 2px 9px rgba(0,0,0,.1);
+    border-radius: 18px;
+}
+
+.card {
+	border: hidden;
+}
+
+.card-title {
+	font-size: 14px;
+	color: #878787;
+	letter-spacing: 0.2px;
+}
+
+h4 + a:hover {
+	color: #29b7e5;
+	text-decoration: none;
+}
+
+.card-info {
+	color: #c9cacc;
+	font-weight: bold;
+}
+
+h2, h4, p, .card-title, .card-info, footer a, h4 + a {
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.05),
+				 0px 1px 1px rgba(0,0,0,0.05),
+				 0px 1px 1px rgba(0,0,0,0.05);
+
+}
+
+a:hover {
+	text-decoration: none;
+	color: #c9cacc;
+}
+
+.fa-chevron-left, 
+.fa-chevron-right {
+	color: #0cbef7;
+	font-size: 25px;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+li a {
+	color: white !important;
+}
+
+li a:hover {
+	color: #9edaed !important;
+}
+
+
+footer{
+	text-align: center;
+	font-size: 14px;
+}
+
+footer a {
+	color: #b5b6b7;
+}
+
+footer a:hover {
+	color: #b5b6b7;
+}
+
+@media (min-width: 800px){
+	.duy-under {
+		position: relative;
+	}
+	.duy-cover {
+		position: absolute;
+		top: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+}
+
+.duy-google-btn {
+	background-color: rgb(222,55,11);
+	width: 100%;
+}
+.duy-facebook-btn {
+	width: 100%;
+	background-color: rgb(57,86, 159);
+}
+
+.duy-signup-btn {
+	background-color: white !important;
+	color: #0cbef7;
+}
+
+
+.duy-signup-btn:hover {
+	background-color: #f4f5f7 !important;
+	color: #0cbef7;
+}
+
+.login:hover {
+	background-color: #32cdff !important;
+	color: #8fdef7;
+}
+
+.scroll{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
