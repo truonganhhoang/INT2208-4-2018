@@ -123,7 +123,9 @@
                 <h4 class="mb-3">Search decks
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </h4>
-                <input type="search" class="form-control pt-3 pb-3 first-row" placeholder="e.g, Spanish, History...">
+                <form action="/search" method="get">
+                    <input type="search" class="form-control pt-3 pb-3 first-row" name="deck" placeholder="e.g, Spanish, History...">
+                </form>
             </div>
             <div class="col-lg-2 pl-5">
                 <img src="imgs/green-head.PNG" alt="green head">
@@ -136,7 +138,7 @@
             </div>
             <!-- second row -->
             <h4 class="mr-auto ml-3 pt-4">Decks we love</h4>
-            <a href="" class="pt-4 mr-3">SEE ALL</a>
+            <a href="/featured" class="pt-4 mr-3">SEE ALL</a>
         </div>
         <!-- next row -->
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -182,7 +184,7 @@
         <hr>
         <div class="row">
             <h4 class="mr-auto ml-3 pt-4">Trending</h4>
-            <a href="" class="pt-4 mr-3">SEE ALL</a>
+            <a href="/trending" class="pt-4 mr-3">SEE ALL</a>
         </div>
         <!-- next row -->
         <div id="carousel-1" class="carousel slide" data-ride="carousel">

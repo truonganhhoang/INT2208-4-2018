@@ -105,6 +105,42 @@ app.post("/learn/:deckID", isLoggedIn, function (req, res) {
     })
 });
 
+// search page
+app.get("/search", function (req, res) {
+    if (req.isAuthenticated()) {
+        User.findOne({username: req._passport.session.user}, function (error, user) {
+            if (!error) {
+                searchDecks(user.name, req, res)
+            } else console.log(error)
+        })
+    } else {
+        searchDecks(null, req, res);
+    }
+});
+
+// more love decks page
+app.get("/featured", function (req, res) {
+    if (req.isAuthenticated()) {
+        User.findOne({username: req._passport.session.user}, function (error, user) {
+            if (!error) {
+                getMoreDecks("Decks we love", 500, user.name, res);
+            } else console.log(error)
+        })
+    } else getMoreDecks("Decks we love", 500, null, res);
+});
+
+// more trending decks page
+
+app.get("/trending", function (req, res) {
+    if (req.isAuthenticated()) {
+        User.findOne({username: req._passport.session.user}, function (error, user) {
+            if (!error) {
+                getMoreDecks("Trending", 1000, user.name, res);
+            } else console.log(error)
+        })
+    } else getMoreDecks("Trending", 1000, null, res);
+});
+
 // DUY multer
 var storage = multer.diskStorage({ //multers disk storage settings
     destination: function (req, file, cb) {
@@ -452,6 +488,32 @@ function updateNewLearningData(user, req, res) {
             user.save();
             res.send("Update data completed!")
         } else console.log(error);
+    })
+}
+
+// search decks
+function searchDecks(user, req, res) {
+    Deck.find({}).populate("author").exec(function (error, decks) {
+        if (!error && req.query.deck) {
+            var decksRequested = [];
+            decks.forEach(function (deck) {
+                if (deck.name.toLowerCase().includes(req.query.deck.toLowerCase())) {
+                    decksRequested.push(deck);
+                }
+            });
+            res.render("3", {decks: decksRequested, req: req.query.deck, user: user});
+        } else if (!req.query.deck) {
+            res.render("3", {decks: decks, req: req.query.deck, user: user});
+        } else console.log(error)
+    });
+}
+
+// get more decks
+function getMoreDecks(title, condition, user, res) {
+    Deck.find().where("favourites").gt(condition).populate("author").exec(function (error, decks) {
+        if (!error) {
+            res.render("3-1", {title: title, decks: decks, user: user});
+        }
     })
 }
 
