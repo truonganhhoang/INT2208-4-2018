@@ -164,27 +164,33 @@ class SinhVien{
 
 ### Khái niệm
 
-- Những ý tưởng mức cao (tính trừu tượng cao) khi đưa vào hệ thống phần mềm cần được cụ thể hóa trở thành những nhiệm vụ khả thi.
+- Những ý tưởng mức cao (có tính trừu tượng cao) khi triển khai vào hệ thống phần mềm cần được cụ thể hóa trở thành những công việc cụ thể.
 +++?color=rgb(155, 255, 128)
 
 ### Các bước
 
-- Đặc tả ý tưởng người dùng
-- Thiết kể biểu đồ
+- Đưa ra các đặc tả (specification)
+- Thiết kế các sơ đồ (diagram)
 - Code
 +++?color=rgb(155, 255, 128)
 
 #### Đặc tả ý tưởng
 
-- Điều đầu tiên cần làm là chuyển những ý tưởng, yêu cầu của người dùng thành những đặc tả.
+- Điều đầu tiên cần làm là chuyển những ý tưởng, yêu cầu của người dùng thành những đặc tả cụ thể.
 
-  - Trong suốt quá trình cụ thể hóa, chúng ta sẽ nghiên cứu và quay lại chỉnh sửa ý tưởng gốc. Đó là quá trình lặp đi lặp lại.
+  - Trong suốt quá trình cụ thể hóa, chúng ta sẽ nghiên cứu và quay lại chỉnh sửa ý tưởng gốc
+  - Đó là quá trình lặp đi lặp lại để đạt được kết quả tốt nhất.
 +++?color=rgb(155, 255, 128)
 
-#### Thiết kế
-- Chuyển đổi từ những đặc tả thành thiết kế khá khó khăn vì đặc tả là những chỉ là những văn bản.Nhưng thiết kế thì cần phải cụ thể hơn nhiều
-  - Thiết kế có thể là biểu đồ UML hay một số loại biểu đồ khác
-  - Thiết kế cũng là quá trình lặp đi lặp lại
+#### Sơ đồ thiết kế
+- Chuyển đổi những đặc tả thành các biểu đồ thiết kế.
+- Khá khó khăn vì:
+  - Đặc tả là những chỉ là những dòng văn bản.
+  - Sơ đồ thì cần phải cụ thể, trực quan hơn nhiều.
+
+#### Biểu đồ Thiết kế
+- Sơ đồ thiết kế có thể là biểu đồ UML hay một số loại sơ đồ khác.
+- Đây cũng (có thể) là một quá trình lặp đi lặp lại để tạo ra các kết quả tốt nhất.
 +++?color=rgb(155, 255, 128)
 
 #### Code
@@ -192,6 +198,8 @@ class SinhVien{
 - cụ thể hóa thiết kế: code
 - Bước này có thể là: thuật toán nào? cấu trúc dữ liệu gì? ...
 +++?color=rgb(155, 255, 128)
+
+#### Lưu ý
 
 - Cần nhớ rằng, các quá trình trên là lặp đi lặp lại, chỉnh sửa đến khi đạt kết quả tốt.
 
