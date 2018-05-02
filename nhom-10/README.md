@@ -3,6 +3,7 @@ Nhóm 10
 	Trần Thế Tuấn
 	Đỗ Trung Đức
 	Trần Minh Hiếu
+	Lê Văn Công
 
 Phần mềm lựa chọn: Tinycards
 
