@@ -115,15 +115,15 @@ class SinhVien{
 - trong nhiều trường hợp, che giấu thông tin (information hiding) và tính đóng gói (encapsulation) được coi là tương đương nhau
 - nhiều người cho rằng che giấu thông tin là về quy tắc còn đóng gói thiên về kỹ thuật
 
----?color=hsla(20, 13%, 65%, .5)
+---?color=hsla(250, 100%, 8%, 1)
 ## Biểu diễn kỹ thuật
 Technical Representations
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Khái niệm
 Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thống phần mềm cần được cụ-thể-hóa thành những công việc.
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Quy trình
 - Đưa ra các đặc tả (specification)
 
@@ -131,7 +131,7 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 
 - Xây dựng mã nguồn (code)
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Đưa ra các đặc tả
 - Chuyển những ý tưởng, yêu cầu của người dùng thành những đặc tả cụ thể.
 
@@ -139,7 +139,7 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 
 - Là quá trình lặp-đi-lặp-lại để đạt kết quả tốt nhất.
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Sơ đồ thiết kế
 - Là công cụ trực quan để các bên (stakeholder) thảo luận, trao đổi.
 
@@ -147,7 +147,7 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 
 - Chính xác, cụ thể, không mơ hồ.
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Thiết kế các sơ đồ
 - Chuyển đổi những đặc tả thành các biểu đồ thiết kế.
 
@@ -157,14 +157,14 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 
 - (Có thể) là một quá trình lặp lại để tạo ra kết quả tốt nhất.
 
-+++?image=http://www.tokkoro.com/picsup/380757-hello-kitty-images-and-pictures.jpg
++++?color=hsla(20, 13%, 65%, 0.5)
 ### Xây dựng mã nguồn
 
 - Là bước cụ-thể-hóa các sơ đồ thiết kế.
 
 - Ngôn ngữ sử dụng? Thuật toán nào? Cấu trúc dữ liệu gì? ...
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Lưu ý
 - Các quá trình trên lặp-đi-lặp-lại, chỉnh sửa đến khi đạt kết quả tốt nhất.
 
@@ -172,25 +172,25 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 
 - Một hệ thống có nhiều lớp biểu diễn kỹ thuật sẽ có sự minh bạch, rõ ràng trong việc xây dựng hệ thống.
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Động và tĩnh
 ##### Dynamic & Static
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 - Thêm, xóa, sửa code (yếu tố tĩnh) có thể làm thay đổi cách hệ thống thi hành (yếu tố động).
 
 - Người dùng chỉ quan tâm cách hệ thống làm việc, KHÔNG quan tâm mã nguồn trông ra sao.
 
 - Do đó, cần đảm bảo hệ thống luôn làm việc đúng và đưa ra kết quả chính xác
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Trình gỡ lỗi
 ##### Debugger
 - Không chỉ giúp loại bỏ lỗi (error) mà còn giúp ta hiểu rõ sự thực thi của chương trình.
 
 - Là công cụ tốt để giám sát, đảm bảo hệ thống hoạt động chính xác.
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Sơ đồ triển khai
 ##### Deployment Diagrams
 - Bổ sung thông tin cho biểu đồ lớp (class diagrams).
@@ -203,7 +203,7 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 ### Ví dụ về sơ đồ triển khai
 ![Deployment Diagram](https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/chart/uml/deployment-diagram/deployment-diagram-example-700x412@2x.jpeg)
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?color=hsla(250, 100%, 8%, 1)
 ### Sơ đồ trạng thái
 ##### State Machine Diagrams
 - Mô tả các thông tin về các trạng thái khác nhau của đối tượng.
@@ -214,18 +214,18 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 ### Ví dụ về sơ đồ trạng thái
 ![State Machine Diagram](http://voer.edu.vn/file/29920)
 
----?color=hsla(20, 13%, 65%, .5)
+---?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ## API
 ##### Application Programming Interface
 ##### Giao diện lập trình ứng dụng
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Tổng quan về API
 - Là giao diện cho phép các phần tử của chương trình tương tác với nhau.
 
 - Có thể được tái sử dụng giúp tiết kiệm thời gian công sức, chi phí phát triển phần mềm.
 
-+++?image=http://www.zgjm-org.com/data/out/8/IMG_273608.png 
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Thiết kế API mức cao
 
 ##### Nguyên tắc thiết kế
@@ -237,36 +237,31 @@ Những ý tưởng mức cao (trừu tượng) khi triển khai vào hệ thố
 
 - Có tính đóng gói cao
 
-+++?image=http://www.zgjm-org.com/data/out/8/IMG_273608.png 
-### Thiết kế API mức cao
-Các API sẽ hỗ trợ người dùng lâu dài.
-
-Do đó, thiết kế API phải tuân thủ các nguyên tắc đã đặt ra.
-
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Thiết kế API mức thấp
+
 Cụ thể hóa các mục tiêu của API
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Một số quy tắc thiết kế API ở mức thấp
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 #### Hạn chế số lượng tham số
 
-##### KHÔNG NÊN
+##### KHÔNG nên
 ```Javascript
 addUser(lastname: String, firstname: String, email: String);
 ```
 
-##### NÊN
+##### Nên
 ```Javascript
 addUser(user: User);
 ```
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 #### Kiểu trả về là một đối tượng cụ thể
 
-##### Đừng code thế này
+##### Đừng thế này
 ```Javascript
 getUserData(): String;
 // return string firstname + lastname + email
@@ -276,13 +271,14 @@ getUserData(): String;
 ```Javascript
 getUserData(): User;
 ```
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 #### Che giấu mã nguồn
+- Để đảm bảo rằng người dùng không sử dụng API không đúng cách.
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Quy trình thiết kế API
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 #### 1. Trả lời các câu hỏi:
 - Mục đích của API?
   - Ngôn ngữ sử dụng
@@ -294,23 +290,40 @@ getUserData(): User;
   - Giấy phép sử dụng (lisence)
   - ...
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 #### 2. Thu thập phản hồi
+- Về nhu cầu sử dụng, hỗ trợ, hướng phát triển
 
-+++?color=hsla(20, 13%, 65%, .5)
-#### 3. Tạo nguyên mẫu ban đầu
+- Để đảm bảo API đáp ứng tốt nhu cầu của người sử dụng
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
+#### 3. Tạo nguyên mẫu (prototype) ban đầu
+
+- Tạo ra NHIỀU nguyên mẫu khác nhau của API
+
+- Tìm ra nguyên mẫu tốt nhất
+
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
+#### Lưu ý
+- API khi được công bố, sẽ không thay đổi theo thời gian.
+
+- Do đó, các quá bước trên lặp đi lặp lại để tạo ra kết quả tốt nhất
+
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 #### 4. Viết tài liệu
+- Là hướng-dẫn-sử-dụng của API.
 
-+++?color=hsla(20, 13%, 65%, .5)
+- Viết tài liệu theo kiểu xử-lý-công-việc để người dùng tra cứu dễ dàng.
+
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Tính hữu dụng của API
 Cần quan tâm tới các vấn đề:
 - Trực quan (visibility)
 - Mô hình sử dụng (model)
-- 
+- Tính gợi nhớ (mapping)
 - Phản hồi với người dùng (feedback)
-+++?color=hsla(20, 13%, 65%, .5)
+
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 #### Trực quan
 - Người dùng chỉ cần nhìn là biết tác dụng.
 - Dễ dàng tìm kiếm, tra cứu.
@@ -324,7 +337,7 @@ Hãy code thế này
 items.sort(Filter.CLEARANCE);
 ```
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Mô hình sử dụng
 Hình dung trước cách thức sử dụng API của người dùng để đưa ra API ngắn gọn, dễ dùng.
 
@@ -338,13 +351,13 @@ thay vì
 bookshop.getAuthor("Emily Bronte").getBook("Wuthering Heights").getPrice();
 ```
 
-+++?color=hsla(20, 13%, 65%, .5)
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
 ### Tính gợi nhớ
 Giúp người dùng dễ dàng nhận ra được kiểu trả về, kiểu đầu vào.
 ```Javascript
 store.getProduct(productID: string): Product;
 ```
 
-+++?color=hsla(20, 13%, 65%, .5)
-### Tương tác tới người dùng
++++?image=http://hd-wallpapersfd.info/wp-content/uploads/HTML/Dark-Colors-Computer/Dark-Colors-Computer1.jpg
+### Phản hồi tới người dùng
 - Luôn đưa ra những thông báo, cảnh báo khi có thể xảy ra lỗi.
