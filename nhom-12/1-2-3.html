@@ -16,6 +16,7 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascript.js" type="text/javascript"></script>
 </head>
 <body style="background-color: #f7f7f7">
 <div class="navbar">
@@ -24,11 +25,19 @@
             <a class="navbar-brand" href="#">
                 <img src="IMG/tiny.png" alt="logo" style="width:180px; height: 60px">
             </a>
-            <div class="placeholder">
-                <form class="form-inline my-2 my-lg-0">
-                    <input type="text" class="placeholder" onfocus="this.value=''" value="Search">
-                </form>
-                <div id="react-autowhatever-1" class="react">
+            <div>
+                <input type="text" placeholder="Search.." id="myInputSearch" onkeyup="filterFunction()">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Search result</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">art</a>
+                        <a href="#">authentic</a>
+                        <a href="#">biology</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                        <a href="#">custom</a>
+                        <a href="#">dutch basics</a>
+                    </div>
                 </div>
             </div>
             <div class="navbar3">
@@ -67,8 +76,8 @@
             are on the other one
         </div>
         <div style="display: flex">
-            <img src="photocat.jpg" alt="Ashlee"
-                 style="border-radius: 100%; width: 30px; height: 30px; margin-top: 1em">
+            <img src="IMG/photocat.jpg" alt="Ashlee"
+                 style="border-radius: 100%; width: 40px; height: 30px; margin-top: 1em">
             <a href="#" class="btn signup" style="background-color: #f7f7f7">Ashlee</a>
             <p style="color: #c4c4c4">Rating: 853</p>
         </div>
@@ -104,7 +113,7 @@
         </div>
     </div>
 </div>
-<div style="width: 640px;  vertical-align: top; background-color: #ffffff; margin-top: -34em; margin-left: 25em; border-radius: 15px; box-shadow: 0 0 25px rgba(0, 0, 0, .04);">
+<div style="width: 640px; height: 700px; vertical-align: top; background-color: #ffffff; margin-top: -34em; margin-left: 25em; border-radius: 15px; box-shadow: 0 0 25px rgba(0, 0, 0, .04);">
     <div class="container">
         <!-- Tabs -->
         <ul class="nav nav-tabs" style="text-transform: uppercase">
@@ -176,14 +185,50 @@
                 </div>
             </div>
             <div class="tab-pane" id="tab2">
-                <img src="IMG/flag2.jpg" alt="flag2"
-                     style="width: 224px; height: 258px; border-radius: 20px; margin: 64px auto 20px 64px">
-                <img src="IMG/flag4.jpg" alt="flag3"
-                     style="width: 224px; height: 258px; border-radius: 20px; margin: 64px auto 20px 64px">
-                <img src="IMG/flag5.jpg" alt="flag4"
-                     style="width: 224px; height: 258px; border-radius: 20px; margin: 64px auto 20px 64px">
-                <img src="IMG/flag6.jpg" alt="flag5"
-                     style="width: 224px; height: 258px; border-radius: 20px; margin: 64px auto 20px 64px">
+                <div style="display: flex">
+                    <div class="flipcard">
+                        <div class="front">
+                            <img src="IMG/flag2.jpg" alt="flag2"
+                                 style="width: 232px; height: 268px; border-radius: 20px; margin-top: -120px; margin-left: -40px">
+                        </div>
+                        <div class="back" style="text-align: center">
+                            Hungary
+                        </div>
+                    </div>
+                    <div class="flipcard">
+                        <div style="margin-left: 7em">
+                            <div class="front">
+                                <img src="IMG/flag4.jpg" alt="flag3"
+                                     style="width: 232px; height: 268px; border-radius: 20px; margin-top: -120px; margin-left: -40px">
+                            </div>
+                            <div class="back" style="text-align: center">
+                                Andorra
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 2em">
+                    <div class="flipcard">
+                        <div class="front">
+                            <img src="IMG/flag5.jpg" alt="flag4"
+                                 style="width: 232px; height: 268px; border-radius: 20px; margin-top: -120px; margin-left: -40px">
+                        </div>
+                        <div class="back" style="text-align: center">
+                            Angola
+                        </div>
+                    </div>
+                    <div class="flipcard">
+                        <div style="margin-left: 7em">
+                            <div class="front">
+                                <img src="IMG/flag6.jpg" alt="flag5"
+                                     style="width: 232px; height: 268px; border-radius: 20px; margin-top: -120px; margin-left: -40px">
+                            </div>
+                            <div class="back" style="text-align: center">
+                                Antigua
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
