@@ -3,7 +3,7 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -19,7 +19,7 @@
 <nav class="navbar navbar-default">
   <div class="container">
      
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="./1-1.html">
         <img src="https://d17u0960v8a9bp.cloudfront.net/favicon.ico">
       </a>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,19 +37,28 @@
 
       <div class="content"> 
           <ul class="nav nav-tabs" style="  padding: 15px 10px 5px; ">
-            <li><a href="./2-1.html"><STRONG>LESSON</STRONG></a></li>
+            <li><a href="./2-1.html">LESSON</a></li>
             <li><a href="#"><STRONG>CARDS</STRONG></a></li>
           </ul>
-           <img class="tinycard-image" onclick="onClick1()" src="https://d9np3dj86nsu2.cloudfront.net/image/dbb4ffc729f5272a6980da93ed7185a6"/>
-            <img class="tinycard-image" onclick="onClick2()" src="https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39"/>
-            <img class="tinycard-image" onclick="onClick3()" src="https://d9np3dj86nsu2.cloudfront.net/image/e853b2a0e28856470a628aba66e73854"/>
-            <img class="tinycard-image" onclick="onClick4()" src="https://d9np3dj86nsu2.cloudfront.net/image/54b3953062c22430d63e36524c0bb02a"/>
-            <img class="tinycard-image" onclick="onClick5()" src="https://d9np3dj86nsu2.cloudfront.net/image/1bb221e7ac0abcff7b8fcc5115d1a576"/>
-            <img class="tinycard-image" onclick="onClick6()" src="https://d9np3dj86nsu2.cloudfront.net/image/b0e21d2ecf9d039b710588808072d616"/>
-            <img class="tinycard-image" onclick="onClick7()" src="https://d9np3dj86nsu2.cloudfront.net/image/0d8ab7d47013245413c6f267eb3a2398"/>
-            <img class="tinycard-image" onclick="onClick8()" src="https://d9np3dj86nsu2.cloudfront.net/image/31504ff5d69bc21eeee55ebd8bf144d3"  />
+           <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/98707cbe6c35570bf3309710846bd66a')" src="https://d9np3dj86nsu2.cloudfront.net/image/dbb4ffc729f5272a6980da93ed7185a6"/>
+
+            <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/8a2015765feb99ba0a4a8ae0f8439d29')" src="https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39"/>
+
+            <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39')" src="https://d9np3dj86nsu2.cloudfront.net/image/e853b2a0e28856470a628aba66e73854"/>
+
+            <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/05309c879345e4b89aac440a2ee6c06e')" src="https://d9np3dj86nsu2.cloudfront.net/image/54b3953062c22430d63e36524c0bb02a"/>
+
+            <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/9d15503e3a5ee7a03d2e2170394da17a')" src="https://d9np3dj86nsu2.cloudfront.net/image/1bb221e7ac0abcff7b8fcc5115d1a576"/>
+
+            <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39')" src="https://d9np3dj86nsu2.cloudfront.net/image/b0e21d2ecf9d039b710588808072d616"/>
+
+            <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/e5fba6dc2b3457754c07b511b10fff31')" src="https://d9np3dj86nsu2.cloudfront.net/image/0d8ab7d47013245413c6f267eb3a2398"/>
+
+            <img class="tinycard-image" onclick="onClick('https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39')" src="https://d9np3dj86nsu2.cloudfront.net/image/31504ff5d69bc21eeee55ebd8bf144d3"  />
     </div>
 </div>
+
+
 
  
 
@@ -63,45 +72,12 @@
 </div>
 
   <script>
-function onClick1() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/98707cbe6c35570bf3309710846bd66a";
+function onClick(link) {
+  document.getElementById("img01").src = link;
   document.getElementById("modal01").style.display = "block";
 }
 
-function onClick2() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/8a2015765feb99ba0a4a8ae0f8439d29";
-  document.getElementById("modal01").style.display = "block";
-}
 
-function onClick3() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39";
-  document.getElementById("modal01").style.display = "block";
-}
-
-function onClick4() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/05309c879345e4b89aac440a2ee6c06e";
-  document.getElementById("modal01").style.display = "block";
-}
-
-function onClick5() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/9d15503e3a5ee7a03d2e2170394da17a";
-  document.getElementById("modal01").style.display = "block";
-}
-
-function onClick6() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39";
-  document.getElementById("modal01").style.display = "block";
-}
-
-function onClick7() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/e5fba6dc2b3457754c07b511b10fff31";
-  document.getElementById("modal01").style.display = "block";
-}
-
-function onClick8() {
-  document.getElementById("img01").src = "https://d9np3dj86nsu2.cloudfront.net/image/a2da54e0eecdc931fa6f83caf6a4bf39";
-  document.getElementById("modal01").style.display = "block";
-}
 
 </script>
 </body>
