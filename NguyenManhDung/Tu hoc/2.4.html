@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tinycards</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link href="css/2.4.css" rel="stylesheet" />
+    <link rel="icon" sizes="192x192" href="https://d17u0960v8a9bp.cloudfront.net/192x192.png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand row navbar-dark bg-primary py-0 sticky-top font-weight-bold">
+        <div class="container">
+            <a class="navbar-brand d-none d-lg-block col col-auto" href="#">
+                <img src="imgs/tinycard.PNG" alt="LOGO">
+            </a>
+            <!-- xem lai phan collapse -->
+            <div class="collapse navbar-collapse col col-auto" id="navbarSupportedContent">
+                <!-- left -->
+                <div class="navbar-nav mr-sm-auto col-sm-auto col col-auto">
+                    <form class="form-inline d-sm-block d-none">
+                        <input class="form-control py-2" type="search" placeholder="SEARCH" aria-label="Search">
+                    </form>
+                </div>
+                <!-- right -->
+                <ul class="nav col-auto col" id="navbarSupportedContent">
+                    <li class="nav-item my-0 py-3 order-2 d-block d-sm-none col col-auto">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-search"></i>
+                            <span class="d-none d-lg-inline"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item my-0 py-3 order-2 col col-auto">
+                        <a class="nav-link" href="2.html">
+                            <i class="fas fa-home"></i>
+                            <span class="d-none d-lg-inline">HOME</span>
+                        </a>
+                    </li>
+                    <li class="nav-item order-3 py-3 px-2 col col-auto">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-plus"></i>
+                            <span class="d-none d-lg-inline">CREATE</span>
+                        </a>
+                    </li>
+                    <li class="nav-item order-4 py-3 px-2 col col-auto">
+                        <a class="nav-link" href="#">
+                            <i class="far fa-user"></i>
+                            <span class="d-none d-lg-inline"> PROFILE</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- content -->
+    <div class="container my-5">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="pb-5 col-1">
+                    <button class="ml-5 mb-3 btn btn-light escape-btn p-0" href="#">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="progress mb-5 ml-lg-3 ml-5 mt-3 col-lg-10 col-sm-9 col-7 col-md-10 p-0" style="height: 7px; width: 85%">
+                    <div class="progress-bar" role="progressbar" style="width: 0; background-color: #ffd600" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="row d-none question-1">
+                <div class="col-3 offset-1 text-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-muted">trunk</h4>
+                    </div>
+                </div>
+                <div class="col-2 p-0 ml-5">
+                    <div class="multipleChoice mt-5 h-75 left">
+                        <a><img class="card-img-top h-100" alt="trunk" id="n-0" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 center">
+                        <a><img class="card-img-top h-100" alt="head" id="n-1" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 right">
+                        <a><img class="card-img-top h-100" alt="nose" id="n-2" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none question-1">
+                <div class="col-3 offset-1 text-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-muted">head</h4>
+                    </div>
+                </div>
+                <div class="col-2 p-0 ml-5">
+                    <div class="multipleChoice mt-5 h-75 left">
+                        <a><img class="card-img-top h-100" alt="trunk" id="n-3" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985" alt="Card image cap"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 center">
+                        <a><img class="card-img-top h-100" alt="limbs" id="n-4" src="https://d9np3dj86nsu2.cloudfront.net/image/643fab795ba562697468540d79b843d0" alt="Card image cap"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 right">
+                        <a><img class="card-img-top h-100" alt="head" id="n-5" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none question-1">
+                <div class="col-3 offset-1 text-center">
+                    <div class="card-body">
+                        <h4 class="card-title text-muted">nose</h4>
+                    </div>
+                </div>
+                <div class="col-2 p-0 ml-5">
+                    <div class="multipleChoice mt-5 h-75 left">
+                        <a><img class="card-img-top h-100" alt="nose" id="n-6" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9" alt="Card image cap"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 center">
+                        <a><img class="card-img-top h-100" alt="limbs" id="n-7" src="https://d9np3dj86nsu2.cloudfront.net/image/643fab795ba562697468540d79b843d0" alt="Card image cap"></a>
+                    </div>
+                </div>
+                <div class="col-2 p-0">
+                    <div class="multipleChoice h-75 mt-5 right">
+                        <a><img class="card-img-top h-100" alt="head" id="n-8" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-none question-2">
+                <div class="col-3 offset-1 text-center">
+                    <img class="card-img-top h-100" src="https://d9np3dj86nsu2.cloudfront.net/image/ccbdd23f15979c7b0075f0ebfabd8514" alt="head" />
+                </div>
+                <div class="col-8">
+                    <input type="text" class="w-75 ml-3 pb-2" name="name" value="" placeholder="Enter the answer"/>
+                </div>
+            </div>
+            <div class="row d-none question-2">
+                <div class="col-3 offset-1 text-center">
+                    <img class="card-img-top h-100" src="https://d9np3dj86nsu2.cloudfront.net/image/0e836e3deda25d86937d4ea8ae25d985" alt="trunk" />
+                </div>
+                <div class="col-8">
+                    <input type="text" class="w-75 ml-3 pb-2" name="name" value="" placeholder="Enter the answer" />
+                </div>
+            </div>
+            <div class="row d-none question-2">
+                <div class="col-3 offset-1 text-center">
+                    <img class="card-img-top h-100" src="https://d9np3dj86nsu2.cloudfront.net/image/e7c8fe8eb09f4da62b758d108f40f8f9" alt="nose" />
+                </div>
+                <div class="col-8">
+                    <input type="text" class="w-75 ml-3 pb-2" name="name" value="" placeholder="Enter the answer" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="2.4.js"></script>
+</body>
+</html>

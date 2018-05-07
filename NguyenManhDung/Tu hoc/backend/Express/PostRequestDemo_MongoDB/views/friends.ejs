@@ -1,0 +1,17 @@
+<h1>Friends list goes here!</h1>
+
+<ul>
+    <% friends.forEach(function (friend) { %>
+    <li><%= friend.name %> - Age: <em><%= friend.age %></em> - <%= friend.sex %></li>
+    <% }) %>
+</ul>
+
+<form action="/addFriend" method="POST">
+    <input type="text" name="name" placeholder="name" required>
+    <input type="number" name="age" placeholder="age" required>
+    <input type="radio" name="sex" id="male" value="male" checked>
+    <label for="male">male</label>
+    <input type="radio" name="sex" id="female" value="female">
+    <label for="female">female</label>
+    <button>I made a new friend!</button>
+</form>
