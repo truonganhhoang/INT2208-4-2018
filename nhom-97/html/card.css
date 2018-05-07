@@ -67,7 +67,7 @@ html {
   box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
 }
   .tinycard-image1{
-    margin: 30px 20px 50px 20px;
+    margin: 15px 20px 50px 20px;
     width: 160px;
     height: 180px;
     border-radius: 20px;
@@ -75,9 +75,9 @@ html {
     padding-top: 8px;
   }
   .tinycard-image2{
-     padding-top: 30px;
+     padding-top: 15px;
     width: 280px;
-    height: 323px;
+    height: 315px;
     border-radius: 20px;
     position: relative;
   }
@@ -95,7 +95,7 @@ html {
 .content1 {
 
     background-color: #f1f1f1;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-left: 65px;
     margin-top: 10px;
     max-width: 1200px;
