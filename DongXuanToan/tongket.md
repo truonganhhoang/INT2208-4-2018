@@ -12,21 +12,21 @@ https://www.w3schools.com/php/default.asp
 
 Một số bài Quiz đã hoàn thành:
 * Bài Quiz HTML
-
+![Alt text](html.png) 
 * Bài Quiz PHP:
-
+![Alt text](php.png) 
 II. Áp dụng kiến thức được học vào Bài tập lớn: TinyCard Doulingo
 Các chức năng chính:
 
 * Đăng nhập:
-
+![Alt text](login.png) 
 * Tạo tài khoản:
-
+![Alt text](signup.png) 
 * Chơi TinyCards:
-
+![Alt text](play.png) 
 * Tạo thẻ, chủ đề:
- 
+ ![Alt text](create.png) 
 * Tìm chủ đề:
-![Alt text](create.png) 
+![Alt text](search.png) 
 
 Chương trình được lập trình hoàn toàn trên nền tảng JavaScript, Jquery, PHP.
