@@ -1,6 +1,8 @@
 - Bài tập lớn: Làm phần giao diện 
      https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-2 
      
+- Bài tập thuyết trình: https://github.com/Hantor28/INT2208-4-2018/blob/master/DoHuyLinh/pitchme.md
+     
 - Bài tập Edx:
 https://github.com/Hantor28/INT2208-4-2018/blob/master/DoHuyLinh/Edx/Construction.png
 https://github.com/Hantor28/INT2208-4-2018/blob/master/DoHuyLinh/Edx/Process.png
