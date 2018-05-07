@@ -1,0 +1,102 @@
+﻿Có rất nhiều kiểu Test và ta muốn tìm ra những đặc điểm khác nhau giữa chúng bởi vì mỗi loại đều có ưu và nhược điểm riêng.
+
+Hãy nhớ lại các tính chất của test ta đã nói
+Đầu tiên là tốc độ
+Đương nhiên ta muốn test phải nhanh
+Vậy nên ta có 2 loại: bài test nhanh và bài test chậm
+Và một tính chất nữa ta đã nói tới và ta thật sự để tâm đến
+Đó là cô lập các khiếm khuyết
+Nếu 1 test bị fail, ta muốn chúng chỉ cho ta thấy được lí do lỗi xảy ra
+Vậy ở đây ta có bị cô lập và không bị cô lập.
+
+Trên đây là những tính chất mà ta sẽ thảo luận, các tính chất này có ở nhiều kiểu test khác nhau.
+
+Giờ hãy nghĩ về kiểu test cơ bản nhất nơi bạn có 1 phần độc lập của hệ thống mà bạn muốn xác thực,
+Hãy coi nó tương tự thế này
+
+(Đoạn này xem video có minh họa)
+Bạn có một con bu lông, trông giống thế này
+và đường kính của nó ở đây.
+Nếu bạn test các tính trạng của bu lông
+bạn sẽ muốn kiểm tra đường kính cũng phải đúng.
+rồi bạn muốn test rằng chiều dài đúng nữa.
+Vậy đây là test một, test hai, và bạn cũng có cả một vài rãnh vít ở đây
+bạn cũng muốn chắc chắn rằng chiều rộng của rãnh cũng đúng.
+Vậy đây là test ba.
+Vì vậy, đây là ba bài kiểm tra khác nhau mà chúng ta có thể muốn làm trên một cái bu lông.
+Và nếu bạn có một cái ốc, bạn có thể tưởng tượng rằng nó trông như thế này.
+Và nếu ta có ốc, chúng tôi muốn thử nghiệm rằng đường kính này là chính xác.
+đây là test 1
+Và nó sẽ có một số rãnh trong ở đây nữa.
+Vậy đây là test 2.
+Chúng ta sẽ đảm bảo số lượng rãnh cũng chính xác.
+Vì vậy, nếu chúng ta đang xây dựng một test đơn giản cho một vít hoặc cho một bu lông,
+chúng ta sẽ chỉ muốn kiểm tra các thuộc tính này.
+Và điều được biết đến như là không gian thử nghiệm cho các hệ thống phần mềm là unit tests,
+Vì vậy, unit tests tương đối nhanh để thực hiện vì chúng chỉ kiểm tra các tính chất đơn giản.
+Nếu bạn chỉ cần đo chiều dài của con ốc, nó không mất nhiều thời gian.
+
+Tương tự, trong một hệ thống phần mềm, nếu bạn chỉ thực thi một phương thức, thì rất nhanh chóng để nhận được kết quả rằng phương thức đó đúng hay không.
+
+Cô lập khiếm khuyết rất tốt.
+
+Nếu chiều dài của bu lông là sai, bạn biết những gì sai ngay.
+Liệu nó dài quá hay ngắn quá.
+
+Trong hệ thống phần mềm cũng vậy.
+
+Nếu bạn chỉ đo đạc một phương thức khép kín độc lập
+sẽ rất nhanh và dễ dàng tìm ra vấn đề thực sự.
+
+Rồi, chúng ta vừa trao đổi về unit test, chúng là hình thức test chính mà chúng ta thấy trong thực tế và trong các bộ test tự động.
+
+Giờ, chúng ta hãy suy nghĩ về các bài test ở một phương diện khác.
+
+Nếu bạn là người dùng và bạn nhận được một hệ thống phần mềm mới và bạn muốn chắc chắn rằng nó thực sự đúng, bạn sẽ thực hiện những gì được gọi là thử nghiệm chấp nhận (acceptance test).
+Vậy, các bài acceptance test được thực hiện bởi người nhận phần mềm ở nơi đầu tiên.
+Nếu bạn đã ký hợp đồng một phần mềm và một người nào đó đang phân phối nó cho bạn, bạn sẽ đi và đi qua hệ thống và đảm bảo rằng nó thực sự cư xử theo cách mà bạn mong đợi.
+
+Vì vậy, các tests này thường không được tự động hóa, nhưng họ đang sử dụng dữ liệu sản xuất của riêng bạn trên các máy chủ của riêng bạn, vì vậy mọi thứ kết thúc chậm hơn một chút, bởi vì nó là một quá trình nhiều thủ công hơn.
+
+Thử nghiệm chấp nhận của chúng ta thực ra nằm ở không gian này.
+Các bài acceptance tests, bởi vì chúng không tập trung vào các phần nhỏ của hệ thống tại một thời điểm,
+Nên chúng có khuynh hướng không được tốt để cô lập khiếm khuyết.
+Bởi vì nếu có cái gì đó sai, nó có thể là điểm khởi đầu để khiếm khuyết lan rộng.
+Vì vậy, cách này không được tốt.
+Chúng cũng rất chậm vì chúng không được thực hiện thường xuyên trong suốt quá trình phát triển.
+Những điều này hầu hết kết hợp nhiều với nhau ở cuối.
+Kiểu test tiếp theo thì phổ biến hơn, những thứ mà nhìn lại 2 thứ này với nhau.
+Vậy, nếu bạn có một cái bu-lông và nó hoạt động, và bạn có một cái ốc đáp ứng các yêu cầu kĩ thuật, bạn cũng muốn đảm bảo rằng ốc và bu lông có thể làm việc cùng nhau để thực sự hoàn thành nhiệm vụ mà bạn muốn.
+Vì vậy, điều này được gọi là một bài kiểm tra tích hợp (integration test),
+nơi bạn gắn 2 thứ lại với nhau.
+Integration test nằm nhiều ở chỗ này.
+Bây giờ integration test ít cô lập hơn so với unit test
+bởi vì chúng thử nhiều phần cùng một lúc.
+Và chúng cũng chậm hơn unit tests bởi vì chúng thực hiện nhiều phần hệ thống cùng một lúc.
+Nhưng chúng hơi nhanh hơn và cũng...
+có thể được cô lập hơn một chút so với các bài acceptance tests rộng rãi.
+
+
+Ngoài ra còn có một tập hợp con đặc biệt của integration tests được gọi là smoke test nằm ở đây.
+Smoke test chỉ là một tập con của integration test của bạn mà bạn có thể chạy để có được một cảm giác của mọi thứ đang làm việc.
+Vì vậy, có thể nói, bạn có thể tưởng tượng có một bài integration test gồm 1,000 integration tests trong đó và rồi bộ smoke test của bạn sẽ chỉ có 10 hoặc 12 tests, chỉ để đảm bảo như là một kiểm tra bình thường, rằng hệ thống của bạn vẫn làm việc.
+
+Phân loại rộng cuối cùng của tests thực sự bao gồm toàn bộ không gian này/
+Và đây được gọi là thử nghiệm hệ thống (System tests).
+Vậy, system tests thực hiện các phần rộng của hệ thống cùng một lúc, thông thường với dữ liệu tổng hợp, để để chắc chắn rằng tất cả các phần khác nhau phù hợp với nhau.
+Vậy, integration tests thực sự chỉ là tìm kiếm các cặp hoặc các tập con nhỏ của hệ thống, trong khi xét nghiệm hệ thống sẽ xem xét việc thu thập rất nhiều đơn vị khác nhau và những thứ mà bạn đã tích hợp kiểm tra để đảm bảo rằng tất cả chúng làm việc cùng nhau một cách hiệu quả.
+
+Bây giờ một trong những khác biệt quan trọng giữa system tests và acceptance test ở đây là system test được thực hiện bởi đội phát triển.
+Vậy bạn sẽ chạy chúng trên nền tảng liên tục
+Sự khác nhau nữa là system tests thường với dữ liệu tổng hợp, sử dụng các máy móc và dịch vụ của nhà phát triển, trong khi đó acceptance tests được thực hiện bởi khách hàng trong môi trường riêng của họ.
+Vậy điểm khác biệt cốt lõi ở đây là rất quan trọng.
+
+Giờ, một thứ tôi muốn chỉ ra ở đây, nó rất là cốt lõi
+Rất đáng để nói
+Đó là chúng ra có thể chỉ viết unit tests cho mọi thứ. Chúng nhanh, cô lập tốt, nhưng chúng thực sự không báo với ta nếu hệ thống của chúng ta sẽ hoạt động tốt với nhau
+Vì vậy, cuối cùng, vào cuối bất kỳ chương trình testing hiệu quả, bạn sẽ đương đầu nhiều loại tests khác nhau bởi vì mỗi cái đều cho bạn các thông tin khác nhau của hệ thống.
+Các unit test sẽ cho bạn biết, hey, các từng phần riêng đều hoạt động tốt và thành công
+Integration tests bảo cho bạn rằng các đơn vị cũng hoạt động tốt với nhau.
+Và system tests chạy và báo với bạn rằng cả hệ thống có thể hoàn thành nhiệm vụ một cách hiệu quả
+Cuối cùng, vào cuối của quá trình phát triển, một khi khách hàng được tham gia, acceptance tests đảm bảo rằng thứ bạn tin là đúng sẽ giống với mong đợi của khách hàng về thứ họ tin là đúng.
+

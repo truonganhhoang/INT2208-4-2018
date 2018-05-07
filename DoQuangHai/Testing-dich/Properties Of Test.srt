@@ -1,0 +1,174 @@
+﻿1
+00:00:00,369 --> 00:00:02,660
+REID HOLMES: There are also a few high-level properties
+Có thêm một số các tính chất ở mức độ cao
+
+2
+00:00:02,660 --> 00:00:05,450
+that we want our test cases to have so they can be of the most
+mà chúng ta muốn các test cases phải có để chúng có thể trở thành
+
+3
+00:00:05,450 --> 00:00:07,550
+utility for a development team.
+công cụ tốt nhất cho nhóm phát triển.
+
+4
+00:00:07,550 --> 00:00:10,520
+So the first is that we want our test cases to execute very quickly.
+Vậy điều đầu tiên chúng ta muốn các test cases phải thực thi thật nhanh.
+
+5
+00:00:10,520 --> 00:00:14,825
+That is, we want them to be fast because slow test cases impede velocity, ta muốn chúng phải nhanh vì test cases chậm sẽ làm chậm tiến độ
+
+6
+00:00:14,825 --> 00:00:16,700
+and they make it so developers don't actually
+và nếu làm ra chúng thì các developers sẽ không thực sự
+
+7
+00:00:16,700 --> 00:00:18,449
+want to run their test suites because they
+muốn chạy chúng bởi vì họ
+
+8
+00:00:18,449 --> 00:00:21,180
+don't want to wait for the results.
+không muốn đợi chờ kết quả.
+
+9
+00:00:21,180 --> 00:00:24,140
+The next property we want is we want the results to be reliable.
+tính chất tiếp theo đó là ta muốn các kết quả phải đáng tin cậy.
+
+10
+00:00:27,410 --> 00:00:31,460
+That is, when a test case fails, the failure actually
+Có nghĩa là, khi một test case lỗi, lỗi thực sự
+
+11
+00:00:31,460 --> 00:00:35,030
+corresponds to an actual defect in the system under test. 
+tương ứng với một khiếm khuyết thực tế trong system under test.
+
+12
+00:00:35,030 --> 00:00:39,740
+Because if test cases fail randomly, it can erode developer confidence
+Bởi vì nếu test case lỗi một cách ngẫu nhiên, nó có thể làm giảm niềm tin của developer
+
+13
+00:00:39,740 --> 00:00:42,980
+that the test suite is actually giving them value and teaching them things
+rằng bộ test đang đem lại lợi ích thực sự và dạy họ các điều
+
+14
+00:00:42,980 --> 00:00:46,090
+about the behavior of the system.
+về hành vi của hệ thống.
+
+15
+00:00:46,090 --> 00:00:50,375
+Next, we want the test suite failures to help us isolate failures.
+Tiếp theo, chúng ta muốn những lỗi của test suite giúp ta cô lập được các lỗi
+
+16
+00:00:53,890 --> 00:00:56,750
+And what I mean by this is we want a single test case
+và ý của tôi là muốn một test case đơn
+
+17
+00:00:56,750 --> 00:01:00,230
+failure to help us quickly pinpoint where in the code under test
+sẽ chỉ điểm nhanh chóng chỗ nào trong code under test
+
+18
+00:01:00,230 --> 00:01:01,820
+the problem arises.
+lỗi đang phát sinh.
+
+19
+00:01:01,820 --> 00:01:04,864
+Because if a test case failure shows us 100,000 lines that
+Bởi vì nếu một lỗi test case chỉ ra 100,000 dòng
+
+20
+00:01:04,864 --> 00:01:08,030
+could be the source of the problem, it really doesn't provide a lot of value
+có thể là nguồn gốc vấn đề, điều này thực tế chẳng cung cấp nhiều giá trị
+
+21
+00:01:08,030 --> 00:01:08,529
+for us. 
+cho ta.
+
+22
+00:01:08,529 --> 00:01:11,710
+We really want to be able to isolate that failure in as
+Chúng ta muốn phải cô lập các lỗi 
+
+23
+00:01:11,710 --> 00:01:14,340
+fine-grained a manner as possible.
+càng tách biệt càng tốt.
+
+24
+00:01:14,340 --> 00:01:16,520
+And finally, we want our faults to simulate users.
+Và cuối cùng, chúng ta muốn lỗi của ta giả lập người dùng.
+
+25
+00:01:22,910 --> 00:01:24,770
+Now, this seems like a different property,
+Điều này giống nhưu một tính chất khác
+
+26
+00:01:24,770 --> 00:01:26,652
+but it's an important one in practice.
+nhưng nó khá quan trọng trong thực tế.
+
+27
+00:01:26,652 --> 00:01:28,610
+Where we're testing our systems, we're not just
+Khi chúng ta kiểm thử hệ thống, chúng ta không chỉ
+
+28
+00:01:28,610 --> 00:01:31,250
+trying to validate the low-level programmatic behavior
+cố gắng xác thực hành vi mang tính lập trình ở cấp thấp
+
+29
+00:01:31,250 --> 00:01:32,670
+within our system.
+trong hệ thống.
+
+30
+00:01:32,670 --> 00:01:35,720
+We're also trying to validate the high-level behavior of the system
+Chúng ta cũng cố gắng xác thực cách hành vi ở mức cao của hệ thống
+
+31
+00:01:35,720 --> 00:01:38,010
+that the user can actually see.
+thứ mà người dùng có thể thấy thực thế.
+
+32
+00:01:38,010 --> 00:01:41,630
+So if we can't trigger the kinds of faults that our users experience,
+Vậy nên nếu chúng ta không phát hiện được những loại lỗi mà người dùng trải qua,
+
+33
+00:01:41,630 --> 00:01:46,130
+the test cases won't accurately reflect the overall quality of our system.
+thì test cases sẽ không phản ánh đúng tổng quan chất lượng của hệ thống.
+
+34
+00:01:46,130 --> 00:01:49,085
+So keeping this in mind is also one other dimension
+Vậy nên hãy luôn nhớ điều này như là một góc nhìn khác
+
+35
+00:01:49,085 --> 00:01:52,356
+when we're thinking what the test cases that we're writing.
+khi ta suy nghĩ test cases ta đang định viết.
+
