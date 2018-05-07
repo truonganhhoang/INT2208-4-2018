@@ -2,6 +2,7 @@ HVT: Trần Văn Định
 MSV: 16020885
 
 Link Bài tập nhóm: https://nhom-7-4.herokuapp.com/home
+
   Nội dung: Tinycards clone
   Có chức năng đăng ký, đăng nhập
   Có chức năng tạo deck mới, sửa nội dung deck
@@ -9,6 +10,7 @@ Link Bài tập nhóm: https://nhom-7-4.herokuapp.com/home
   Có thể search được deck
   Đều được lưu trữ trong database
   ...
+	
 Nội dung cá nhân đóng góp:
   Trang seach
   Báo cáo dự án phần mềm 
