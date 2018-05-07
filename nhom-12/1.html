@@ -17,7 +17,7 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
+    <script src="javascript.js" type="text/javascript"></script>
 </head>
 
 <body style="background-color: #f7f7f7">
@@ -28,11 +28,19 @@
             <a class="navbar-brand" href="#">
                 <img src="IMG/tiny.png" alt="logo" style="width:180px; height: 60px">
             </a>
-            <div class="placeholder">
-                <form class="form-inline my-2 my-lg-0">
-                    <input type="text" class="placeholder" onfocus="this.value=''" value="Search">
-                </form>
-                <div id="react-autowhatever-1" class="react">
+            <div>
+                <input type="text" placeholder="Search.." id="myInputSearch" onkeyup="filterFunction()">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Search result</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">art</a>
+                        <a href="#">authentic</a>
+                        <a href="#">biology</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                        <a href="#">custom</a>
+                        <a href="#">dutch basics</a>
+                    </div>
                 </div>
             </div>
             <div class="navbar3">
@@ -78,19 +86,19 @@
             </div>
             <div class="carousel-item">
                 <a href="http://localhost:63342/Tynicard/1-2-3.html?_ijt=kc0t1p8clna8skcqmlghcj7lrt">
-                <img class="d-block w-100" src="IMG/image.svg" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>...</h5>
-                    <p>...</p>
-                </div>
+                    <img class="d-block w-100" src="IMG/image.svg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                    </div>
             </div>
             <div class="carousel-item">
                 <a href="http://localhost:63342/Tynicard/1-2-3.html?_ijt=kc0t1p8clna8skcqmlghcj7lrt">
-                <img class="d-block w-100" src="IMG/image.svg" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>...</h5>
-                    <p>...</p>
-                </div>
+                    <img class="d-block w-100" src="IMG/image.svg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>...</h5>
+                        <p>...</p>
+                    </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -129,7 +137,7 @@
                 <td>
                     <a href='http://localhost:63342/Tynicard/1-2-2.html?_ijt=kh62812gmvcnqv941ci2f7mn6m'
                        style="float: right; font-size: 15px"
-                        class="btn signup">
+                       class="btn signup">
                         See all
                     </a>
                 </td>
@@ -227,7 +235,8 @@
                             </button>
                         </div>
                         <div style="margin: 0 0 1em 5em">
-                            <a href="http://localhost:63342/Tynicard/1-2.html?_ijt=h8sb5lmkmquqherqenf14ti5rb" class="btn btn-primary">Login</a>
+                            <a href="http://localhost:63342/Tynicard/1-2.html?_ijt=h8sb5lmkmquqherqenf14ti5rb"
+                               class="btn btn-primary">Login</a>
                         </div>
                     </form>
                 </div>
