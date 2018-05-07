@@ -9,7 +9,8 @@ MSV: 16021105
 
 2.Bài tập nhóm
 	+ Làm slide phần Low level desgin: https://github.com/truonganhhoang/SoftEng/blob/master/low-level-design/PITCHME.md
-
+3.Bài tập cá nhân
+	+ Software Engineering: https://github.com/quannguyen0510/INT2208-4-2018/tree/master/NguyenVietQuan/Bai%20tap%20Software%20Engineering
 3. Phần tự học
 	+ HTML, CSS, bootstrap JavaScript ở mức căn bản
 	+ Mới bắt đầu tiếp cận angular
