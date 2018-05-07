@@ -12,6 +12,7 @@ https://github.com/truonganhhoang/SoftEng/tree/master/specifications
 
 3. Phần tự học
 
-HTML, CSS, bootstrap3, JavaScript, nodejs + express 
+HTML: 80%, CSS: 20%, bootstrap3: 50%, JavaScript: 80%, nodejs + express: 20% 
+
 - bao gồm những kiến thức học trên google và youtube, nên không có tiến trình như khóa học
 - phần đã học trên sololearn: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/TongLyTrinh/soloJPG
