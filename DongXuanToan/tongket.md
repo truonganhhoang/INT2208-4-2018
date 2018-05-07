@@ -5,10 +5,10 @@ Báo cáo tổng kết môn học:
 I. Bài tập lớn:
 Hoàn thành 70% các khóa học HTMLBoostrap,JavaScript,PHP trên W3schools
 Link khóa học:
-https://www.w3schools.com/html/
-https://www.w3schools.com/bootstrap/default.asp
-https://www.w3schools.com/js/default.asp
-https://www.w3schools.com/php/default.asp
+https://www.w3schools.com/html/   
+https://www.w3schools.com/bootstrap/default.asp 
+https://www.w3schools.com/js/default.asp  
+https://www.w3schools.com/php/default.asp  
 
 Một số bài Quiz đã hoàn thành:
 * Bài Quiz HTML
