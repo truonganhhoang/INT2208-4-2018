@@ -5,7 +5,6 @@ MSV: 16021377
 1. Cá nhân:
 HMTL, CSS, Bootstrap trên Codecademy, tự dánh giá: mức cơ bản.
 Github: phần nào nắm rõ
-
 Link: https://github.com/QuangHaiDo/INT2208-4-2018/tree/master/DoQuangHai/Self-Studying
 
 2. Bài tập nhóm:
