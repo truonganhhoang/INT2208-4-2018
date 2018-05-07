@@ -14,5 +14,6 @@ Link: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-6
 
 Tham gia dịch và xây dựng slide cho phần thuyết trình về Testing:
 https://github.com/truonganhhoang/SoftEng/tree/master/testing
+https://github.com/QuangHaiDo/INT2208-4-2018/tree/master/DoQuangHai/Testing-dich
 
 Phần chấm điểm chéo:
