@@ -1,82 +1,165 @@
-.tinycard-bounding{
-  height: 166px;
-  margin-bottom: 30px;
-  position: relative;
+
+.navbar-default{
+  border: none;
+  background: #32cdff;
+}
+.navbar{
+  padding: 0;
+  height: 60px;
+  margin-bottom: 0;
+    padding-top: 0;
+
+}
+.navbar-brand{
+  padding-left: 90px;
+  padding-top: 8px;
+}
+.container-fluid{
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+    padding-left: 0;
+    padding-top: 20px
+}
+.navbar-nav{
+  margin-top: 5px;
+  margin-left: -20px;
+  text-decoration-color: 
 }
 
-.tinycard{
-  display: block;
-  margin: auto;
-  height: 166px;
-  position: relative;
-  width: 144px;
-}
 
-.tinycard-image{
-  object-fit: cover;
+.navbar-default .navbar-nav {
+  color: #f1f1f1;
+  }
+  .tinycard-image{
+    margin: 30px 20px 50px 20px;
+    width: 144px;
+    height: 166px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  body,
+html {
   height: 100%;
   width: 100%;
-  z-index: 2;
-  background-color: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 9px #fff;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.error {
+  width: 200px;
+  height: 20px;
+  height: auto;
   position: absolute;
-  border-style: none;
-}
-
-.tinycard-display{
-  display: inline-block;
-  height: 286px;
-  margin-top: 15px;
-  margin-left: 20px;
-  position: relative;
-  text-align: left;
-  text-decoration: none;
-  vertical-align: top;
-  white-space: normal;
-  width: 144px;
-}
-
-.tinycard-name{
-  -webkit-box-orient: vertical;
-  color: #5c5c5c;
-  display: -webkit-box;
-  font-size: 15px;
-  -webkit-line-clamp: 3;
-  line-height: 1.2;
-  margin: 5px 0px;
-  width: 100%;
-  max-height: 54px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 10px;
+  background-color: #383838;
+  color: #F0F0F0;
+  font-family: Calibri;
+  font-size: 20px;
+  padding: 10px;
   text-align: center;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+  -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+  box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+}
+  .tinycard-image1{
+    margin: 15px 20px 50px 20px;
+    width: 160px;
+    height: 180px;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 8px;
+  }
+  .tinycard-image2{
+     padding-top: 15px;
+    width: 280px;
+    height: 315px;
+    border-radius: 20px;
+    position: relative;
+  }
+.content {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 30px;
+    max-width: 850px;
+    vertical-align: top;
+    width: 840px;
 }
 
-.shadow1{
-  height: 99%;
-  top: 6px;
-  width: 99%;
-  z-index: 1;
-  background-color: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 9px rgba(0,0,0,.1);
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
-}
+.content1 {
 
-.shadow2{
-  height: 98%;
-  top: 12px;
-  width: 98%;
-  z-index: 0;
-  background-color: #fff;
-  border-radius: 18px;
-  box-shadow: 0 2px 9px rgba(0,0,0,.1);
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-left: 65px;
+    margin-top: 10px;
+    max-width: 1200px;
+    vertical-align: top;
+    width: 1200px;
+}
+.content2 {
+
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    margin-left: 200px;
+    margin-top: 30px;
+    max-width: 1200px;
+    vertical-align: top;
+    width: 1000px;
+}
+.subject {
+  padding-top: 20px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height: 600px;
+}
+.subject1 {
+  padding-top: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    height:420px;
+ padding-right: 500px;
+}
+.subject-name{
+  margin-top: 150px;
+  text-align: center;
+  width: 250px;
+  color: #5c5c5c;
+}
+.a {
+    color: #2dced6;
+    padding-left: 8px;
+  }
+  .text{
+    text-align: center;
+    width: 250px;
+    color: #5c5c5c;   
+    margin-top: 20px; 
+  }
+  .w3-content {
+     background-color: transparent;
+     margin-top: auto;
+     position: relative;
+     outline: 0;
+     padding: 0;
+     width: 600px;
+     padding-left: 140px;
+}
+.w3-animate-zoom {
+    animation-duration: 0.6s;
+    animation-timing-function: initial;
+    animation-delay: initial;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
 }
