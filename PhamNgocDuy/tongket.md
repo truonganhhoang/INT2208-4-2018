@@ -22,6 +22,8 @@
     ![demo-angular-development-screen](https://raw.githubusercontent.com/phamngocduy98/INT2208-4-2018/master/PhamNgocDuy/images/angular_demo.png)
     - Angular built file:
         - xem tại: https://github.com/phamngocduy98/INT2208-4-2018/tree/master/PhamNgocDuy/dev/angular_dist.zip
+    - NodeJS demo phiên bản đầu:
+        - xem tại: https://github.com/phamngocduy98/INT2208-4-2018/tree/master/PhamNgocDuy/dev/index.js
 - Đã làm:
     - Dịch black-box Testing: https://github.com/truonganhhoang/SoftEng/blob/master/testing/PITCHME.md
         - (xem phần bên dưới white-box testing)
