@@ -10,8 +10,8 @@ Mã sinh viên: 16020961
         - Technical Representations
         - APIs
 - Bài tập cá nhân:
-    - High Level Design: https://github.com/INT2208-4-2018TranMinhHieu/BaiTapCaNhan/HighLevelDesign.png
-    - Low Level Design: https://github.com/INT2208-4-2018TranMinhHieu/BaiTapCaNhan/LowLevelDesign.png
+    - High Level Design: https://github.com/hieutm2198/INT2208-4-2018/blob/master/TranMinhHieu/BaiTapCaNhan/HighLevelDesign.png
+    - Low Level Design: https://github.com/hieutm2198/INT2208-4-2018/blob/master/TranMinhHieu/BaiTapCaNhan/LowLevelDesign.png
 
 - Nội dung tự học:
     - Tự học HTML, CSS ở mức trung bình.
