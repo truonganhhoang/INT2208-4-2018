@@ -10,7 +10,7 @@ Link: https://github.com/QuangHaiDo/INT2208-4-2018/tree/master/DoQuangHai/Self-S
 2. Bài tập nhóm:
 
 Đề tài: Tiny Cards
-Link: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-6
+Link: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-6 
 Ðóng góp: Trang học bài mới, tạo nội dung thẻ.
 
 Tham gia dịch và xây dựng slide cho phần thuyết trình về Testing:
