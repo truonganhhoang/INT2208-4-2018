@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Card } from './../card';
-import { CardService } from './../card.service';
+import { ActivatedRoute } from '@angular/router';
+import { DeckService } from '../deck.service';
+import { Location } from '@angular/common';
+import { Deck } from '../deck';
 
 @Component({
   selector: 'app-learn',
@@ -8,12 +10,18 @@ import { CardService } from './../card.service';
   styleUrls: ['./learn.component.css']
 })
 export class LearnComponent implements OnInit {
-  public cards: Card[]=[];
-  constructor(private cardService: CardService) { }
+
+  deck: Deck;
+
+  constructor(
+    private route: ActivatedRoute,
+    private deckService: DeckService,
+    private location: Location
+  ) {}
 
   ngOnInit() {
-    this.cards = this.cardService.getAllCards();
-    console.log(this.cards);
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.deck = this.deckService.getDeckByID(id);
   }
 
 }
