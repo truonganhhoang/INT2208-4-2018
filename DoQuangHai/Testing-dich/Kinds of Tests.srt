@@ -1,0 +1,661 @@
+﻿1
+00:00:00,409 --> 00:00:02,700
+REID HOLMES: So there are many different kinds of tests
+Có rất nhiều kiểu Test
+
+2
+00:00:02,700 --> 00:00:05,116
+and we want to look at what their different properties are
+và ta muốn tìm ra những đặc điểm khác nhau giữa chúng
+
+3
+00:00:05,116 --> 00:00:07,631
+because each have some positive and negative properties.
+bởi vì mỗi loại đều có ưu và nhược điểm riêng
+
+4
+00:00:07,631 --> 00:00:10,630
+So let's think back to some of the test properties we just talked about.
+Hãy nhớ lại các tính chất của test ta đã nói
+
+5
+00:00:10,630 --> 00:00:11,680
+So the first is speed.
+Đầu tiên là tốc độ
+
+6
+00:00:11,680 --> 00:00:15,820
+So we want, not surprisingly, our test to be fast.
+Đương nhiên ta muốn test phải nhanh
+
+7
+00:00:15,820 --> 00:00:19,309
+So we have fast tests and we have tests that are slow.
+Vậy nên ta có 2 loại: bài test nhanh và bài test chậm
+
+8
+00:00:19,309 --> 00:00:22,350
+And another property that we talked about that we're really interested in
+và một tính chất nữa ta đã nói tới và ta thật sự để tâm đến
+
+9
+00:00:22,350 --> 00:00:24,130
+is that defect isolation.
+đó là cô lập các khiếm khuyết
+
+10
+00:00:24,130 --> 00:00:28,530
+So if a test fails, we want to be able to tell why that failure happened.
+Nếu 1 test bị fail, ta muốn chúng chỉ cho ta thất được lí do lỗi xảy ra
+
+11
+00:00:28,530 --> 00:00:35,231
+So here we can have isolated and not isolated.
+Vậy ở đây ta có bị cô lập và không bị cô lập.
+
+12
+00:00:39,852 --> 00:00:42,060
+These are our properties that we're going to discuss,
+Trên đây là những tính chất mà ta sẽ thảo luận,
+
+13
+00:00:42,060 --> 00:00:44,750
+these different kinds of tests having.
+các tính chất này có ở nhiều kiểu test khác nhau.
+
+14
+00:00:44,750 --> 00:00:47,190
+So let's think of the most basic kind of test
+Giờ hãy nghĩ về kiểu test cơ bản nhất
+
+15
+00:00:47,190 --> 00:00:50,700
+where you have a single part of a system that you want to validate.
+nơi bạn có 1 phần độc lập của hệ thống mà bạn muốn xác thực,
+
+16
+00:00:50,700 --> 00:00:53,670
+Just think about it in terms of an analogy.
+hCoi nó tương tự thế này
+
+17
+00:00:53,670 --> 00:00:56,530
+Say you have a bolt. So bolt looks kind of like this.
+(Đoạn này xem video có minh họa,) Bạn có một con ốc vít, trông giống thế này
+
+18
+00:00:59,390 --> 00:01:02,960
+And it has a diameter here.
+và đường kính của nó ở đây.
+
+19
+00:01:02,960 --> 00:01:04,830
+So if you tested the properties of the bolt,
+Nếu bạn test các tính trạng của vít
+
+20
+00:01:04,830 --> 00:01:07,470
+you'd want to test that the diameter was correct.
+bạn sẽ muốn kiểm tra đường kính cũng phải đúng.
+
+21
+00:01:07,470 --> 00:01:11,360
+Then you want to test that it's a length that is correct as well.
+rồi bạn muốn test rằng chiều dài đúng nữa.
+
+22
+00:01:11,360 --> 00:01:17,015
+So here's test one, here's test two, and you probably have some threads on here.
+Vậy đây là test một, test hai, và bạn cũng có cả một vài rãnh vít ở đây
+
+23
+00:01:17,015 --> 00:01:19,640
+You want to make sure that the pitch of the threads is correct.
+bạn cũng muốn chắc chắn rằng chiều rộng của rãnh cũng đúng.
+
+24
+00:01:19,640 --> 00:01:21,014
+So here's test number three.
+Vậy đây là test ba.
+
+25
+00:01:21,014 --> 00:01:23,930
+So these are three different tests that we might want to do on a bolt.
+Vì vậy, đây là ba bài kiểm tra khác nhau mà chúng ta có thể muốn làm trên một cái vít.
+
+26
+00:01:23,930 --> 00:01:27,670
+And if you had a nut as well, You could imagine that looks like this.
+Và nếu bạn có một cái ốc, bạn có thể tưởng tượng rằng nó  trông như thế này.
+
+27
+00:01:31,300 --> 00:01:35,620
+And if we had a nut, we'd want to test that this diameter is correct.
+Và nếu ta có ốc, chúng tôi muốn thử nghiệm rằng đường kính này là chính xác.
+
+28
+00:01:35,620 --> 00:01:37,560
+Here's test 1.
+đây là test 1
+
+29
+00:01:37,560 --> 00:01:40,560
+And it is going to have some internal threads in here, too.
+Và nó sẽ có một số rãnh trong ở đây nữa.
+
+30
+00:01:40,560 --> 00:01:42,010
+So here's test two.
+Vậy đây là test 2.
+
+31
+00:01:42,010 --> 00:01:45,130
+We're going to make sure that the thread count is also correct.
+Chúng ta sẽ đảm bảo số lượng rãnh cũng chính xác.
+
+32
+00:01:45,130 --> 00:01:48,940
+So if we were building a simple test for a bolt or for a nut,
+Vì vậy, nếu chúng ta đang xây dựng một test đơn giản cho một vít hoặc cho một ốc,
+
+33
+00:01:48,940 --> 00:01:50,910
+we would just want to check these properties.
+chúng ta sẽ chỉ muốn kiểm tra các thuộc tính này.
+
+34
+00:01:50,910 --> 00:01:54,010
+And what this is known as in the testing space for software systems
+Và điều được biết đến như là không gian thử nghiệm cho các hệ thống phần mềm
+
+35
+00:01:54,010 --> 00:01:56,650
+are unit tests.
+là unit tests,
+
+36
+00:01:56,650 --> 00:02:01,120
+So unit tests are relatively fast to execute because they're just
+Vì vậy, unit tests tương đối nhanh để thực hiện vì chúng chỉ
+
+37
+00:02:01,120 --> 00:02:02,370
+checking simple properties.
+kiểm tra các tính chất đơn giản.
+
+38
+00:02:02,370 --> 00:02:05,740
+If you're just measuring the length of a bolt, it doesn't take very long.
+Nếu bạn chỉ cần đo chiều dài của con ốc, nó không mất nhiều thời gian.
+
+39
+00:02:05,740 --> 00:02:08,790
+Similarly, in a software system, if you're just executing a method,
+Tương tự, trong một hệ thống phần mềm, nếu bạn chỉ thực thi một phương thức,
+
+40
+00:02:08,790 --> 00:02:10,539
+it can be very quick to get a result as to
+thì rất nhanh chóng để nhận được kết quả
+
+41
+00:02:10,539 --> 00:02:12,970
+whether or not that method is correct.
+rằng phương thức đó đúng hay không.
+
+42
+00:02:12,970 --> 00:02:15,290
+They're also really good a defect isolation.
+Cô lập khiếm khuyết rất tốt.
+
+43
+00:02:15,290 --> 00:02:18,670
+If the length of the bolt is wrong, you know what's wrong right away.
+Nếu chiều dài của con vít là sai, bạn biết những gì sai ngay.
+
+44
+00:02:18,670 --> 00:02:20,531
+It's too long or it's too short.
+Liệu nó dài quá hay ngắn quá.
+
+45
+00:02:20,531 --> 00:02:22,030
+The same thing in a software system.
+Trong hệ thống phần mềm cũng vậy.
+
+46
+00:02:22,030 --> 00:02:27,100
+If you're just measuring how correct a single small self-contained method is,
+Nếu bạn chỉ đo đạc một phương thức khép kín độc lập
+
+47
+00:02:27,100 --> 00:02:29,620
+it can be really quick and easy to be able to figure out
+sẽ rất nhanh và dễ dàng tìm ra
+
+48
+00:02:29,620 --> 00:02:30,742
+what's actually wrong.
+vấn đề thực sự.
+
+49
+00:02:30,742 --> 00:02:33,700
+All right, so these are unit tests and this is the primary form of test
+Rồi, chúng ta vừa trao đổi về unit test, chúng là hình thức test chính
+
+50
+00:02:33,700 --> 00:02:38,220
+that we see in practice and in automated test suites.
+mà chúng ta thấy trong thực tế và trong các bộ test tự động.
+
+51
+00:02:38,220 --> 00:02:41,030
+So let's think about the tests on the other end of the spectrum.
+Giờ, chúng ta hãy suy nghĩ về các bài test ở một phương diện khác.
+
+52
+00:02:41,030 --> 00:02:43,300
+So if you're a user and you're getting a new software system
+Nếu bạn là người dùng và bạn nhận được một hệ thống phần mềm mới
+
+53
+00:02:43,300 --> 00:02:45,508
+and you want to make sure that it's actually correct,
+và bạn muốn chắc chắn rằng nó thực sự đúng,
+
+54
+00:02:45,508 --> 00:02:48,340
+you're going to perform what's called acceptance tests.
+bạn sẽ thực hiện những gì được gọi là thử nghiệm chấp nhận (acceptance test).
+
+55
+00:02:48,340 --> 00:02:51,207
+So acceptance tests are performed by the person receiving
+Vậy, các bài acceptance test được thực hiện bởi người nhận
+
+56
+00:02:51,207 --> 00:02:52,540
+the software in the first place.
+phần mềm ở nơi đầu tiên.
+
+57
+00:02:52,540 --> 00:02:54,540
+If you've contracted out a piece of software and someone
+Nếu bạn đã ký hợp đồng một phần mềm và một người nào đó
+
+58
+00:02:54,540 --> 00:02:57,498
+is delivering it to you, you're going to go and walk through the system
+đang phân phối nó cho bạn, bạn sẽ đi và đi qua hệ thống
+
+59
+00:02:57,498 --> 00:02:59,930
+and make sure it actually behaves the way that you expect.
+và đảm bảo rằng nó thực sự cư xử theo cách mà bạn mong đợi.
+
+60
+00:02:59,930 --> 00:03:02,320
+So these tests aren't generally heavily automated,
+Vì vậy, các tests này thường không được tự động hóa,
+
+61
+00:03:02,320 --> 00:03:06,370
+but they're using your own production data on your own servers,
+nhưng họ đang sử dụng dữ liệu sản xuất của riêng bạn trên các máy chủ của riêng bạn,
+
+62
+00:03:06,370 --> 00:03:08,830
+so things end up being quite a bit slower, because it's
+vì vậy mọi thứ kết thúc chậm hơn một chút, bởi vì nó là
+
+63
+00:03:08,830 --> 00:03:10,705
+a much more manual process.
+một quá trình nhiều thủ công hơn.
+
+64
+00:03:10,705 --> 00:03:12,830
+Our acceptance test really live down in this space.
+Thử nghiệm chấp nhận của chúng ta thực ra nằm ở không gian này.
+
+65
+00:03:21,550 --> 00:03:25,750
+So acceptance tests, because they aren't focusing
+Các bài acceptance tests, bởi vì chúng không tập trung vào
+
+66
+00:03:25,750 --> 00:03:27,910
+on small little parts of the system at a time,
+các phần nhỏ của hệ thống tại một thời điểm,
+
+67
+00:03:27,910 --> 00:03:30,760
+they tend to not be great for defect isolation.
+họ có khuynh hướng không được tốt để cô lập khiếm khuyết.
+
+68
+00:03:30,760 --> 00:03:34,030
+Because if something is wrong, it can be broad swaths of the system
+Bởi vì nếu có cái gì đó sai, nó có thể là điểm khởi đầu
+
+69
+00:03:34,030 --> 00:03:35,842
+that the defect could be arising from.
+để khiếm khuyết lan rộng.
+
+70
+00:03:35,842 --> 00:03:37,050
+So they're not good that way.
+Vì vậy, cách này không được tốt.
+
+71
+00:03:37,050 --> 00:03:39,640
+They're also very slow because they aren't performed frequently
+Chúng cũng rất chậm vì chúng không được thực hiện thường xuyên
+
+72
+00:03:39,640 --> 00:03:41,098
+throughout the development process.
+trong suốt quá trình phát triển.
+
+73
+00:03:41,098 --> 00:03:44,620
+These mostly just come together more at the end.
+Những điều này hầu hết kết hợp nhiều với nhau ở cuối.
+
+74
+00:03:44,620 --> 00:03:48,170
+The next kind of tests that are commoner, the things that
+Kiểu test tiếp theo thì phổ biến hơn, những thứ mà
+
+75
+00:03:48,170 --> 00:03:50,620
+look at these two pieces together.
+nhìn lại 2 thứ này với nhau.
+
+76
+00:03:50,620 --> 00:03:53,530
+So if you have a bolt and it works, and you
+Vậy, nếu bạn có một cái bu-lông và nó hoạt động, và bạn
+
+77
+00:03:53,530 --> 00:03:55,420
+have a nut that meets your specifications,
+có một cái ốc đáp ứng các yêu cầu kĩ thuật,
+
+78
+00:03:55,420 --> 00:03:57,586
+you also want to make sure that the nut and the bolt
+bạn cũng muốn đảm bảo rằng ốc và bu lông
+
+79
+00:03:57,586 --> 00:04:00,967
+can work together to actually accomplish the task that you want.
+có thể làm việc cùng nhau để thực sự hoàn thành nhiệm vụ mà bạn muốn.
+
+80
+00:04:00,967 --> 00:04:02,800
+So this is called an integration test, where
+Vì vậy, điều này được gọi là một bài kiểm tra tích hợp (integration test),
+
+81
+00:04:02,800 --> 00:04:04,730
+you tie these two things together.
+nơi bạn gắn 2 thứ lại với nhau.
+
+82
+00:04:04,730 --> 00:04:06,640
+So integration test lives more in this space.
+Integration test nằm nhiều ở chỗ này.
+
+83
+00:04:16,100 --> 00:04:19,880
+Now integration tests are less isolated than unit tests
+Bây giờ integration test ít cô lập hơn so với unit test
+
+84
+00:04:19,880 --> 00:04:22,367
+because they're trying multiple parts at once.
+bởi vì chúng thử nhiều phần cùng một lúc.
+
+85
+00:04:22,367 --> 00:04:24,950
+And they're also slower than unit tests because again, they're
+Và chúng cũng chậm hơn unit tests bởi vì
+
+86
+00:04:24,950 --> 00:04:26,870
+executing more of the system at once.
+thực hiện nhiều phần hệ thống cùng một lúc.
+
+87
+00:04:26,870 --> 00:04:30,290
+But they're quite a bit faster and quite a bit more
+Nhưng chúng hơi nhanh hơn và cũng...
+
+88
+00:04:30,290 --> 00:04:34,414
+can be quite a bit more isolated than broad acceptance tests.
+có thể được cô lập hơn một chút so với các bài acceptance tests rộng rãi.
+
+89
+00:04:34,414 --> 00:04:36,830
+There is also a special subset of integration tests called
+Ngoài ra còn có một tập hợp con đặc biệt của integration tests được gọi là
+
+90
+00:04:36,830 --> 00:04:40,820
+smoke tests that live in this space.
+smoke test nằm ở đây.
+
+91
+00:04:40,820 --> 00:04:43,640
+Smoke test is just a subset of your integration test
+Smoke test chỉ là một tập con của integration test của bạn
+
+92
+00:04:43,640 --> 00:04:46,680
+that you might run to get a sense of if things are working.
+mà bạn có thể chạy để có được một cảm giác của mọi thứ đang làm việc.
+
+93
+00:04:46,680 --> 00:04:50,555
+So you could say, you could imagine having an integration test
+Vì vậy, có thể nói, bạn có thể tưởng tượng có một bài integration test
+
+94
+00:04:50,555 --> 00:04:54,680
+suite with 1,000 integration tests in it,
+gồm 1,000 integration tests trong đo
+
+95
+00:04:54,680 --> 00:04:57,620
+and then your smoke test suite will only have 10 or 12 tests,
+và rồi bộ smoke test của bạn sẽ chỉ có 10 hoặc 12 tests,
+
+96
+00:04:57,620 --> 00:05:01,910
+just to make sure as a sanity check, that your system is still working.
+chỉ để đảm bảo như là một kiểm tra bình thường, rằng hệ thống của bạn vẫn làm việc.
+
+97
+00:05:01,910 --> 00:05:06,250
+The final broad classification of tests really encompasses this whole space.
+Phân loại rộng cuối cùng của tests thực sự bao gồm toàn bộ không gian này/
+
+98
+00:05:09,294 --> 00:05:10,710
+And these are called system tests.
+Và đây được gọi là thử nghiệm hệ thống (System tests).
+
+99
+00:05:14,950 --> 00:05:18,220
+So system tests execute broad parts of your system
+Vậy, system tests thực hiện các phần rộng của hệ thống
+
+100
+00:05:18,220 --> 00:05:20,890
+at once, usually with synthetic data, in order
+cùng một lúc, thông thường với dữ liệu tổng hợp, để 
+
+101
+00:05:20,890 --> 00:05:23,991
+to make sure that all of these different parts fit together.
+để chắc chắn rằng tất cả các phần khác nhau phù hợp với nhau.
+
+102
+00:05:23,991 --> 00:05:25,990
+So the integration tests are really just looking
+Vậy, integration tests thực sự chỉ là tìm kiếm
+
+103
+00:05:25,990 --> 00:05:28,210
+at pairs or small subsets of your system,
+ các cặp hoặc các tập con nhỏ của hệ thống, 
+
+104
+00:05:28,210 --> 00:05:30,910
+whereas system tests are going to look at bringing together
+ trong khi xét nghiệm hệ thống sẽ xem xét việc thu thập rất nhiều đơn vị khác nhau 
+
+105
+00:05:30,910 --> 00:05:33,100
+lots of your different units and things that you've
+và những thứ mà bạn 
+
+106
+00:05:33,100 --> 00:05:36,340
+integration tested to make sure that they all work together
+đã tích hợp kiểm tra để đảm bảo rằng tất cả chúng làm việc cùng nhau
+
+107
+00:05:36,340 --> 00:05:37,554
+in an effective way.
+ một cách hiệu quả.
+
+108
+00:05:37,554 --> 00:05:40,470
+Now one important difference between system tests and acceptance tests
+Bây giờ một trong những khác biệt quan trọng giữa system tests và acceptance test ở đây
+
+109
+00:05:40,470 --> 00:05:43,750
+here are that system tests are performed by the development team.
+là system test được thực hiện bởi đội phát triển.
+
+110
+00:05:43,750 --> 00:05:46,190
+So you're going to run these on a continuous basis.
+Vậy bạn sẽ chạy chúng trên nền tảng liên tục
+
+111
+00:05:46,190 --> 00:05:49,330
+The other difference is that system tests are usually with synthetic data,
+Sự khác nhau nữa là system tests thường với dữ liệu tổng hợp,
+
+112
+00:05:49,330 --> 00:05:54,610
+using development machines and services, whereas acceptance tests are performed
+sử dụng các máy móc và dịch vụ của nhà phát triển, trong khi đó acceptance tests được thực hiện
+
+113
+00:05:54,610 --> 00:05:57,300
+by a customer in their own environment.
+bởi khác hàng trong môi trường riêng của họ.
+
+114
+00:05:57,300 --> 00:06:01,120
+So there really is a key differentiation here that's important.
+Vậy điểm khác biệt cốt lõi ở đây là rất quan trọng.
+
+115
+00:06:01,120 --> 00:06:04,210
+Now one thing that I want to point out here that's really key,
+Giờ, một thứ tôi muốn chỉ ra ở đây, nó rất là cốt lõi
+
+116
+00:06:04,210 --> 00:06:06,340
+is that it's super appealing to say, we could just
+rất đáng để nói
+
+117
+00:06:06,340 --> 00:06:07,800
+write unit tests for everything.
+Đó là chúng ra có thể chỉ viết unit tests cho mọi thứ.
+
+118
+00:06:07,800 --> 00:06:09,629
+They're fast, they give us good isolation,
+ Chúng nhanh, cô lập tốt,
+
+119
+00:06:09,629 --> 00:06:11,920
+but they really don't tell us if our system is actually
+nhưng chúng thực sự không nói với chúng ta nếu hệ thống của chúng ta
+
+120
+00:06:11,920 --> 00:06:13,400
+going to work together.
+sẽ hoạt động tốt với nhau
+
+121
+00:06:13,400 --> 00:06:17,740
+So in the end, at the end of any effective testing program,
+Vì vậy, cuối cùng, vào cuối bất kỳ chương trình testing hiệu quả,
+
+122
+00:06:17,740 --> 00:06:20,800
+you're going to end up having several different kinds of tests
+bạn sẽ gặp qua nhiều loại tests khác nhau
+
+123
+00:06:20,800 --> 00:06:23,900
+because they each give you different information about your system.
+bởi vì mỗi cái đều cho bạn các thông tin khác nhau của hệ thống.
+
+124
+00:06:23,900 --> 00:06:28,660
+The unit tests will tell you, hey, the individual parts work well on their own
+Các unit test sẽ cho bạn biết, hey, các từng phần riêng đều hoạt động tốt
+
+
+125
+00:06:28,660 --> 00:06:31,190
+and they succeed successfully.
+và thành công
+
+126
+00:06:31,190 --> 00:06:35,140
+The integration tests tell you that the units work together as well.
+Integration tests bảo cho bạn rằng các đơn vị cũng hoạt động tốt với nhau.
+
+127
+00:06:35,140 --> 00:06:37,870
+And the system tests go and tell you that the whole system
+Và system tests chạy và báo với bạn rằng cả hệ thống
+
+128
+00:06:37,870 --> 00:06:41,204
+is able to accomplish its tasks in an effective way.
+có thể hoàn thành nhiệm vụ một cách hiệu quả
+
+129
+00:06:41,204 --> 00:06:43,370
+Finally, at the very end of the development process,
+Cuối cùng, vào cuối của quá trình phát triển,
+
+130
+00:06:43,370 --> 00:06:45,910
+once the customer gets involved, the acceptance tests
+một khi khách hàng được tham gia,
+
+131
+00:06:45,910 --> 00:06:48,700
+make sure that what you believe to be correct also
+ acceptance tests đảm bảo rằng thứ bạn tin là đúng
+
+132
+00:06:48,700 --> 00:06:52,830
+matches the customer's expectations of what they believe to be correct.
+sẽ giống với mong đơi của khách hàng về thứ họ tin là đúng,
+
