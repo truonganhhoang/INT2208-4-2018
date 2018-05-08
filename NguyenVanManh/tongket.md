@@ -7,8 +7,8 @@ trên w3school.com
 image: 
 ![Alt text](Screenshot (249).png)
 
-![Alt text](Screenshot (249).png)
+![Alt text](Screenshot (250).png)
 
-![Alt text](Screenshot (249).png)
+![Alt text](Screenshot (251).png)
 
-![Alt text](Screenshot (249).png)
+![Alt text](Screenshot (252).png)
