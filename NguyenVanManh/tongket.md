@@ -9,13 +9,11 @@ image:
 
 Một số bài Quiz đã hoàn thành:
 * Bài Quiz HTML
-![Alt text](Screenshot (249).png) 
-* Bài Quiz PHP:
 
-![Alt text](Screenshot (249).png)
+![Alt text](html.png)
 
-![Alt text](Screenshot (250).png)
+![Alt text](css.png)
 
-![Alt text](Screenshot (251).png)
+![Alt text](js.png)
 
-![Alt text](Screenshot (252).png)
+![Alt text](boostrap.png)
