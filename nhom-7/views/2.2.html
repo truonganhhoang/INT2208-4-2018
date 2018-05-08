@@ -1,0 +1,239 @@
+<!-- This file completely made by Phạm Ngọc Duy -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TinyCards -- Flash Cards by Duolingo</title>
+    <link rel="shortcut icon" type="image/png" href="https://d17u0960v8a9bp.cloudfront.net/image/5c826d3d048819c3fc25ddaea0697433.png"
+    />
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="css/duy.css">
+    <link rel="stylesheet" href="css/profile.css">
+    
+    <script src="js/duy.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Phạm Ngọc Duy" />
+    <meta charset="UTF-8" />
+    <style>
+        h4 {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+
+<body style="background-color: rgb(247,247,247);">
+    <!-- NAV BAR -->
+    <div class="navbar navbar-dark row sticky-top text-center py-0 px-4 bg-primary" id="nav-bar">
+        <div class="container">
+            <a class="navbar-brand d-none d-lg-block col col-lg-auto order-lg-1" href="#">
+                <img src="imgs/logo-icon.png" alt="(*.*)">
+                <img src="imgs/logo-text.png" alt="TinyCards">
+            </a>
+            <!--home-->
+            <a class="col col-lg-auto order-1 order-lg-3 text-white nav-link nav-item py-3" id="nav-home" href="2.html">
+                <i class="fa fa-home"></i>
+                <span class="d-none d-lg-inline">HOME</span>
+            </a>
+            <!--search on mobile-->
+            <a id="nav-search-mobile" class="col col-lg-auto order-2 text-white d-lg-none d-block nav-link py-3" onclick="showHideSearch();">
+                <span class="d-block d-lg-none">
+                    <i class="fa fa-search"></i>
+                </span>
+            </a>
+            <!-- search on PC -->
+            <div class="col col-lg-auto order-lg-2 mr-lg-auto d-none d-lg-block nav-link" id="nav-search-pc">
+                <form class="my-2 my-lg-0" style="position: relative;">
+                    <input class="form-control" type="text" placeholder="Search" aria-label="Search" style="padding-left: 40px; padding-right: 40px;">
+                    <div style="position: absolute; top: 0 ; left: 15px; line-height: 38px; color: #32cdff;">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="d-none d-lg-none" id="close-search" style="position: absolute; top: 0 ; right: 15px; line-height: 38px; color: #32cdff;" onclick="showHideSearch();">
+                        <i class="fa fa-times"></i>
+                    </div>
+                </form>
+            </div>
+            <!--create-->
+            <a class="col col-lg-auto order-3 order-lg-4 text-white nav-link py-3" id="nav-create" href="2.3.html">
+                <i class="fa fa-plus"></i>
+                <span class="d-none d-lg-inline">CREATE</span>
+            </a>
+            <!--profile-->
+            <a class="col col-lg-auto order-4 order-lg-5 text-white nav-link active py-3" id="nav-profile" href="2.2.html">
+                <i class="fa fa-user"></i>
+                <span class="d-none d-lg-inline">PROFILE</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- LEFT-PANEL-->
+            <div id="left-user-panel" class="col-lg-3 col-12">
+                <!-- profile info-->
+                <div class="mb-4 row justify-content-center">
+                    <!-- avatar -->
+                    <div class="col-lg-12 col-3 pb-lg-4 text-center pr-1 pr-lg-3">
+                        <img class="rounded-circle img-fluid" src="imgs/green-head.PNG" alt="avatar">
+                    </div>
+                    <!-- user-info and action btn -->
+                    <div class="col-lg-12 col-9 pl-1 pl-lg-3">
+                        <div class="row">
+                            <!-- name-info -->
+                            <h3 class="text-lg-center order-lg-1 order-1 col-12">Phạm Ngọc Duy</h3>
+                            <!-- bio info -->
+                            <div class="text-lg-center order-lg-3 order-2 col-12 mb-lg-3">Sáng lập Bầu Trời Xa Corporation</div>
+                            <!-- follow info -->
+                            <div class="border-bottom mt-3 mt-lg-0 mb-3 order-lg-2 order-3 col-12">
+                                <div id="follow-info-container" class="text-lg-center mb-3">
+                                    <a class="follow-info-item mr-3" href="#">Followers: 0</a>
+                                    <a class="follow-info-item" href="#">Following: 1</a>
+                                </div>
+                            </div>
+                            <!-- action button-->
+                            <div class="col-12 text-lg-center order-lg-4 order-4 col-12 ">
+                                <div class="row justify-content-lg-center">
+                                    <!-- setting btn -->
+                                    <a class="col-7 p-0 mr-1" href="2.2.1.html">
+                                        <button type="button" class="btn btn-outline-primary w-100">
+                                            <i class="fas fa-cog"> </i> SETTINGS
+                                        </button>
+                                    </a>
+                                    <!-- share btn -->
+                                    <button type="button" class="btn btn-outline-primary col-auto">
+                                        <i class="fas fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- RIGHT-PANEL-->
+            <div id="right-content" class="col-lg col-12">
+                <div class="round-container">
+                    <!-- tab-->
+                    <nav>
+                        <!-- tab btn -->
+                        <div class="nav nav-tabs justify-content-center justify-content-sm-start" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active ml-sm-5 ml-0" id="nav-desks-tab" data-toggle="tab" href="#nav-desks" role="tab" aria-controls="nav-desks"
+                                aria-selected="true">Desks</a>
+                            <a class="nav-item nav-link ml-5" id="nav-followers-tab" data-toggle="tab" href="#nav-followers" role="tab" aria-controls="nav-followers"
+                                aria-selected="false">Followers</a>
+                            <a class="nav-item nav-link ml-5" id="nav-following-tab" data-toggle="tab" href="#nav-following" role="tab" aria-controls="nav-following"
+                                aria-selected="false">Following</a>
+                        </div>
+                    </nav>
+                    <!-- tab content-->
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- Desks tab-->
+                        <div class="tab-pane fade show active" id="nav-desks" role="tabpanel" aria-labelledby="nav-desks-tab">
+                            <div class="row px-md-5 py-md-5 px-2 py-2">
+                                <!-- card collection image -->
+                                <div class="col-lg-3 col-4 pr-1 pr-lg-2">
+                                    <div class="rounded w-100">
+                                        <img class="img-fluid" src="./imgs/default_collection_logo.png" alt="collection-img">
+                                    </div>
+                                </div>
+                                <!-- collection info -->
+                                <div class="col-lg-9 col-8 pl-1 pl-lg-2">
+                                    <h4>Collection Name </h4>
+                                    <p> Description</p>
+                                    <p>
+                                        <i class="far fa-star"></i> 1
+                                        <i class="far fa-sticky-note"></i> 2
+                                    </p>
+                                    <input type="checkbox" id="publish">
+                                    <label for="publish">
+                                        <div class="radio">
+                                            <div class="radio__circle"></div>
+                                        </div>Like</label>
+                                    <select>
+                                        <option value="1">Share</option>
+                                        <option value="2">Share to facebook</option>
+                                        <option value="3">Send via messenger</option>
+                                        <option value="4">Send via Zalo</option>
+                                    </select>
+                                    <input type="text" class="form-control" placeholder="Comment">
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Followers tab-->
+                        <div class="tab-pane fade" id="nav-followers" role="tabpanel" aria-labelledby="nav-followers-tab">
+                            <div class="px-md-5 py-md-5 px-2 py-2">
+                                <div class="text-center">This user has no followers yet. </div>
+                            </div>
+                        </div>
+                        <!-- Following tab-->
+                        <div class="tab-pane fade" id="nav-following" role="tabpanel" aria-labelledby="nav-following-tab">
+                            <div class="row px-md-5 py-md-5 px-2 py-2">
+
+                                <!-- Following 1 -->
+                                <div class="col-3 col-md-auto pr-1 pr-lg-2">
+                                    <img class="img-fluid rounded-circle" src="imgs/green-head.PNG">
+                                </div>
+                                <div class="col pl-1 pl-lg-2">
+                                    <h4>Following Name</h4>
+                                    <p>Followers: 1K</p>
+                                    <p>Short description about him, just text</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-info">
+                                        Follow
+                                    </button>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                                <!-- Following 2 -->
+                                <div class="col-3 col-md-auto pr-1 pr-lg-2">
+                                    <img class="img-fluid rounded-circle" src="imgs/green-head.PNG">
+                                </div>
+                                <div class="col pl-1 pl-lg-2">
+                                    <h4>Following Name</h4>
+                                    <p>Followers: 1K</p>
+                                    <p>Short description about him, just text</p>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-info">
+                                        Follow
+                                    </button>
+                                </div>
+
+                                <div class="w-100"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

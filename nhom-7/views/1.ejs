@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tinycards - Flashcards by Duolingo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://d17u0960v8a9bp.cloudfront.net/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="css/1.css">
+    <link rel="icon" sizes="192x192" href="https://d17u0960v8a9bp.cloudfront.net/192x192.png">
+</head>
+
+<body>
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a href="/home" class="navbar-brand">
+            <img src="imgs/tinycard.PNG" alt="cap picture">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-demo">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-demo">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary login" id="login-btn" data-toggle="modal"
+                            data-target="#loginModal">
+                        LOGIN WITH DUOLINGO
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary duy-signup-btn" data-toggle="modal"
+                            data-target="#signupModal">
+                        SIGN UP
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Login with your duolingo account </h5>
+                <button type="submit" class="btn btn-outline-info" data-toggle="modal" data-target="#signupModal"
+                        data-dismiss="modal">SIGN UP
+                </button>
+            </div>
+            <form id="submit-login" action="/login" method="post">
+                <div class="modal-body px-4" id="login-info">
+                    <input type="text" class="form-control mb-3 px-0" name="username" id="username" required
+                           placeholder="Email or username">
+                    <input type="password" class="form-control px-0" name="password" id="password" required
+                           placeholder="Password">
+                </div>
+                <!--<a class="text-center" href="#">FORGOT PASSWORD?</a>-->
+                <div class="modal-footer">
+                    <button id="login-btn" type="submit" class="btn btn-primary">LOG IN</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Sign-up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Create a duolingo account </h5>
+                <button type="submit" class="btn btn-outline-info" data-toggle="modal" data-target="#loginModal"
+                        data-dismiss="modal">LOGIN
+                </button>
+            </div>
+            <form id="submit-signUp" action="/register" method="post">
+                <div class="modal-body px-4" id="signUp-info">
+                    <input type="text" class="form-control mb-3 px-0" maxlength="36" name="name" placeholder="Name" required>
+                    <input type="text" class="form-control mb-3 px-0" name="username" placeholder="Username" required>
+                    <input type="email" class="form-control mb-3 px-0" name="email" placeholder="Email" required>
+                    <input type="password" class="form-control px-0" name="password" placeholder="Password" minlength="6"
+                           required>
+                </div>
+                <div class="modal-footer">
+                    <button id="signUp-btn" type="submit" class="btn btn-primary">SIGN UP</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- header -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container duy-under">
+        <div class="row pb-5 mb-5">
+            <div class="col-md-8">
+                <h2 class="m-5">Learn anything with fun flashcards by Duolingo</h2>
+            </div>
+            <div class="col-md-4">
+                <img src="imgs/picture.PNG" alt="content picture">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- content -->
+<div class="container duy-cover">
+    <div class="jumbotron">
+        <div class="row">
+            <!-- first row -->
+            <div class="col-lg-2 pl-5">
+                <img src="imgs/purple-head.PNG" alt="purple head">
+            </div>
+            <div class="col-lg-4 pt-2">
+                <h4 class="mb-3">Search decks
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </h4>
+                <form action="/search" method="get">
+                    <input type="search" class="form-control pt-3 pb-3 first-row" name="deck" placeholder="e.g, Spanish, History...">
+                </form>
+            </div>
+            <div class="col-lg-2 pl-5">
+                <img src="imgs/green-head.PNG" alt="green head">
+            </div>
+            <div class="col-lg-4 pt-2">
+                <h4 class="mb-3">Create your own</h4>
+                <button class="btn btn-primary pt-3 pb-3 first-row" data-toggle="modal" data-target="#loginModal">
+                    CREATE
+                </button>
+            </div>
+            <!-- second row -->
+            <h4 class="mr-auto ml-3 pt-4">Decks we love</h4>
+            <a href="/featured" class="pt-4 mr-3">SEE ALL</a>
+        </div>
+        <!-- next row -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="first-carousel">
+                <% var trendingDecks = [], lovedDecks = [] %>
+                <% for (i = 0; i < decks.length; i++ ) { if (decks[i].favourites > 500) lovedDecks.push(decks[i]) } %>
+                <% for (i = 0; i < lovedDecks.length; i += 6) { %>
+                <div class="carousel-item">
+                    <div class="row pt-4" style="height: 300px">
+                        <% for (var j = 0; j < 6; j++) { %>
+                        <% if (lovedDecks[i + j]) { %>
+                        <div class="card col-lg-2 col-md-3 col-4">
+                            <a href="/deck/<%= lovedDecks[i + j]._id %>" style="height: 176px">
+                                <img class="card-img-top h-100"
+                                     src="<%= lovedDecks[i + j].themeImage %>"
+                                     alt="<%= lovedDecks[i + j].name %>">
+                            </a>
+                            <div class="card-body p-0 mt-4">
+                                <a href="/deck/<%= lovedDecks[i + j]._id %>" class="card-title"><%= lovedDecks[i + j].name %></a>
+                                <br>
+                                <a href="/deck/<%= lovedDecks[i + j]._id %>" class="card-info">
+                                    <i class="far fa-star"></i> <%= decks[i + j].favourites %>
+                                    <% if (lovedDecks[i + j].favourites > 1000)  trendingDecks.push(lovedDecks[i + j])%>
+                                </a>
+                            </div>
+                        </div>
+                        <% } %>
+                        <% } %>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+            <!-- arrow -->
+            <a class="carousel-control-prev h-75" style="width: 1%" href="#carouselExampleControls" role="button"
+               data-slide="prev">
+                <i class="fas fa-chevron-left mr-5"></i>
+            </a>
+            <a class="carousel-control-next h-75" style="width: 1%" href="#carouselExampleControls" role="button"
+               data-slide="next">
+                <i class="fas fa-chevron-right ml-5"></i>
+            </a>
+        </div>
+        <hr>
+        <div class="row">
+            <h4 class="mr-auto ml-3 pt-4">Trending</h4>
+            <a href="/trending" class="pt-4 mr-3">SEE ALL</a>
+        </div>
+        <!-- next row -->
+        <div id="carousel-1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="second-carousel">
+                <% for (i = 0; i < trendingDecks.length; i += 6) { %>
+                <div class="carousel-item">
+                    <div class="row pt-4" style="height: 300px">
+                        <% for (j = 0; j < 6; j++) { %>
+                        <% if (trendingDecks[i + j] && trendingDecks[i + j].favourites > 1000) { %> <%# can be deleted %>
+                        <div class="card col-lg-2 col-md-3 col-4">
+                            <a href="/deck/<%= trendingDecks[i + j]._id %>" style="height: 176px">
+                                <img class="card-img-top h-100"
+                                     src="<%= trendingDecks[i + j].themeImage %>"
+                                     alt="<%= trendingDecks[i + j].name %>">
+                            </a>
+                            <div class="card-body p-0 mt-4">
+                                <a href="/deck/<%= trendingDecks[i + j]._id %>" class="card-title"><%= trendingDecks[i + j].name %></a>
+                                <br>
+                                <a href="/deck/<%= trendingDecks[i + j]._id %>" class="card-info">
+                                    <i class="far fa-star"></i> <%= trendingDecks[i + j].favourites %></a>
+                            </div>
+                        </div>
+                        <% } %>
+                        <% } %>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+            <!-- arrow -->
+            <a class="carousel-control-prev h-75" style="width: 1%" href="#carousel-1" role="button" data-slide="prev">
+                <i class="fas fa-chevron-left mr-5"></i>
+            </a>
+            <a class="carousel-control-next h-75" style="width: 1%" href="#carousel-1" role="button" data-slide="next">
+                <i class="fas fa-chevron-right ml-5"></i>
+            </a>
+        </div>
+    </div>
+    <footer class="mb-3 mt-5 pt-3">
+        <a href="/press" class="m-4">ABOUT</a>
+        <a href="" class="m-4">SUPPORT</a>
+        <a href="" class="m-4">TERMS</a>
+        <a href="" class="m-4">DUOLINGO</a>
+        <a href="" class="m-4">FACEBOOK</a>
+        <a href="" class="m-4">TWITTER</a>
+        <a href="" class="m-4" id="language">
+            <img src="imgs/english.png"> ENGLISH
+        </a>
+    </footer>
+
+</div>
+<!--</div>-->
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script>
+    // get data from server
+    var userdata = [];
+    <% for (var i = 0; i < users.length; i++) { %>
+    userdata.push({
+        name: "<%= users[i].name %>",
+        username: "<%= users[i].username %>",
+        email: "<%= users[i].email %>"
+    })
+    <% } %>
+</script>
+<script src="js/1-1.js"></script>
+<script src="js/1-2.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Duolingo | Học English</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://d35aaqx5ub95lt.cloudfront.net/favicon.ico" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/chart.js"></script>
+</head>
+
+<body style="background-color: #e9e9e9;">
+    <nav class="navbar navbar-expand-lg navbar-light d-none d-md-block" style="background-color:#20a8e9">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="#">
+                <h3 style="color:#fff; font-weight: bolder"><img src="img/douligo.PNG" style="width: 90px; height: 90px">duolingo</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Thảo luận</a>
+                    </li>
+                </ul>
+                <div class="my-lg-0">
+                    <ul class="navbar-nav mr-auto">
+                        <li>
+                            <i class="far fa-bell" style="font-size: 25pt;"></i>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Tài khoản
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Hồ sơ của bạn</a>
+                                <a class="dropdown-item" href="#">Cài đặt</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Đăng xuât</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container alert">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="alert bg-white" >
+                    <div class="d-flex">
+                        <div class="p-2">icon</div>
+                        <div class="p-2">
+                            <h4>Cơ bản</h4>
+                        </div>
+                        <div class="ml-auto p-2">
+                            <a class="btn btn-outline-danger" href="#" role="button">Củng cố</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-start flex-wrap">
+                        <div class="p-2">
+                            <div class="card container" style="width: 13rem; text-align:center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bài học 1/4</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">description</h6>
+                                    <a class="btn btn-primary" href="#" role="button">Bắt đầu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card container" style="width: 13rem; text-align:center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bài học 2/4</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">description</h6>
+                                    <a class="btn btn-primary" href="#" role="button">Bắt đầu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card container" style="width: 13rem; text-align:center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bài học 3/4</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">description</h6>
+                                    <a class="btn btn-primary" href="#" role="button">Bắt đầu</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" p-2">
+                            <div class="card container" style="width: 13rem; text-align:center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bài học 4/4</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">description</h6>
+                                    <a class="btn btn-primary" href="#" role="button">Bắt đầu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 d-none d-md-block" style="text-align:center">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

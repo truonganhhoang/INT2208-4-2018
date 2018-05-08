@@ -1,0 +1,19 @@
+.cate-detail
+{
+    margin-top: 20px;
+}
+.list-categories li a
+{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.list-categories li a:hover
+{
+    color: coral;
+}
+.list-categories li
+{
+    margin: 20px 0px;
+}
