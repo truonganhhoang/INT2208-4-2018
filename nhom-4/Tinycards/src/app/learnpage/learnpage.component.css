@@ -1,31 +1,40 @@
-.area { 
-  width: 350px; 
-  height: 350px;
-  position: relative;
-  background-color:rgb(255, 255, 255);
-  border-radius: 13px;
+label {
+ display: inline;
+cursor: pointer;
 }
 
-.bubble { 
-  position: absolute; 
-  left: 20px; 
-  top: 20px; 
-  width: 310px; 
-  height: 310px; 
-  display: table; 
+.card {
+  width: 100% !important;
+  height: 350px !important;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
 }
 
-.bubble p {
-  font-size: 40px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  display: table-cell; 
-  vertical-align: middle; 
-  text-align: center; 
-
+.card div {
+  width: 100% !important;
+  height: 350px !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2px;
 }
 
-img{
-  border-radius: 13px;
-  width:350px; 
-  height:350px;
+.card .back  {
+  transform: rotateY(180deg);
+}
+
+input {
+  display: none;
+}
+
+:checked + .card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.front img, .back img {
+  width: 100% !important;
+  height: 350px !important;
 }

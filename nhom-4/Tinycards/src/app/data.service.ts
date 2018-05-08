@@ -1,12 +1,11 @@
-import { Component, OnInit,Output, EventEmitter } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
-@Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
-})
-export class HomepageComponent implements OnInit {
-  @Output() waitForOtherPage= new EventEmitter<string>();
+@Injectable()
+export class DataService {
+
+  private messageSource = new BehaviorSubject<string>("default message");
+  currentMessage = this.messageSource.asObservable();
   Cards=[
     { title:"Bird", id:"1",
       content: [
@@ -86,9 +85,11 @@ export class HomepageComponent implements OnInit {
       ]
     },
   ]
+
   constructor() { }
 
-  ngOnInit() {
+  changeMessage(message: string) {
+    this.messageSource.next(message)
   }
 
 }
