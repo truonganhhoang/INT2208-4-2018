@@ -6,6 +6,9 @@ I. Cá nhân:
 trên w3school.com
 image: 
 ![Alt text](Screenshot (249).png)
+
 ![Alt text](Screenshot (249).png)
+
 ![Alt text](Screenshot (249).png)
+
 ![Alt text](Screenshot (249).png)
