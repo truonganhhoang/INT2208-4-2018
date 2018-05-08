@@ -9,7 +9,8 @@ import { CardComponent } from './card/card.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LearnpageComponent } from './learnpage/learnpage.component';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
-import { IpComponent } from './ip.component';
+import { AppRoutingModule } from './app-routing.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -20,11 +21,12 @@ import { IpComponent } from './ip.component';
     HomepageComponent,
     LearnpageComponent,
     ProfilepageComponent,
-    IpComponent,
   ],
   imports: [
     BrowserModule,
     HttpModule,
+    NgbModule.forRoot(),
+    AppRoutingModule,    
   ],
   providers: [],
   bootstrap: [AppComponent]

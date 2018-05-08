@@ -1,0 +1,29 @@
+﻿REID HOLMES: Có một bộ thuật ngữ đa dạng liên quan đến vấn đề kiểm thử tư động.
+
+Phần quan trọng nhất mà chúng ta thường đề cập đến là tình huống kiểm thử riêng biệt (individual test case).
+
+Một Test Case chỉ chỉ ra rõ ràng duy nhất một hành vi trong chương trình, nhưng chúng ta thường không chỉ thực thi một Test Case, mà phải thực thi một tập hợp nhiều Test Case,và chúng được gọi là "test suites" (bộ kiểm thử)
+
+Vậy các "bộ" là kiến trúc ở mức độ cao cho phép ta nhóm nhiều tập hợp các test case liên quan lại với nhau.
+
+Bây giờ, code đang được mỗi test case độc lập đánh giá được gọi là "Code Under Test" - hay CUT
+Đôi khi điều này cũng được đề cập như là "System Under Test" - hay SUT.
+Vậy "code under test" và "system under test" đều đại diện cho code mà đang được đánh giá bởi một test case độc lập, hoặc tập hợp nhiều test case được đóng gói trong một bộ test (*test suite).
+
+Ở mức độ cao, có hai kỹ thuật chính chúng ta có thể dùng để viết test case.
+
+Thứ nhất là "white box testing"- kiểm thử hộp trắng.
+Trong "white box testing", việc chúng ta sẽ làm đó là kiểm tra đoạn "code under test" và thực sự kiểm tra phần bên trong nó để thấy cách nó hoạt động.
+Bằng cách nhìn vào đoạn code, chúng ta có thể quyết định được những loại test cases chúng ta muốn tạo ra.
+
+Kỹ thuật còn lại gọi là "black box testing" - kiểm thử hộp trắng
+Trong "black box testing", việc chúng ta sẽ làm là xem những đặc điểm kỹ thuật cho "code under test", rồi thiết kế các test cases dựa vào đó.
+Vậy nên chúng ta không thực sự nhìn xuống các phần được che dấu đi.
+Trên thực tế, chúng ta rõ ràng không được nhìn vào các phần được che dấu này.
+
+Bây giờ, chúng ta sẽ thiết kế cả white box và black box test cases.
+Chúng ta muốn các test cases đều phải hiệu quả.
+Do đó, ta muốn chúng phải phát hiện thật nhanh nhạy những lỗi trong code under test.
+Bởi vì nếu chúng ta viết một test case mà không bao giờ sai hay không thể phát hiện lỗi trong code under test thì nó không có giá trị gì.
+Vậy nên hãy nhớ giữ hiệu quả là rất quan trọng khi ta thiết kế các tests, bất kể chúng là white box tests hay black box tests.
+
