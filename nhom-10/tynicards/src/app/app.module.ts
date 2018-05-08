@@ -1,30 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './/app-routing.module';
-import { ViewComponent } from './view/view.component';
+import { DeckComponent } from './deck/deck.component';
+import { RoutingModule } from './routing.module';
+import { CardService } from './card.service';
 import { LearnComponent } from './learn/learn.component';
-import { EditComponent } from './edit/edit.component';
-import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
     HomeComponent,
-    ViewComponent,
-    LearnComponent,
-    EditComponent,
-    CardComponent
+    DeckComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    RoutingModule,
   ],
-  providers: [],
+  providers: [CardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

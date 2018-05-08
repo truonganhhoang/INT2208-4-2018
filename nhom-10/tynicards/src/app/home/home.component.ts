@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DeckService } from '../deck.service';
-import { Deck } from '../deck';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +7,9 @@ import { Deck } from '../deck';
 })
 export class HomeComponent implements OnInit {
 
-  decks: Deck[];
-
-  newDeckID = '10';
-
-  constructor(private deckService: DeckService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.decks = this.deckService.getDecks();
   }
 
 }
