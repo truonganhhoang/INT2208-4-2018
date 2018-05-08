@@ -11,7 +11,7 @@
 </head>
 <body>
   <div id="header">
-    <nav class="navbar navbar-default navbar-static-top" style="background-color: #33CCFE;">
+    <nav class="navbar navbar-default navbar-static-top">
           <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,7 +24,7 @@
                 <a class="navbar-brand" href="1.html">
                   <img src="images/tiny1.png" width="40" height="34" class="img-responsive" alt="">
                   </a>
-                  <a class="navbar-brand" href="2.html">
+                  <a class="navbar-brand" href="1.html">
                   <img src="images/logo.png" width="120" height="34" class="img-responsive" alt="">
                   </a>
               </div><!-- logo -->
@@ -47,16 +47,16 @@
 
       <div class="row answerArea">
 
-        <button id="startButton" class="row startButton"><h4>Start</h4></button>
+        <button id="startButton" class="row startButton" onclick="start()"><h4>Start</h4></button>
 
         <div class="row">
           <div id="wins" class="col-sm-4 col-sm-offset-1"></div>
           <div id="losses" class="col-sm-4"></div>
         </div>
 
-        <button id="1" class="row answerBlock"><p>answer1</p></button>
-        <button id="2" class="row answerBlock"><p>answer2</p></button>
-        <button id="3" class="row answerBlock"><p>answer3</p></button>
+        <button id="1" class="row answerBlock" onclick="answer('1')"><p>answer1</p></button>
+        <button id="2" class="row answerBlock" onclick="answer('2')"><p>answer2</p></button>
+        <button id="3" class="row answerBlock" onclick="answer('3')"><p>answer3</p></button>
 
     </div><!--"answerArea endtag"-->
   </div><!--"row container endtag"-->

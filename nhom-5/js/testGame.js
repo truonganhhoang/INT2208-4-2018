@@ -1,6 +1,6 @@
 
 
-  $(document).ready(function(){
+
    
 
     //Mang du lieu cho cau hoi
@@ -52,12 +52,12 @@
   var incorrect = 0;
   var ans;
   var started = false;
-  var rightSong = new Audio();
-  rightSong.type = 'audio/mpeg';
-  rightSong.src = 'music/dung.mp3';
-  var wrongSong = new Audio();
-  wrongSong.type = 'audio/mpeg';
-  wrongSong.src = 'music/sai.mp3';
+  // var rightSong = new Audio();
+  // rightSong.type = 'audio/mpeg';
+  // rightSong.src = 'music/dung.mp3';
+  // var wrongSong = new Audio();
+  // wrongSong.type = 'audio/mpeg';
+  //wrongSong.src = 'music/sai.mp3';
   function incrementQuestion(){
     if(index==4) {
       setTimeout(function(){
@@ -88,13 +88,14 @@
       $("#1").html(triviaBucket[index].falseOne);
       $("#2").html(triviaBucket[index].falseTwo);
     }
+    console.log("populateQuestionArea " + ans);
   }
   //------------------------------------------
 
 
   //click nut Start
   //------------------------------------------
-  $('#startButton').on("click", function(){
+function start(){
     started = true;
     index = 0;
     correct = 0;
@@ -104,19 +105,18 @@
     populateQuestionArea();
     console.log("clickswitch is now = " + clickSwitch);
 
-  });
+  }
     //------------------------------------------
 
 
     //click cau tra loi
-  $(document).on("click", ".answerBlock", function(){
-    var $this = this;
-
-    var clickIdentifier = $(this).attr('id');
+function answer(clickIdentifier){
+    console.log("answer " + ans);
+    console.log("answer clickIdentifier " + clickIdentifier);
     if(started){
       if (clickIdentifier == ans) {
-      // console.log('true!');
-        rightSong.play();
+        
+        // rightSong.play();
         
         clickSwitch = false;
         correct++;
@@ -129,15 +129,14 @@
           incrementQuestion();
           populateQuestionArea();
         },1000);
-        } else {
-        wrongSong.play();
-        clickSwitch = false;
+      } else {
+        // wrongSong.play();
+        // clickSwitch = false;
         incorrect++;
         $("#losses").html("Wrong! " + incorrect);
         console.log(incorrect + " is the number of incorrect answers");
       }
     }
-  });
+  }
 
   
-}); 
