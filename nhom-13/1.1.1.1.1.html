@@ -11,7 +11,7 @@
     <style type="text/css">
         body{ background-color: #eee; }
         .nd{
-		    display: flex; 
+		    display: flex;
 		    flex-wrap: wrap;
 		    justify-content: space-around;
 	    }
@@ -21,7 +21,7 @@
 		    border: 1px solid #1caff6;
 		    border-radius: 5px;
 		    background-color: white;
-		   
+
 		}
 		.img-thumbnail {
 			width: 170px;
@@ -71,7 +71,7 @@
 						<h4><b class="mau">3. Tôi là một phụ nữ</b></h4>
 						<div class="radio">
 						    <label>
-						        <input type="radio" name="q3" value="A" > I am one woman
+						        <input type="radio" name="q3" value="A" > I am a woman
 				            </label>
 						</div>
 						<div class="radio">
@@ -113,23 +113,23 @@
 				            </label>
 						</div>
 						<br><br>
-						<b><input onclick="getScore(this.form)" type="button" value="Kết quả"/> <strong><input class="bgclr" disabled name="percentage" size="5" type="text" /></strong> 
+						<b><input onclick="getScore(this.form)" type="button" value="Kết quả"/> <strong><input class="bgclr" disabled name="percentage" size="5" type="text" /></strong>
 						<br><br>
 						<input type="reset" value="Làm lại"/></b>
 						<br><br>
 						<h4><b>Đáp án</b></h4>
 						<textarea class="bgclrr" cols="25" disabled name="solutions" rows="5" wrap="virtual"></textarea>
-						<a href="1.1.1.1.html" style=" float: right;margin-top: 50px; margin-right: 40px">x</a>
+						<a href="1.1.1.1.html" style=" float: right;margin-top: 50px; margin-right: 40px"><b>X</b></a>
 					</form>
 					<script language="JavaScript">
-						// Số câu hỏi 
+						// Số câu hỏi
 						var numQues = 5;
-						//Số phương án trả lời 
+						//Số phương án trả lời
 						var numChoi = 3;
-						//Số câu hỏi được hiển thị đáp án 
+						//Số câu hỏi được hiển thị đáp án
 						var answers = new Array(5);
-						// Đáp án đúng cho câu hỏi 
-						answers[0] = "A"; 
+						// Đáp án đúng cho câu hỏi
+						answers[0] = "A";
 						answers[1] = "B";
 						answers[2] = "A";
 						answers[3] = "C";
@@ -140,19 +140,19 @@
 						    var currElt;
 						    var currSelection;
 						    for (i=0; i<numQues; i++) {
-						        currElt = i*numChoi; 
+						        currElt = i*numChoi;
 						        for (j=0; j<numChoi; j++) {
-						            currSelection = form.elements[currElt + j]; 
+						            currSelection = form.elements[currElt + j];
 						            if (currSelection.checked) {
 						                if (currSelection.value == answers[i]) {
-						                    score++; 
+						                    score++;
 						                break;
 						                }
 						            }
 						        }
 						    }
-						    score = Math.round(score/numQues *100); 
-						    form.percentage.value = score + "/100" ; 
+						    score = Math.round(score/numQues *100);
+						    form.percentage.value = score + "/100" ;
 						    var correctAnswers = "";
 						    for (i=1; i<=numQues; i++) {
 						        correctAnswers += i + ". " + answers[i-1] + "\r\n";
