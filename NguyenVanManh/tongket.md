@@ -17,3 +17,8 @@ Một số bài Quiz đã hoàn thành:
 ![Alt text](js.png)
 
 ![Alt text](boostrap.png)
+
+II. Bài tập nhóm:
+- Đề tài : memrise
+-Link btl : https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11
+- Dịch khóa học phần thiết kế cấp thấp và làm slide.
