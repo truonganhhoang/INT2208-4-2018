@@ -2,11 +2,11 @@
 var express = require("express");
 var mysql = require("mysql");
 var app = express();
-app.use(express.static("images"));
-app.use(express.static("css"));
-app.use(express.static("js"));
-app.use(express.static("music"));
-app.use(express.static("fonts"));
+app.use("/images",express.static(__dirname + "/images"));
+app.use("/css", express.static(__dirname + "/css"));
+app.use("/js", express.static(__dirname + "/js"));
+app.use("/music", express.static(__dirname + "/music"));
+app.use("/fonts", express.static(__dirname + "/fonts"));
 app.set('views',__dirname + '/');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
@@ -17,13 +17,8 @@ var connection = mysql.createConnection({
 	database: "test"
 });
 
-connection.connect(function(err){
-	if (err) {
-		console.log("error ",err);
-	}else{
-		console.log("successful");
-	}
-});
+
+
 app.get("/", function(req, res){
 	connection.query("SELECT * FROM words", function(error, rows, fields){
 		if(error){
@@ -62,7 +57,7 @@ app.get("/2.1.html", function(req, res){
 	// res.send("Hi");
 	// console.log("connected");
 });
-app.get("/2.2", function(req, res){
+app.get("/2.2.html", function(req, res){
 	connection.query("SELECT * FROM words", function(error, rows, fields){
 		if(error){
 			console.log("Error in the query");
