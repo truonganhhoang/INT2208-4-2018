@@ -25,52 +25,6 @@ function initChallenge(){
 	result = 0;
 }
 
-//tinh diem va kiem tra dap an
-function check(){
-	var cont = "";
-	var flag = false;
-	$('input').keyup(function(){
-			cont = $(this).val();
-		}
-	).keyup();
-	console.log("check "+ cont);
-	if(ranEle == 1){
-		if(cont == arr[ranId].mean){
-			flag = true;
-			result++;
-			if(ranId == 4) ranId = 0;
-			else ranId++;
-			ranEle = Math.floor((Math.random()*5)+1);
-		}
-	} else {
-		if(cont == arr[ranId].word){
-			flag = true;
-			result++;
-			if(ranId == 4) ranId = 0;
-			else ranId++;
-			ranEle = Math.floor((Math.random()*5)+1);
-		}
-	}
-	
-	if(ranEle == 1) question = arr[ranId].word;
-	else question = arr[ranId].mean;
-	
-	$(".input").disabled = true;
-	
-	$('input').val("");
-	// setTimeout(function() {
-	// 	if(flag){
-	// 	// alert("Great");
-	// 		$("#anounce").text("Great");
-	// 	}else{
-	// 		$("#anounce").text("Wrong");
-	// 	}
-	// 	$("anounce").text("Check");
-	// },2000);
-	document.getElementById('learnCard').innerHTML = question;
-	console.log(document.getElementById('learnCard').innerHTML);
-	if(result == 5) alert("You are Excellent, the Challenge is completed");
-}
 
 //lat the
 function flip() {
