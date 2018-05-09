@@ -1,0 +1,32 @@
+<ng-container *ngIf="!isCompleted">
+    <div class="container-fluid" id="viewCards" *ngIf="isViewing">
+        <div class="row">
+            <app-card [card]="viewingCard"></app-card>
+        </div>
+        <div class="row"> 
+            <button (click)="nextCard()">Next</button>
+        </div>
+        
+    </div>
+    <div class="container-fluid" id="checkCards" *ngIf="!isViewing">
+        <div class="row">
+            {{ question }}
+        </div>
+        <div class="row">
+            <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-lg">Answer</span>
+                </div>
+                <input [(ngModel)]="userAnswer" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+            </div>
+        </div>
+        <div class="row">
+            <h1>{{ userAnswer }}</h1>
+            <button (click)="checkAnswer()">Submit</button>
+        </div>
+    </div>
+</ng-container>
+<div class="container-fluid" id="complete" *ngIf="isCompleted">
+    <p>Complete!</p>
+    <button (click)="saveData()" routerLink="/view/{{ deck.id }}">ok</button>
+</div>
