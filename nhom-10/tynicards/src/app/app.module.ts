@@ -9,9 +9,8 @@ import { ViewComponent } from './view/view.component';
 import { LearnComponent } from './learn/learn.component';
 import { EditComponent } from './edit/edit.component';
 import { CardComponent } from './card/card.component';
-import { DeckService } from './deck.service';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomepageComponent } from './homepage/homepage.component';
+import { ReviewComponent } from './review/review.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -21,15 +20,15 @@ import { HomepageComponent } from './homepage/homepage.component';
     LearnComponent,
     EditComponent,
     CardComponent,
-    NavbarComponent,
-    HomepageComponent
+    ReviewComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [DeckService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,16 +1,14 @@
-<div class="container-fluid" >
-  <div class="row justify-content-center align-self-center" >
-    <div *ngFor="let deck of decks" >
-      <div class="card text-center" [ngStyle]="{'margin-top.px': '100', 'margin-right.px': '20'}">
-        <div class="card-header">
-          Deck {{deck.id}}
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">{{deck.title}}</h5>
-          <p class="card-text">{{deck.description}}</p>
-          <a href="#" class="btn btn-primary my-5 mx-3 border border-primary rounded shadow" routerLink="/view/{{ deck.id }}">Let's learn</a>
-        </div>
-      </div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <button routerLink="/create/{{ newDeckID }}" type="button" class="btn btn-success">Create</button>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let deck of decks">
+      <button routerLink="/view/{{ deck.id }}" type="button" class="btn btn-light my-5 mx-3 border border-primary rounded shadow text-center" style="width: 160px; height: 240px">
+        {{ deck.title }}
+      </button>
     </div>
   </div>
 </div>

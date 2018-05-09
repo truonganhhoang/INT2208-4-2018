@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   decks: Deck[];
 
-  // newDeckID = '10';
+  newDeckID = '10';
 
   constructor(private deckService: DeckService) { }
 
