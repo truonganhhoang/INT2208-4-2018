@@ -3,7 +3,7 @@
 - Mã sv: 15021380
 
 1. Bài tập lớn: 
-	* Tham gia hoàn thành 100% bài tập lớn ([nhóm 14](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-14]))
+	* Tham gia hoàn thành 100% bài tập lớn ([nhóm 14](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-14))
 	* Hoàn thành 100% bài tập làm slide của nhóm ([phần Introduction](https://github.com/truonganhhoang/SoftEng/tree/master/introduction))
 2. Bài tập cá nhân: 
 	* [Introduction](https://github.com/truonganhhoang/INT2208-4-2018/blob/master/NguyenHoangAnh/Introduction.png)
