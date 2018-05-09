@@ -9,6 +9,8 @@ import { ViewComponent } from './view/view.component';
 import { LearnComponent } from './learn/learn.component';
 import { EditComponent } from './edit/edit.component';
 import { CardComponent } from './card/card.component';
+import { ReviewComponent } from './review/review.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CardComponent } from './card/card.component';
     ViewComponent,
     LearnComponent,
     EditComponent,
-    CardComponent
+    CardComponent,
+    ReviewComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,

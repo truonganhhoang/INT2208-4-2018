@@ -3,23 +3,35 @@
   <div class="row">
     <button routerLink="/home/" type="button" class="btn btn-danger">Back</button>
     <p>{{ deck.title }}</p>
-    <button routerLink="/learn/{{ deck.id }}" type="button" class="btn btn-primary">Learn</button>
+    <button routerLink="/review/{{ deck.id }}" type="button" class="btn btn-info">Review</button>
     <button routerLink="/edit/{{ deck.id }}" type="button" class="btn btn-success">Edit</button>
   </div>
   <div class="row">
-    <p>{{ deck.description }}</p>
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+          <a class="nav-link active" id="pills-lessons-tab" data-toggle="pill" href="#pills-lessons" role="tab" aria-controls="pills-lessons" aria-selected="true">Lessons</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" id="pills-cards-tab" data-toggle="pill" href="#pills-cards" role="tab" aria-controls="pills-cards" aria-selected="true">Cards</a>
+      </li>
+    </ul>
   </div>
   <div class="row">
-    <div *ngFor="let card of deck.cards">
-      <app-card [card]="card"></app-card>
-      <!--
-      <button type="button" class="btn btn-light my-5 mx-3 border border-primary rounded shadow text-center" style="width: 160px; height: 240px">
-        {{ card.front }}
-      </button>
-      <button type="button" class="btn btn-light m-5 border border-primary rounded shadow text-center" style="width: 160px; height: 240px">
-        {{ card.back }}
-      </button>
-      -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-lessons" role="tabpanel" aria-labelledby="pills-lessons-tab">
+        <span *ngFor="let lesson of deck.lessons">
+          <button type="button" routerLink="/learn/{{ deck.id }}/{{ lesson.id }}" class="btn btn-light my-5 mx-3 border border-primary rounded shadow text-center" style="width: 160px; height: 240px">
+            {{ lesson.id }}
+          </button>
+        </span>
+      </div>
+      <div class="tab-pane fade" id="pills-cards" role="tabpanel" aria-labelledby="pills-cards-tab">
+        <span *ngFor="let lesson of deck.lessons">
+          <ng-container *ngFor="let card of lesson.cards">
+            <app-card [card]="card"></app-card>
+          </ng-container>
+        </span>
+      </div>
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Card } from '../card';
 
 @Component({
@@ -6,7 +6,7 @@ import { Card } from '../card';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
-export class CardComponent implements OnInit {
+export class CardComponent implements OnInit, OnChanges {
 
   @Input() card: Card;
   text: string;
@@ -17,6 +17,10 @@ export class CardComponent implements OnInit {
     } else {
       this.text = this.card.front;
     }
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.text = this.card.front;
   }
 
   constructor() { }
