@@ -32,20 +32,6 @@ Các chức năng chính:
 Chương trình được lập trình hoàn toàn trên nền tảng JavaScript, Jquery, PHP.
 III. Khóa học software engineering edx:
 Đã hoàn thiện các bài Quiz và bài Final Exam
-![Alt text](img/Process.png)
-
-![Alt text](img/Specifications.png)
-
-![Alt text](img/Testing.png)
-
-![Alt text](img/Process.png)
-
-![Alt text](img/HighLevelDesign.png)
-
-![Alt text](img/LowLevelDesign.png)
-
-![Alt text](img/Construction.png)
-
-![Alt text](img/FinalExam.png)
+[Chung chi](https://github.com/toandx/INT2208-4-2018/tree/master/DongXuanToan/img)
 
 Hoàn thành phần Spiral slide : [Slide](https://github.com/truonganhhoang/SoftEng/blob/master/process/PITCHME.md)
