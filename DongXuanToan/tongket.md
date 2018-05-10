@@ -35,4 +35,4 @@ III. Khóa học software engineering edx:
 Đã hoàn thiện các bài Quiz và bài Final Exam
 [Chung chi](https://github.com/toandx/INT2208-4-2018/tree/master/DongXuanToan/img)
 
-Hoàn thành phần Spiral trong slide Pr : [Slide](https://github.com/truonganhhoang/SoftEng/blob/master/process/PITCHME.md)
+Hoàn thành phần Spiral trong slide : [Slide](https://github.com/truonganhhoang/SoftEng/blob/master/process/PITCHME.md)
