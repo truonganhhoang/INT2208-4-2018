@@ -2,13 +2,13 @@ Dự án TinyCards bản hoàn thiện. Để chạy chương trình, bạn cầ
 kích hoạt nó. Cài cơ sở dữ liệu web trên Database (Đây là khó khăn lớn nhất khi Deploy phần mềm lên các Server khác). Copy file 
 FinalProject lên thư mục htdocs của XAMPP. Sau đó, chỉ cần truy cập vào localhost/FinalProject/1.html và sử dụng.
 Chương trình có các tính năng chính:
-* Đăng nhập:
+* Đăng nhập: (1.html)
 ![Alt text](img/login.png) 
-* Tạo tài khoản:
+* Tạo tài khoản: (1-2.html)
 ![Alt text](img/signup.png) 
-* Chơi TinyCards:
+* Chơi TinyCards:(1-1.html)
 ![Alt text](img/play.png) 
-* Tạo thẻ, chủ đề:
+* Tạo thẻ, chủ đề:(1-1-1.html)
  ![Alt text](img/create.png) 
 * Tìm chủ đề:
 ![Alt text](img/search.png)
