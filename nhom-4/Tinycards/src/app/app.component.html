@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html>
+<app-navigation-bar style="padding:20px"></app-navigation-bar>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Tiny Card - Nhom 4</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- icon -->
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-  <app-navigation-bar (waitForOtherPage)="goTo($event)" style="padding:20px"></app-navigation-bar>
+<div class="main">
+    <br/>
+    <br/> 
   <div class="container my-4">
-    <app-homepage  (waitForOtherPage)="goTo($event)" *ngIf="isHomePage"></app-homepage>
-    <app-profilepage (waitForOtherPage)="goTo($event)" *ngIf="isProfilePage"></app-profilepage>
-    <app-learnpage [cards]="currentCard" (waitForOtherPage)="goTo($event)" *ngIf="isLearnPage"></app-learnpage>
-  </div>
-  <app-ip></app-ip>
-</body>
+    <router-outlet></router-outlet>
+   </div>
+</div>
 
-</html>
