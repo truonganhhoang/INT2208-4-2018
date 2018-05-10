@@ -1,0 +1,26 @@
+<form class="form-group" (ngSubmit)="sendNewCardCollection()" [formGroup]="newCardCollection">
+  <div class="row">
+    <div class="col-md-4 col-sm-12 ">
+      <!-- info -->
+      <h3>Tên bộ thẻ</h3>
+      <input class="form-control" type="text" formControlName="title">
+      <button type="submit" class="btn btn-success my-5" style="width:100%">Tạo bộ thẻ này</button>
+    </div>
+    <div class="col-md-8">
+      <div formArrayName="cards">
+        <div *ngFor="let itemrow of newCardCollection.controls.cards.controls; let i=index" [formGroupName]="i" class="row">
+          <div class="col-md-5 mx-1">
+            <h5>Mặt trước</h5>
+            <input class="form-control" type="text" formControlName="front">
+          </div>
+          <div class="col-md-5 mx-1">
+            <h5>Mặt sau</h5>
+            <input class="form-control" type="text" formControlName="back">
+          </div>
+          <button type="button" class="btn btn-danger btn-sm" style="position: relative;top:35px;height:30px" (click)="deleteRow(i)">Xóa</button>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary float-right mt-3" (click)="addNewRow()">Thêm</button>
+    </div>
+  </div>
+</form>
