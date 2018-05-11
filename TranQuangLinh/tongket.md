@@ -27,4 +27,7 @@
 
 + Viết [báo cáo](https://docs.google.com/document/d/1W-kvb4cAC5ST_LlfsD7BMCIhNfj1SusxlI1qusP4eT4/edit?usp=sharing) cho bài tập lớn của nhóm
 
++ Làm [slide](https://github.com/truonganhhoang/SoftEng/blob/master/specifications/PITCHME.md) nhóm phần Spefication trong khóa học trên EDX
+
+
 + Bài tập lớn :ứng dụng tinycards xem tại [đây] (http://jindojojin.github.io)
