@@ -25,6 +25,9 @@ var control = {
                 res.status(404);
                 res.send();
             })
+    },
+    createNewCardCollection: function(req,res){
+        console.log(req.body);
     }
 }
 module.exports = control;
