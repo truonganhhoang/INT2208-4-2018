@@ -1,6 +1,6 @@
-﻿Tổng kết môn học, 
-Họ và tên: Trịnh Văn Thi
-MSV: 14020441
+﻿#Tổng kết môn học
+- Họ và tên: Trịnh Văn Thi
+- MSV: 14020441
 
 1. Tự học
    - Học Bootstrap, HTML, CSS và JavaScript ở mức cơ bản trên trang https://www.w3schools.com/ và 1 vài nguồn khác.
