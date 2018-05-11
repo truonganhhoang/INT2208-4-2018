@@ -13,8 +13,8 @@
 + nắm được các component cơ bản như navbar, button, modal và hệ thống grid thể hiện qua bài tập lớn [bên dưới](https://github.com/jindojojin/INT2208-4-2018/tree/master/nhom-4/Tinycards/src)
 
 #### Angular + NodeJS( cụ thể là Express): Sử dụng cơ bản, mức độ sử dụng thể hiện qua bài tập lớn : 
-+ [link đến ứng dụng](jindojojin.github.io)  
-+ [link đến repo](https://github.com/jindojojin/server_internship_web) 
++ [link đến ứng dụng](http://jindojojin.github.io)  
++ [link đến repo](https://github.com/jindojojin/INT2208-4-2018/tree/master/nhom-4/Tinycards) 
 
 ## Qúa trình làm bài tập cá nhân: 
 + làm bài tập trên EDX: [link ảnh dẫn chứng](https://drive.google.com/drive/folders/1A-KjwyRwXfaggmSwGnK90PUSR_XgbB3K?usp=sharing)
