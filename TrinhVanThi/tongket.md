@@ -8,10 +8,10 @@
    - Tham gia làm slide phần Construction (cụ thể là phần 'Mã xấu' và 'Cải tiến mã nguồn'), link : https://github.com/truonganhhoang/SoftEng/tree/master/construction.
    - Tham gia làm bài tập lớn, link : https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-13.
 3. Bài tập cá nhân 
-	- Process.
-	- Specifications.
-	- Testing.
-	- High Level Design.
-	- Low Level Design.
-	- Construction.
+	- [Process](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/Process.png).
+	- [Specifications](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/Specifications.png).
+	- [Testing](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/Testing.png).
+	- [High Level Design](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/High%20Level%20Design.png).
+	- [Low Level Design](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/Low%20Level%20Design.png).
+	- [Construction](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/Construction.png).
 4. Điểm chấm chéo
