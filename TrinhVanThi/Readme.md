@@ -1,2 +1,2 @@
-﻿Họ và tên : Trịnh Văn Thi
+﻿Họ và tên : Trịnh Văn Thi,
 MSV : 14020441
