@@ -22,5 +22,5 @@
  
  -Điểm: 6.5
  
- -Nhận xét:Không tiến hành làm BTL. Dẫn chứng phần tự học chưa thực sự thuyết phục.
+ -Nhận xét:Không tiến hành làm BTL, báo cáo cho BTL. Dẫn chứng phần tự học chưa thực sự thuyết phục.
  		
