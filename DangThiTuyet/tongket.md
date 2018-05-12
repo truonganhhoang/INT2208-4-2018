@@ -11,10 +11,9 @@ MSV: 16021229
 2. Bài tập nhóm + Tham gia dịch và làm slide phần specication: https://github.com/truonganhhoang/SoftEng/tree/master/specifications
 
 3. Phần tự học : Tự học trên youtube nên không có chứng chỉ
-
-HTML, CSS, bootstrap3, JavaScript, nodejs + express tự đánh giá mức cơ bản 
-Boostrap : https://getbootstrap.com/
-html : https://www.coursera.org/learn/html/lecture/Ilm91/01-01-welcome-to-introduction-to-html5
-css : https://www.youtube.com/watch?v=_JT3jPzuqmY
+   + HTML, CSS, bootstrap3, JavaScript, nodejs + express tự đánh giá mức cơ bản 
+   + Boostrap : https://getbootstrap.com/
+   + Html : https://www.coursera.org/learn/html/lecture/Ilm91/01-01-welcome-to-introduction-to-html5
+   + Css : https://www.youtube.com/watch?v=_JT3jPzuqmY
 Boostrap : https://www.youtube.com/watch?v=-sMbAvgg7mY&list=PLv6GftO355AvAl13CUVcVvWu0hOZnpfW8
 
