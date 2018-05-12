@@ -1,6 +1,7 @@
-#1.Báo cáo tổng kết
-##2.Sinh viên: Hà Công Trung
-##2.MSV      : 16021199
+# Báo cáo tổng kết
+## Sinh viên: Hà Công Trung
+## MSV      : 16021199
+
 -link bài tập nhóm [Tiny Card](tps://github.com/hatrunguet98/INT2208-4-2018/tree/master/HaCongTrung/Software%20Engineering%20Introduction
 -link bài thuyết trình [Testing](https://github.com/truonganhhoang/SoftEng/blob/master/testing/nhom-8/PITCHME.md
 -Tự học
