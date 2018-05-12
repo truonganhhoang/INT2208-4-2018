@@ -1,0 +1,164 @@
+/* This file completely made by Phạm Ngọc Duy */
+
+/* Mobile-style */
+@media (max-width: 700px){
+
+    /* Duy's reuse-template */
+    #main-container{
+        text-align: center !important;
+        padding: 0;
+    }
+
+    /* Duy's site style */
+    #duy-tab a{
+        display: inline-block;
+        padding: 30px 0 20px 10px;
+        text-decoration: none;
+        color: rgb(196,196,196);
+    }
+    #duy-tab {
+        margin: 0 auto;
+        text-align: center;
+        display: inline-block;
+    }
+    #duy-tab #duy-about {
+        margin: 0 70px -3px 0!important;
+    }
+    #main {
+        background-color: white;
+        border-radius: unset !important; 
+        box-shadow: transparent;
+    }
+    .main-content {
+        padding: 60px 10px !important;
+    }
+    #logo img {
+        display: none;
+    }
+
+    #contact-content {
+        margin: 0 0 !important;
+        border-top: 1px solid #e8e8e8
+    }
+    .footer {
+        display: none !important;
+    }
+
+    #round-container {
+        background-color: white;
+        border-radius: 0px !important;
+        box-shadow: 0 0 20px 5px rgba(0,0,0,.08);
+    }
+    
+}
+
+/* Duy's reuse-template */
+*{
+    font-family: sans-serif;
+    /*font-family: 'DINNextRoundedLTPro-Regular';*/
+    padding: 0;
+    margin: 0;
+}
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+.blue-link {
+    color:  rgb(50, 205, 255) !important;
+    font-size: 12pt !important;
+}
+#round-container {
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.08);
+}
+#duy-tab {
+    border-bottom: #e8e8e8 1px solid;
+}
+    #duy-tab a{
+        display: inline-block;
+        padding: 30px 0 20px 0;
+        text-decoration: none;
+        color: rgb(196,196,196);
+    }
+    #duy-tab #duy-about {
+        margin: 0 70px -3px 80px;
+    }
+    #duy-tab-item {
+        display: inline-block !important;
+    }
+    #duy-tab a{
+        border: none;
+        background: none;
+    }
+    .nav-tabs .duy-tab-item.active a{
+        color: rgb(50, 205, 255) !important;
+        border-bottom: rgb(50, 205, 255) 4px solid;
+    }
+    /*main content padding*/
+    .main-content {
+        padding: 60px 80px;
+    }
+
+/* Duy's Page style */
+
+a {
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 12pt !important;
+    margin-bottom: 15px !important;
+    font-weight: bold !important;
+}
+p {
+    font-size: 12pt !important;
+    line-height: 2em;
+}
+
+
+
+#invester a {
+    display: inline-block;
+    margin: 20px 30px 0 0;
+}
+#contact-content {
+    margin: 0 80px;
+    border-top: 1px solid #e8e8e8
+}
+    .contact-item{
+        /* display: inline-block; */
+        margin: 10px 0px;
+        height: 3em;
+        line-height: 3em;
+        /* margin: 10px 20px; */
+        text-align: center;
+        /*position: relative;*/
+    }
+    .contact-link {
+        color: rgb(105, 109, 118);
+        font-weight: normal;
+    }
+    .contact-icon {
+        vertical-align: middle;
+    }
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer a{
+    color: rgb(31,152,191);
+    text-transform: uppercase;
+    font-size: 14px !important;
+    display: inline-block;
+    height: 3em;
+    line-height: 3em;
+    margin: 10px 20px;
+    text-align: center;
+}
+#current-lang{
+    cursor: pointer;
+}

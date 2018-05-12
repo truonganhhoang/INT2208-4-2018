@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Effects</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: teal;
+            float: left;
+            margin: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>CLick Me</button>
+
+    <div>Please don't fade me!</div>
+    <div>I'm begging you, please!</div>
+    <div>Help help help</div>
+</body>
+<script>
+    $('button').on('click', function () {
+        /**
+         * fading effect
+         */
+        // $('div').fadeOut(1000, function () {
+        //     $(this).remove();
+        // });
+        /**
+         * sliding effect
+         */
+        $('div').slideDown();
+    })
+</script>
+</html>
