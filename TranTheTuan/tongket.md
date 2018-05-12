@@ -3,7 +3,7 @@
 - Đóng góp bài tập lớn: - Giao diện
 - Đóng góp thuyết trình: - Abstraction
 - Bài tập cá nhân:
-  
+  https://github.com/TranTheTuan/INT2208-4-2018/tree/master/TranTheTuan/BaiTapCaNhan
 - Nội dung tự học:
   - Tự học HTML, CSS, javascript ở mức thông hiểu: http://www.htmldog.com/
   - Tự học Bootstrap ở mức thông hiểu: http://getbootstrap.com/
