@@ -9,3 +9,10 @@ MSV: 16021420
 	http://getbootstrap.com/docs/3.3/
 	https://www.youtube.com/watch?v=GArJ0EPu77w&list=PLLAJJPGNwNkhRy3GedkR4nQsXO_LFKeBD
 	https://www.youtube.com/watch?v=aeNRVbyn2fc&list=PLLAJJPGNwNkgMIv4MMe08xLYJyHWqrjut
+4. Chấm điểm:
+- Người chấm: Lê Công Thái
+- Điểm: 9
+- Nhận xét:
+	- Bạn đã học được cơ bản html, css, js, bootstrap tại các khóa học onl
+	- Bài tập cá nhân đã làm đầy đủ và có minh chứng rõ ràng
+	- Bài tập lớn có nêu rõ nội dung tham gia.
