@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+      </div>
+      <input [(ngModel)]="title" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+      </div>
+      <input [(ngModel)]="description" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+  </div>
+  <div class="row">
+    <button type="button" routerLink="/view/{{ deck.id }}" (click)="save();" class="btn btn-success">Save</button>
+    <button type="button" routerLink="/view/{{ deck.id }}" class="btn btn-danger">Cancel</button>
+  </div>
+</div>

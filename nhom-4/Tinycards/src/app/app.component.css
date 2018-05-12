@@ -1,0 +1,11 @@
+.main{
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+

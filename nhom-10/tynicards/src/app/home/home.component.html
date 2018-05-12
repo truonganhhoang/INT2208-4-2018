@@ -1,0 +1,14 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <button routerLink="/create/{{ newDeckID }}" type="button" class="btn btn-success">Create</button>
+    </div>
+  </div>
+  <div class="row">
+    <div *ngFor="let deck of decks">
+      <button routerLink="/view/{{ deck.id }}" type="button" class="btn btn-light my-5 mx-3 border border-primary rounded shadow text-center" style="width: 160px; height: 240px">
+        {{ deck.title }}
+      </button>
+    </div>
+  </div>
+</div>

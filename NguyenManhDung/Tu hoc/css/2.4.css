@@ -1,0 +1,90 @@
+﻿div form input {
+    width: 14rem !important;
+    border-radius: 8px !important;
+    font-weight: bold;
+    background-color: #6ad8fc !important;
+    border: none !important;
+}
+
+    div form input:focus {
+        background-color: white !important;
+        font-weight: normal;
+    }
+
+    div form input::placeholder {
+        color: #eaf4f9 !important;
+    }
+
+.bg-primary {
+    background-color: #32cdff !important;
+}
+
+ul a {
+    color: white;
+}
+
+    ul a:hover {
+        color: #8fdef7;
+    }
+
+body {
+    background-color: #f7f7f7;
+}
+
+    *:focus {
+        outline: none !important;
+        border-color: transparent;
+        box-shadow: none !important;
+    }
+
+.card-body, .jumbotron, .card-img-top, .multipleChoice {
+    background-color: white;
+    box-shadow: 0 2px 9px rgba(0,0,0,.2);
+    border-radius: 18px;
+}
+
+.card-body {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.left {
+    transform: rotate(-4deg);
+}
+
+.right {
+    transform: rotate(4deg);
+}
+
+.question-2 input {
+    margin: 15% auto;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #32cdff;
+    font-size: 20px;
+}
+
+.shaking {
+    animation: shake 0.1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes shake {
+    from {
+        transform: translate(-10px);
+    } 
+    to {
+        transform: translate(10px);
+    }
+}
+
+.escape-btn {
+    background-color: white;
+    color: #bdb9b9;
+    font-size: 20px;
+    border: none;
+}
+    .escape-btn:hover {
+        color: #aaa7a7;
+        background-color: inherit;
+    }

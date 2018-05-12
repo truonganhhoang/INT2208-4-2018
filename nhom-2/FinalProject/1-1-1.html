@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	<script defer src="fontawesome-all.js"></script>
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tinycards Doulingo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://d35aaqx5ub95lt.cloudfront.net/favicon.ico" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block" style="background-color:#20a8e9">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="1.html">
+                <h3 style="color:#fff; font-weight: bolder">Tiny Cards</h3>
+            </a>
+			<form class="collapse navbar-collapse form-inline" style="max-width:270px; max-height:50px" id="navbarSearch">
+                <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                </input>
+                <button class="btn btn-success" type="submit" >
+					Go
+                </button>
+            </form>
+			
+			
+			<a class="mx-auto navbar-toggler ion-ios-home-outline" href="1.html" role="button" id="homeIcon"></a>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link ion-ios-home-outline" href="1-1.html"> 
+							<i class="fas fa-home"></i>
+							Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link ion-android-add " href="1-1-1.html"> <i class="far fa-plus-square"></i> Create </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ion-android-contact" href="1.html"> <i class="fas fa-users"></i>
+
+ Log out </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<div class="container">
+	<br>
+	<div class="row">
+	<div class="col-sm-3">
+	<h1> Enter title: </h1>
+	<input id="title" class="form-control" type="search" placeholder="Title" aria-label="Search"> </input>
+	<br>
+	<button class="btn btn-success" onclick="EnterTitle()" type="submit" >Enter</button>
+	</div>
+	<div class="col-sm-4">
+	<div class="row">
+	<input type="file" id="myFile1" >
+	<button id="upload1"><i class="fas fa-upload"></i> </button>
+	<button onclick="submit1() "class="btn btn-primary" type="submit" >
+	<i class="fas fa-font"></i>
+	</button>
+	</div>
+	<br>
+	<img class="rounded" id="img1" style="max-height:400px; max-width:300px;display:block" src="uploads/4.jpg">
+	<input id="txt1" type="text">
+	</div>
+	<div class="col-sm-4">
+	<div class="row">
+	<input type="file" id="myFile2" >
+	<button id="upload2"><i class="fas fa-upload"></i> </button>
+	<button onclick="submit2()" class="btn btn-primary" type="submit" >
+	<i class="fas fa-font"></i>
+	</button>
+	</div>
+	<br>
+	<img class="rounded" id="img2" style="max-height:400px; max-width:300px;display:block"	  src="uploads/5.jpg">
+	<input id="txt2" type="text">
+	</div>
+	<div class="col-sm-1">
+	<br>
+	<br>
+	<br>
+	<button onclick="add()" class="btn btn-success" type="submit" >
+	<h1> + <h1>
+	</button>
+	</div>
+	</div>
+	</div>
+  </div>
+	<script>
+	var img1,txt1,type1,img2,txt2,type2;
+	$.ajaxSetup({async: false});  
+	var id=0;
+	txt1="";
+	type1="0";
+	type2="0";
+	txt2="";
+	img1="";
+	imt2="";
+	var subjectid="1";
+	$('#upload1').on('click', function() {
+    var file_data = $('#myFile1').prop('files')[0];   
+    var form_data = new FormData();                  
+    form_data.append('file', file_data);                      
+    $.ajax({
+        url: 'upload.php', // point to server-side PHP script 
+        dataType: 'text',  // what to expect back from the PHP script, if anything
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,                         
+        type: 'post',
+		async:false,
+        success: function(res){
+            if (res=="0")
+			alert("You must upload image file"); else
+			if (res=="-1")
+			alert("File existed in database"); else
+			if (res=="-2")
+			alert("You don't upload file"); else
+			{
+				document.getElementById("img1").src="uploads/"+res;
+				alert("Upload file successful");
+				type1="1";
+				img1=res;
+			}
+        }
+     });
+	});
+	$('#upload2').on('click', function() {
+    var file_data = $('#myFile2').prop('files')[0];   
+    var form_data = new FormData();                  
+    form_data.append('file', file_data);                      
+    $.ajax({
+        url: 'upload.php', // point to server-side PHP script 
+        dataType: 'text',  // what to expect back from the PHP script, if anything
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,                         
+        type: 'post',
+		async:false,
+        success: function(res){
+            if (res=="0")
+			alert("You must upload image file"); else
+			if (res=="-1")
+			alert("File existed in database"); else
+			if (res=="-2")
+			alert("You don't upload file"); else
+			{
+				document.getElementById("img2").src="uploads/"+res;
+				alert("Upload file successful");
+				type2="1";
+				img2=res;
+			}
+        }
+     });
+	});
+	function submit1()
+	{
+		type1="0";
+		txt1=document.getElementById("txt1").value;
+		document.getElementById("img1").src="";
+	}
+	function submit2()
+	{
+		type2="0";
+		txt2=document.getElementById("txt2").value;
+		document.getElementById("img2").src="";
+	}
+	function EnterTitle()
+	{
+		id=0;
+		var subjectname=$('#title').val();
+		$.post('updata.php',{rq:"0",txt:subjectname},
+		function(data)
+		{
+			subjectid=data;
+			alert("Create group card successful");
+		});
+	}
+	function add()
+	{
+		id=id+1;
+		if (type1=="0") img1="";else txt1="";
+		if (type2=="0") img2="";else txt2="";
+		$.post('updata.php',{rq:"1",txt:subjectid+"|"+type1+"|"+img1+"|"+txt1+"|"+type2+"|"+img2+"|"+txt2+"|"+id},
+		function(data)
+		{
+			if (data=="1")
+				alert("Add card successful");
+		});
+	}
+	</script>
+	</body>
+</html>

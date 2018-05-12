@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Methods</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <style>
+        .correct {
+            color: green;
+        }
+
+        .wrong {
+            color: red;
+            background: pink;
+        }
+
+        .done {
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+
+<h1>jQuery Methods Demo Page</h1>
+
+<input type="text" placeholder="your name">
+
+<select>
+    <option>Ostrich</option>
+    <option>Turtle</option>
+    <option>Toad</option>
+</select>
+
+<ul>
+    <li>Skittles</li>
+    <li>Starburst</li>
+    <li>Twix</li>
+</ul>
+</body>
+<script>
+    // attr() and val()
+    console.log($("input").attr("placeholder")); // retrieve
+    console.log($("input").attr("placeholder", "nothing")); // replace
+    console.log($("input").val("nice try"));
+    $("input[type = text]"); // pick input which gets its attribute type = text
+    // classes
+    $("h1").addClass("correct wrong").removeClass("correct");
+    $("li").addClass("correct");
+</script>
+</html>

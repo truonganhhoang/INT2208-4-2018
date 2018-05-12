@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+<div ng-app="" ng-init="x=1;y=2;a='toan';b='dep trai';person={firstName:'toan',lastname:'dx'}; point=[1,2,3,4]; myCol='lightblue'">
+<p> {{x+y}}</p>
+<h1> {{a+' '+b}}</h1>
+<p> {{person.firstName}}</p>
+<h1> {{point[2]}}</h1>
+<input style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}">
+</div>
+</body>
+</html>

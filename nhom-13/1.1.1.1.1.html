@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Douligo | English</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://d35aaqx5ub95lt.cloudfront.net/favicon.ico"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+    <style type="text/css">
+        body{ background-color: #eee; }
+        .nd{
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: space-around;
+	    }
+	    .baihoc{
+		    width: 700px;
+		    height: auto;
+		    border: 1px solid #1caff6;
+		    border-radius: 5px;
+		    background-color: white;
+
+		}
+		.img-thumbnail {
+			width: 170px;
+			height: 150px;
+		}
+	</style>
+<body>
+	<div style="width: 100%">
+		<div class="nd">
+			<div class="baihoc">
+				<div style="height: 50px; background-color: #1caff6;border-radius: 5px;">
+					<br>
+					<p class="text-center" style="color: white; font-size: 25px;line-height: 10px">Chọn đáp án đúng</p>
+
+				</div>
+				<div style="margin-left: 40px">
+					<form name="quiz">
+						<br>
+						<h4><b class="mau">1. Banana</b></h4>
+						<label>
+                            <input type="radio" name="q1" value="A"> <img src="img/chuoi.jpg" class="img-thumbnail" >&emsp;
+						</label>
+						<label>
+						    <input type="radio" name="q1" value="B"> <img src="img/dau.jpg" class="img-thumbnail">&emsp;
+						</label>
+						<label>
+						    <input type="radio" name="q1" value="C"> <img src="img/dua.jpg" class="img-thumbnail">
+						</label>
+						<br>
+						<h4><b class="mau">2. Tôi là một người đàn ông</b></h4>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q2" value="A" > I am break
+				            </label>
+						</div>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q2" value="B" > I am a man
+				            </label>
+						</div>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q2" value="C" > I am a boy
+				            </label>
+						</div>
+						<br>
+						<h4><b class="mau">3. Tôi là một phụ nữ</b></h4>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q3" value="A" > I am a woman
+				            </label>
+						</div>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q3" value="B" > I am a boy
+				            </label>
+						</div>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q3" value="C" > I am a water
+				            </label>
+						</div>
+						<br>
+						<h4><b class="mau">4. Coconut</b></h4>
+						<label>
+                            <input type="radio" name="q4" value="A"> <img src="img/nhan.jpg" class="img-thumbnail">&emsp;
+						</label>
+						<label>
+						    <input type="radio" name="q4" value="B"> <img src="img/dau.jpg" class="img-thumbnail">&emsp;
+						</label>
+						<label>
+						    <input type="radio" name="q4" value="C"> <img src="img/dua.jpg" class="img-thumbnail">
+						</label>
+						<br>
+						<h4><b class="mau">5. I am _ woman</b></h4>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q5" value="A" > an
+				            </label>
+						</div>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q5" value="B" > a
+				            </label>
+						</div>
+						<div class="radio">
+						    <label>
+						        <input type="radio" name="q5" value="C" > the
+				            </label>
+						</div>
+						<br><br>
+						<b><input onclick="getScore(this.form)" type="button" value="Kết quả"/> <strong><input class="bgclr" disabled name="percentage" size="5" type="text" /></strong>
+						<br><br>
+						<input type="reset" value="Làm lại"/></b>
+						<br><br>
+						<h4><b>Đáp án</b></h4>
+						<textarea class="bgclrr" cols="25" disabled name="solutions" rows="5" wrap="virtual"></textarea>
+						<a href="1.1.1.1.html" style=" float: right;margin-top: 50px; margin-right: 40px"><b>X</b></a>
+					</form>
+					<script language="JavaScript">
+						// Số câu hỏi
+						var numQues = 5;
+						//Số phương án trả lời
+						var numChoi = 3;
+						//Số câu hỏi được hiển thị đáp án
+						var answers = new Array(5);
+						// Đáp án đúng cho câu hỏi
+						answers[0] = "A";
+						answers[1] = "B";
+						answers[2] = "A";
+						answers[3] = "C";
+						answers[4] = "B";
+
+						function getScore(form) {
+						    var score = 0;
+						    var currElt;
+						    var currSelection;
+						    for (i=0; i<numQues; i++) {
+						        currElt = i*numChoi;
+						        for (j=0; j<numChoi; j++) {
+						            currSelection = form.elements[currElt + j];
+						            if (currSelection.checked) {
+						                if (currSelection.value == answers[i]) {
+						                    score++;
+						                break;
+						                }
+						            }
+						        }
+						    }
+						    score = Math.round(score/numQues *100);
+						    form.percentage.value = score + "/100" ;
+						    var correctAnswers = "";
+						    for (i=1; i<=numQues; i++) {
+						        correctAnswers += i + ". " + answers[i-1] + "\r\n";
+						    }
+						    form.solutions.value = correctAnswers;
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
