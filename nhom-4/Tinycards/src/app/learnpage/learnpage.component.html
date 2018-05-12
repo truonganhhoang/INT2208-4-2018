@@ -5,18 +5,17 @@
     <div class="col">
       <label>
         <input type="checkbox"/>
-        <div class="card" (onclick)="flip()">
-          <div *ngIf="isFront" class="front" (onclick)="flip()">
-            <img id="imgFront" alt="">
+        <div class="card">
+          <div class="front" >
+            <img id="imgFront" src="{{front}}">
           </div>
-          <div *ngIf="!isFront" class="back" (onclick)="flip()">
-            <h2>{{theBack}}</h2>
+          <div class="back">
+            <h2 class="center-text">{{back}}</h2>
           </div>
         </div>
-        <button *ngIf="(this.i) > 0" class="btn btn-success my-3 float-left" (click)=" backCard();">Back</button>
-        <button *ngIf="(this.i) < (this.cards.length-1) " class="btn btn-success my-3 float-right" (click)="nextCard()">Next</button>
+        <button *ngIf="!isLast" class="btn btn-success my-3 float-left" (click)="backCard()">Back</button>
+        <button *ngIf="!isFirst" class="btn btn-success my-3 float-right" (click)="nextCard()">Next</button>
       </label>
-
     </div>
     <div class="col col-sm-offset-3"></div>
   </div>

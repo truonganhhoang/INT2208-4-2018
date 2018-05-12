@@ -23,10 +23,18 @@ cursor: pointer;
 
 .card .back  {
   transform: rotateY(180deg);
+  
+}
+
+.center-text{
+  position: relative;
+  bottom: 250px;
+  text-align: center;
 }
 
 input {
   display: none;
+
 }
 
 :checked + .card {
