@@ -15,8 +15,9 @@
 	- High Level Design:https://i.imgur.com/MZFTDnG.png
 - Phần tự học:
 	+ Học HTML, Css, Bootstrap, Js căn bản trên trang https://www.w3schools.com/
- Chấm báo cao:
+	
+ Chấm báo cáo:
  -Người chấm: Trần Thị Minh Nguyệt.
- -Điểm: 7
+ -Điểm: 6.5
  -Nhận xét:Không tiến hành làm BTL. Dẫn chứng phần tự học chưa thực sự thuyết phục.
  		
