@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+	<html lang="vi">
+	<head>
+	<script defer src="fontawesome-all.js"></script>
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tinycards Doulingo</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://d35aaqx5ub95lt.cloudfront.net/favicon.ico" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+	<nav class="navbar navbar-expand-lg navbar-light d-none d-sm-block" style="background-color:#20a8e9">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="1.html">
+                <h3 style="color:#fff; font-weight: bolder">Tiny Cards</h3>
+            </a>
+			<form class="collapse navbar-collapse form-inline" style="max-width:270px; max-height:50px" id="navbarSearch">
+                <input id="search" class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                </input>
+                <button onclick="goBtn()" type="button" class="btn btn-success"> Go </button>
+            </form>
+			
+			
+			<a class="mx-auto navbar-toggler ion-ios-home-outline" href="1.html" role="button" id="homeIcon"></a>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-auto active">
+                        <a class="nav-link ion-ios-home-outline" href="1-1.html"> 
+							<i class="fas fa-home"></i>
+							Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ion-android-add " href="1-1-1.html"> <i class="far fa-plus-square"></i> Create </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ion-android-contact" href="1.html"> <i class="fas fa-users"></i>
+
+ Log out </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<br>
+	<div class="progress" style="height:25px;margin-left:3%;margin-right:3%">
+	 <div id="progress bar" class="progress-bar bg-success progress-bar-striped" style="width:0%;height:25px">0%</div>
+	</div>
+	<br>
+	<h1 id="quest"></h1>
+	<div id="card1" class="card" style="width:60%;margin-left:20%">
+  <img id="imgmain" onclick="change()" class="card-img-top" src="uploads/bike.jpg" alt="Card image" style="max-width:100%;max-height:100%">
+  <div class="card-body">
+    <h1 id="txt" onclick="change()"></h1>
+    <a id="buttonmain" onclick="continuebtn()" class="btn btn-primary">Continue</a>
+  </div>
+</div>
+<div id="row1" class="row" style="display:none">
+    <div class="col-sm-4" style="background-color:lavender;">
+	<div class="card" style="width:100%">
+    <img id="img1" class="card-img-top" src="job.jpg" alt="Card image" style="max-height:400px;max-width:100%">
+	<h1 id="txt1"></h1>
+	<div class="radio">
+      <label id="label1" ><input id="radio1" type="radio" name="optradio"></label>
+    </div>
+  </div>
+	</div>
+    <div class="col-sm-4" style="background-color:lavender;">
+	<div class="card" style="width:100%">
+    <img id="img2" class="card-img-top" src="student.jpg" alt="Card image" style="max-width:100%;max-height:400px">
+	<h1 id="txt2"></h1>
+	<div class="radio">
+      <label id="label2" ><input id="radio2" type="radio" name="optradio"></label>
+    </div>
+  </div>
+	</div>
+	<div class="col-sm-4" style="background-color:lavender;">
+	<div class="card" style="width:100%">
+    <img id="img3" class="card-img-top" src="writer.jpg" alt="Card image" style="max-width:100%;max-height:400px">
+	<h1 id="txt3"></h1>
+	<div class="radio">
+      <label id="label3" ><input id="radio3" type="radio" name="optradio"></label>
+    </div>
+  </div>
+	</div>
+
+  </div>
+  <button id="nextbtn" onclick="nextbtn()" type="button" style="display:none" class="btn btn-success float-right" >Next</button>
+	<script>
+	var n,b;
+	var subject="1";
+	var step=0;
+	var score=0;
+	var type1=[];var img1=[];var txt1=[];var type2=[];var img2=[];var txt2=[];
+	$.ajaxSetup({async: false});  	
+	var i,res;
+	function init()
+	{
+	score=0;
+	document.getElementById("quest").innerHTML="";
+	document.getElementById("progress bar").style="width:0%;height:25px";
+	document.getElementById("row1").style="display:none";
+	document.getElementById("progress bar").innerHTML="0%";
+	type1=[];img1=[];txt1=[];type2=[];img2=[];txt2=[];
+	$.get('getdata.php',{q:"0",sub:subject},
+	function(data)
+	{
+		n=parseInt(data);
+	});	
+	for(i=1;i<=n;++i) {
+	$.get('getdata.php',{q:i.toString(),sub:subject},
+	function(data)
+	{
+		res=data.split("|");
+		type1=type1.concat(res[0]);
+		img1=img1.concat(res[1]);
+		txt1=txt1.concat(res[2]);
+		type2=type2.concat(res[3]);
+		img2=img2.concat(res[4]);
+		txt2=txt2.concat(res[5]);
+	});
+	}
+	i=0;
+	if (type1[i]=="1")
+		{ 
+			document.getElementById("imgmain").style="display:block-inline; max-width:100%;max-height:100%";
+			document.getElementById("imgmain").src="uploads/"+img1[i];
+			document.getElementById("txt").innerHTML="";}
+ else
+		{ 
+			document.getElementById("imgmain").style="display:none";
+			document.getElementById("txt").innerHTML=txt1[i];}
+	}
+	init();
+	function continuebtn()
+	{
+		if (type1[i]=="1")
+		{
+			document.getElementById("txt").innerHTML="";
+			document.getElementById("imgmain").style="display:block-inline; max-width:100%;max-height:100%";
+			document.getElementById("imgmain").src="uploads/"+img1[i]; 
+		}else
+		{
+			document.getElementById("imgmain").style="display:none";
+			document.getElementById("txt").innerHTML=txt1[i];
+		}
+		document.getElementById("row1").style="display:block-inline";
+		document.getElementById("nextbtn").style="display:block";
+		if (type2[i]=="1")
+		{
+			document.getElementById("txt1").innerHTML="";
+			document.getElementById("img1").style="display:block-inline; max-width:100%;max-height:100%";
+			document.getElementById("img1").src="uploads/"+img2[i]; 
+		}else
+		{
+			document.getElementById("img1").style="display:none";
+			document.getElementById("txt1").innerHTML=txt2[i];
+		}
+		if (type2[(i+1)%n]=="1")
+		{
+			document.getElementById("txt2").innerHTML="";
+			document.getElementById("img2").style="display:block-inline; max-width:100%;max-height:100%";
+			document.getElementById("img2").src="uploads/"+img2[(i+1)%n]; 
+		}else
+		{
+			document.getElementById("img2").style="display:none";
+			document.getElementById("txt2").innerHTML=txt2[(i+1)%n];
+		}
+		if (type2[(i+2)%n]=="1")
+		{
+			document.getElementById("txt3").innerHTML="";
+			document.getElementById("img3").style="display:block-inline; max-width:100%;max-height:100%";
+			document.getElementById("img3").src="uploads/"+img2[(i+2)%n]; 
+		}else
+		{
+			document.getElementById("img3").style="display:none";
+			document.getElementById("txt3").innerHTML=txt2[(i+2)%n];
+		}
+	}
+	function nextbtn()
+	{
+		if (document.getElementById("radio1").checked)
+		 score=score+1;
+		i=i+1;
+		document.getElementById("progress bar").style="width:"+(i/n*100).toFixed(0).toString()+"%;height:25px";
+		document.getElementById("progress bar").innerHTML=(i/n*100).toFixed(0).toString()+"%";
+		if (i==n) 
+		{
+			document.getElementById("row1").style="display:none";
+			document.getElementById("card1").style="display:none";
+			document.getElementById("nextbtn").style="display:none";
+			document.getElementById("quest").innerHTML="Your score is "+score+"/"+n;
+		} else
+		{
+			step=0;
+			document.getElementById("row1").style="display:none";
+			document.getElementById("card1").style="width:60%;margin-left:20%";
+			if (type1[i]=="1")
+			{
+			document.getElementById("txt").innerHTML="";
+			document.getElementById("imgmain").style="display:block-inline; max-width:100%;max-height:400px";
+			document.getElementById("imgmain").src="uploads/"+img1[i]; 
+			}else
+			{
+			document.getElementById("imgmain").style="display:none";
+			document.getElementById("txt").innerHTML=txt1[i];
+			}
+		}
+	}
+	function change()
+	{
+		document.getElementById("quest").innerHTML="";
+		step=(step+1)%4;
+		if (step==0) {
+		if (type1[i]=="1")
+		{
+			document.getElementById("txt").innerHTML="";
+			document.getElementById("imgmain").style="display:block-inline; max-width:100%;max-height:400px";
+			document.getElementById("imgmain").src="uploads/"+img1[i]; 
+		}else
+		{
+			document.getElementById("imgmain").style="display:none";
+			document.getElementById("txt").innerHTML=txt1[i];
+		}
+		}
+		if (step==1) {
+		if (type2[i]=="1")
+		{
+			document.getElementById("txt").innerHTML="";
+			document.getElementById("imgmain").style="display:block-inline;max-width:100%;max-height:400px";
+			document.getElementById("imgmain").src="uploads/"+img2[i]; 
+		}else
+		{
+			document.getElementById("imgmain").style="display:none";
+			document.getElementById("txt").innerHTML=txt2[i];
+		}
+		}
+		if (step==2) {
+		if (type1[(i+1)%n]=="1")
+		{
+			document.getElementById("txt").innerHTML="";
+			document.getElementById("imgmain").style="display:block-inline; max-width:100%;max-height:400px";
+			document.getElementById("imgmain").src="uploads/"+img1[(i+1)%n]; 
+		}else
+		{
+			document.getElementById("imgmain").style="display:none";
+			document.getElementById("txt").innerHTML=txt1[(i+1)%n];
+		}
+		}
+		if (step==3) {
+		if (type2[(i+1)%n]=="1")
+		{
+			document.getElementById("txt").innerHTML="";
+			document.getElementById("imgmain").style="display:block-inline; max-width:100%;max-height:400px";
+			document.getElementById("imgmain").src="uploads/"+img2[(i+1)%n]; 
+		}else
+		{
+			document.getElementById("imgmain").style="display:none";
+			document.getElementById("txt").innerHTML=txt2[(i+1)%n];
+		}
+		}
+	}
+	function goBtn()
+	{
+	var subjectname=$('#search').val();
+	$.get('find_sub.php',{sub:subjectname},
+	function(data)
+	{
+		if (data=="-1")
+		document.getElementById("quest").innerHTML="Can not found subject"; else
+		subject=data;
+		init();
+	});
+
+	}
+	</script>
+	</body>
+</html>

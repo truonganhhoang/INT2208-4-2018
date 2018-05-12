@@ -28,6 +28,7 @@ var control = {
     },
     createNewCardCollection: function(req,res){
         console.log(req.body);
+        console.log(req.files);
     }
 }
 module.exports = control;

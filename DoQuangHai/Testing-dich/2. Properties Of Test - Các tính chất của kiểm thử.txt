@@ -1,0 +1,19 @@
+﻿REID HOLMES: Có thêm một số các tính chất ở mức độ cao mà chúng ta muốn các test cases phải có để chúng có thể trở thành công cụ tốt nhất cho nhóm phát triển.
+Vậy điều đầu tiên chúng ta muốn là các test cases phải thực thi thật nhanh.
+Ta muốn chúng phải nhanh vì test cases chậm sẽ làm chậm tiến độ, và nếu điều đó xảy ra thì các developers sẽ không thực sự muốn chạy chúng bởi vì họ không muốn phải đợi chờ kết quả.
+
+Tính chất tiếp theo đó là ta muốn các kết quả phải đáng tin cậy.
+Có nghĩa là, khi một test case lỗi, lỗi thực sự ương ứng với một khiếm khuyết thực tế trong system under test.
+Bởi vì nếu test case lỗi một cách ngẫu nhiên, nó có thể làm giảm niềm tin của developer rằng bộ test đang đem lại lợi ích thực sự và dạy họ các điều về hành vi của hệ thống.
+
+Tiếp theo, chúng ta muốn những lỗi của test suite giúp ta cô lập được các lỗi, và ý của tôi là muốn một test case đơn sẽ chỉ điểm nhanh chóng chỗ nào trong code under test phát sinh lỗi.
+Bởi vì nếu một lỗi test case chỉ ra 100,000 dòng có thể là nguồn gốc vấn đề, điều này thực tế chẳng cung cấp nhiều giá trị cho ta.
+Chúng ta muốn phải cô lập các lỗi càng tách biệt càng tốt.
+
+Và cuối cùng, chúng ta muốn lỗi của ta mô phỏng người dùng.
+Điều này dường như là một tính chất khác nhưng nó khá quan trọng trong thực tế.
+Khi chúng ta kiểm thử hệ thống, chúng ta không chỉ cố gắng xác thực hành vi mang tính lập trình ở cấp thấp trong hệ thống.
+Chúng ta cũng cố gắng xác thực cách hành vi ở mức cao của hệ thống thứ mà người dùng có thể trải nghiệm trong thực thế.
+Vậy nên nếu chúng ta không phát hiện được những loại lỗi mà người dùng trải qua, thì test cases sẽ không phản ánh đúng tổng quan chất lượng của hệ thống.
+
+Vậy nên hãy luôn nhớ điều này như là một góc nhìn khác khi ta suy nghĩ test cases ta đang định viết.

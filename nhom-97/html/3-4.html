@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='card.css' rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+
+
+    
+
+
+<div class="container-fluid text-center " style="background-color: #fff; padding-top: 20px; ">    
+        
+      <div class="content1" > 
+         <div class="progress" style=" height: 5px; ">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 60%; height: 10px;">
+          </div>
+        </div> 
+            <img class="tinycard-image2" 
+          src="https://d9np3dj86nsu2.cloudfront.net/image/ed79415f335cdd42fb147b5da3887853"/>
+            <div class="jkl" style="padding-top: 10px;">
+              <img  data-text='True!' class="tinycard-image1" src="https://d9np3dj86nsu2.cloudfront.net/image/9f499136ad667a8e1e5cd37bdd2cceda" onclick= "direct('./3-5.html')"/>
+              <img data-text='False!' class="tinycard-image1" src="https://d9np3dj86nsu2.cloudfront.net/image/fb22e82328239c2f944fed6a55261cd0"/>
+              <img data-text='False!' class="tinycard-image1" src="https://d9np3dj86nsu2.cloudfront.net/image/21a957cf11dd2b064fc423c1012d967f" />
+            </div>
+      </div> 
+</div>
+
+<div class='error' style='display:none'></div>
+<script type="text/javascript">
+  $('img').click(function () {
+    $('.error').text($(this).data('text')).fadeIn(400).delay(700).fadeOut(400); 
+
+  });
+ 
+ function direct(page){
+var timer = setTimeout(function() {
+            window.location=page
+        }, 2000);
+ }
+</script>
+  
+
+
+</body>
+</html>

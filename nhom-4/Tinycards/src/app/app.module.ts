@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CreateCardComponent } from './create-card/create-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardInputComponent } from './card-input/card-input.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LearnpageComponent,
     ProfilepageComponent,
     CreateCardComponent,
+    CardInputComponent,
   ],
   imports: [
     BrowserModule,

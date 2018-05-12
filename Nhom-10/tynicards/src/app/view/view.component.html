@@ -1,0 +1,25 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <button routerLink="/home/" type="button" class="btn btn-danger">Back</button>
+    <p>{{ deck.title }}</p>
+    <button routerLink="/learn/{{ deck.id }}" type="button" class="btn btn-primary">Learn</button>
+    <button routerLink="/edit/{{ deck.id }}" type="button" class="btn btn-success">Edit</button>
+  </div>
+  <div class="row">
+    <p>{{ deck.description }}</p>
+  </div>
+  <div class="row">
+    <div *ngFor="let card of deck.cards">
+      <app-card [card]="card"></app-card>
+      <!--
+      <button type="button" class="btn btn-light my-5 mx-3 border border-primary rounded shadow text-center" style="width: 160px; height: 240px">
+        {{ card.front }}
+      </button>
+      <button type="button" class="btn btn-light m-5 border border-primary rounded shadow text-center" style="width: 160px; height: 240px">
+        {{ card.back }}
+      </button>
+      -->
+    </div>
+  </div>
+</div>

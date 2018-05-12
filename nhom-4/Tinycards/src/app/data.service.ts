@@ -22,8 +22,10 @@ export class DataService {
   }
 
   sendNewCardCollection(value){
+    let data = JSON.stringify(value);
     let url="http://localhost:9000/newCardCollection";
-    this.http.post(url,JSON.stringify(value),{headers: new Headers({'Content-Type': 'application/json'})})
+    let headers= new Headers({'Content-Type': 'application/json'});
+    this.http.post(url,value)
     .toPromise()
     .then( r => console.log(r))
     .catch(e => console.log(e))

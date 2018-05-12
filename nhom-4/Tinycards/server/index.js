@@ -1,6 +1,8 @@
 const express = require("express");
 const jsonParser = require("body-parser").json();
 const app = express();
+const fileUpload = require('express-fileupload');
+app.use(fileUpload());
 
 var control = require("./Control/control")
 
@@ -15,7 +17,7 @@ app.use((req, res, next) => {   // hỗ trợ nhận request post/get chứa coo
 app.get("/",(req,res) => res.send("hadfadfasdfsdf"));
 app.get("/list/CardCollection",(req,res)=> control.sendListCardColection(res));
 app.get("/CardCollection/cardID=:cardID",(req,res)=> control.sendCardCollection(req,res));
-app.post("/newCardCollection",jsonParser,(req,res)=> control.createNewCardCollection(req,res) )
+app.post("/newCardCollection",(req,res)=> control.createNewCardCollection(req,res) )
 
 
 app.listen(9000, function () {
