@@ -7,6 +7,9 @@ HMTL, CSS, Bootstrap trên Codecademy, tự đánh giá: mức cơ bản.
 Github: phần nào nắm rõ
 [Link](https://github.com/QuangHaiDo/INT2208-4-2018/tree/master/DoQuangHai/Self-Studying)
 
+Bài Học Software Engineering Introduction:
+[Link](https://github.com/QuangHaiDo/INT2208-4-2018/tree/master/DoQuangHai/SE-Introduction)
+
 2. Bài tập nhóm:
 Đề tài: Tiny Cards [Link](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-6). 
 Ðóng góp: Trang học bài mới, tạo nội dung thẻ.
