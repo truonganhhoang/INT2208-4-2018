@@ -6,10 +6,15 @@ MSV: 16021229
 - học theo chủ đề được chọn từ màn hình chính
 - học bằng thẻ lật được gồm từ và nghĩa
 - kiểm tra trắc nghiệm: chọn đáp án đúng, sai có âm thanh phụ họa
-- chúc mừng khi hoàn thành
+- chúc mừng khi hoàn thành   
 
 2. Bài tập nhóm + Tham gia dịch và làm slide phần specication: https://github.com/truonganhhoang/SoftEng/tree/master/specifications
 
 3. Phần tự học : Tự học trên youtube nên không có chứng chỉ
 
-HTML, CSS, bootstrap3, JavaScript, nodejs + express tự đánh giá mức cơ bản
+HTML, CSS, bootstrap3, JavaScript, nodejs + express tự đánh giá mức cơ bản 
+Boostrap : https://getbootstrap.com/
+html : https://www.coursera.org/learn/html/lecture/Ilm91/01-01-welcome-to-introduction-to-html5
+css : https://www.youtube.com/watch?v=_JT3jPzuqmY
+Boostrap : https://www.youtube.com/watch?v=-sMbAvgg7mY&list=PLv6GftO355AvAl13CUVcVvWu0hOZnpfW8
+
