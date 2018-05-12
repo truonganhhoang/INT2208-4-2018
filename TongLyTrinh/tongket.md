@@ -22,15 +22,15 @@
 - khóa học Software Engineering: Introduction
 
 	+ Process:
-		![Process](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Process.JPG)
+		![Process](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Process.jpg)
 	+ Specifications
-		![Specifications](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Specifications.JPG)
+		![Specifications](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Specifications.jpg)
 	+ Testing
-		![Testing](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Testing.JPG)
+		![Testing](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Testing.jpg)
 	+ High Level Design
-		![High Level Design](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_High_Level_Design.JPG)
+		![High Level Design](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_High_Level_Design.jpg)
 	+ Low Level Design
-		![Low Level Design](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Low_Level_Design.JPG)
+		![Low Level Design](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Low_Level_Design.jpg)
 	+ Construction
-		![Construction](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Construction.JPG)
+		![Construction](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Construction.jpg)
 4. Điểm chấm chéo
