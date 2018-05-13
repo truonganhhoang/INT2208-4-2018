@@ -45,3 +45,9 @@ Hoàn thiện khóa học SoftEng tốt 10/10
 Làm bài tập nhóm và slide tốt: 10/10
 
 Làm bài tập lớn và tự học lập trình web tốt: 10/10
+
+* Người chấm: Trần Minh Tiến
+	+ Điểm: 9.5
+	+ Nhận xét: Tham gia đầy đủ vào bài tập nhóm và bài thuyết trình, phần bài tập cá nhân hoàn thành đầy đủ, tự học tốt có dẫn chứng đầy đủ
+
+
