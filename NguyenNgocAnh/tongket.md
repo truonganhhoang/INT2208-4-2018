@@ -20,3 +20,9 @@ Link Facebook: https://www.facebook.com/profile.php?id=100005879019647
 	+ Nhận xét: 
 		* Ưu điểm: Có các bài tập nhóm, bài tập tự học html, css và js.
 		* Nhược điểm: Không có bài tập cá nhân bắt buộc trên Software Engineering Introduction và link dẫn chứng của bài tập tự học bootstrap không có ý nghĩa.
+	+----------------------------------------------
+	+ Người chấm: Đặng Thị Tuyết
+	+ Điểm: 7
+	+ Nhận xét: 
+		* Tham gia đóng góp bài tập nhóm, bài tập lớn
+		* tự học html, css, js, boostrap
