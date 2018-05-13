@@ -27,3 +27,10 @@
 	- Phần bài tập lớn nên nêu rõ nội dung mình làm.
 	- Hoàn thành bootstreap, html,css ở mức cơ bản
 	- Hoàn thành đầy đủ bài tập cá nhân, có chứng minh.
+
+- Người chấm: Nguyễ Minh Tâm
+- Điểm: 8.5
+- Nhận xét:
+	+ Hoàn thành bài tập lớn, tuy nhiên chưa ghi rõ nội dung làm.
+	+ Hoàn thành cơ bản html, css, bootstrap,..
+	+ Hoàn thành bài tập cá nhân và có ảnh kèm theo.
