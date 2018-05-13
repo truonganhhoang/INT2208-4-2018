@@ -15,4 +15,4 @@ Họ Và Tên: Trần Thị Phương Anh
 	+ Điểm: 4
 	+ Nhận xét: 
 		* Ưu điểm: Có các bài tập nhóm và liệt kê bài tập tự học.
-		* Nhược điểm: Không có bài tập cá nhân bắt buộc trên Software Engineering Introduction, link dẫn chứng của bài tập tự học không có ý nghĩa và định dang file tổng kết bị sai.
+		* Nhược điểm: Không có bài tập cá nhân bắt buộc trên Software Engineering Introduction, link dẫn chứng của bài tập tự học không có ý nghĩa và định dạng file tổng kết bị sai.
