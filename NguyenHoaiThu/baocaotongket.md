@@ -8,5 +8,5 @@ Họ và tên: Nguyễn Hoài Thu  MSV: 16021168
 - Người chấm: Trịnh Văn Thi
 - Điểm: 8
 - Nhận xét:
-	-Chưa có link chứng minh đến bài tập cá nhân.
-	-Chưa nói là làm gì trong bài tập lớn.
+	- Chưa có link chứng minh đến bài tập cá nhân.
+	- Chưa nói là làm gì trong bài tập lớn.
