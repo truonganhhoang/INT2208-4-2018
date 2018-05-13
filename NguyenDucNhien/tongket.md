@@ -23,5 +23,9 @@
  -Điểm: 6.5
  
  -Nhận xét:Không tiến hành làm BTL, báo cáo cho BTL. Dẫn chứng phần tự học chưa thực sự thuyết phục.
- 
+  - NGười chấm : Nguyễn Văn Mạnh.
+  - Đã làm bài tập lớn phần testing.
+  - Hoàn thành bài tập cá nhân.
+  -Chưa thấp làm bài tập lớn xây dựng phần mềm.
+  Điểm : 7
  		
