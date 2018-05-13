@@ -19,6 +19,11 @@ Chấm điềm chéo:
 -Điểm chấm: 9
 -Nhận xét: Hoàn thành cơ bản, tương đối các bài học, khóa học cần thiết, tham gia đầy đủ các btap nhóm
 
+
+-Nguyễn Viết Quân
+       -Điểm: 8
+       -Nhận xét: Hoàn thành cở bản các khóa học, tham gia đầy đủ vào btap nhóm, thuyết trình. Dẫn chứng tự học chưa đủ 
+
 -Người chấm: Nguyễn Văn Phi.
 -Điểm: 8
 -Nhận xét:Đã tiến hành làm BTL, báo cáo cho BTL. đã dẫn chứng phần tự học.
