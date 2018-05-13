@@ -32,3 +32,10 @@
 * Người chấm: Trần Minh Tiến
       + Điểm: 9
       + Nhận xét: Tham gia làm bài tập nhóm, bài thuyết trình đầy đủ. Phần bài tập cá nhân hoàn thành đầy đủ, tự học tốt đầy đủ dẫn chứng
+
+Người chấm: Đồng Xuân Toàn
+Điểm: 9/10
+Nhận xét:
+Hoàn thiện khóa học SoftEng tốt 9/10
+Làm bài tập nhóm và slide tốt: 9/10
+Làm bài tập lớn và tự học lập trình web tốt: 9/10
