@@ -17,3 +17,5 @@ Nội dung cá nhân đóng góp:
     https://docs.google.com/document/d/1VsnzuqYDXdrzQ1ElvVkF0h-0LJa8-F4TEy6Nqhkr-V0/edit
   Tự học html, css, bootstrap, js ở mức cơ bản 
     https://github.com/MuathuHaNoi/INT2208-4-2018/tree/master/TranVanDinh/tuhoc
+    bai tap 9-13
+    https://github.com/MuathuHaNoi/INT2208-4-2018/tree/master/TranVanDinh/softwareengineering
