@@ -21,3 +21,7 @@
 	* Bài tập cá nhân đã làm đầy đủ và có minh chứng rõ ràng
 	* Bài tập lớn có nêu rõ nội dung tham gia.
 	-Điểm : 7.
+
+	-Người chấm: Hà Thế Lực
+	-Điểm: 9
+	-Nhận xét: Tham gia đầy đủ vào bài tập nhóm, làm slide thuyết trình. Phần bài tập cá nhân hoàn thành có dẫn chứng đầy đủ, phần tự học tốt có dẫn chứng
