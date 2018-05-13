@@ -16,3 +16,10 @@ Mã sinh viên: 16020961
 - Nội dung tự học:
     - Tự học HTML, CSS ở mức trung bình.
     - Tự học Bootstrap, Angular ở mức thông hiểu.
+    
+    --------Chấm chéo-------
+1. Người chấm: Đỗ Quang Hải. Điểm 5.
+        - Ưu điểm: có đóng góp dự án và thuyết trình nhóm.
+        -Khuyết điểm: Chưa có dẫn chứng phần nội dung tự học, bài tập bắt buộc trên edX chưa đủ.
+--------------
+    
