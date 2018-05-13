@@ -8,6 +8,9 @@
 * Link bài tập lớn (https://github.com/gungui98/Duolingo_clone)
 * Đóng góp bài tập lớn: Tham gia lập trình
 * Đóng góp nhóm thuyết trình: Tham gia làm slide
+* Học khóa học (Software Engineering)[https://courses.edx.org/courses/course-v1:UBCx+SoftEng1x+1T2018/course/]: 
+	- Hoàn thành Introduction, Process và một phần bài Specifications
+	- Link ảnh phần đã học [Software Engineering](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/TranVanThang/SoftwareEngineering.png)
 
 4. Chấm điểm:
 - Người chấm: Phạm Thuận Thành
