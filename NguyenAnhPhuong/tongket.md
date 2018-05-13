@@ -18,3 +18,9 @@ Tự học: HTML mức căn bản :https://github.com/anhphuongcac/INT2208-4-201
 -Điểm: 8
 
 -Nhận xét:đã làm BTL, báo cáo cho BTL. Đã gửi dẫn chứng phần tự học.
+
+-Người chấm: Nguyễn Đức Nhiên
+-Điểm: 8,5
+-Nhận xét:
++Tham gia làm bài tập lớn, bài tập nhóm đầy đủ.
++ Phần tự học tốt, khóa học SoftEng chưa có dẫn chứng cụ thể.
