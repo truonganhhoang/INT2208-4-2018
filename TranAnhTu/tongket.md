@@ -2,10 +2,10 @@
  +
  + MSV: 16021208
  +
- +- Bài tập nhóm:
+ + Bài tập nhóm:
  +	- Làm phần kiểm tra các thẻ đã có, bài tập lớn nhóm 8: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-8
  +
- +- Phần tự học:
+ + Phần tự học:
  +	+ Học HTML5, Css, Bootstrap4 căn bản trên trang https://www.w3schools.com
  +	+ Học HTML5 tại : https://www.w3schools.com/html/
  +	+ Học Css tại : https://www.w3schools.com/css/
