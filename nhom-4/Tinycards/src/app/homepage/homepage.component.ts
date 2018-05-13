@@ -16,6 +16,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit() {
     this.dataService.getListCardCollection().then(
       res => {
+        console.log(res);
         this.Cards= res;
       }
     )

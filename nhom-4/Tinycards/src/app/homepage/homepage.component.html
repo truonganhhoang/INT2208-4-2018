@@ -8,7 +8,7 @@
     </div>
     <div class="row" >
         <div *ngFor="let card of Cards" class="col-lg-2 col-md-4 col-sx-4" >
-            <a routerLink="/learn/{{card.cardID}}"><app-card [cardTitle]="card.title" [linkToImg]="card.avatar"></app-card></a>            
+            <a routerLink="/learn/{{card._id}}"><app-card [cardTitle]="card.title" [linkToImg]="card.avatar"></app-card></a>            
         </div>
     </div>
 </div>

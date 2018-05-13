@@ -6,10 +6,13 @@
       <input class="form-control" type="text" formControlName="title">
       <br/>
       <h5>Ảnh đại điện</h5>
-      <button class="btn btn-sm btn-primary" onclick='document.getElementById("inputAvatar").click()'>Chọn ảnh</button>
-      <br>
-      <input id="inputAvatar" style="display: none" type='file' (change)="readURL($event);" #fileInputAvatar accept="image/*" />
-      <canvas #avatar width="240" height="300" style="border: solid 1px; border-radius:5px"></canvas>
+      <img *ngIf='newCardCollection.value.typeAvatar == "img" ' class="float-left" style="width:230px; height:280px; border:1px solid; border-radius:10px"
+              [src]="newCardCollection.value.avatar" alt="">
+            <select style="font-size: 15px; border-radius:5px" class="float-right" formControlName="typeAvatar">
+              <option ngValue="img">Link ảnh</option>
+              <option selected ngValue="text">Văn bản</option>
+            </select>
+            <input class="form-control" type="text" formControlName="avatar" placeholder="Văn bản hoặc đường dẫn ảnh">
 
       <button [disabled]="newCardCollection.invalid" type="submit" class="btn btn-success my-5" style="width:100%">Tạo bộ thẻ này</button>
     </div>
@@ -17,17 +20,31 @@
       <h5>Thêm các thẻ dưới đây:</h5>
       <br>
       <div formArrayName="cards">
-        <div *ngFor="let itemrow of newCardCollection.controls.cards.controls; let i=index" [formGroupName]="i" class="row ">
+        <div *ngFor="let itemrow of newCardCollection.controls.cards.controls; let i=index" [formGroupName]="i" class="row">
           <div class="col-md-5 mx-1">
             <h6>Mặt trước</h6>
-            <app-card-input [theSide]="i.frontSide" ></app-card-input>
+            <img *ngIf='newCardCollection.value.cards[i].typeFront == "img" ' class="float-left" style="width:150px; height:200px; border:1px solid; border-radius:10px"
+              [src]="newCardCollection.value.cards[i].front" alt="">
+            <select style="font-size: 15px; border-radius:5px; margin:auto" class="float-right" formControlName="typeFront">
+              <option selected ngValue="img">Link ảnh</option>
+              <option ngValue="text">Văn bản</option>
+            </select>
+            <input class="form-control" type="text" formControlName="front" placeholder="Văn bản hoặc đường dẫn ảnh">
           </div>
           <div class="col-md-5 mx-1">
             <h6>Mặt sau</h6>
-            <app-card-input [theSide]="i.backSide"></app-card-input>
+            <img *ngIf='newCardCollection.value.cards[i].typeBack == "img" ' class="float-left" style="width:150px; height:200px; border:1px solid; border-radius:10px"
+              [src]="newCardCollection.value.cards[i].back" alt="">
+            <select style="font-size: 15px; border-radius:5px" class="float-right" formControlName="typeBack">
+              <option ngValue="img">Link ảnh</option>
+              <option selected ngValue="text">Văn bản</option>
+            </select>
+            <input class="form-control" type="text" formControlName="back" placeholder="Văn bản hoặc đường dẫn ảnh">
           </div>
-          <button type="button" class="btn btn-danger btn-sm" style="position: relative;top:35px;height:30px" (click)="deleteRow(i)">Xóa</button>
+          <button type="button" class="btn btn-danger btn-sm" style="position: relative;margin:auto;height:30px" (click)="deleteRow(i)">Xóa</button>
+          <p style="display: inline" class="mx-3">-------------</p>
         </div>
+
       </div>
       <button type="button" class="btn btn-primary float-right mt-3" (click)="addNewRow()">Thêm</button>
     </div>

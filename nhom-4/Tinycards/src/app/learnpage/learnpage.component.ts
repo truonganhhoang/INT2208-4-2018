@@ -13,7 +13,7 @@ export class LearnpageComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
   ngOnInit() {
-    let cardID = parseInt(this.route.snapshot.paramMap.get("id"));
+    let cardID = this.route.snapshot.paramMap.get("id");
     this.dataService.getCardCollection(cardID)
       .then(res => {
         this.cards = res;
