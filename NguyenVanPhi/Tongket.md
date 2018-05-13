@@ -16,3 +16,10 @@ Nhận xét :
 * Bài tập lớn đã làm và có cụ thể nội dung làm kèm theo link.
 * Bài tập cá nhân làm đủ, có ảnh chứng minh.
 * Đã học html, css, js, bootstrap để phục vụ cho môn học, có link khóa học kèm theo.
+
+- Người chấm: Nguyễn Đức Nhiên
+- Điểm: 9
+- Nhận xét:
++ Hoàn thành bài tập lớn,bài tập nhóm đầy đủ.
++ Phần tự học: rất tốt! có các dẫn chứng đầy đủ đi kèm.
+
