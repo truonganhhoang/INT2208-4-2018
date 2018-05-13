@@ -10,6 +10,16 @@ MSV: 16020930
 4. Chấm điểm chéo
 
 ### Chấm điểm
+
+- Người chấm: Đỗ Trung Đức
+- Điểm: 8
+- Nhận xét:
+	- Chưa có thông tin về bài tập cá nhân tuần 9-12 (khoá SE Introduction)
+	- Tham gia tích cực vào bài thuyết trình của nhóm
+	- Trung thực về việc tự học các nội dung khác
+	- Chưa đề cập chi tiết vai trò làm bài tập nhóm
+
+
 - Người chấm: Phạm Ngọc Duy
 - Điểm: 7
 - Nhận xét:

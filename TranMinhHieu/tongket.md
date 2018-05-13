@@ -28,6 +28,14 @@ Mã sinh viên: 16020961
      - Nhận xét:
          - Làm bài tập tuần đầy đủ, có dẫn chứng kèm theo.
          - Tham gia làm bài tập thuyết trình và bài tập nhóm đầy đủ.
+		 
+- Người chấm: Đỗ Trung Đức
+- Điểm: 8
+- Nhận xét:
+    - Hoàn thành tốt bài tập cá nhân (khoá SE Introduction)
+    - Tích cực tham gia đóng góp nội dung thuyết trình của nhóm
+    - Đã tự đánh giá về phần tự học html, css, ...
+    - Tích cực tham gia bài tập nhóm.
 
 1. Người chấm: Đỗ Quang Hải. Điểm 5.
         - Ưu điểm: có đóng góp dự án và thuyết trình nhóm.
