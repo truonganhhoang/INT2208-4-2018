@@ -20,3 +20,9 @@
 * Bài tập lớn đã có minh chứng rõ ràng, từng phần cụ thể.
 * Bài tập về nhà làm đầy đủ và có ảnh chứng minh.
 * Tham gia làm slide thuyết trình nhóm.
+
+-Người chấm: Nguyễn Đức Nhiên.
+-Điểm : 9
+-Nhận xét:
++ Tham gia vào làm bài tập lớn, bài tập nhóm đầy đủ.
++ Phần tự học tốt.
