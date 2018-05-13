@@ -15,9 +15,22 @@
 	- [Low Level Design](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/Low%20Level%20Design.png).
 	- [Construction](https://github.com/thitrinh/INT2208-4-2018/blob/master/TrinhVanThi/B%C3%A0i%20t%E1%BA%ADp%20tu%E1%BA%A7n%209%20-%2012%20(ph%E1%BA%A7n%20Edx)/Construction.png).
 4. Điểm chấm chéo
-Người chấm: Phạm Thuận Thành
-Điểm: 9 
-Nhận xét: 
-- Phần bài tập lớn chưa nêu rõ nội dung thực hiện
-- Đã hoàn thành mức cơ bản các nội dung bootstrap, html,css... 
-- Đã hoàn thành đầy đủ phần bài tập cá nhân, có minh chứng rõ ràng.
+- Người chấm: Phạm Thuận Thành
+- Điểm: 9 
+- Nhận xét: 
+	- Phần bài tập lớn chưa nêu rõ nội dung thực hiện
+	- Đã hoàn thành mức cơ bản các nội dung bootstrap, html,css... 
+	- Đã hoàn thành đầy đủ phần bài tập cá nhân, có minh chứng rõ ràng.
+- Người chấm: Nguyễn Thị Thanh Tân
+- Điểm: 9
+- Nhận xét:
+	- Phần bài tập lớn nên nêu rõ nội dung mình làm.
+	- Hoàn thành bootstreap, html,css ở mức cơ bản
+	- Hoàn thành đầy đủ bài tập cá nhân, có chứng minh.
+
+- Người chấm: Nguyễ Minh Tâm
+- Điểm: 8.5
+- Nhận xét:
+	+ Hoàn thành bài tập lớn, tuy nhiên chưa ghi rõ nội dung làm.
+	+ Hoàn thành cơ bản html, css, bootstrap,..
+	+ Hoàn thành bài tập cá nhân và có ảnh kèm theo.

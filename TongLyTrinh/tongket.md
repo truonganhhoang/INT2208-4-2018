@@ -34,3 +34,14 @@
 	+ Construction
 		![Construction](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Construction.jpg)
 4. Điểm chấm chéo
+Người chấm: Đồng Xuân Toàn
+
+Điểm: 10/10
+
+Nhận xét:
+
+Hoàn thiện khóa học SoftEng tốt 10/10
+
+Làm bài tập nhóm và slide tốt: 10/10
+
+Làm bài tập lớn và tự học lập trình web tốt: 10/10

@@ -18,3 +18,9 @@
 	* [JavaScript](https://github.com/hoanganhit1997/INT2208-4-2018/blob/master/NguyenHoangAnh/Javascript.jpg): Học trên codeacademy
 	* [Bootstrap](https://github.com/hoanganhit1997/INT2208-4-2018/tree/master/NguyenHoangAnh/Bootstrap): Học trên link thầy cho
 4. Chấm điểm chéo:
++- Người chấm: Đặng Thị Tuyết
++- Điểm: 10
++- Nhận xét:
++	- Hoàn thành nội dung bài tập lớn và bài tập nhóm
++	- Bài tập cá nhân làm đủ, có ảnh chứng minh.
++	- Đã học html, css, js, bootstrap để phục vụ cho môn học, có link khóa học kèm theo.

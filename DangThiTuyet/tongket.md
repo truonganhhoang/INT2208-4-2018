@@ -1,4 +1,4 @@
-Họ tên: Đặng Thị Tuyết 
+7Họ tên: Đặng Thị Tuyết 
 MSV: 16021229
 
 1. Tham gia làm bài tập lớn: Tiny Cards + Link: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-5 
@@ -18,9 +18,8 @@ MSV: 16021229
    + Boostrap : https://www.youtube.com/watch?v=-sMbAvgg7mY&list=PLv6GftO355AvAl13CUVcVvWu0hOZnpfW8
 
 
-- Điểm chấm chéo: 5
+- Điểm chấm chéo: 7
 - Người chấm: Trần Thế Tuấn
 - Nhận xét: 
-  - chưa làm file tongket.md
-  - không liên lạc được nên không biết cụ thể bạn làm được gì
-  - thư mục rỗng, chỉ có file readme.md
+  - tích cực tham gia project
+  - đã tự học các kiến thức yêu cầu mức cơ bản
