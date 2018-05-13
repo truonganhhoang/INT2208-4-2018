@@ -24,3 +24,10 @@ MSV: 16021105
 	 +Nhận xét: Hoàn thành tương đối tốt các khóa tự học, tham gia đầy đủ việc làm bài tập nhóm, bài tập nhóm tốt
  2.1.Nguyễn Văn Phi +Chấm điểm: 9
  +Nhận xét: Hoàn thành các khóa tự học, tham gia làm bài tập nhóm, bài tập nhóm tốt
+ 
+3. Người chấm: Phạm Văn Oánh
+- Điểm: 9
+- Nhận xét:
+	+ Hoàn thành tốt bài tập cá nhân và làm việc nhóm, có liệt kê cụ thể
+	+ Báo cáo đầy đủ, rõ ràng.
+	+ Phần tự học: rất tốt! có minh chứng cụ thể phần SE.
