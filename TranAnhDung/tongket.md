@@ -46,3 +46,7 @@ Một số chức năng khác đang được hoàn thiện.
   - Chưa có thông tin về phần làm slide của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x).
   - Đã có minh chứng về phần tự học html, bootstrap.
   - Bài tập nhóm có ảnh nhưng chưa nói rõ vai trò tham gia.
+
+- Người chấm: Trần Thị Phương Anh
+- Điểm: 8
+- Nhận xét: Đã có bài tập lớn bài tập nhóm và tự học nhưng chưa có thông tin về bài tập cá nhân và bài tập làm slide của nhóm.

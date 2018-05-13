@@ -23,3 +23,7 @@ MSV: 16021229
 - Nhận xét: 
   - tích cực tham gia project
   - đã tự học các kiến thức yêu cầu mức cơ bản
+  
+- Điểm chấm chéo: 9
+   - Người chấm: Nguyễn Hoàng Tuyên
+   - Nhận xét: Tích cực tham gia tự học và làm project

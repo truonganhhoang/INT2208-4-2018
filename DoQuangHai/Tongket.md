@@ -19,3 +19,12 @@ Tham gia dịch và xây dựng slide cho phần thuyết trình về Testing:
 và [Link2](https://github.com/QuangHaiDo/INT2208-4-2018/tree/master/DoQuangHai/Testing-dich)
 
 Phần chấm điểm chéo:
+
+    ### Chấm điểm
+- Người chấm: Trần Văn Định
+- Điểm: 9
+- Nhận xét:
+    - Đã có thông tin đầy đủ về bài tập cá nhân tuần 9-12.
+    - Đã có thông tin về làm slide bài tập
+    - Đã có thông tin về phần tự học html, css, bootstrap.
+    - Đã có thông tin về vai trò tham gia bài tập nhóm.
