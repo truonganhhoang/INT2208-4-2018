@@ -12,3 +12,9 @@ Tự học: HTML mức căn bản :https://github.com/anhphuongcac/INT2208-4-201
  Hoàn thành việc học các bài trên khóa Softwave Engineering: Introduction
  
  Chấm điểm chéo:
+ 
+-Người chấm: Nguyễn Văn Phi.
+
+-Điểm: 8
+
+-Nhận xét:đã làm BTL, báo cáo cho BTL. Đã gửi dẫn chứng phần tự học.
