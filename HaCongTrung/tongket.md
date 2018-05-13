@@ -19,3 +19,9 @@
 <li>JQ https://www.youtube.com/watch?v=crMjNgwO2js&list=PLLAJJPGNwNkghoNSB9xq22EJ_Z1rX7Ygs&index=40</li>
 <li>BOOSTTRAP https://getbootstrap.com/</li>
 </ul>
+
+- Người chấm: Tống Lý Trinh
+- Điểm: 9/10
+- Nhận xét: 
++ tham gia làm bài tập nhóm đầy đủ
++ tự học tốt
