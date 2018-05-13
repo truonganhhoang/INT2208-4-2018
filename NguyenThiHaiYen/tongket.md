@@ -13,7 +13,7 @@ MSV: 160201243
 [bootstrap](http://getbootstrap.com.vn/getting-started/)
 4. Điểm chấm chéo
 +- Người chấm: Đặng Thị Tuyết
-+- Điểm: 8
++- Điểm: 7
 +- Nhận xét:
 +	- Tham gia đóng góp bài tập nhóm
 +	- Đã học html, css, bootstrap ở mức cơ bản, có link khóa học kèm theo.
