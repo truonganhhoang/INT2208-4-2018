@@ -30,4 +30,11 @@ MSV: 16021420
 	- Bài tập lớn hoàn thành từng phần cụ thể
 	- Bài tập về nhà đã làm đầy đủ và có ảnh cụ thể.
 	- Học html, bootstrap, js, css tại các khóa học và có ghi nguồn rõ ràng. 
+
+- Người chấm: Vũ Xuân Quân
+- Điểm: 8.5
+- Nhận xét:
+	- Bài tập lớn đã làm và có cụ thể nội dung làm kèm theo link.
+	- Bài tập cá nhân làm đủ, có ảnh chứng minh.
+	- Đã học html, css, js, bootstrap để phục vụ cho môn học, có link khóa học kèm theo.
 	
