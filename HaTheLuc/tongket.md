@@ -10,7 +10,9 @@ Họ Và Tên: Hà Thế Lực
 	+ Làm slide phần Low level desgin: https://github.com/truonganhhoang/SoftEng/blob/master/low-level-design/PITCHME.md
 3. Phần tự học
 	+ HTML, CSS, JavaScript căn bản trên : https://www.w3schools.com
-	
+	+ Hình ảnh tự học: https://drive.google.com/drive/folders/1srkB_ZJkmNK0yqBu8FboFqr7C6BZx3Wi?usp=sharing
+4. Bài tập cá nhân:
+	+ Phần software egineering: https://drive.google.com/drive/folders/1MHJoSVA98KIjh9Z-9EOqhElspPKFlRGM?usp=sharing
 ## Chấm điểm:
 - Người chấm: Cao Đức Huân.
 - Điểm: 7.
