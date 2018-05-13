@@ -41,3 +41,9 @@
 	- Đã hoàn thành mức cơ bản các nội dung bootstrap, html,css... 
 	- có link tới bài tập lớn nhưng chưa nêu rõ phần mình làm.
 	- Đã hoàn thành đầy đủ phần bài tập cá nhân, có minh chứng rõ ràng.
+- Người chấm: Trần Văn Thắng
+- Điểm: 8.5
+- Nhận xét:
+	- Hoàn thành bài tập lớn, chưa có nội dung làm
+	- Hoàn thành bootstrap, html. css ở mức cơ bản
+	- Hoàn thành bài tập cá nhân ( bài tập khóa học Software Engineering online ), có minh chứng
