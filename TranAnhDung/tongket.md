@@ -37,3 +37,12 @@ Các chức năng chính:
 ![Alt text](img/tiny3.png)
 
 Một số chức năng khác đang được hoàn thiện.
+
+### Chấm điểm
+- Người chấm: Nguyễn Mạnh Dũng
+- Điểm: 7.5
+- Nhận xét: 
+  - Chưa có thông tin về bài tập cá nhân tuần 9-12 và ảnh về các quiz của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x).
+  - Chưa có thông tin về phần làm slide của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x).
+  - Đã có minh chứng về phần tự học html, bootstrap.
+  - Bài tập nhóm có ảnh nhưng chưa nói rõ vai trò tham gia.
