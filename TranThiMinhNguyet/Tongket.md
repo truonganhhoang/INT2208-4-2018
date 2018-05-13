@@ -14,3 +14,10 @@
 3. Bài tập nhóm- Nhóm 4.
 	- Viết báo cáo cho BTL của nhóm : https://docs.google.com/document/d/1W-kvb4cAC5ST_LlfsD7BMCIhNfj1SusxlI1qusP4eT4/edit?usp=sharing
 	- làm giao diện trang 1-2-1: https://drive.google.com/file/d/1nxWK4BSX9Dj_-W079CHbl0VAp_So55NQ/view?usp=sharing
+	
+4. Chấm điểm :
+	-Người chấm : Nguyễn Văn Mạnh.
+	* Bạn đã học được cơ bản html, css tại các khóa học online
+	* Bài tập cá nhân đã làm đầy đủ và có minh chứng rõ ràng
+	* Bài tập lớn có nêu rõ nội dung tham gia.
+	-Điểm : 7.
