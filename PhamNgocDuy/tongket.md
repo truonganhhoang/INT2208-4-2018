@@ -39,3 +39,11 @@
     - NodeJS, express: https://www.youtube.com/playlist?list=PLv1l5w91VrLq2yzVL09J13bdG78A3NkAD
     - Special thank to StackOverFlow.com
 
+### Chấm điểm
+- Người chấm: Nguyễn Mạnh Dũng
+- Điểm: 10
+- Nhận xét:
+    - Đã có thông tin đầy đủ về bài tập cá nhân tuần 9-12.
+    - Đã hoàn thành phần slide của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x).
+    - Đã có thông tin về phần tự học html, css, bootstrap, js, angular...
+    - Đã nói rõ về vai trò tham gia bài tập nhóm.
