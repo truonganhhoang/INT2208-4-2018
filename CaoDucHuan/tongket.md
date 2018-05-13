@@ -10,8 +10,8 @@
 
 ------Chấm điểm chéo------------
 4. Người chấm: Đỗ Quang Hải. 
- - Điểm 8
- -NX: tham gia tốt vào dự án và thuyết trình nhóm. Tự học tốt (đã có ảnh).
+ - Điểm 9
+ -NX: tham gia tốt vào dự án và thuyết trình nhóm. Tự học và bài tập cá nhân tốt (đã có ảnh).
 
 * Người chấm: Nguyễn Anh Phương
  * Điểm: 9
