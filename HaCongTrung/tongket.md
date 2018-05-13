@@ -3,7 +3,7 @@
 ## MSV      : 16021199
 
 ### 1.Làm bài tập nhóm Tiny Card (https://github.com/hatrunguet98/INT2208-4-2018/tree/master/HaCongTrung/Software%20Engineering%20Introduction)
-: phần đăng nhập với tài khoản google và facebook cùng chỉnh sửa và hoàn thành 1 số phần giao diện.
+: cùng chỉnh sửa và hoàn thành 1 số phần .
 ### 2.Dịch vào làm bài thuyết trình Testing phần: Module Wrap-Up https://github.com/truonganhhoang/SoftEng/blob/master/testing/nhom-8/PITCHME.md
 
 ### 3.Tạo và làm bài tập SEMAT https://docs.google.com/spreadsheets/d/1kUthTDw9u9fBCuGOcUk2xnqq7hRlQ_mXE3DhTQHxcj4/edit#gid=1233293521
