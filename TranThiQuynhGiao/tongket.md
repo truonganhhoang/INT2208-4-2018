@@ -17,7 +17,15 @@ MSV: 16020930
 	- Đã hoàn thành phần slide của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x)
 	- Chưa có minh chứng về việc tự học html, css, bootstrap, js.
 	- Chưa nói rõ vai trò tham gia bài tập nhóm.
----
+
+- Người chấm: Trần Văn Định
+- Điểm: 7
+- Nhận xét:
+	- Chưa có thông tin về bài tập cá nhân tuần 9-12
+	- Đã có thông tin về slide khóa học.
+	- Chưa có minh chứng về việc tự học html, css, bootstrap, js.
+	- Chưa nói rõ vai trò tham gia bài tập nhóm.
+
 - Người chấm: Nguyễn Mạnh Dũng
 - Điểm: 7.5
 - Nhận xét: 
