@@ -34,3 +34,10 @@
 	+ Hoàn thành bài tập lớn, tuy nhiên chưa ghi rõ nội dung làm.
 	+ Hoàn thành cơ bản html, css, bootstrap,..
 	+ Hoàn thành bài tập cá nhân và có ảnh kèm theo.
+
+- Người chấm: Hoàng Văn Thắng
+- Điểm: 9 
+- Nhận xét: 
+	- Đã hoàn thành mức cơ bản các nội dung bootstrap, html,css... 
+	- có link tới bài tập lớn nhưng chưa nêu rõ phần mình làm.
+	- Đã hoàn thành đầy đủ phần bài tập cá nhân, có minh chứng rõ ràng.
