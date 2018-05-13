@@ -15,6 +15,6 @@
 
 - Chấm điểm chéo:
   * Người chấm: Nguyễn Anh Tuấn
-  * Điểm: 6
-  * Nhận xét: Có đóng góp BTL, chưa có dẫn chứng phần tự học và BT làm Slide thuyết trình, chưa có hình ảnh BT SoftEng trên edX
+  * Điểm: 7
+  * Nhận xét: Có đóng góp BTL, chưa có BT làm Slide thuyết trình và hình ảnh BT SoftEng trên edX. Dẫn chứng tự học chưa thuyết phục
  

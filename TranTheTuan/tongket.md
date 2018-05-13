@@ -12,5 +12,5 @@
   
 - Chấm điểm chéo:
   * Người chấm: Nguyễn Anh Tuấn
-  * Điểm: 7
+  * Điểm: 8
   * Nhận xét: Có đóng góp BTL, Slide thuyết trình và hoàn thành bài tập SoftEng - edX nhưng phần dẫn chứng tự học chưa thuyết phục.
