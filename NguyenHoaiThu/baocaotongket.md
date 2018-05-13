@@ -17,3 +17,10 @@ Họ và tên: Nguyễn Hoài Thu  MSV: 16021168
 - Nhận xét: 
   - chưa nêu rõ phần bài tập nhóm mình làm.
   - thiếu dẫn chứng cụ thể.
+- Người chấm: Phạm Thuận Thành
+- Điểm: 7,5
+- Nhận xét:
+	- Đã làm bài tập lớn, tuy nhiên chưa nêu rõ phần mình thực hiện.
+	- Đã làm bài tập nhóm và slide, có link kèm theo.
+	- Đã học cơ bản html,css,boostrap, javascript tuy nhiên chưa có minh chứng.
+	- Chưa có minh chứng bài tập cá nhân.
