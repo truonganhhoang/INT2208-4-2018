@@ -8,3 +8,9 @@
   - Tự học HTML, CSS, javascript ở mức thông hiểu: http://www.htmldog.com/
   - Tự học Bootstrap ở mức thông hiểu: http://getbootstrap.com/
   - Tự học Angular ở mức thông hiểu: https://www.youtube.com/watch?v=H6IjqFs6Q9o&list=PLJ5qtRQovuENHYHqlQP5XT7zwbCA5Q5He
+
+  
+- Chấm điểm chéo:
+  * Người chấm: Nguyễn Anh Tuấn
+  * Điểm: 7
+  * Nhận xét: Có đóng góp BTL, Slide thuyết trình và hoàn thành bài tập SoftEng - edX nhưng phần dẫn chứng tự học chưa thuyết phục.
