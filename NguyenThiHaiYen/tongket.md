@@ -18,3 +18,7 @@ MSV: 160201243
 +	- Tham gia đóng góp bài tập nhóm
 +	- Đã học html, css, bootstrap ở mức cơ bản, có link khóa học kèm theo.
 
+- Người chấm: Nguyễn Hoàng Tuyên
+  - Điểm: 8
+  - Nhận xét: Tham gia làm project, tự học.
+
