@@ -21,6 +21,13 @@ Phần chấm điểm chéo:
     - Chưa có thông tin về phần tự học html, css, bootstrap, js, angular...
     - Chưa nói rõ về vai trò tham gia bài tập nhóm.
 
+    
+- Người chấm: Trần Thị Quỳnh Giao
+- Điểm: 8
+- Nhận xét:
+    - Bài tập tuần làm đầy đủ, có link dẫn chứng.
+    - Có tham gia làm slide, chưa có dẫn chứng.
+
 - Người chấm: Trần Thị Quỳnh Giao
 - Điểm: 8
 - Nhận xét: 
