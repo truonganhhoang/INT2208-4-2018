@@ -7,3 +7,7 @@
  1. **Bài tập lớn làm dự án Tiny Cards.** Link: https://github.com/huancd96/nhom9-k61-cac/tree/master/BaiTapLon
  2. **Bài tập thuyết trình nhóm: làm slide phần HIGH LEVEL DISIGN** Link: https://github.com/huancd96/nhom9-k61-cac/tree/master/baiTaplamSlide-monCNPM
  3. **Tự học: HTML, CSS, Bootstrap ở mức căn bản.** Link tự học: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/CaoDucHuan
+
+------Chấm điểm chéo------------
+4. Người chấm: Đỗ Quang Hải. -- Điểm 8
+ -NX: tham gia tốt vào dự án và thuyết trình nhóm. Tự học tốt (đã có ảnh).
