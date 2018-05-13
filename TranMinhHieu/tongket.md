@@ -37,6 +37,5 @@ Mã sinh viên: 16020961
     - Đã tự đánh giá về phần tự học html, css, ...
     - Tích cực tham gia bài tập nhóm.
 
-1. Người chấm: Đỗ Quang Hải. Điểm 5.
-        - Ưu điểm: có đóng góp dự án và thuyết trình nhóm.
-        -Khuyết điểm: Chưa có dẫn chứng phần nội dung tự học, bài tập bắt buộc trên edX chưa đủ.
+1. Người chấm: Đỗ Quang Hải. Điểm 9.
+        - Ưu điểm: có đóng góp dự án và thuyết trình nhóm, bài tập cá nhân làm đầy đủ.
