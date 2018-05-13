@@ -14,6 +14,7 @@
   * Người chấm: Nguyễn Anh Tuấn
   * Điểm: 7
   * Nhận xét: Có đóng góp BTL, Slide thuyết trình và hoàn thành bài tập SoftEng - edX nhưng phần dẫn chứng tự học chưa thuyết phục.
+
   * Người chấm: Trần Anh Tú
   * Điểm: 8
   * Nhận xét: Có tham gia xây dựng BTL và Slide thuyết trình, cập nhật quá trình tự học đầy đủ.

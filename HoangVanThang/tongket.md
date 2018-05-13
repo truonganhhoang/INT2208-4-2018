@@ -25,5 +25,14 @@
 - Điểm:9
 - Nhận xét:
   - Đã học được cơ bản html,css,bootstrap để phục vụ cho môn học
-  - Đã làm bài tập về nahf trên edx và có minh chứng rõ ràng.
+  - Đã làm bài tập về nhà trên edx và có minh chứng rõ ràng.
   - Đã hoàn thành bài tập lớn, slide môn học, và có link minh chứng.
+
+* Chấm điểm:
+- Người chấm: Phạm Thuận Thành
+- Điểm: 9
+- Nhận xét:
+  + Bài tập lớn hoàn thành, có từng nội dung cụ thể, tham gia làm silde nhóm và có minh chứng, link đính kèm.
+  + Đọc có quá trình tự học cơ bản html, css, bootstrap.
+  + Đã hoàn thành bài tập cá nhân trên edx và có minh chứng.
+  

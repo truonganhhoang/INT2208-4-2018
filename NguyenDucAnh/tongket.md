@@ -17,3 +17,6 @@
 	- [Low Level Design](https://github.com/NguyenDucAnh96/INT2208-4-2018/blob/master/NguyenDucAnh/B%C3%A0i%20t%E1%BA%ADp%20c%C3%A1%20nh%C3%A2n/Low%20Level%20Design_Quiz.png).
 	- [Construction](https://github.com/NguyenDucAnh96/INT2208-4-2018/blob/master/NguyenDucAnh/B%C3%A0i%20t%E1%BA%ADp%20c%C3%A1%20nh%C3%A2n/Construction_Quiz.png).
 4. Điểm chấm chéo
++- Người chấm: Đặng Thị Tuyết
++- Điểm: 9
++- Nhận xét:  Tham gia đóng góp bài tập nhóm, hoàn thành các bài học, khóa học cần thiết và có minh chứng đầy đủ
