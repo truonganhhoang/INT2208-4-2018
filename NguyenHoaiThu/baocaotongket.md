@@ -5,3 +5,8 @@ Họ và tên: Nguyễn Hoài Thu  MSV: 16021168
 4. Phần tự học
 	- HTML, CSS, bootstrap, javascript ở mức căn bản
 5. Chấm điểm chéo
+- Người chấm: Trịnh Văn Thi
+--Điểm: 8
+--Nhận xét:
+---Chưa có link chứng minh đến bài tập cá nhân.
+---Chưa nói là làm gì trong bài tập lớn.
