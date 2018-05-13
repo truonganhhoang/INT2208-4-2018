@@ -13,3 +13,16 @@ Link Facebook: https://www.facebook.com/profile.php?id=100005879019647
 3. Tu hoc html, css, javascript trên codeacademy: [https://drive.google.com/open?id=1HrUIPSZahLsoIw5E_fLM6-l1ZtRF9YFe]
 
 4. Tu hoc bootstrap: [https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-97]
+
+5. Điểm chấm chéo: 
+	+ Người chấm: Nguyễn Hoàng Anh
+	+ Điểm: 5
+	+ Nhận xét: 
+		* Ưu điểm: Có các bài tập nhóm, bài tập tự học html, css và js.
+		* Nhược điểm: Không có bài tập cá nhân bắt buộc trên Software Engineering Introduction và link dẫn chứng của bài tập tự học bootstrap không có ý nghĩa.
+	+----------------------------------------------
+	+ Người chấm: Đặng Thị Tuyết
+	+ Điểm: 7
+	+ Nhận xét: 
+		* Tham gia đóng góp bài tập nhóm, bài tập lớn
+		* tự học html, css, js, boostrap

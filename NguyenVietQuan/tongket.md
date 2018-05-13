@@ -14,7 +14,11 @@ MSV: 16021105
 	+ Software Engineering: https://github.com/quannguyen0510/INT2208-4-2018/tree/master/NguyenVietQuan/Bai%20tap%20Software%20Engineering
 	
 4. Phần tự học
-	+ HTML, CSS, bootstrap JavaScript ở mức căn bản
+	+ HTML, CSS, bootstrap JavaScript ở mức căn bản trên w3school: https://drive.google.com/drive/folders/1p8TxS5GcSQR6sFOjhkakqV-QRKDiLTdg?usp=sharing
 	+ Mới bắt đầu tiếp cận angular
 
 5. Chấm điểm chéo
+
+ 1.Nguyễn Anh Phương
+         +Chấm điểm: 9
+	 +Nhận xét: Hoàn thành tương đối tốt các khóa tự học, tham gia đầy đủ việc làm bài tập nhóm, bài tập nhóm tốt
