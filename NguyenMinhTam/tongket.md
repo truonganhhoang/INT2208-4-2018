@@ -11,7 +11,7 @@ MSSV: 16022119.
 
 * Chấm chéo: 
  + Người chấm: Nguyễn Viết Quân
- + Điểm: 8.5
+ + Điểm: 9
  + Nhận xét: tham gia vào bài tập nhóm. Bài tập cá nhân hoàn thiện đầy đủ, tự học cần thêm dẫn chứng
  
  * Người chấm: Vũ Xuân Quân
