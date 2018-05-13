@@ -13,4 +13,10 @@
 	JavaScript:![Alt text](JS.png)
  	Software Engineering: lowlevel design ![Alt text](SE.png)
 
-3. Chấm điểm: - Người chấm : Nguyễn Văn Mạnh. -Điểm : 9. -Nhận xét : * Bài tập lớn đã có minh chứng rõ ràng, từng phần cụ thể. * Bài tập về nhà làm đầy đủ và có ảnh chứng minh. * Tham gia làm slide thuyết trình nhóm.
+3. Chấm điểm:
+- Người chấm : Nguyễn Văn Mạnh.
+-Điểm : 9.
+-Nhận xét : 
+* Bài tập lớn đã có minh chứng rõ ràng, từng phần cụ thể.
+* Bài tập về nhà làm đầy đủ và có ảnh chứng minh.
+* Tham gia làm slide thuyết trình nhóm.

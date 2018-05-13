@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tinycards - Flashcards by Duolingo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+    <link rel="icon" sizes="192x192" href="https://d17u0960v8a9bp.cloudfront.net/192x192.png">
+    <link rel="stylesheet" href="css/1-1.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand row navbar-dark bg-primary py-0 sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-none d-lg-block col col-auto" href="#">
+                <img src="imgs/tinycard.PNG" alt="LOGO">
+            </a>
+            <!-- xem lai phan collapse -->
+            <div class="collapse navbar-collapse col col-auto" id="navbarSupportedContent">
+                <!-- left -->
+                <div class="navbar-nav mr-sm-auto col-sm-auto col col-auto">
+                    <form class="form-inline d-sm-block d-none">
+                        <input class="form-control py-2" type="search" placeholder="SEARCH" aria-label="Search">
+                    </form>
+                </div>
+                <!-- right -->
+                <ul class="nav col-auto col" id="navbarSupportedContent">
+                    <li class="nav-item my-0 py-3 order-2 d-block d-sm-none col col-auto">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-search"></i>
+                            <span class="d-none d-lg-inline">HOME</span>
+                        </a>
+                    </li>
+                    <li class="nav-item clicked my-0 py-3 order-2 col col-auto">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-home"></i>
+                            <span class="d-none d-lg-inline">HOME</span>
+                        </a>
+                    </li>
+                    <li class="nav-item order-3 py-3 px-2 col col-auto">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-plus"></i>
+                            <span class="d-none d-lg-inline">CREATE</span>
+                        </a>
+                    </li>
+                    <li class="nav-item order-4 py-3 px-2 col col-auto">
+                        <a class="nav-link" href="#">
+                            <i class="far fa-user"></i>
+                            <span class="d-none d-lg-inline"> PROFILE</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- content -->
+    <div class="container mt-5">
+        <div class="jumbotron p-0">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#">
+                            <div class="row" style="background-color: rgb(149, 21, 42);">
+                                <div class="col-sm-11 col-md-4 col-lg-6 offset-sm-1 cap ">
+                                    <h1>US state abbreviations</h1>
+                                    <p class="author">by Crystal Yoon</p>
+                                </div>
+                                <div class="col-sm-10 offset-2 col-md-5 offset-md-2 col-lg-4 offset-lg-1 p-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/ac487eecf9b558b778663710d38b7035" alt="Card image cap">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="row" style="background-color: rgb(177, 118, 137);">
+                                <div class="col-sm-11 col-md-4 col-lg-6 offset-sm-1 cap ">
+                                    <h1>Frog Anatomy </h1>
+                                    <p class="author">by TinyScience</p>
+                                </div>
+                                <div class="col-sm-10 offset-2 col-md-5 offset-md-2 col-lg-4 offset-lg-1 p-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/e6a591df72c7f2686d4a5561260c5c03" alt="Card image cap">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                            <div class="row" style="background-color: rgb(102, 116, 131);">
+                                <div class="col-sm-11 col-md-4 col-lg-6 offset-sm-1 cap ">
+                                    <h1>Chemistry colours</h1>
+                                    <p class="author">by Justin Schmidt</p>
+                                </div>
+                                <div class="col-sm-10 offset-2 col-md-5 offset-md-2 col-lg-4 offset-lg-1 p-4">
+                                    <div class="card">
+                                        <img class="card-img-top" src="http://d9np3dj86nsu2.cloudfront.net/image/aba40980cfa910b14a6933b552f321cc" alt="Card image cap">
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon d-lg-block d-none" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon d-lg-block d-none" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- next row -->
+            <div class="row">
+                <h4 class="col-8 col-md-10 col-lg-10 pt-4 pl-5">Your favorites</h4>
+                <a href="" class="offset-1 col-3 offset-md-0 col-md-2 col-lg-2 pl-lg-5 pt-4">SEE ALL</a>
+            </div>
+            <!-- next row -->
+            <div class="row pt-4">
+                <div class="card col-lg-2 col-md-3 col-sm-4 col-5 offset-1 content-card">
+                    <a href="">
+                        <img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/628ff718bee6982c46bf73b63c9c063e" alt="Card image cap">
+                    </a>
+                    <div class="card-body p-0 pt-3">
+                        <div class="progress" style="height: 7px;">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <a href="" class="card-title">Body parts</a>
+                        <br>
+                        <a href="" class="card-info">
+                            <i class="far fa-star"></i> 2K
+                            &nbsp &nbsp
+                            <i class="far fa-square"></i> 33
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- next row -->
+            <hr />
+            <div class="row">
+                <h4 class="col-8 col-md-10 col-lg-10 pt-4 pl-5">Trending</h4>
+                <a href="" class="offset-1 col-3 offset-md-0 col-md-2 col-lg-2 pl-lg-5 pt-4">SEE ALL</a>
+            </div>
+            <!-- next row -->
+            <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row pt-4">
+                            <div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/7db472b668b4a191b237069824043002" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">Duolinggo Spanish Podcast</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 313</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/fa695e8822f7b1c691ac5b8bb1d9991d" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">Animal Superstitions from Around the World</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 388</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/29667e730569a820dbd9a0278dadb32e" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">Types of fruits</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 2K</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/138e205a3755748ddf2331078a7d9c7f" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">Good Times, Bad Times Vocabulary</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 176</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/e36e8952cd4da13c7941770ff5fd92d9" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">Math</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 768</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- next item -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card col-lg-2 col-md-4 offset-md-2 offset-lg-1 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/ac7889e6061a8523ed9355ae0b49c1f0" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">Resnaissance: Paré, Vesalius & Harvey</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 117</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 offset-md-1 offset-lg-0 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/af636372283d2ea15b0fb68722d2d902" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">L'équipement</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 58</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/bb0e66c473836034bb9a4b5d2688814a" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">U.S. Presidents Quiz</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 1K</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/a918f336ed040ebf5eb92d6456495fe5" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">¿A dónde vas?</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 44</a>
+                                </div>
+                            </div>
+                            <div class="card col-lg-2 col-md-4 content-card">
+                                <a href=""><img class="card-img-top" src="https://d9np3dj86nsu2.cloudfront.net/image/e73dd985d83cd80d82dd4539029de4bd" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <a href="" class="card-title">Skeletal System</a>
+                                    <br>
+                                    <a href="" class="card-info"><i class="far fa-star"></i> 168</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- arrow -->
+                <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left mr-5"></i>
+                </a>
+                <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right ml-5"></i>
+                </a>
+            </div>
+
+        </div>
+        <footer class="mb-3 mt-5 pt-3">
+            <a href="about.html" class="m-4">ABOUT</a>
+            <a href="" class="m-4">SUPPORT</a>
+            <a href="" class="m-4">TERMS</a>
+            <a href="" class="m-4">DUOLINGO</a>
+            <a href="" class="m-4">FACEBOOK</a>
+            <a href="" class="m-4">TWITTER</a>
+            <a href="" class="m-4" id="language">
+                <img src="imgs/english.png"> ENGLISH
+            </a>
+        </footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

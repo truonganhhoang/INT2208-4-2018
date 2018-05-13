@@ -1,0 +1,25 @@
+
+.row {
+	margin-top: 64px;
+}
+.frame1 {
+	width: 240px;
+	height: 488px;
+
+}
+.col-md-8 {
+	margin-top: 60px;
+	background-color: white;
+}
+.col-md-4 {
+	margin-top: 60px;
+}
+.mn_1 {
+	margin-top: 60px;
+}
+.col {
+	margin-left: 60px;
+}
+.card {
+	background-color:  #f7f7f7;
+}
