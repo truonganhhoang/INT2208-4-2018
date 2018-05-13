@@ -12,4 +12,9 @@
 - Điểm chấm chéo: 7
 - Người chấm: Trần Thế Tuấn
 - Nhận xét: đã học Html, css, bootstrap cơ bản; làm giao diện cho project, chưa có chứng chỉ software engineering trên edx
+
+- Chấm điểm chéo:
+  * Người chấm: Nguyễn Anh Tuấn
+  * Điểm: 6
+  * Nhận xét: Có đóng góp BTL, chưa có dẫn chứng phần tự học và BT làm Slide thuyết trình, chưa có hình ảnh BT SoftEng trên edX
  
