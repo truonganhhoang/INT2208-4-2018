@@ -1,17 +1,18 @@
- Họ&Tên: Phạm Van Oánh MSSV:16021087;
-<ul>
+@@ -1,14 +1,14 @@
+-Họ&Tên: Phạm Van Oánh MSSV:16021087;
+ 
++ 1.BT Nhóm
+ 	BTL: [Memrise](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11)
+ 	Báo cáo phần mềm: [Low level desgin](https://github.com/truonganhhoang/SoftEng/blob/master/low-level-design/nhom%2011/PITCHME.md)
+ 	Hoàn thành SEMAT
+-2.Tự học
+-	HTML và CSS, Bootstrap, JavaScript trên [W3School](https://www.w3schools.com)
++	HTML: ![Alt text](HTML.png)
+	CSS: ![Alt text](CSS.png)
+	Bootstrap: ![Alt text](Boostrap.png)
+	JavaScript:![Alt text](JS.png)
+ 	Software Engineering: lowlevel design ![Alt text](SE.png)
 
- 1.BT Nhóm
-  <ul>
-	<li>BTL: [Memrise](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11) </li>
-	<li>Báo cáo phần mềmm: [Low level desgin](https://github.com/truonganhhoang/SoftEng/blob/master/low-level-design/nhom%2011/PITCHME.md) </li>
-	<li>Hoàn thành SEMAT </li>
-  </ul>
- 2.Tự học:
-<ul>
-	<li>HTML, bootstrap trên [Edumall](https://edumall.vn/) </li>
-	<li>Software Engineering: lowlevel design <img src="https://imgur.com/UD30n27">; </li>
-</ul>
 3. Chấm điểm:
 - Người chấm : Nguyễn Văn Mạnh.
 -Điểm : 9.
