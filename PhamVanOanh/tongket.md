@@ -28,8 +28,14 @@
 + Phần tự học tốt.
 
 -Người chấm: Trần Thị Minh Nguyệt
+
 -Điểm: 9
+
 -Nhận xét: 
+
 	+có minh chứng rõ ràng, cụ thể cho các mục.
+	
 	+Hoàn thành tốt công việc của nhóm
+	
 	+Phần tự học tốt.
+	
