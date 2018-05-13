@@ -1,18 +1,36 @@
-Họ tên: Tống Lý Trinh MSV: 16021197
+#Tổng kết
+
 
 1. Tham gia làm bài tập lớn 100%: Tiny Cards 
-+ Link: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-5 
-- học theo chủ đề được chọn từ màn hình chính
-- học bằng thẻ lật được gồm từ và nghĩa
-- kiểm tra trắc nghiệm: chọn đáp án đúng, sai có âm thanh phụ họa
-- chúc mừng khi hoàn thành
+
+	- Link: [nhom-5](http://https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-5 "nhom-5") 
+	- học theo chủ đề được chọn từ màn hình chính
+	- học bằng thẻ lật được gồm từ và nghĩa
+	- kiểm tra trắc nghiệm: chọn đáp án đúng
+	- chúc mừng khi hoàn thành
 
 2. Bài tập nhóm + Làm slide phần Specifications: 
-https://github.com/truonganhhoang/SoftEng/tree/master/specifications
+	[specifications](http://https://github.com/truonganhhoang/SoftEng/tree/master/specifications)
 
 3. Phần tự học
 
-HTML: 80%, CSS: 20%, bootstrap3: 50%, JavaScript: 80%, nodejs + express: 20% 
+	- HTML, CSS, bootstrap, JavaScript, node.js + express trên youtube và google
 
-- bao gồm những kiến thức học trên google và youtube, nên không có tiến trình như khóa học
-- phần đã học trên sololearn: https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/solo.JPG
+	- phần đã học trên sololearn: ![anh](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/solo.JPG)
+		+ [chứng chỉ](https://www.sololearn.com/Certificate/1014-1741911/pdf/)
+
+- khóa học Software Engineering: Introduction
+
+	+ Process:
+		![Process](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Process.jpg)
+	+ Specifications
+		![Specifications](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Specifications.jpg)
+	+ Testing
+		![Testing](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Testing.jpg)
+	+ High Level Design
+		![High Level Design](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_High_Level_Design.jpg)
+	+ Low Level Design
+		![Low Level Design](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Low_Level_Design.jpg)
+	+ Construction
+		![Construction](https://github.com/trinhtl/INT2208-4-2018/blob/master/TongLyTrinh/Quiz_Construction.jpg)
+4. Điểm chấm chéo

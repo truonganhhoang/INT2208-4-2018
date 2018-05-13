@@ -8,3 +8,11 @@
 * Link bài tập lớn (https://github.com/gungui98/Duolingo_clone)
 * Đóng góp bài tập lớn: Tham gia lập trình
 * Đóng góp nhóm thuyết trình: Tham gia làm slide
+
+4. Chấm điểm:
+- Người chấm: Phạm Thuận Thành
+- Điểm: 10
+- Nhận xét: 
+  - Đã hoàn thành các khóa học online về htnl, css, javascrip, đã có ảnh minh họa.
+  - Tham gia làm slide thuyết trình của nhóm, tham gia làm bài tập lớn của nhóm và đã có minh chứng rõ ràng
+  - Tự học thêm các kiến thức ngoài bổ trợ cho môn học.
