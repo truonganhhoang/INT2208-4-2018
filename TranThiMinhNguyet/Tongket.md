@@ -21,3 +21,7 @@
 	* Bài tập cá nhân đã làm đầy đủ và có minh chứng rõ ràng
 	* Bài tập lớn có nêu rõ nội dung tham gia.
 	-Điểm : 7.
+
+- Người chấm: Trần Quang Linh
+- Điểm: 8
+- Nhận xét: Làm bài tập trên EDX, tự học html, css đầy đủ, có tham gia bài tập lớn của nhóm
