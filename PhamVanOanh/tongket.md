@@ -1,20 +1,16 @@
 @@ -1,14 +1,14 @@
--Họ&Tên: Ph?m Van Oánh MSSV:16021087;
- <ul>
+-Họ&Tên: Phạm Van Oánh MSSV:16021087;
  
 + 1.BT Nhóm
-   <ul>
- 	<li>BTL: [Memrise](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11) </li>
- 	<li>Báo cáo phần mềm: [Low level desgin](https://github.com/truonganhhoang/SoftEng/blob/master/low-level-design/nhom%2011/PITCHME.md) </li>
- 	<li>Hoàn thành SEMAT </li>
-   </ul>
+ 	BTL: [Memrise](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11)
+ 	Báo cáo phần mềm: [Low level desgin](https://github.com/truonganhhoang/SoftEng/blob/master/low-level-design/nhom%2011/PITCHME.md)
+ 	Hoàn thành SEMAT
 -2.Tự học
- <ul>
--	<li>HTML và CSS, Bootstrap, JavaScript trên [W3School](https://www.w3schools.com) </li>
-+	<li>HTML: <img src="https://github.com/phamvanoanh26/INT2208-4-2018/blob/master/PhamVanOanh/HTML.png"> </li>
-	<li>CSS: <img src="https://github.com/phamvanoanh26/INT2208-4-2018/blob/master/PhamVanOanh/CSS.png"> </li>
-	<li>Bootstrap: <img src="https://github.com/phamvanoanh26/INT2208-4-2018/blob/master/PhamVanOanh/Boostrap.png"> </li>
-	<li>JavaScript: <img src="https://github.com/phamvanoanh26/INT2208-4-2018/blob/master/PhamVanOanh/JS.png"> </li>
- 	<li>Software Engineering: lowlevel design <img src="https://github.com/phamvanoanh26/INT2208-4-2018/blob/master/PhamVanOanh/SE.png">; </li>
+-	HTML và CSS, Bootstrap, JavaScript trên [W3School](https://www.w3schools.com)
++	HTML: ![Alt text](HTML.png)
+	CSS: ![Alt text](CSS.png)
+	Bootstrap: ![Alt text](Boostrap.png)
+	JavaScript:![Alt text](JS.png)
+ 	Software Engineering: lowlevel design ![Alt text](SE.png)
 
- </ul>
+3. Chấm điểm: - Người chấm : Nguyễn Văn Mạnh. -Điểm : 9. -Nhận xét : * Bài tập lớn đã có minh chứng rõ ràng, từng phần cụ thể. * Bài tập về nhà làm đầy đủ và có ảnh chứng minh. * Tham gia làm slide thuyết trình nhóm.
