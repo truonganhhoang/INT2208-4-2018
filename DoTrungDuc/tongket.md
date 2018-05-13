@@ -23,7 +23,15 @@ Mã sinh viên: 16020961
 	- HTML, CSS: 70%
 	- Bootstrap, Angular: 50%
 	
-### Chấm điểm
+
+* Chấm điểm
+	- Người chấm: Trần Văn Định
+	- Điểm: 8.5
+	- Đã có thông tin bài tập về nhà tuần 9-12
+	- Đã có thông tin về đóng góp bài tập lớn
+	- Chưa có thông tin về tự học.
+
+
 - Người chấm: Phạm Ngọc Duy
 - Điểm: 8.5
 - Nhận xét:
