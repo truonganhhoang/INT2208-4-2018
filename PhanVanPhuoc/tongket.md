@@ -9,3 +9,11 @@ Người chấm: Trần Thị Minh Nguyệt
 Điểm: 0
 
 Nhận xét: Không có bài.
+
+Người chấm: Phạm Văn Oánh
+
+- Điểm: 1
+
+- Nhận xét:
+
++ Chưa có bài.
