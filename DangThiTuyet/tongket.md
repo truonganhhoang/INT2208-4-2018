@@ -1,0 +1,6 @@
+- Điểm chấm chéo: 5
+- Người chấm: Trần Thế Tuấn
+- Nhận xét: 
+  - chưa làm file tongket.md
+  - không liên lạc được nên không biết cụ thể bạn làm được gì
+  - thư mục rỗng, chỉ có file readme.md
