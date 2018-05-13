@@ -9,5 +9,7 @@
 	+ Học HTML, Css, Js căn bản trên trang https://www.freecodecamp.org/
   + Tự học bootstrap
 
-- Điểm chấm chéo:
+- Điểm chấm chéo: 7
+- Người chấm: Trần Thế Tuấn
+- Nhận xét: đã học Html, css, bootstrap cơ bản; làm giao diện cho project, chưa có chứng chỉ software engineering trên edx
  

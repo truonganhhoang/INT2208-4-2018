@@ -15,5 +15,12 @@ MSV: 16021229
    + Boostrap : https://getbootstrap.com/
    + Html : https://www.coursera.org/learn/html/lecture/Ilm91/01-01-welcome-to-introduction-to-html5
    + Css : https://www.youtube.com/watch?v=_JT3jPzuqmY
-Boostrap : https://www.youtube.com/watch?v=-sMbAvgg7mY&list=PLv6GftO355AvAl13CUVcVvWu0hOZnpfW8
+   + Boostrap : https://www.youtube.com/watch?v=-sMbAvgg7mY&list=PLv6GftO355AvAl13CUVcVvWu0hOZnpfW8
 
+
+- Điểm chấm chéo: 5
+- Người chấm: Trần Thế Tuấn
+- Nhận xét: 
+  - chưa làm file tongket.md
+  - không liên lạc được nên không biết cụ thể bạn làm được gì
+  - thư mục rỗng, chỉ có file readme.md
