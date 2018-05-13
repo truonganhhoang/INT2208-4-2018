@@ -36,3 +36,8 @@ III. Khóa học software engineering edx:
 [Chung chi](https://github.com/toandx/INT2208-4-2018/tree/master/DongXuanToan/img)
 
 Hoàn thành phần Spiral trong slide : [Slide](https://github.com/truonganhhoang/SoftEng/blob/master/process/PITCHME.md)
+
+* Chấm điểm chéo:
+     + Người chấm: Trần Minh Tiến
+     + Điểm: 9
+     + Nhận xét: Tham gia đầy đủ vào làm bài tập lớn, bài thuyết trình. Phần tự học có các dẫn chứng đầy đủ, bài tập cá nhân đã hoàn thiện đầy đủ
