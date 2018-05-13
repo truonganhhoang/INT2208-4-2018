@@ -12,7 +12,12 @@ Mã sinh viên: 16020961
 	- Các API
 
 - Bài tập cá nhân:
-	- 
+	- Process: https://github.com/trungduc0502/INT2208-4-2018/blob/master/DoTrungDuc/SEIntroduction/Construction.png
+	- Specifications: https://github.com/trungduc0502/INT2208-4-2018/blob/master/DoTrungDuc/SEIntroduction/Specifications.png
+	- Testing: https://github.com/trungduc0502/INT2208-4-2018/blob/master/DoTrungDuc/SEIntroduction/Testing.png
+	- High Level Design: https://github.com/trungduc0502/INT2208-4-2018/blob/master/DoTrungDuc/SEIntroduction/HighLevelDesign.png
+	- Low Level Design: https://github.com/trungduc0502/INT2208-4-2018/blob/master/DoTrungDuc/SEIntroduction/LowLevelDesign.png	
+	- Construction: https://github.com/trungduc0502/INT2208-4-2018/blob/master/DoTrungDuc/SEIntroduction/Construction.png
 	
 - Tự học:
 	- HTML, CSS: 70%
