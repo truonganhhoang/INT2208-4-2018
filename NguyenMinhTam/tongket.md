@@ -10,9 +10,9 @@ MSSV: 16022119.
   * HTML, CSS, Javascript ở mức cơ bản trên các trang youtube, w3school.
 
 * Chấm chéo: 
-  * Người chấm: Nguyễn Viết Quân
-  * Điểm: 6
-  * Nhận xet: tham gia vào bài tập nhóm. Bài tập cá nhân k có dẫn chứng, tự học dẫn chứng k thuyết phục
+ + Người chấm: Nguyễn Viết Quân
+ + Điểm: 8.5
+ + Nhận xét: tham gia vào bài tập nhóm. Bài tập cá nhân hoàn thiện đầy đủ, tự học cần thêm dẫn chứng
  
  * Người chấm: Vũ Xuân Quân
  * Điểm: 8.5
