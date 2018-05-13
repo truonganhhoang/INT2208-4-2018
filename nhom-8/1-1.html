@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Architectural Styles</title>
+	<link rel="icon" href="image/1.jpg">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link href="style.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+				<a class="navbar-brand" href="1.html">
+					<img src="image/logo.png" width="40" height="40" class="d-inline-block align-top" alt="Tinycards-logo">
+					<strong>TinyCards</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="modal" data-target="#SignUpModal"><strong>Sign Up</strong></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="modal" data-target="#SignInModal">Sign In</a>
+						</li>
+					</ul>
+					<form class="form-inline mt-2 mt-md-0">
+						<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+						<a data-toggle="modal" data-target="#SearchResult"><button class="btn btn-outline-light my-2 my-sm-0">Search</button></a>
+					</form>
+				</div>
+			</nav>
+			<div class="modal fade" id="SearchResult" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<blockquote class="blockquote text-center">
+							<p class="mb-0">Nothing found</p>
+							 <footer class="blockquote-footer">Dev</footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="container-fluid" style="padding-top: 20px">
+							<center><h3><STRONG> Creat an account</STRONG></h3></center>
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Example: anyone@gmail.com">
+									<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Password</label>
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">Retype your password</label>
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+								</div>
+								<button type="submit" class="btn btn-dark"">Sign Up</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="SignInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="container-fluid" style="padding-top: 20px">
+							<center><h3><STRONG>Sign In</STRONG></h3></center>
+							<form>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Example: anyone@gmail.com">
+									<div class="form-group">
+										<label for="exampleInputPassword1">Password</label>
+										<input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+									</div>
+									<button type="submit" class="btn btn-dark"">Sign IN</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main role="main">
+				<div class="container marketing">
+					<div class="row">
+						<div class="col-lg-4">
+							<h1>▼</h1>
+							<img class="rounded-circle" src="image/1.jpg" alt="Thumbnail" width="140" height="140">
+							<h2>Architectural Styles</h2>
+							<p>Identify popular architectural styles throughout history.</p>
+						</div>
+						<div class="col-lg-8">
+							<h1>Cards</h1>
+							<div class="row border border-secondary rounded">
+								<div class="col-lg-4">
+									<img class="img-thumbnail" src="image/cards_1/1.jpg" width="200">
+									<p><a class="btn btn-primary" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapseExample">View</a></p>
+									<div class="collapse" id="collapse1">
+										<div class="card card-body">
+											<strong>Classical</strong>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<img class="img-thumbnail" src="image/cards_1/2.jpg" width="200">
+									<p><a class="btn btn-primary" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">View</a></p>
+									<div class="collapse" id="collapse2">
+										<div class="card card-body">
+											<strong>Romanesque</strong>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<img class="img-thumbnail" src="image/cards_1/3.jpg" width="200">
+									<p><a class="btn btn-primary" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapseExample">View</a></p>
+									<div class="collapse" id="collapse3">
+										<div class="card card-body">
+											<strong>Gothic</strong>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		</body>
+		</html>

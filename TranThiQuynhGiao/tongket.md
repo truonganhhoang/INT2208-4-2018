@@ -1,0 +1,1 @@
+﻿Họ và tên: TRẦN THỊ QUỲNH GIAOMSV: 160209301. Bài tập lớn: tham gia làm dự án Tiny cards + link : https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-52. Bài tập thuyết trình nhóm: làm slide phần specifications https://github.com/truonganhhoang/SoftEng/blob/master/specifications/PITCHME.md3. Tự học: HTML, CSS, bootstrap ở mức căn bản4. Chấm điểm chéo

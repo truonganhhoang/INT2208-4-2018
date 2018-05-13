@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Profile</title>
+        <link rel="stylesheet" href="https://bootswatch.com/3/cosmo/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            #content {
+                
+                padding: 0px 50px;
+                margin-top: 50px;
+            }
+            #info {
+                text-align: center;
+                max-width: 500px;
+                margin-bottom: 20px;
+            }
+            #avatar {
+                border: solid 3px white;
+            }
+            #username {
+                margin-top: 20px;
+                font-size: 20px;
+                font-weight: bolder;
+            }
+            #action-buttons {
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+            .glyphicon {
+                margin-right: 8px;
+            }
+            .btn {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .has-shadow {
+                box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+            }
+            .tab-content {
+                padding-top: 10px;
+                padding-bottom: 25px;
+            }
+            #stats>hr {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Tinyfake</a>
+                </div>
+                <form clss
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-plus"></span>Create</a></li>
+                    <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="content" class="container-fluid">
+            <div class="row">
+                    <div class="col-md-4 container-fluid" id="info">
+                        <img src="images/avatar.jpg"  class="img-circle has-shadow" id="avatar" width=150px height="auto">
+                        <div id="user-info">
+                            <div id="username">
+                                Tran Minh Hieu
+                            </div>
+                            <div id="id">
+                                <a href="#">@tranminhhieu</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="action-buttons">
+                            <button type="button" class="btn btn-default has-shadow"><span class="glyphicon glyphicon-cog"></span>Setting</button>
+                            <button type="button" class="btn btn-danger has-shadow"><span class="glyphicon glyphicon-log-out"></span>Log out</button>
+                        </div>
+                    </div>
+                    <div class="col-md-8 breadcrumb has-shadow" id="stats">
+                        <ul class="nav nav-pills">
+                            <li class="active"><a href="#decks" data-toggle="pill">Decks<span class="badge">5</span></a></li>
+                            <li><a href="#followers" data-toggle="pill">Followers<span class="badge">20</span></a></li>
+                            <li><a href="#following" data-toggle="pill">Following<span class="badge">50</span></a></li>
+                        </ul>
+                        <hr>
+                        <div class="tab-content">
+                            <div id="decks" class="tab-pane fade in active">
+                                Decks!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, mollitia earum deserunt ut, soluta distinctio sit a neque voluptas quo architecto natus ducimus, illum voluptatibus nisi sed eos corporis sequi doloribus eius quisquam cupiditate ex maiores asperiores. Autem nam sequi excepturi consequuntur, sunt hic fugit fugiat minus quo ut quisquam quibusdam expedita porro voluptates delectus similique quasi! Quos sint sunt, dolorum maxime possimus similique esse, vero amet, fuga voluptatum incidunt rerum? Ullam labore velit consequuntur, quaerat sequi reprehenderit id unde illo enim voluptatem accusantium ut libero quasi veniam magni aliquid perferendis ratione eligendi explicabo maxime at? Est, corporis officiis nulla iure mollitia facilis quasi quos sint tenetur pariatur architecto vel ullam aspernatur nostrum eaque, eius culpa? Animi reprehenderit voluptatum ex expedita, fuga quibusdam exercitationem repellat nihil? Assumenda, natus laudantium sint saepe officia officiis temporibus illo ut iste, porro autem et maxime voluptates exercitationem ipsum cum soluta! Iste, facere voluptate a delectus similique nemo quibusdam ipsam illum minus velit, architecto perspiciatis. Sapiente autem sunt dolore illum? Repudiandae dignissimos similique cumque cupiditate eligendi dicta, natus neque praesentium porro saepe mollitia ipsa temporibus iusto quibusdam, suscipit quaerat tempora inventore minus quam ad architecto assumenda sit! Adipisci distinctio veritatis natus quia amet dignissimos laborum!
+                            </div>
+                            <div id="followers" class="tab-pane fade">
+                                Followers!
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ipsum corporis, molestiae vitae amet nulla iusto dicta hic? Deleniti ipsum quae suscipit nemo atque fugit architecto. Voluptates deserunt dicta aut ad earum nihil nemo accusamus, inventore quam sunt blanditiis tenetur dolorum cum at quas atque fugiat hic odit reiciendis similique rem! Perferendis quibusdam fugiat nihil eveniet ducimus quia, consequatur quod, atque tempore debitis doloremque odio illo sunt. Odit fuga sequi tempora explicabo fugit reiciendis magnam laudantium accusantium mollitia quam. Et voluptatem adipisci doloremque animi quos quasi. Ducimus ea soluta harum alias! Commodi sed incidunt mollitia nisi quis consequatur, dolor blanditiis.
+                            </div>
+                            <div id="following" class="tab-pane fade">
+                                Following!
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </body>
+</html>
