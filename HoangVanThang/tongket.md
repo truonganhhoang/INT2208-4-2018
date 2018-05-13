@@ -36,3 +36,11 @@
   + Đọc có quá trình tự học cơ bản html, css, bootstrap.
   + Đã hoàn thành bài tập cá nhân trên edx và có minh chứng.
   
+ * Chấm điểm:
+ - Người chấm: Nguyễn Minh Tâm
+ - Điểm: 8.5
+ - Nhận xét:
+  + Bài tập lớn hoàn thành, có nội dung mình làm và link kèm theo.
+  + Hoàn thành bài tập trên edx và có ảnh kèm theo.
+  + Học cơ bản html, css, boostrap để phục vụ môn học.
+  
