@@ -28,3 +28,7 @@
 
 + Điểm: 7
 + Nhận xét: Tham gia làm bài tập nhóm, phần tự học dẫn chứng chưa thuyết phục 
+
+* Người chấm: Trần Minh Tiến
+      + Điểm: 9
+      + Nhận xét: Tham gia làm bài tập nhóm, bài thuyết trình đầy đủ. Phần bài tập cá nhân hoàn thành đầy đủ, tự học tốt đầy đủ dẫn chứng
