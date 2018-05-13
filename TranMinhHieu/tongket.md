@@ -16,3 +16,10 @@ Mã sinh viên: 16020961
 - Nội dung tự học:
     - Tự học HTML, CSS ở mức trung bình.
     - Tự học Bootstrap, Angular ở mức thông hiểu.
+    
+- Chấm điểm chéo:
+     - Người chấm: Trần Thị Quỳnh Giao
+     - Điểm: 9
+     - Nhận xét:
+         - Làm bài tập tuần đầy đủ, có dẫn chứng kèm theo.
+         - Tham gia làm bài tập thuyết trình và bài tập nhóm đầy đủ.
