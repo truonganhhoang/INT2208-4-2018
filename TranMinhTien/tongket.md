@@ -11,3 +11,10 @@ Họ Và Tên: Trần Minh Tiến
 3. Phần tự học
 	+ HTML, CSS, bootstrap JavaScript ,ASP.Net...trên : https://edumall.vn/?utm_source=edumall-aff&edmaff_id=fcf9d5&utm_campaign=smart&utm_medium=tracking_id_2295066
 	+ Mới bắt đầu tiếp cận angular,...
+
+4. Chấm điểm chéo
+- Người chấm: Trịnh Văn Thi
+- Điểm : 8.5
+- Nhận xét:
+	- Chưa đưa ra được phần bài tập cá nhân.
+	- Đã nêu được phần mình làm trong bài tập lớn.
