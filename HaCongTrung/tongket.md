@@ -21,5 +21,10 @@
 </ul>
 
 - Người chấm: Tống Lý Trinh
+- Điểm: 9/10
+- Nhận xét: 
++ tham gia làm bài tập nhóm đầy đủ
++ tự học tốt
+
 + Điểm: 7
 + Nhận xét: Tham gia làm bài tập nhóm, phần tự học dẫn chứng chưa thuyết phục 
