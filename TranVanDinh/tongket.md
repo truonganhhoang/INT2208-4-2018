@@ -28,3 +28,12 @@ Nội dung cá nhân đóng góp:
 	- Phần slide của khóa học chưa có thông tin.
 	- Đã có minh chứng về việc tự học html, css, bootstrap, js.
 	- Đã nói rõ vai trò tham gia bài tập nhóm.
+
+- Người chấm: Phạm Ngọc Duy
+- Điểm: 8.5
+- Nhận xét:
+	- Đã cập nhật thêm (13/5/2018) thông tin về bài tập cá nhân tuần 9-12  - các quiz của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x).
+	- Phần dịch slide của khóa học chưa có thông tin.
+	- Chưa có dẫn chứng bằng link mình học html, css, bootstrap, js, ... ở đâu
+	- Đã có minh chứng về việc tự học html, css, bootstrap, js.
+	- Đã nói rõ vai trò tham gia bài tập nhóm.
