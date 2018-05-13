@@ -22,3 +22,5 @@ MSV: 16021105
  1.Nguyễn Anh Phương
          +Chấm điểm: 9
 	 +Nhận xét: Hoàn thành tương đối tốt các khóa tự học, tham gia đầy đủ việc làm bài tập nhóm, bài tập nhóm tốt
+ 2.1.Nguyễn Văn Phi +Chấm điểm: 9
+ +Nhận xét: Hoàn thành các khóa tự học, tham gia làm bài tập nhóm, bài tập nhóm tốt
