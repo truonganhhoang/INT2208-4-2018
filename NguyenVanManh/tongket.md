@@ -23,6 +23,12 @@ II. Bài tập nhóm:
 -Link btl : https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11
 - Dịch khóa học phần thiết kế cấp thấp và làm slide.
 
+
+* Chấm chéo
+    + Người chấm: Hà Thế Lực
+    + Điểm: 8
+    + Nhận xét: Làm bài tập nhóm, thuyết trình. Tự học tốt, có dẫn chứng đầy đủ. Bài tập cá nhân Software engineering chưa có
+
 - Người chấm: Trần Quang Linh
 - Điểm 7.5
 - Nhận xét: tự học html, css, javascript, bootstrap tốt, tham gia làm slide + bài tập lớn cho nhóm nhưng chưa làm bài tập trên EDX
