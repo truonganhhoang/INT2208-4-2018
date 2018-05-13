@@ -22,3 +22,8 @@ II. Bài tập nhóm:
 - Đề tài : memrise
 -Link btl : https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11
 - Dịch khóa học phần thiết kế cấp thấp và làm slide.
+
+* Chấm chéo
+    + Người chấm: Hà Thế Lực
+    + Điểm: 8
+    + Nhận xét: Làm bài tập nhóm, thuyết trình. Tự học tốt, có dẫn chứng đầy đủ. Bài tập cá nhân Software engineering chưa có
