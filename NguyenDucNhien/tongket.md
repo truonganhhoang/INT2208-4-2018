@@ -20,7 +20,7 @@
  
  -Người chấm: Trần Thị Minh Nguyệt.
  
- -Điểm: 7
+ -Điểm: 6.5
  
  -Nhận xét:Không tiến hành làm BTL, báo cáo cho BTL. Dẫn chứng phần tự học chưa thực sự thuyết phục.
   - NGười chấm : Nguyễn Văn Mạnh.
@@ -28,4 +28,8 @@
   - Hoàn thành bài tập cá nhân.
   -Chưa thấp làm bài tập lớn xây dựng phần mềm.
   Điểm : 7
+  
+  -Người chấm: Hà Thế Lực
+  -Điểm: 8.5
+  -Nhận xét: tham gia đầy đủ vào bài tập nhóm, slide thuyết trình. Hoàn thành bài tập cá nhân, phần tự học tốt tuy nhiên thiếu dẫn chứng
  		
