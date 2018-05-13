@@ -27,3 +27,10 @@
   * Hoàn thành [Khóa học Software Engineering](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/NguyenAnhTuan/BT-SoftEng) bao gồm: Bài giảng, Question và Quiz.
 
 4. Chấm điểm chéo:
+- Người chấm: Tống Lý Trinh
+- Điểm 10/10
+- Nhận xét: + tham gia làm bài tập nhóm đầy đủ
++ tự học khóa học Software Engineering:Introduction tốt
++ tự học các ngôn ngữ, framework tốt
+
+
