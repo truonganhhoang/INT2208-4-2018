@@ -20,3 +20,9 @@ Phần chấm điểm chéo:
     - Chưa chứng minh đã làm slide của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x).
     - Chưa có thông tin về phần tự học html, css, bootstrap, js, angular...
     - Chưa nói rõ về vai trò tham gia bài tập nhóm.
+
+- Người chấm: Trần Thị Quỳnh Giao
+- Điểm: 8
+- Nhận xét: 
+    - Làm bài tập tuần đầy đủ.
+    - Tham gia làm bài tập nhóm.
