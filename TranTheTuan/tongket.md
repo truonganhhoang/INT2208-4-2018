@@ -19,3 +19,13 @@
   * Điểm: 8
   * Nhận xét: Có tham gia xây dựng BTL và Slide thuyết trình, cập nhật quá trình tự học đầy đủ.
   
+
+* Người chấm: Hà Công Trung
+  * Điểm: 9
+  * Nhận xét: àm trang chủ, giao diện các trang trong project, tự học thông hiểu html, css, js, bootstrap. angular cơ bản, tự học khóa software engineering trên edx.org
+  
+
+  * Người chấm: Trần Anh Tú
+  * Điểm: 8
+  * Nhận xét: Có tham gia xây dựng BTL và Slide thuyết trình, cập nhật quá trình tự học đầy đủ.
+ 
