@@ -26,3 +26,8 @@ Link Facebook: https://www.facebook.com/profile.php?id=100005879019647
 	+ Nhận xét: 
 		* Tham gia đóng góp bài tập nhóm, bài tập lớn
 		* tự học html, css, js, boostrap
+	+ Người chấm: Nguyễn Thị Hải Yến
+	Điểm:7
+	Nhận xét: Đã tự hoc và  tham gia làm bài tập nhóm 
+	Phần tự học: Đã học cơ bản
+	Phần nhóm: có tham gia làm slide

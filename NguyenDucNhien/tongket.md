@@ -20,7 +20,7 @@
  
  -Người chấm: Trần Thị Minh Nguyệt.
  
- -Điểm: 6.5
+ -Điểm: 7
  
  -Nhận xét:Không tiến hành làm BTL, báo cáo cho BTL. Dẫn chứng phần tự học chưa thực sự thuyết phục.
   - NGười chấm : Nguyễn Văn Mạnh.
