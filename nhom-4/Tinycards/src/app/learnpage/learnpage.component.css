@@ -1,0 +1,48 @@
+label {
+ display: inline;
+cursor: pointer;
+}
+
+.card {
+  width: 100% !important;
+  height: 350px !important;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  z-index: 20;
+}
+
+.card div {
+  width: 100% !important;
+  height: 350px !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 2px;
+}
+
+.card .back  {
+  transform: rotateY(180deg);
+  
+}
+
+.center-text{
+  position: relative;
+  bottom: 250px;
+  text-align: center;
+}
+
+input {
+  display: none;
+
+}
+
+:checked + .card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.front img, .back img {
+  width: 100% !important;
+  height: 350px !important;
+}

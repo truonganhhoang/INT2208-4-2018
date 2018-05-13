@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Events</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <h1>jQuery Events</h1>
+
+    <input type="text">
+
+    <button>Don't click me</button>
+    <button>Seriously don't click me</button>
+    <button>This is your last warning</button>
+</body>
+<script>
+    // click
+    $("h1").click(function () {
+        alert("h1 clicked!");
+    });
+    $("button").click(function () {
+        $(this).css("background", "pink");
+    });
+    // key pressed
+    $("input").keypress(function (event) {
+        if (event.which  === 13) {
+            alert("You hit enter!");
+        }
+    });
+    // on event
+    $('h1').on('click', function () {
+        $(this).css("color", "purple");
+    });
+    $('input').on('keypress', function () {
+        console.log("Keypressed!");
+    });
+    $('button').on('mouseover', function () {
+        $(this).css("backgroundColor", "brown");
+    });
+    /**
+     * @note: on() WILL ADD listeners for all future elements while click() DOES NOT
+     */
+</script>
+</html>

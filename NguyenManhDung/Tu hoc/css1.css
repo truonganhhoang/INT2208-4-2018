@@ -1,0 +1,10 @@
+h1 {
+	color: rgb(100, 101, 200);
+	border: 3px solid brown;
+}
+
+body {
+	background: url("C:/Users/Dung/Pictures/minion2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
