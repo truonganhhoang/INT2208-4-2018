@@ -17,3 +17,13 @@
     + HTML: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/NguyenTuanLinh/html5 
     + CSS: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/NguyenTuanLinh/CSS.png 
     + JavaScript: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/NguyenTuanLinh/JS.png 
+## Chấm điểm:
+- Người chấm: Cao Đức Huân.
+- Điểm: 9.
+- Nhận xét:
+
+ 1) Đã hoàn thành các khóa học online về htnl, css, javascrip, đã có ảnh minh họa.
+
+ 2) Tham gia làm slide thuyết trình của nhóm, tham gia làm bài tập lớn của nhóm và đã có minh chứng rõ ràng.
+ 
+ 3) Tự học thêm các kiến thức ngoài bổ trợ cho môn học.

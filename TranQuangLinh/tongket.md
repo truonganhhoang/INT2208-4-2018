@@ -31,3 +31,14 @@
 
 
 + Bài tập lớn :ứng dụng tinycards xem tại [đây](http://jindojojin.github.io)
+
+## Chấm điểm:
+- Người chấm: Cao Đức Huân.
+- Điểm: 9.
+- Nhận xét:
+
+ 1) Đã hoàn thành các khóa học online về htnl, css, javascrip, đã có ảnh minh họa.
+
+ 2) Tham gia làm slide thuyết trình của nhóm, tham gia làm bài tập lớn của nhóm và đã có minh chứng rõ ràng.
+ 
+ 3) Tự học thêm các kiến thức ngoài bổ trợ cho môn học.

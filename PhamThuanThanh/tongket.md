@@ -16,3 +16,25 @@ MSV: 16021420
 	- Bạn đã học được cơ bản html, css, js, bootstrap tại các khóa học onl
 	- Bài tập cá nhân đã làm đầy đủ và có minh chứng rõ ràng
 	- Bài tập lớn có nêu rõ nội dung tham gia.
+
+- Người chấm: Nguyễn Minh Tâm
+- Điểm: 9
+- Nhận xét:
+	- Bài tập lớn đã có minh chứng rõ ràng, từng phần cụ thể.
+	- Đã học html, css, js, boostrap ở mức cơ bản tại các khóa học, có ghi rõ nguộn.
+	- Bài tập về nhà làm đầy đủ và có ảnh chứng minh.
+
+- Người chấm: Nguyễn Thị Thanh Tân
+- Điểm: 9
+- Nhận xét: 
+	- Bài tập lớn hoàn thành từng phần cụ thể
+	- Bài tập về nhà đã làm đầy đủ và có ảnh cụ thể.
+	- Học html, bootstrap, js, css tại các khóa học và có ghi nguồn rõ ràng. 
+
+- Người chấm: Vũ Xuân Quân
+- Điểm: 8.5
+- Nhận xét:
+	- Bài tập lớn đã làm và có cụ thể nội dung làm kèm theo link.
+	- Bài tập cá nhân làm đủ, có ảnh chứng minh.
+	- Đã học html, css, js, bootstrap để phục vụ cho môn học, có link khóa học kèm theo.
+	

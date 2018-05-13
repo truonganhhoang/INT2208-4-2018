@@ -16,3 +16,8 @@ MSV: 16020904
 - Tự học html, css, js, ...: [click here](/NguyenManhDung/Tu%20hoc) 
     - Đã tự học được html, css, bootstrap, js, jquery ở mức cơ bản
     - Đã tự học được express, nodeJS, MongoDB ở mức cơ bản
+    
+- Chấm điểm chéo: 
+	- Người chấm: Trần Thị Phương Anh
+	- Điểm: 9
+	- Nhận xét: Có các bài tập nhóm và bài tập tự học, bài tập cá nhân đầy đủ.
