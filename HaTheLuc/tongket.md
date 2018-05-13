@@ -19,3 +19,7 @@ Họ Và Tên: Hà Thế Lực
  1) Tham gia làm slide thuyết trình của nhóm, tham gia làm bài tập lớn của nhóm.
  
  2) Tự học thêm các kiến thức ngoài bổ trợ cho môn học.
+ 
+ - Người chấm: Trần Quang Linh
+ - Điểm: 7
+ - Nhận xét: chưa lấy dẫn chứng làm bài tập cá nhân trên EDX, có tham gia làm bài tập lớn cùng nhóm, phần tự học bootstrap chưa có
