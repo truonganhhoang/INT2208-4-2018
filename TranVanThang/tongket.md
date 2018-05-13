@@ -16,15 +16,25 @@
   - Đã hoàn thành các khóa học online về html, css, javascript, đã có ảnh minh họa.
   - Tham gia làm slide thuyết trình của nhóm, tham gia làm bài tập lớn của nhóm và đã có minh chứng rõ ràng
   - Tự học thêm các kiến thức ngoài bổ trợ cho môn học.
+
 - Người chấm: Nguyễn Thị Thanh Tân
 - Điểm: 9,5
 - Nhận xét:
   - Tham gia làm slide, và bài tập nhóm đầy đủ, nêu rõ từng phần và có minh chứng
   - Hoàn thành các kháo học online html, css, javascript, có ảnh.
   - Tự học thêm các kiến thức để bổ túc cho môn học.
+
+
 - Người chấm: Vũ Xuân Quân
 - Điểm: 9.5
 - Nhận xét: 
   + Đx hoàn thành ở mức cơ bản html, css, javascript. có link và ảnh minh chứng.
   + Tham gia làm bài tập lớn, có ghi rõ phần mình làm, phần làm slide thuyết trình và có link bài tập trên github.
   + Tự học thêm kiến thức để giúp bài tập làm tốt hơn.
+
+- Người chấm: Nguyễn Minh Tâm
+- Điểm: 9.5
+- Nhận xét:
+  + Đã hoàn thành bài tập lớn, có ghi chú phần làm cụ thể và minh chứng kèm theo.
+  + Tự học thêm kiến thức để phụ giúp môn học.
+  + Hoàn thành các khóa học online html, css,... và có ảnh kèm theo.
