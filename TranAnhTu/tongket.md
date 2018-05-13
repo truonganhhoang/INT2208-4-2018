@@ -25,3 +25,7 @@ Làm bài tập nhóm và slide tốt: 10/10
 
 Làm bài tập lớn và tự học lập trình web tốt: 10/10
 
+*Người chấm:Hà Công Trung
+*Điểm 9
+*Nhận xét: hoàn thiện các khóa học,làm đầy đủ các bài tập.
+
