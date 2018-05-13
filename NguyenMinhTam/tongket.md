@@ -20,3 +20,10 @@ MSSV: 16022119.
   - Tham gia bài tập nhóm đầy đủ
   - Bài tập cá nhân làm đầy đủ và có dẫn chứng.
   - Tự hjoc có dẫn chứng nhưng chưa thuyết phục
+  
+ * Người chấm: Nguyễn Anh Phương
+ * Điểm: 9
+ * Nhận xét:
+  - Bài tập nhóm đầy đủ
+  - Bài tập cá nhân làm đầy đủ, đã có dẫn chứng.
+  - Tự học tương đối đầy đủ nhưng cần thêm dẫn chứng
