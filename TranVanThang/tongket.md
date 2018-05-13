@@ -22,3 +22,9 @@
   - Tham gia làm slide, và bài tập nhóm đầy đủ, nêu rõ từng phần và có minh chứng
   - Hoàn thành các kháo học online html, css, javascript, có ảnh.
   - Tự học thêm các kiến thức để bổ túc cho môn học.
+- Người chấm: Vũ Xuân Quân
+- Điểm: 9.5
+- Nhận xét: 
+  + Đx hoàn thành ở mức cơ bản html, css, javascript. có link và ảnh minh chứng.
+  + Tham gia làm bài tập lớn, có ghi rõ phần mình làm, phần làm slide thuyết trình và có link bài tập trên github.
+  + Tự học thêm kiến thức để giúp bài tập làm tốt hơn.
