@@ -23,9 +23,20 @@ Mã sinh viên: 16020961
 	- HTML, CSS: 70%
 	- Bootstrap, Angular: 50%
 	
+
 * Chấm điểm
 	- Người chấm: Trần Văn Định
 	- Điểm: 8.5
 	- Đã có thông tin bài tập về nhà tuần 9-12
 	- Đã có thông tin về đóng góp bài tập lớn
 	- Chưa có thông tin về tự học.
+
+
+- Người chấm: Phạm Ngọc Duy
+- Điểm: 8.5
+- Nhận xét:
+	- Đã có thông tin đầy đủ về bài tập cá nhân tuần 9-12. - các quiz của khóa học trên [edx](https://www.edx.org/course/software-engineering-introduction-ubcx-softeng1x).
+	- Đã hoàn thành phần slide của khóa học trên edx.
+	- Chưa có dẫn chứng bằng link mình học html, css, bootstrap, js, ... ở đâu
+	- Chưa có minh chứng về việc tự học html, css, bootstrap, js.
+	- Đã nói rõ vai trò tham gia bài tập nhóm.

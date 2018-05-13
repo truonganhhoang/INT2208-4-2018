@@ -26,3 +26,9 @@ Hoàn thiện khóa học SoftEng tốt 9/10
 
 Làm bài tập nhóm và slide: 8/10
 Làm bài tập lớn và tự học lập trình web khá: 8/10
+- Người chấm: Tống Lý Trinh
+- Điểm: 9
+- Nhận xét: 
++ tham gia làm bài tập nhóm
++ tự học đầy đủ
++ hoàn thành khóa học Software Engineering Introduction

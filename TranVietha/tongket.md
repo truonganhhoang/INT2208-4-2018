@@ -29,6 +29,14 @@ Phần chấm điểm chéo:
     - Chưa có thông tin về phần tự học html, css, bootstrap, js, angular...
     - Chưa nói rõ về vai trò tham gia bài tập nhóm.
     
+- Người chấm: Đỗ Trung Đức
+- Điểm: 8
+- Nhận xét:
+    - Đã hoàn thành bài tập cá nhân, có dẫn chứng đầy đủ
+    - Chưa đề cập đến bài thuyết trình của nhóm
+    - Đã tự đánh giá về các nội dung HTML, CSS, ...
+    - Chưa đề cập đến vai trò tham gia bài tập nhóm.
+	
 - Người chấm: Trần Thị Quỳnh Giao
 - Điểm: 8
 - Nhận xét:
