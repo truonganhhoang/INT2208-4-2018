@@ -28,7 +28,6 @@
   - Đã làm bài tập về nhà trên edx và có minh chứng rõ ràng.
   - Đã hoàn thành bài tập lớn, slide môn học, và có link minh chứng.
 
-* Chấm điểm:
 - Người chấm: Phạm Thuận Thành
 - Điểm: 9
 - Nhận xét:
@@ -36,8 +35,14 @@
   + Đọc có quá trình tự học cơ bản html, css, bootstrap.
   + Đã hoàn thành bài tập cá nhân trên edx và có minh chứng.
   
- * Chấm điểm:
- - Người chấm: Nguyễn Minh Tâm
+- Người chấm: Vũ Xuân Quân
+- Điểm: 9
+- Nhận xét:
+  + Bài tập lớn đã hoàn thanh từng phần cụ thể, có link đính kèm.
+  + Tự học html css, bootstrap ở mức cơ bản.
+  + Hoàn thành bài tập cá nhân và có minh chứng.
+
+- Người chấm: Nguyễn Minh Tâm
  - Điểm: 8.5
  - Nhận xét:
   + Bài tập lớn hoàn thành, có nội dung mình làm và link kèm theo.
