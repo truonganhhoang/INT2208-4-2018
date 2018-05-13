@@ -1,7 +1,7 @@
  Họ và Tên: Nguyễn Đức Nhiên
 
  MSV: 16021082
-
+- Dự án Tinycards: https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-8
 - Bài tập nhóm:
 	- Làm silde phần Testing: https://github.com/truonganhhoang/SoftEng/blob/master/testing/nhom-8/PITCHME.md
 
