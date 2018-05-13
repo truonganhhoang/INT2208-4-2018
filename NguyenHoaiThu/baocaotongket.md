@@ -6,7 +6,7 @@ Họ và tên: Nguyễn Hoài Thu  MSV: 16021168
 	- HTML, CSS, bootstrap, javascript ở mức căn bản
 5. Chấm điểm chéo
 - Người chấm: Hoàng Văn Thắng
-- Điểm: 6
+- Điểm: 7
 - Nhận xét: 
   - chưa nêu rõ phần bài tập nhóm mình làm.
   - thiếu dẫn chứng cụ thể.
