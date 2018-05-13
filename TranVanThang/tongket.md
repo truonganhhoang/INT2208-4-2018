@@ -38,3 +38,10 @@
   + Đã hoàn thành bài tập lớn, có ghi chú phần làm cụ thể và minh chứng kèm theo.
   + Tự học thêm kiến thức để phụ giúp môn học.
   + Hoàn thành các khóa học online html, css,... và có ảnh kèm theo.
+
+- Người chấm: Hoàng Văn Thắng
+- Điểm: 9.5
+- Nhận xét: 
+  - Đã hoàn thành các khóa học online về html, css, javascript, đã có ảnh minh họa.
+  - Tự học thêm các kiến thức ngoài bổ trợ cho môn học.
+  - tham gia làm slide và bài tập lớn cùng nhóm, có link bài tập nhóm kèm theo.
