@@ -1,34 +1,74 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AppRoutingModule } from './/app-routing.module';
-import { ViewComponent } from './view/view.component';
-import { LearnComponent } from './learn/learn.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 import { EditComponent } from './edit/edit.component';
-import { CardComponent } from './card/card.component';
-import { ReviewComponent } from './review/review.component';
-import { QuestionComponent } from './question/question.component';
+import { CreateComponent } from './create/create.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AuthService } from './auth.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    ViewComponent,
-    LearnComponent,
+    DashboardComponent,
+    LoginComponent,
+    RegisterComponent,
     EditComponent,
-    CardComponent,
-    ReviewComponent,
-    QuestionComponent
+    CreateComponent,
+    ProfileComponent,
+    LogoutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    FormsModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: DashboardComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'login',
+        component: LoginComponent,
+        
+      },
+      {
+        path: 'logout',
+        component: LogoutComponent,
+        
+      },
+      {
+        path: 'register',
+        component: RegisterComponent,
+        
+      },
+      {
+        path: 'create',
+        component: CreateComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'profile',
+        component: ProfileComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+        canActivate: [AuthGuard]
+      }
+    ])
   ],
-  providers: [],
+  providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
