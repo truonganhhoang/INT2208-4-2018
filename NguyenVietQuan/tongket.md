@@ -18,3 +18,7 @@ MSV: 16021105
 	+ Mới bắt đầu tiếp cận angular
 
 5. Chấm điểm chéo
+
+ 1.Nguyễn Anh Phương
+         +Chấm điểm: 9
+	 +Nhận xét: Hoàn thành tương đối tốt các khóa tự học, tham gia đầy đủ việc làm bài tập nhóm, bài tập nhóm tốt
