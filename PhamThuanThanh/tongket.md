@@ -23,4 +23,11 @@ MSV: 16021420
 	- Bài tập lớn đã có minh chứng rõ ràng, từng phần cụ thể.
 	- Đã học html, css, js, boostrap ở mức cơ bản tại các khóa học, có ghi rõ nguộn.
 	- Bài tập về nhà làm đầy đủ và có ảnh chứng minh.
+
+- Người chấm: Nguyễn Thị Thanh Tân
+- Điểm: 9
+- Nhận xét: 
+	- Bài tập lớn hoàn thành từng phần cụ thể
+	- Bài tập về nhà đã làm đầy đủ và có ảnh cụ thể.
+	- Học html, bootstrap, js, css tại các khóa học và có ghi nguồn rõ ràng. 
 	
