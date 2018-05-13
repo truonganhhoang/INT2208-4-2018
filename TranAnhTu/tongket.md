@@ -29,3 +29,8 @@ Làm bài tập lớn và tự học lập trình web tốt: 10/10
 *Điểm 9
 *Nhận xét: hoàn thiện các khóa học,làm đầy đủ các bài tập.
 
+- Người chấm: Tống Lý Trinh
+- Điểm: 9
+- Nhận xét: 
++ tham gia làm bài tập nhóm đầy đủ
++ tự học tốt
