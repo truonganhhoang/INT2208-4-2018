@@ -18,3 +18,6 @@
   * Điểm: 7
   * Nhận xét: Có đóng góp BTL, chưa có BT làm Slide thuyết trình và hình ảnh BT SoftEng trên edX. Dẫn chứng tự học chưa thuyết phục
  
+* Người chấm: Hà Công Trung
+  * Điểm: 7
+  * Nhận xét: làm đủ và góp phần đầy đủ trong cái bài tập!Các dẫn chứng phần tự học chưa dõ dàng
