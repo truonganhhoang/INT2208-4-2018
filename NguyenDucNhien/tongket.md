@@ -28,4 +28,8 @@
   - Hoàn thành bài tập cá nhân.
   -Chưa thấp làm bài tập lớn xây dựng phần mềm.
   Điểm : 7
+  
+  -Người chấm: Hà Thế Lực
+  -Điểm: 8.5
+  -Nhận xét: tham gia đầy đủ vào bài tập nhóm, slide thuyết trình. Hoàn thành bài tập cá nhân, phần tự học tốt tuy nhiên thiếu dẫn chứng
  		

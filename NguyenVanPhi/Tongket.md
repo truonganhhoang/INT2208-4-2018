@@ -23,3 +23,26 @@ Nhận xét :
 + Hoàn thành bài tập lớn,bài tập nhóm đầy đủ.
 + Phần tự học: rất tốt! có các dẫn chứng đầy đủ đi kèm.
 
+
+- Người chấm: Trần Thị Minh Nguyệt
+
+- Điểm: 9
+
+- Nhận xét:
+
++ Hoàn thành tốt bài tập cá nhân và làm việc nhóm.
+
++ Báo cáo đầy đủ, rõ ràng.
+
+- Người chấm: Phạm Văn Oánh
+
+- Điểm: 9
+
+- Nhận xét:
+
++ Hoàn thành tốt bài tập cá nhân và làm việc nhóm, có liệt kê cụ thể
+
++ Báo cáo đầy đủ, rõ ràng.
+
++ Phần tự học: tốt! có minh chứng cụ thể
+
