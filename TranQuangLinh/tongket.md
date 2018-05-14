@@ -42,3 +42,11 @@
  2) Tham gia làm slide thuyết trình của nhóm, tham gia làm bài tập lớn của nhóm và đã có minh chứng rõ ràng.
  
  3) Tự học thêm các kiến thức ngoài bổ trợ cho môn học.
+
+- Người chấm: Đỗ Huy Linh.
+- Điểm: 9.
+- Nhận xét:
+   - Tham gia khóa học html, css ,javascrip,
+   - Hoàn thành Edx có ảnh minh họa
+   - Tham gia làm slide thuyết trình, bài tập lớn
+  
