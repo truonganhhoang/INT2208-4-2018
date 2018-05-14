@@ -36,3 +36,11 @@ Phần chấm điểm chéo:
 	- Tích cực tham gia bài thuyết trình của nhóm
     - Đã tự học html, css, bootstrap.
     - Tham gia đóng góp tốt cho bài tập nhóm.
+    
+- Người chấm: Đỗ Huy Linh
+- Điểm: 9
+- Nhận xét:
+    - Thông tin đầy đủ về bài tập cá nhân tuần 9-12 và slide bài tập
+    - Đã có thông tin về phần tự học html, css, bootstrap.
+    - Tham gia đóng góp tích cực bài tập nhóm.
+ 
