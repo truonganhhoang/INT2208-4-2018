@@ -25,3 +25,11 @@ Họ Và Tên: Hà Thế Lực
  - Người chấm: Trần Quang Linh
  - Điểm: 7
  - Nhận xét: chưa lấy dẫn chứng làm bài tập cá nhân trên EDX, có tham gia làm bài tập lớn cùng nhóm, phần tự học bootstrap chưa có
+
+
+- Người chấm: Đỗ Huy Linh
+ - Điểm: 7
+ - Nhận xét: 
+	- Tham gia làm slide thuyết trình, bài tập lớn
+	- Tự học thêm các kiến thức bổ trợ
+	- Chưa có dẫn chứng bài tập cá nhân Edx.
