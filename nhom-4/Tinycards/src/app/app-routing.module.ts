@@ -4,11 +4,12 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { LearnpageComponent } from './learnpage/learnpage.component';
 import { CreateCardComponent } from './create-card/create-card.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
+import { UserGuard } from './user.guard';
 
 const routes: Routes = [
     {path:"home", component:HomepageComponent},
     {path:"learn/:type/:id",component:LearnpageComponent},
-    {path:"create",component:CreateCardComponent},
+    {path:"create",canActivate:[UserGuard],component:CreateCardComponent},
     {path:"login",component:LoginpageComponent},    
     {path:"", redirectTo:"home",pathMatch:"full"},
     {path:"**",redirectTo:"home",pathMatch:"full"}
@@ -17,7 +18,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes)],
-  providers: [
+  providers: [ UserGuard
   ],
   exports: [RouterModule],
 })

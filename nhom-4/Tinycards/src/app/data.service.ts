@@ -22,9 +22,9 @@ export class DataService {
     return this.http.post(url,value)
     .toPromise()
     .then(res =>
-      res.json()
+      true
     )
-    .catch( err => console.log(err))
+    .catch( err => false)
   }
   getListFavoriteCollection(){
     let url = this.myWebServer+"/list/FavoriteCardCollection/userName="+getCookie("userName");
@@ -52,10 +52,10 @@ export class DataService {
 
   sendNewCardCollection(value){
     let url=this.myWebServer+"/newCardCollection";
-    this.http.post(url,value)
+    return this.http.post(url,value)
     .toPromise()
-    .then( r => console.log(r))
-    .catch(e => console.log(e))
+    .then( res => true)
+    .catch( err => false)
   }
 
   addFavorite( userName, collectionID){

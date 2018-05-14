@@ -1,45 +1,50 @@
 <div class="row justify-content-md-center">
-  
+        
   <div class="col-md-6">
-      <form *ngIf="!signup" (ngSubmit)="Login()" validate [formGroup]="formLogin">
-          <div class="container">
-              <div class="form-group">
-                  <label for="exampleInputEmail1">Tên đăng nhập</label>
-                  <input formControlName="username" type="email" class=" form-control form-control-lg"  aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Mật khẩu</label>
-                  <input formControlName="password" type="password" class="form-control form-control-lg"  placeholder="Password">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input">
-                  <label class="form-check-label" for="exampleCheck1">Ghi nhớ đăng nhập</label>
-                </div>
-                <label for="">Chưa có tài khoản? <button (click)="signup = true">Đăng kí ngay</button></label>
-                <br>
-                <button [disabled]="formLogin.invalid" type="submit" class="btn btn-primary float-right mx-1 mb-5">Đăng nhập</button>
-          </div>  
-      </form>
-      <form *ngIf="signup" (ngSubmit)="Signup()" validate [formGroup]="formSignup">
-          <div class="container">
-              <div class="form-group">
-                  <label for="exampleInputEmail1">Tên đăng nhập</label>
-                  <input formControlName="username" type="email" class=" form-control form-control-lg"placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Mật khẩu</label>
-                  <input formControlName="password1" type="password" class="form-control form-control-lg"  placeholder="Password">
-                  <span *ngIf="formSignup.controls.password1.errors" style="color:red !important">Mật khẩu phải dài ít nhất 8 kí tự</span>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Nhập lại mật khẩu</label>
-                    <input formControlName="password2" type="password" class="form-control form-control-lg"  placeholder="Password">
-                  </div>                
-                  <label for="">Đã có tài khoản? <button (click)="signup = false">Đăng nhập</button></label>
-                  <br>
-                <button [disabled]="formSignup.invalid" type="submit" class="btn btn-success float-right mx-1 mb-5">Đăng kí</button>
-          </div>  
-      </form>
+    <form *ngIf="!signup" (ngSubmit)="Login()" validate [formGroup]="formLogin">
+      <div class="container">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tên đăng nhập</label>
+          <input formControlName="username" class=" form-control form-control-lg" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Mật khẩu</label>
+          <input formControlName="password" type="password" class="form-control form-control-lg" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="exampleCheck1">Ghi nhớ đăng nhập</label>
+        </div>
+        <label for="">Chưa có tài khoản?
+          <button (click)="signup = true">Đăng kí ngay</button>
+        </label>
+        <br>
+        <button [disabled]="formLogin.invalid" type="submit" class="btn btn-primary float-right mx-1 mb-5">Đăng nhập</button>
+      </div>
+    </form>
+    <form *ngIf="signup" (ngSubmit)="Signup()" validate [formGroup]="formSignup">
+      <div class="container">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Tên đăng nhập</label>
+          <input formControlName="username" type="email" class=" form-control form-control-lg" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Mật khẩu</label>
+          <input formControlName="password1" type="password" class="form-control form-control-lg" placeholder="Password">
+          <span *ngIf="formSignup.controls.password1.errors" style="color:red !important">Mật khẩu phải dài ít nhất 8 kí tự</span>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Nhập lại mật khẩu</label>
+          <input formControlName="password2" type="password" class="form-control form-control-lg" placeholder="Password">
+          <span *ngIf="!samePassword" style="color:red !important">Mật khẩu này không đúng</span>          
+        </div>
+        <label>Đã có tài khoản?
+          <button (click)="signup = false">Đăng nhập</button>
+        </label>
+        <br>
+        <button [disabled]="formSignup.invalid" type="submit" class="btn btn-success float-right mx-1 mb-5">Đăng kí</button>
+      </div>
+    </form>
   </div>
-  
+  <p class="float-right mx-3" style="color:red">Lưu ý: Phần mềm này được thực hiện và triển khai nhằm mục đích thực hành, do đó tính bảo mật của phần mềm chưa thực sự tốt. Vì vậy khi đăng kí tài khoản mới, bạn không nên dùng mật khẩu hoặc tên đăng nhập giống với các tài khoản facebook, gmail, ... của bạn</p>
 </div>

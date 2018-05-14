@@ -98,6 +98,7 @@ var control = {
             })
     },
     createNewCardCollection: function (req, res) {
+        console.log(req.body);
         database.insertCardColection({
             title: req.body.title,
             avatar: req.body.avatar,
@@ -110,8 +111,18 @@ var control = {
             database.insertCard(listCard)
                 .then(
                     r => {
-                        res.status(201);
-                        res.send();
+                        database.insertUser_Collection(req.body.userName,collectionID).then( result=>{
+                            res.status(201);
+                            res.send();
+                        })
+                        .catch(
+                            e => {
+                                console.log(e);
+                                res.status(500);
+                                res.send();
+                            }
+                        )
+                        
                     }
                 )
                 .catch(e => {

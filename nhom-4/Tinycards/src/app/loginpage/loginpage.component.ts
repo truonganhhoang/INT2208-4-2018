@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 export class LoginpageComponent implements OnInit {
   signup:boolean=false;
+  samePassword:boolean=true;
   formLogin: FormGroup;
   formSignup:FormGroup;
   constructor(private _fb: FormBuilder, private dataService : DataService,private router: Router) { }
@@ -26,11 +27,21 @@ export class LoginpageComponent implements OnInit {
     }).catch( e => console.log(e))
   }
   Signup(){
-    console.log(this.formSignup.value);
-    this.dataService.signUp(this.formSignup.value)
-    .then(r => {
-      console.log(r)
-    }).catch( e => console.log(e))
+    // console.log(this.formSignup.value);
+    if(this.formSignup.value.password1 == this.formSignup.value.password2){
+      this.dataService.signUp(this.formSignup.value)
+      .then(r => {
+        if(r){
+        window.alert("đăng kí tài khoản mới thành công");
+        this.signup=false;
+        }else{
+          window.alert("Đăng kí tài khoản thất bại, hãy thử sử dụng tên đăng nhập khác");
+        }
+      }).catch( e => window.alert("Đăng kí tài khoản thất bại, hãy thử sử dụng tên đăng nhập khác"));
+    }else{
+      this.samePassword = false;
+    }
+    
   }
 
   ngOnInit() {
