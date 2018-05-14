@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
@@ -16,4 +17,24 @@ app.controller("myCtl", function($scope) {
 </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+<div ng-app="myAp" ng-controller="myCtl">
+{{ firstName + " " + lastName }}
+</div>
+
+<script>
+var app = angular.module("myAp", []);
+app.controller("myCtl", function($scope) {
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
+});
+</script>
+
+</body>
+>>>>>>> c65cf1a6cb3051a59e512043cd98683b2d07b006
 </html>

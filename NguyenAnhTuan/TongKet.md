@@ -26,4 +26,15 @@
   * [Bootstrap](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/NguyenAnhTuan/Tuhoc-Bootstrap) và qua [Khóa học Bootstrap](https://drive.google.com/drive/u/1/folders/0Bxtai1f5Fda1UThDbU5GYlJvSTQ)
   * Hoàn thành [Khóa học Software Engineering](https://github.com/truonganhhoang/INT2208-4-2018/tree/master/NguyenAnhTuan/BT-SoftEng) bao gồm: Bài giảng, Question và Quiz.
 
+<<<<<<< HEAD
 4. Chấm điểm chéo:
+=======
+4. Chấm điểm chéo:
+- Người chấm: Tống Lý Trinh
+- Điểm 10/10
+- Nhận xét: + tham gia làm bài tập nhóm đầy đủ
++ tự học khóa học Software Engineering:Introduction tốt
++ tự học các ngôn ngữ, framework tốt
+
+
+>>>>>>> c65cf1a6cb3051a59e512043cd98683b2d07b006

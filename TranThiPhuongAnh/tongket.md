@@ -10,3 +10,12 @@ Họ Và Tên: Trần Thị Phương Anh
 	+ Làm slide phần Low level desgin: https://github.com/truonganhhoang/SoftEng/blob/master/low-level-design/PITCHME.md
 3. Phần tự học
 	+ HTML, CSS, bootstrap, JavaScript trên : https://www.w3schools.com và UET Codecamp
+<<<<<<< HEAD
+=======
+4. Điểm chấm chéo: 
+	+ Người chấm: Nguyễn Hoàng Anh
+	+ Điểm: 4
+	+ Nhận xét: 
+		* Ưu điểm: Có các bài tập nhóm và liệt kê bài tập tự học.
+		* Nhược điểm: Không có bài tập cá nhân bắt buộc trên Software Engineering Introduction, link dẫn chứng của bài tập tự học không có ý nghĩa và định dạng file tổng kết bị sai.
+>>>>>>> c65cf1a6cb3051a59e512043cd98683b2d07b006

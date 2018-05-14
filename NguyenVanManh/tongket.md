@@ -22,3 +22,10 @@ II. Bài tập nhóm:
 - Đề tài : memrise
 -Link btl : https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-11
 - Dịch khóa học phần thiết kế cấp thấp và làm slide.
+<<<<<<< HEAD
+=======
+
+- Người chấm: Trần Quang Linh
+- Điểm 7.5
+- Nhận xét: tự học html, css, javascript, bootstrap tốt, tham gia làm slide + bài tập lớn cho nhóm nhưng chưa làm bài tập trên EDX
+>>>>>>> c65cf1a6cb3051a59e512043cd98683b2d07b006
