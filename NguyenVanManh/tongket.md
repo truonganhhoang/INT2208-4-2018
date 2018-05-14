@@ -32,3 +32,11 @@ II. Bài tập nhóm:
 - Người chấm: Trần Quang Linh
 - Điểm 7.5
 - Nhận xét: tự học html, css, javascript, bootstrap tốt, tham gia làm slide + bài tập lớn cho nhóm nhưng chưa làm bài tập trên EDX
+
+
+- Người chấm: Đỗ Huy Linh   
+- Điểm: 8
+- Nhận xét: 
+    - Tự học thêm các kiến thức bổ trợ : html, css, bootstrap, javascript
+    - Tham gia làm bài tập thuyết trình và bài tập lớn 
+    - Chưa có thông tin bài tập cá nhân Edx
