@@ -8,12 +8,11 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { CardComponent } from './card/card.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LearnpageComponent } from './learnpage/learnpage.component';
-import { ProfilepageComponent } from './profilepage/profilepage.component';
 import { AppRoutingModule } from './app-routing.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CreateCardComponent } from './create-card/create-card.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CardInputComponent } from './card-input/card-input.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 
 @NgModule({
@@ -23,9 +22,8 @@ import { CardInputComponent } from './card-input/card-input.component';
     CardComponent,
     HomepageComponent,
     LearnpageComponent,
-    ProfilepageComponent,
     CreateCardComponent,
-    CardInputComponent,
+    LoginpageComponent,
   ],
   imports: [
     BrowserModule,

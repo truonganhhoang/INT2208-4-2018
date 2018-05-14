@@ -10,7 +10,7 @@
               [src]="newCardCollection.value.avatar" alt="">
             <select style="font-size: 15px; border-radius:5px" class="float-right" formControlName="typeAvatar">
               <option ngValue="img">Link ảnh</option>
-              <option selected ngValue="text">Văn bản</option>
+              <option  ngValue="text">Văn bản</option>
             </select>
             <input class="form-control" type="text" formControlName="avatar" placeholder="Văn bản hoặc đường dẫn ảnh">
 
@@ -26,7 +26,7 @@
             <img *ngIf='newCardCollection.value.cards[i].typeFront == "img" ' class="float-left" style="width:150px; height:200px; border:1px solid; border-radius:10px"
               [src]="newCardCollection.value.cards[i].front" alt="">
             <select style="font-size: 15px; border-radius:5px; margin:auto" class="float-right" formControlName="typeFront">
-              <option selected ngValue="img">Link ảnh</option>
+              <option ngValue="img">Link ảnh</option>
               <option ngValue="text">Văn bản</option>
             </select>
             <input class="form-control" type="text" formControlName="front" placeholder="Văn bản hoặc đường dẫn ảnh">
@@ -37,14 +37,13 @@
               [src]="newCardCollection.value.cards[i].back" alt="">
             <select style="font-size: 15px; border-radius:5px" class="float-right" formControlName="typeBack">
               <option ngValue="img">Link ảnh</option>
-              <option selected ngValue="text">Văn bản</option>
+              <option ngValue="text">Văn bản</option>
             </select>
             <input class="form-control" type="text" formControlName="back" placeholder="Văn bản hoặc đường dẫn ảnh">
           </div>
           <button type="button" class="btn btn-danger btn-sm" style="position: relative;margin:auto;height:30px" (click)="deleteRow(i)">Xóa</button>
           <p style="display: inline" class="mx-3">-------------</p>
         </div>
-
       </div>
       <button type="button" class="btn btn-primary float-right mt-3" (click)="addNewRow()">Thêm</button>
     </div>

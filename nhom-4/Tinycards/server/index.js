@@ -14,13 +14,17 @@ app.use((req, res, next) => {   // hỗ trợ nhận request post/get chứa coo
   next();
 });
 
-app.get("/",(req,res) => res.send("hadfadfasdfsdf"));
-app.get("/list/CardCollection",(req,res)=> control.sendListCardColection(res));
-app.get("/CardCollection/cardID=:cardID",(req,res)=> control.sendCardCollection(req,res));
-app.post("/newCardCollection",(req,res)=> control.createNewCardCollection(req,res) )
+app.get("/", (req, res) => res.send("hadfadfasdfsdf"));
+app.get("/list/CardCollection", (req, res) => control.sendListCardColection(res));
+app.get("/list/FavoriteCardCollection/userName=:userName", (req, res) => control.sendListFavoriteCollectionCardColection(req,res));
+app.get("/CardCollection/cardID=:cardID", (req, res) => control.sendCardCollection(req, res));
+app.get("/addFavorite/collectionID=:collectionID/userName=:userName", (req,res)=> control.addFavoriteForUser(req,res));
+app.get("/removeFavorite/collectionID=:collectionID/userName=:userName", (req,res)=> control.removeFavoriteForUser(req,res));
+app.post("/newCardCollection", (req, res) => control.createNewCardCollection(req, res));
+app.post("/signup", jsonParser, (req, res) => control.signUp(req, res));
+app.post("/login", jsonParser, (req, res) => control.logIn(req, res));
 
 
 app.listen(9000, function () {
-    console.log("server dang chay");
-  });
-  
+  console.log("server dang chay");
+});

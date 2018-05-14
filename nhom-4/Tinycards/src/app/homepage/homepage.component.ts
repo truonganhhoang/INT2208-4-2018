@@ -1,5 +1,6 @@
 import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 import { DataService } from '../data.service';
+import { getCookie } from '../Cookiee';
 
 @Component({
   selector: 'app-homepage',
@@ -9,15 +10,28 @@ import { DataService } from '../data.service';
 })
 export class HomepageComponent implements OnInit {
   errServer: boolean;
-  @Output() waitForOtherPage= new EventEmitter<string>();
+  logedIn:boolean;
   
   constructor( private dataService : DataService) { }
   Cards:any;
+  FavoriteCards:any;
   ngOnInit() {
+    this.logedIn =(getCookie("userName") != null)?true:false
     this.dataService.getListCardCollection().then(
       res => {
         console.log(res);
         this.Cards= res;
+      }
+    )
+    .catch(e => {
+      this.errServer = true
+    })
+
+    this.dataService.getListFavoriteCollection()
+    .then(
+      res => {
+        console.log(res);
+        this.FavoriteCards = res;
       }
     )
     .catch(e => {

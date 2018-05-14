@@ -1,15 +1,15 @@
 import { NgModule, } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
-import { ProfilepageComponent } from './profilepage/profilepage.component';
 import { LearnpageComponent } from './learnpage/learnpage.component';
 import { CreateCardComponent } from './create-card/create-card.component';
+import { LoginpageComponent } from './loginpage/loginpage.component';
 
 const routes: Routes = [
     {path:"home", component:HomepageComponent},
-    {path:"profile",component:ProfilepageComponent},
-    {path:"learn/:id",component:LearnpageComponent},
+    {path:"learn/:type/:id",component:LearnpageComponent},
     {path:"create",component:CreateCardComponent},
+    {path:"login",component:LoginpageComponent},    
     {path:"", redirectTo:"home",pathMatch:"full"},
     {path:"**",redirectTo:"home",pathMatch:"full"}
 ];

@@ -1,16 +1,20 @@
 <div style="background-color:whitesmoke">
-  <button class="my-3 mx-5" routerLink="/home">X</button>
+  <button class="btn btn-danger my-3 mx-5" routerLink="/home">X</button>
+  <button *ngIf="!favorite" (click)="addToFavorite()" class=" btn btn-primary float-right my-3 mx-5">Thêm vào mục yêu thích</button> 
+  <button *ngIf="favorite" (click)="removeOfFavorite()" class=" btn btn-danger float-right my-3 mx-5">Xóa khỏi mục yêu thích</button>     
   <div class="row">
     <div class="col col-sm-offset-3"></div>
     <div class="col">
       <label>
-        <input type="checkbox"/>
+        <input type="checkbox" />
         <div class="card">
-          <div class="front" >
-            <img id="imgFront" src="{{front}}">
+          <div class="front">
+            <h2 *ngIf='typeFront=="text"'>{{front}}</h2>
+            <img *ngIf='typeFront=="img"' id="imgFront" src="{{front}}">
           </div>
           <div class="back">
-            <h2 class="center-text">{{back}}</h2>
+            <img *ngIf='typeBack=="img"' id="imgFront" src="{{back}}">
+            <h2 *ngIf='typeBack=="text"'>{{back}}</h2>
           </div>
         </div>
         <button *ngIf="!isLast" class="btn btn-success my-3 float-left" (click)="backCard()">Back</button>

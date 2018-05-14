@@ -6,6 +6,7 @@ import { Component, Output, EventEmitter,Input } from '@angular/core';
 })
 export class CardComponent {
   @Input() cardTitle:string;
-  @Input() linkToImg:string;   
+  @Input() avatar:string;
+  @Input() typeAvatar:string;   
   constructor() { }
 }

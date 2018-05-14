@@ -13,32 +13,12 @@ export class CreateCardComponent implements OnInit {
   context: CanvasRenderingContext2D;
   fileAvatar: File;
   @ViewChild("avatar") avatar;
-  readURL(event) {
-    let canvas = this.avatar.nativeElement;
-    let context = canvas.getContext('2d');
-    context.clearRect(0, 0, 240, 300);
-    this.fileAvatar = (event.target.files[0].size <= 2000000) ? event.target.files[0] : null;
-    // console.log(this.fileAvatar);
-    var reader = new FileReader();
-    reader.onload = function (e: any) {
-      if (parseInt(e.total) > 2000000) {
-        console.log("quá dung lượng");
-        window.alert("File bạn tải lên vượt quá dung lượng cho phép, vui lòng chọn hình ảnh dưới 2 MB")
-        return;
-      }
-      var img = new Image();
-      img.onload = function () {
-        context.drawImage(img, 0, 0, 240, 300);
-      }
-      img.src = e.target.result;
-    }
-    reader.readAsDataURL(event.target.files[0])
-  }
+
   createItem(): FormGroup {
     return this.formBuilder.group({
       front: ['',Validators.required],
       back: ['',Validators.required],
-      typeFront: ['img', Validators.required],
+      typeFront: ['text', Validators.required],
       typeBack: ['text', Validators.required],
     });
   }
@@ -71,7 +51,7 @@ export class CreateCardComponent implements OnInit {
     this.newCardCollection = this.formBuilder.group({
       title: ['', Validators.required],
       avatar: ['', Validators.required],
-      typeAvatar: ['img', Validators.required],
+      typeAvatar: ['text', Validators.required],
       cards: this.formBuilder.array([this.createItem()])
     })
   }
