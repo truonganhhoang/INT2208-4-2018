@@ -1,0 +1,57 @@
+<div class="index-body">	
+  <div class="row header-top">
+    <div class="col-xs-4 col-sm-4 col-md-7 logo">
+      <%= link_to root_path do %>
+        <img src="https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/logo.png?raw=true"/>
+      <% end %>
+    </div>
+  </div>
+  <div class="container container-max">
+    <header>
+      <div class="row header-title">
+        <div class="title">
+          <span class="title-center"><span class="light white">Welcome to </span><span class="bold white">TinyCards</span></span>
+          <p class="regular white">Learn anything with fun flashcards by Duolingo</p>
+        </div>
+      </div>
+    </header>
+    
+    <section>
+      <div id = "portfolio">
+        <div class="row portfolio-title">
+          <h3 class="regular">Choose topic for your lesson.</h3>
+        </div>
+        <div class="row portfolio-list-btn">
+          <% @categories.each do |cate| %>
+            <div class="col-xs-12 col-sm-12 col-md-3 portfolio-btn">
+              <%= link_to cate.title, category_path(cate), class: "btn button" %>
+            </div>
+          <% end %>
+        </div>
+        <div class="row portfolio-list-icon">
+          <% @card_sets.each do |cs| %>
+            <div class="col-xs-18 col-sm-6 col-md-3">
+              <div class="thumbnail">
+                <div class="col-xs-12 portfolio-icon">
+                  <%= link_to(image_tag(cs.avatar_url, alt: cs.title), card_set_path(cs)) %>
+                </div>
+                <div class="caption">
+                  <h4><%= cs.title %></h4>
+                </div>
+                <p><%= cs.description %></p>
+                <%= link_to "Learn", card_set_path(cs), class: "btn btn-info btn-xs" %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer">
+        <div class="col-xs-12 col-sm-6 footer-left">
+          <p class="regular">© Copyright 2018  |  Created by Team 6</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>

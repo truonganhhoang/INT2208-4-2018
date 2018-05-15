@@ -1,0 +1,15 @@
+﻿	Họ và tên: Lê Hồng Hội
+	Mã sinh viên: 15021390
+* Đóng góp thuyết trình: tìm hiểu phần đầu của APIs
+* Bài tập cá nhân:
+* High Level Design: https://github.com/truonganhhoang/INT2208-4-2018/blob/master/LeHongHoi/BaiTapCaNhan/screencapture-courses-edx-org-courses-course-v1-UBCx-SoftEng1x-1T2018-courseware-2042a4ecd013433ab5a1c552560617f4-c002db65a816469f92fb2cb48db1eb1b-1-2018-05-08-23_02_38.png
+* Low Level Design: https://github.com/truonganhhoang/INT2208-4-2018/blob/master/LeHongHoi/BaiTapCaNhan/screencapture-courses-edx-org-courses-course-v1-UBCx-SoftEng1x-1T2018-courseware-7d0289438e6a4d6491f2b0adbc48763a-7dafa8b79a684689889061f8c747feb6-1-2018-05-08-23_05_51.png
+* Testing:
+* Construction:
+* Process:
+* Specifications:
+* Note: ảnh dẫn chứng cho phần Testing, construction, process, Specifications đã pull request nhưng thầy chưa merge nên chưa có trên git
+* Nội dung tự học: tự học Javascript, html css trên codecedemy
+* Chấm điểm:
+* 
+

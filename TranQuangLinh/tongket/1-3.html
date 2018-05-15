@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tinycards_N4</title>
+    <!-- icon -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:#F7F7F7">
+    <!-- navigation bar -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary ">
+        <div class="container">
+            <a class="collapse navbar-collapse" style="max-width:11em" href="1.html">
+                <h3 style="color:#FFFFFF">Tinycards_N4</h3>
+            </a>
+            <!-- search box -->
+            <form class="collapse navbar-collapse form-inline" style="max-width:250px; max-height:50px" id="navbarSearch">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </input>
+                <button class="btn btn-success" type="submit">
+                    <span class="ion-ios-search-strong"></span>
+                </button>
+            </form>
+            <!-- <div id="navbarIcon"> -->
+            <!-- Home icon -->
+            <a class="mx-auto navbar-toggler ion-ios-home-outline" href="1.html" role="button" id="homeIcon"></a>
+            <!-- search icon -->
+            <button class=" mx-auto navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch" aria-controls="navbarSearch"
+                aria-expanded="true" data-dismiss="navbar-toggler" onclick="hideIcon()" id="searchIcon">
+                <span class="ion-ios-search-strong"></span>
+            </button>
+            <script>
+                function hideIcon() {
+                    document.getElementById("homeIcon").style.display = "none";
+                    document.getElementById("searchIcon").style.display = "none";
+                    document.getElementById("createIcon").style.display = "none";
+                    document.getElementById("profileIcon").style.display = "none";
+                }
+            </script>
+            <!-- Create icon -->
+            <a class="mx-auto navbar-toggler ion-android-add" href="1-1.html" role="button" id="createIcon"></a>
+            <!-- Profile icon -->
+            <a class="mx-auto navbar-toggler ion-android-contact" href="1-3.html" role="button" id="profileIcon"></a>
+            <!-- </div> -->
+            <!-- Menu -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-auto">
+                        <a class="nav-link ion-ios-home-outline" href="1.html"> Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ion-android-add " href="1-1.html"> Create </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link ion-android-contact" href="1-3.html"> Profile </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
+        <div class="row">
+            <!-- user info -->
+            <div class="col-md-4 mt-5">
+                <div class="row  mx-auto">
+                    <div class="col-xs-4 mx-auto">
+                        <img class="d-block d-md-none rounded-circle mt-1" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
+                            width="90px" height="90px">
+                        <img class="d-none d-md-block d-xl-none rounded-circle mt-4" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image"
+                            width="130px" height="130px">
+                        <img class="d-none d-xl-block rounded-circle mt-5" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                alt="Generic placeholder image" width="150px" height="150px">
+                    </div>
+                    <div class="col-xs-8 mx-auto mt-2">
+                        <h4 style="text-align:center" >User's Name</h4>        
+                        <p class="ml-3 float-left mt-2">Followers:<span class=" badge badge-light">6</span>
+                        </p>
+                        <p class="mr-3 float-right mt-2">Following:<span class=" badge badge-light">6</span>
+                        </p>
+
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <button type="button" class="btn btn-lg btn-block mt-3">
+                                 <span class="ion-ios-gear-outline"> SETTINGS</span>                         
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="btn btn-lg mt-3">
+                            <span class="ion-ios-upload-outline"></span>
+                        </button>
+                    </div>
+                </div>
+                       
+            </div>
+            <!-- deck, follower, following -->
+            <div class="col-md-8 mt-5" style="background-color:#FFFFFF">
+                <ul class="nav nav-pills my-2">
+                    <li>
+                        <a id="Decks_btn" data-toggle="pill" href="#DecksTab" role="button" class="btn">DECKS</a>
+                    </li>
+                    <li class="ml-2">
+                        <a data-toggle="pill" href="#FollowersTab" role="button" class="btn">FOLLOWERS</a>
+                    </li>
+                    <li class="ml-2">
+                        <a data-toggle="pill" href="#FollowingTab" role="button" class="btn">FOLLOWING</a>
+                    </li>
+                </ul>
+                <hr>
+                <!-- auto click decks button   -->
+                <script>
+                    jQuery(function () {
+                        jQuery('#Decks_btn').click();
+                    });
+                </script>
+                <!-- content -->
+                <div class="tab-content in active">
+                    <!-- decks tab -->
+                    <div id="DecksTab" class=" container tab-pane fade in active">
+                        <a href="#" class="my-5 mx-5">
+                            <div class="row">
+                                <div class="col-4 card">
+                                    <img class="card-img-top" src="img.jpeg">
+                                </div>
+                                <div class="col-8">
+                                    <h2>card title</h2>
+                                    <span class="ion-ios-star-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                    <span class="ion-ios-browsers-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="my-5 mx-5">
+                            <div class="row">
+                                <div class="col-4 card">
+                                    <img class="card-img-top" src="img.jpeg">
+                                </div>
+                                <div class="col-8">
+                                    <h2>card title</h2>
+                                    <span class="ion-ios-star-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                    <span class="ion-ios-browsers-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="my-5 mx-5">
+                            <div class="row">
+                                <div class="col-4 card">
+                                    <img class="card-img-top" src="img.jpeg">
+                                </div>
+                                <div class="col-8">
+                                    <h2>card title</h2>
+                                    <span class="ion-ios-star-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                    <span class="ion-ios-browsers-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="my-5 mx-5">
+                            <div class="row">
+                                <div class="col-4 card">
+                                    <img class="card-img-top" src="img.jpeg">
+                                </div>
+                                <div class="col-8">
+                                    <h2>card title</h2>
+                                    <span class="ion-ios-star-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                    <span class="ion-ios-browsers-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="my-5 mx-5">
+                            <div class="row">
+                                <div class="col-4 card">
+                                    <img class="card-img-top" src="img.jpeg">
+                                </div>
+                                <div class="col-8">
+                                    <h2>card title</h2>
+                                    <span class="ion-ios-star-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                    <span class="ion-ios-browsers-outline">
+                                        <span class=" badge badge-light">6</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div id="FollowersTab" class="tab-pane fade">
+                        <h3 style="color:cornflowerblue; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align:center">This user has no followers yet.</h3>
+                    </div>
+                    <div id="FollowingTab" class="tab-pane fade">
+                        day la tab 3
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
