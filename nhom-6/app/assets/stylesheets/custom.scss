@@ -1,0 +1,147 @@
+*{margin:0 ;padding:0;}
+h1,h2,h3,h4,h5,h6,ul,li,p{margin: 0;padding:0px;}
+li{list-style: none;float:left;}
+a{text-decoration: none;color:#000;}
+a:hover{text-decoration: none;}
+.row{margin:0px;padding:0px;}
+.index-body {
+	background: #000;
+}
+.regular{
+	margin-right: 30%;
+}
+.title-center{
+	margin-right: 30%;
+}
+.white{
+	color:white;
+}
+.container-max{
+	
+	padding:0px;
+}
+.header-top{
+	background: #43C1FF;
+}
+.logo{
+	padding:15px 0px 15px 30px;
+}
+.header-menu{
+	padding:28px 0px;
+	text-align:center;
+}
+.header-menu li{
+	padding:0px 5px;
+}
+.header-menu a{
+	padding:15px;
+	color:#000;
+}
+.header-menu a:hover{
+	background:#1bbc9b;
+	color:#fff;
+}
+
+.header-title{
+	background: url(https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/background.png?raw=true) no-repeat;
+	text-align: center;
+}
+.title{
+	padding: 10% 0px 10% 25%;
+}
+.title span{
+	font-size:55px;
+}
+.title p{
+	font-size: 18px;
+}
+.button{
+	background: #1bbc9b;
+	color:#fff;
+}
+
+#portfolio{
+	background:#fff;
+	text-align: center;
+	padding: 50px 0px;
+}
+.portfolio-title{
+	padding-bottom: 30px;
+	padding-left: 30%; 
+}
+.portfolio-title p{
+	font-size:16px;
+}
+.portfolio-list-btn{
+	margin:0 20%;
+	padding-bottom: 25px;
+}
+.portfolio-btn {
+	padding:5px 0px;
+}
+.portfolio-btn a:hover{
+	color:#fff;
+}
+.portfolio-icon{
+	padding:15px 0px;
+}
+.footer{
+	background:#2d3e50;
+	padding:20px 0px;
+}
+.footer-left{
+	font-size:14px;
+	color:#fff;
+}
+.footer-left p{
+	line-height: 45px;
+}
+
+.info-card {
+    	float: left;
+	margin: auto;
+	-webkit-perspective: 600px;
+}
+
+.front, .back {
+	background: #FFF;
+	border-radius: 10px;
+	transition: -webkit-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	border: 1px solid black;
+}
+
+.front {
+	overflow: hidden;
+	width: 250px;
+	height: 330px;
+	position: absolute;
+	z-index: 1;
+}
+
+.back {
+	padding: 20px;
+	padding-top: 0px;
+	width: 250px;
+	height: 330px;
+	-webkit-transform: rotateY(-180deg);
+	overflow: scroll;
+}
+
+.info-card:hover .back {
+	-webkit-transform: rotateY(0);
+}
+
+.info-card:hover .front {
+	-webkit-transform: rotateY(180deg);
+}
+
+.body-grey {
+	background: #F7F7F7;
+}
+
+.bg-light {
+	background: #fff !important;
+	border-radius: 5%;
+}
