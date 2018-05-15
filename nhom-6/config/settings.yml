@@ -1,0 +1,452 @@
+categories:
+  -
+    title: "Animal"
+  -
+    title: "Family"
+  -
+    title: "Music"
+  -
+    title: "Vocabs"
+card_sets:
+  -
+    title: "Dog Breeds"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Untitled-1.png?raw=true"
+    description: "Learn to recognize a handful of the most popular breeds of dogs."
+    category_id: 1
+  -
+    title: "Words To Describle People"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/person.jpg?raw=true" 
+    description: "Now you can use better words to describe your friends and family. I MIGHT make more like this." 
+    category_id: 2
+  -
+    title: "Important Musical Terms"
+    avatar_url: "https://raw.githubusercontent.com/truonganhhoang/INT2208-4-2018/master/nhom-6/img/img-1.png"
+    description: "These are terms that every musician should know when learning to play music."
+    category_id: 3
+  -
+    title: "English Vocabulary (Advanced)"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/vocabs.png?raw=true "
+    description: "For the sake of not receiving any more 'simple voice' comments on my written pieces."
+    category_id: 4
+collections:
+  -
+    title: 1
+    card_set_id: 1
+  -
+    title: 2
+    card_set_id: 1
+  -
+    title: 3
+    card_set_id: 1
+  -
+    title: 1
+    card_set_id: 2
+  -
+    title: 2
+    card_set_id: 2
+  -
+    title: 3
+    card_set_id: 2
+  -
+    title: 4
+    card_set_id: 2
+  -
+    title: 1
+    card_set_id: 3
+  -
+    title: 2
+    card_set_id: 3
+  -
+    title: 3
+    card_set_id: 3
+  -
+    title: 4
+    card_set_id: 3
+  -
+    title: 1
+    card_set_id: 4
+  -
+    title: 2
+    card_set_id: 4
+  -
+    title: 3
+    card_set_id: 4
+  -
+    title: 4
+    card_set_id: 4
+cards:
+  -
+    title: "Labrador Retriever"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Labrador%20Retriever.jpg?raw=true"
+    description: "The Labrador Retriever was bred to be both a friendly companion and a useful working dog breed. Historically, he earned his keep as a fisherman’s helper: hauling nets, fetching ropes, and retrieving fish from the chilly North Atlantic."
+    collection_id: 1
+  -
+    title: "Rottweiler"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Rottweiler.jpg?raw=true"
+    description: "Rottweilers were originally dogs bred to drive cattle to market. Later they were used to pull carts for butchers. They were among the earliest police dogs and serve with honor in the military."
+    collection_id: 1
+  -
+    title: "Chow Chow"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Chow%20Chow.jpg?raw=true"
+    description: "This distinctive-looking dog breed has a proud, independent spirit that some describe as catlike. He can be aloof — if you’re looking for a cuddle buddy."
+    collection_id: 1
+  -
+    title: "Husky Sibir"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Husky%20Sibir.jpg?raw=true"
+    description: "The Siberian Husky is a beautiful dog breed with a thick coat that comes in a multitude of colors and markings. Their blue or multi-colored eyes and striking facial masks only add to the appeal of this breed, which originated in Siberia."
+    collection_id: 1
+  -
+    title: "Dobermann"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Dobermann.jpg?raw=true"
+    description: "The Doberman Pinscher was developed in Germany during the late 19th century, primarily as a guard dog. His exact ancestry is unknown, but he’s believed to be a mixture of many dog breeds, including the Rottweiler, Black and Tan Terrier, and German Pinscher."
+    collection_id: 1
+  -
+    title: "Great Dane"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Great%20Dane.jpg?raw=true"
+    description: "Oh, baby! A Great Dane is truly a great dog breed — large and noble, commonly referred to as a gentle giant or as the “Apollo of dogs.” Apollo is the Greek god of the sun, the brightest fixture in the sky."
+    collection_id: 2
+  -
+    title: "Corgi"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Corgi.jpg?raw=true"
+    description: "Originally bred to herd cattle, sheep, and horses, the Pembroke Welsh Corgi is an active and intelligent dog breed."
+    collection_id: 2
+  -
+    title: "Shiba Inu"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Shiba%20Inu.jpg?raw=true"
+    description: "The Shiba Inu dog breed was originally bred to flush birds and small game, and was occasionally used to hunt wild boar."
+    collection_id: 2
+  -
+    title: "Havanese"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Havanese.jpg?raw=true"
+    description: "The Havanese dog breed has won many admirers with his long, silky hair, expressive eyes, and cuddly size. Bred as a companion dog to the Cuban aristocracy in the 1800s, he’s earned the nickname “Velcro dog” because he sticks so closely to his owner’s side."
+    collection_id: 2
+  -
+    title: "Dachshund"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Dachshund.jpg?raw=true"
+    description: "Dachshunds are scent hound dog breeds who were bred to hunt badgers and other tunneling animals, rabbits, and foxes. Packs of Dachshunds were even used to trail wild boar."
+    collection_id: 2
+  -
+    title: "American Eskimo Dog"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/american_eskimo1.jpg?raw=true"
+    description: "Called “the dog beautiful” by his admirers, the American Eskimo Dog, or “Eskie,” is a striking fellow with his white coat, sweet expression, and black eyes. He’s a Nordic dog breed, a member of the Spitz family."
+    collection_id: 3
+  -
+    title: "Bichon Frise"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/bichon_fries.jpg?raw=true"
+    description: "The Bichon Frise (pronounced BEE-shawn FREE-say; the plural is Bichons Frises) is a cheerful, small dog breed with a love of mischief and a lot of love to give."
+    collection_id: 3
+  -
+    title: "Basset Hound"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/Basset_hound.jpg?raw=true"
+    description: "The Basset dog breed was bred for hunting small game such as rabbits and is still used for this purpose in some parts of the country."
+    collection_id: 3
+  -
+    title: "Alaskan Klee Kai"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/alaska.jpg?raw=true"
+    description: "Small, smart, and energetic, the Alaskan Klee Kai is a relatively new breed that looks like a smaller version of the Siberian Husky, and even the name “Klee Kai” comes from an Inuit term meaning “small dog.”"
+    collection_id: 3
+  -
+    title: "Anatolian Shepherd Dog"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/dog_breeds/anatolianshepherddogs.jpg?raw=true"
+    description: "The Anatolian Shepherd Dog is a native of Turkey, where he was developed as a shepherd’s companion and livestock guardian."
+    collection_id: 3
+  -
+    title: "Cantankerous"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-1/cantankerous.jpg?raw=true"
+    description: "Arguing and complaining a lot."
+    collection_id: 4
+  -
+    title: "Jubilant"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-1/jubilant.jpg?raw=true"
+    description: "Feeling or expressing great happiness, especially because of a success."
+    collection_id: 4
+  -
+    title: "Judicious"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-1/judicious.jpg?raw=true"
+    description: "Having or showing reason and good judgment in making decisions."
+    collection_id: 4
+  -
+    title: "Courageous"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-1/courageous.jpg?raw=true"
+    description: "Having or showing courage."
+    collection_id: 4
+  -
+    title: "Melancholy"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-1/melancholy.jpg?raw=true"
+    description: "Feeling sad and unhappy."
+    collection_id: 4
+  -
+    title: "Benevolent"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-2/benevolent.jpg?raw=true"
+    description: "Kind and helpful."
+    collection_id: 5
+  -
+    title: "Canny"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-2/canny.jpg?raw=true"
+    description: "Thinking quickly and cleverly, especially in business or financial matters."
+    collection_id: 5
+  -
+    title: "Forthright"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-2/forthright.jpg?raw=true"
+    description: "(too) honest or direct in behaviour."
+    collection_id: 5
+  -
+    title: "Industrious"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-2/industrious.jpg?raw=true"
+    description: "An industrious person works hard."
+    collection_id: 5
+  -
+    title: "Innovative"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-2/innovative.jpg?raw=true"
+    description: "Using new methods or ideas."
+    collection_id: 5
+  -
+    title: "Ethical"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-3/ethical.jpg?raw=true"
+    description: "Relating to beliefs about what is morally right and wrong."
+    colleciton_id: 6
+  -
+    title: "Incisive"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-3/incisive.jpg?raw=true"
+    description: "Expressing an idea or opinion in a clear and direct way that shows good understanding of what is important."
+    colleciton_id: 6
+  -
+    title: "Knowledgeable"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-3/knowledgeable.jpg?raw=true"
+    description: "Knowing a lot."
+    colleciton_id: 6
+  -
+    title: "Tenacious"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-3/tenacious.jpg?raw=true"
+    description: "Holding tightly onto something, or keeping an opinion in a determined way."
+    colleciton_id: 6
+  -
+    title: "Vigorous"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-3/vigorous.jpg?raw=true"
+    description: "Healthy and strong."
+    colleciton_id: 6
+  -
+    title: "Apoplectic"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-4/aporetic.jpg?raw=true"
+    description: "Extremely and obviously angry."
+    collection_id: 7
+  -
+    title: "Ardent"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-4/ardent.jpg?raw=true"
+    description: "Showing strong feelings."
+    collection_id: 7
+  -
+    title: "Staunch"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-4/staunch.jpg?raw=true"
+    description: "Always loyal in supporting a person, organization, or set of beliefs or opinions."
+    collection_id: 7
+  -
+    title: "Ingenuous"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-4/ingenuous.jpg?raw=true"
+    description: "Honest, sincere, and trusting, sometimes in a way that seems silly."
+    collection_id: 7
+  -
+    title: "Perceptive"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/describe_people/people-4/perceptive.jpg?raw=true"
+    description: "Very good at noticing and understanding things that many people do not notice."
+    collection_id: 7
+  -
+    title: "Classical Music"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/classical.jpg?raw=true"
+    description: "Using an established form (for example a symphony ) and not played on electronic instruments. Classical music is generally considered to be serious and to have a lasting value."
+    collection_id: 8
+  -
+    title: "Country Music"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/country.jpg?raw=true"
+    description: "A type of music in the style of the traditional music of the southern and western U.S."
+    collection_id: 8
+  -
+    title: "Concert"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/concert.jpg?raw=true"
+    description: "A public performance of music. Eg: 'They're in concert at Wembley Arena'."
+    collection_id: 8
+  -
+    title: "National Anthem"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/national%20anthem.jpg?raw=true"
+    description: "The official song of a nation that is sung on special occasions. Eg: Vietnam National Anthem “Tien Quan Ca”."
+    collection_id: 8
+  -
+    title: "Techno Music"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/techno.jpg?raw=true"
+    description: "A type of fast, electronic dance music, typically with little or no singing. Eg: 'Techno is electric dance music'."
+    collection_id: 8
+  -
+    title: "Symphony"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/symphony.jpg?raw=true"
+    description: "A long complicated piece of music for a large orchestra, in three or four main parts. Eg: ‘Beethoven’s Fifth Symphony’."
+    collection_id: 9
+  -
+    title: "Instrument"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/instrument.jpg?raw=true"
+    description: "An object used for producing musical sounds, for example a piano or a drum. Eg: ‘Most pupils learn (to play) a musical instrument’."
+    collection_id: 9
+  -
+    title: "Saxophonist"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/saxophonist.jpg?raw=true"
+    description: "A person who plays the saxophone. Eg: 'He was Saxophonist'."
+    collection_id: 9
+  -
+    title: "Organist"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/organist.jpg?raw=true"
+    description: "A person who plays the organ. Eg: 'He was Organist'"
+    collection_id: 9
+  -
+    title: "Violinist"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/violinist.jpg?raw=true"
+    description: "A person who plays the violin. Eg: 'She is a Violinist'."
+    collection_id: 9
+  -
+    title: "Composer"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/composer.jpg?raw=true"
+    description: "A person who writes music, especially as a professional occupation. Eg: ‘Mozart was her favourite composer’."
+    collection_id: 10
+  -
+    title: "Musician"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/musician.jpg?raw=true"
+    description: "A person who plays a musical instrument, especially as a profession, or is musically talented. Eg: ‘your father was a fine musician’."
+    collection_id: 10
+  -
+    title: "Conductor"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/conductor.jpg?raw=true"
+    description: "A person who directs the performance of an orchestra or choir. Eg: 'He was appointed principal conductor of the Berlin Symphony Orchestra'."
+    collection_id: 10
+  -
+    title: "Drummer"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/drummer.jpg?raw=true"
+    description: "A person who plays a drum or drums. Eg: 'Great drummers understand that drums are not only a rhythm instrument, that they are melodic as well'"
+    collection_id: 10
+  -
+    title: "Pianist"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/pianist.jpg?raw=true"
+    description: "A person who plays the piano, especially professionally. Eg: 'Lessons have enabled her to appreciate the great pianists and the master composers'."
+    collection_id: 10
+  -
+    title: "Choir"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/choir.jpg?raw=true"
+    description: "A group of people who sing together, for example in church services or public performances. Eg: 'She sings in the school choir'."
+    collection_id: 11
+  -
+    title: "Brass Band"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/brass%20band.JPG?raw=true"
+    description: "A group of musicians who play brass instruments. Eg: 'The village brass band plays regular concerts'."
+    collection_id: 11
+  -
+    title: "Trombonist"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/trombonist.jpg?raw=true"
+    description: "A person who plays the trombone. Eg: 'He was Trombonist of the band'."
+    collection_id: 11
+  -
+    title: "Recording Studio"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/recording%20studio.jpg?raw=true"
+    description: "A room where radio or television programmes are recorded and broadcast from, or where music is recorded. Eg: 'She works in Recording Studio'"
+    collection_id: 11
+  -
+    title: "Stage"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/Music/stage.jpg?raw=true"
+    description: "A raised area, usually in a theatre, etc. where actors, dancers, etc. perform. Eg: 'They marched off stage to the sound of trumpets'."
+    collection_id: 11
+  -
+    title: "Intrepid"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-1/Intrepid.png?raw=true"
+    description: "Brave when faced with danger; fearless (adj.)"
+    collection_id: 12
+  -
+    title: "Furtive"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-1/Furtive.png?raw=true"
+    description: "Avoiding attention; secretive (adj.)"
+    collection_id: 12
+  -
+    title: "Umbrage"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-1/Umbrage.png?raw=true"
+    description: "Resentment; offence (n.)"
+    collection_id: 12
+  -
+    title: "Perusal"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-1/perusal.png?raw=true"
+    description: "An examination (n.)"
+    collection_id: 12
+  -
+    title: "Callous"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-1/Callous.png?raw=true"
+    description: "Insensitive and cruel; unfeeling for others (adj.)"
+    collection_id: 12
+  -
+    title: "Zenith"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-2/Zenith.png?raw=true"
+    description: "The highest point (n.)"
+    collection_id: 13
+  -
+    title: "Debase"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-2/Debase.png?raw=true"
+    description: "To lower the esteem of something; degrade (v.)"
+    collection_id: 13
+  -
+    title: "Acquiesce"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-2/Acquiesce.png?raw=true"
+    description: "To accept something without protesting (v.)"
+    collection_id: 13
+  -
+    title: "Elated"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-2/Elated.png?raw=true"
+    description: "An examination (n.)"
+    collection_id: 13
+  -
+    title: "Plethora"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-2/Plethora.png?raw=true"
+    description: "Excessive amount of something; abundance (n.)"
+    collection_id: 13
+  -
+    title: "Insular"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-3/Insular.png?raw=true"
+    description: "Ignorant and uninterested; narrow-minded (adj.)"
+    collection_id: 14
+  -
+    title: "Haughty"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-3/Haughty.png?raw=true"
+    description: "Disdainfully proud; arrogantly superior (adj.)"
+    collection_id: 14
+  -
+    title: "Inept"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-3/Inept.png?raw=true"
+    description: "Having no skill; unqualified (adj.)"
+    collection_id: 14
+  -
+    title: "Wanton"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-3/Wanton.png?raw=true"
+    description: "Lewd and lustful; immodest (adj.)"
+    collection_id: 14
+  -
+    title: "Vociferous"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-3/Vociferous.png?raw=true"
+    description: "Loud; boisterous (adj.)"
+    collection_id: 14
+  -
+    title: "Coerce"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-4/Coerce.png?raw=true"
+    description: "To make someone do something unwillingly (v.)"
+    collection_id: 15
+  -
+    title: "Gluttony"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-4/Gluttony.png?raw=true"
+    description: "Overindulgence in food; excessive eating (n.)"
+    collection_id: 15
+  -
+    title: "Incisive"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-4/Incisive.png?raw=true"
+    description: "Clear; direct (adj.)"
+    collection_id: 15
+  -
+    title: "Decry"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-4/Decry.png?raw=true"
+    description: "To criticize openly; publicly denounce (v.)"
+    collection_id: 15
+  -
+    title: "Nuance"
+    avatar_url: "https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/EngAdvanced/1-2-EngAdvanced-Learn-4/Nuance.png?raw=true"
+    description: "A subtle difference in meaning, expression, or tone (n.)"
+    collection_id: 15

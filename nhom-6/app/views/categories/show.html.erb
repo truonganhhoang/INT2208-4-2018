@@ -1,0 +1,32 @@
+<div class="row header-top">
+  <div class="col-xs-4 col-sm-4 col-md-7 logo">
+    <%= link_to root_path do %>
+      <img src="https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/logo.png?raw=true"/>
+    <% end %>
+  </div>
+</div>
+
+  <div class="container container-max">
+    <div id = "portfolio">
+      <div class="row portfolio-title">
+          <h3 class="regular">Tất cả các bộ thẻ thuộc topic <%= @category.title %></h3>
+      </div>
+      <div class="row portfolio-list-icon">
+        <% @category.card_sets.each do |cs| %>
+          <div class="col-xs-18 col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <div class="col-xs-12 portfolio-icon">
+                <%= link_to(image_tag(cs.avatar_url, alt: cs.title), card_set_path(cs)) %>
+              </div>
+              <div class="caption">
+                <h4><%= cs.title %></h4>
+              </div>
+              <p><%= cs.description %></p>
+              <%= link_to "Learn", card_set_path(cs), class: "btn btn-info btn-xs" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>    
+  </div>
+
