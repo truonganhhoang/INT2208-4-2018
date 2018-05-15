@@ -26,16 +26,17 @@ Tự học: HTML mức căn bản :https://github.com/anhphuongcac/INT2208-4-201
 + Phần tự học tốt, khóa học SoftEng chưa có dẫn chứng cụ thể.
 
 
--Người chấm: Phạm Văn Oánh
--Điểm: 8
--Nhận xét:
-+ Hoàn thành bài tập cá nhân và làm việc nhóm
-+ Phần tự học: tốt! có minh chứng cụ thể
-
-
 Người chấm: Phạm Văn Oánh
 - Điểm: 8
 - Nhận xét:
 + Hoàn thành tốt bài tập cá nhân và làm việc nhóm
 + Báo cáo đầy đủ.
 + Phần tự học:  có minh chứng cụ thể
+
+
+Người chấm: Cao Đức Huân
+- Điểm: 9
+- Nhận xét:
++ Hoàn thành bài tập cá nhân
++ Có tham gia làm việc nhóm
++ Phần tự học: có minh chứng
