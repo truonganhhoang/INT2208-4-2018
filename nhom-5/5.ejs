@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>5</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA_Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styleLearn.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styleTestGame.css">
+	
+</head>
+<body>
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top">
+	      	<div class="container">
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <div id="container">
+				        <a class="navbar-brand" href="">
+			            <img src="images/tiny1.png" width="40" height="34" class="img-responsive" alt="">
+			            </a>
+			            <a class="navbar-brand" href="">
+			            <img src="images/logo.png" width="120" height="34" class="img-responsive" alt="">
+			            </a>
+			        </div><!-- logo -->
+		        </div><!-- nav-header -->
+		        <div id="navbar" class="navbar-collapse collapse">
+			        <ul class="nav navbar-nav navbar-right">
+			            <li><a href="/"><font color="white"><i class="glyphicon glyphicon-home"> </i>HOME</font></a></li>
+			            <li><a href="/addTheme"><font color="white"><i class="glyphicon glyphicon-plus"></i>CREATE</font></a></li>
+			        </ul><!-- menu right -->
+	        	</div><!--/.nav-collapse -->
+	        </div>
+    	</nav> 
+    </div>
+	
+	<div class="rows">
+		<!-- <div class="col-md-1"></div> -->
+		<div class="col-md-4 col-md-offset-1">
+			<div class="panel panel-default">
+			  <div class="panel-body">
+			    <div class="thumbnail" id="themeThumbnail">
+					<!-- <img src="images/<%=cards[0].theme%>.jpg" id="img<%= cards[0].theme %>" class="img"> -->
+					<img src="images/<%=cards[0].theme%>.jpg" id="<%= cards[0].idTheme %>" class="img" alt="" onerror="if (this.src != 'images/default.jpg') this.src = 'images/default.jpg';">
+				</div>
+				<button type="button" class="btn btn-primary" id="name">
+					<b><%=cards[0].theme%></b>
+				</button>
+			  </div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<a href="/edit"><i class="glyphicon glyphicon-pencil"> </i>Edit</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7" >
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<%for(var i = 0; i < cards.length/3; i++){ %>
+						<div class="rows">
+							<%for(var j = 0; j < 3; j++){%>
+								<%if(i*3+j >= cards.length) break; %>
+							
+							    <div class="col-md-3">
+							    	<!-- <a href="#" data-toggle="popover" title="" data-content="Some content inside the popover"> -->
+							    		<div class="cardSmall" id="cardSmall" onclick="flip()">
+											<div class="frontSmall" id="frontSmall<%=cards[3*i+j].word%>"><%= cards[3*i+j].word %></div>
+								    		<div class="backSmall" id="backSmall<%=cards[3*i+j].mean%>"><%= cards[3*i+j].mean %></div>
+										</div>
+									<!-- </a> -->
+							    </div>
+							<%}%>
+							<div class="col-md-1">
+							</div>
+						</div>
+					<% }%>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.flip.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/learn.js"></script>
+	<script src="js/testGame.js"></script>
+
+</body>
+</html>

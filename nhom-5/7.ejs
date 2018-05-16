@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>7</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA_Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styleLearn.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styleTestGame.css">
+	
+
+</head>
+<body>
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top">
+	      	<div class="container">
+		        <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <div id="container">
+				        <a class="navbar-brand" href="">
+			            <img src="images/tiny1.png" width="40" height="34" class="img-responsive" alt="">
+			            </a>
+			            <a class="navbar-brand" href="">
+			            <img src="images/logo.png" width="120" height="34" class="img-responsive" alt="">
+			            </a>
+			        </div><!-- logo -->
+		        </div><!-- nav-header -->
+		        <div id="navbar" class="navbar-collapse collapse">
+			        <ul class="nav navbar-nav navbar-right">
+			            <li><a href="/"><font color="white"><i class="glyphicon glyphicon-home"> </i>HOME</font></a></li>
+			            <li><a href="/create"><font color="white"><i class="glyphicon glyphicon-plus"></i>CREATE</font></a></li>
+			        </ul><!-- menu right -->
+	        	</div><!--/.nav-collapse -->
+	        </div>
+    	</nav> 
+    </div>
+	
+	<div class="container">
+		<div>
+			<h3><span class="label label-default clickMe" for="textBox1" id="name">Theme</span></h3>
+	  		<input value="" type="text" id="textBox1" name="textBox1" class="blur" hidden>
+	  	</div>
+	  <div id="table" class="table-editable">
+	    <span class="table-add glyphicon glyphicon-plus"></span>
+	    <table class="table">
+	      <tr>
+	        <th>word</th>
+	        <th>mean</th>
+	        <th></th>
+	        <th></th>
+	      </tr>
+	      
+	      <tr>
+	        <td contenteditable="true">word1</td>
+	        <td contenteditable="true">mean1</td>
+	        <td>
+	          <span class="table-remove glyphicon glyphicon-remove"></span>
+	        </td>
+	        <td>
+	          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+	          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+	        </td>
+	      </tr>
+	      
+	      <!-- This is our clonable table line -->
+	      <tr class="hide">
+	        <td contenteditable="true">Untitled</td>
+	        <td contenteditable="true">undefined</td>
+	        <td>
+	          <span class="table-remove glyphicon glyphicon-remove"></span>
+	        </td>
+	        <td>
+	          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+	          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+	        </td>
+	      </tr>
+	    </table>
+	  </div>
+	  
+	  <button id="export-btn" class="btn btn-primary">Create</button>
+	  <p id="export"></p>
+	</div>
+	
+<!-- ////////////////////////////////////////////////////////-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.flip.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/createTheme.js"></script>
+	
+</body>
+</html>
