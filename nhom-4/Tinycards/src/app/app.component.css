@@ -1,11 +1,11 @@
-.main{
-    background-color: rgb(231, 231, 231);
-    height: 100%;
+body{
+    /* background-color: rgb(231, 231, 231); */
 }
 
 .container{
-    background-color: white;
+    background-color: white !important;
     padding: 2%;
     border-radius: 10px;
+    z-index: 99999999999;
 }
 

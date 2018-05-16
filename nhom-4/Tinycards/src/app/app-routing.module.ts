@@ -17,7 +17,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)],
+    RouterModule.forRoot(routes,{useHash:true})],
   providers: [ UserGuard
   ],
   exports: [RouterModule],

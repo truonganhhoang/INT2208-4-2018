@@ -9,24 +9,24 @@
         <input type="checkbox" />
         <div class="card">
           <div class="front">
-            <div class="area">
+            <div *ngIf='typeFront=="text"' class="area">
               <div class="bubble">
-                <p *ngIf='typeFront=="text"'>{{front}}</p>
+                <p>{{front}}</p>
               </div>
             </div>
-            <img *ngIf='typeFront=="img"' id="imgFront" src="{{front}}">
+            <img *ngIf='typeFront=="img"' src="{{front}}">
           </div>
           <div class="back">
-            <img *ngIf='typeBack=="img"' id="imgFront" src="{{back}}">
-            <div class="area">
-                <div class="bubble">
-            <p *ngIf='typeBack=="text"'>{{back}}</p>
+            <img *ngIf='typeBack=="img"' src="{{back}}">
+            <div *ngIf='typeBack=="text"' class="area">
+              <div class="bubble">
+                <p>{{back}}</p>
+              </div>
+            </div>
           </div>
         </div>
-          </div>
-        </div>
-        <button *ngIf="!isLast" class="btn btn-success my-3 float-left" (click)="backCard()">Back</button>
-        <button *ngIf="!isFirst" class="btn btn-success my-3 float-right" (click)="nextCard()">Next</button>
+        <button *ngIf="!isFirst" class="btn btn-success my-3 float-left" (click)="backCard()">Back</button>
+        <button *ngIf="!isLast" class="btn btn-success my-3 float-right" (click)="nextCard()">Next</button>
       </label>
     </div>
     <div class="col col-sm-offset-3"></div>

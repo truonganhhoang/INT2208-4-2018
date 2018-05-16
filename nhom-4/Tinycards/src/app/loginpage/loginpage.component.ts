@@ -17,14 +17,14 @@ export class LoginpageComponent implements OnInit {
   formSignup:FormGroup;
   constructor(private _fb: FormBuilder, private dataService : DataService,private router: Router) { }
   Login(){
-    console.log(this.formLogin.value);
+    // console.log(this.formLogin.value);
     this.dataService.logIn(this.formLogin.value)
     .then(r => {
       console.log(r);
       setCookie("userName",r.userName,2);
       this.router.navigate(["/home"]);
       window.location.reload();
-    }).catch( e => console.log(e))
+    }).catch( e => window.alert("Server xảy ra sự cố, vui lòng thử lại sau"))
   }
   Signup(){
     // console.log(this.formSignup.value);

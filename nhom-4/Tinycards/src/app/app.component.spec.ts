@@ -1,10 +1,20 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomepageComponent } from '../../img/src/app/homepage/homepage.component';
+import { CardComponent } from '../../img/src/app/card/card.component';
+import { LearnpageComponent } from './learnpage/learnpage.component';
+import { CreateCardComponent } from './create-card/create-card.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[AppRoutingModule],
       declarations: [
-        AppComponent
+        AppComponent,
+        HomepageComponent,
+        CardComponent,
+        LearnpageComponent,
+        CreateCardComponent
       ],
     }).compileComponents();
   }));

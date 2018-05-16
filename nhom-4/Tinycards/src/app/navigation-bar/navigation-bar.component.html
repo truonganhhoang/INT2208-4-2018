@@ -1,28 +1,35 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-    <a class="collapse navbar-collapse" style="max-width:11em" routerLink="/home">
-      <h3 style="color:#FFFFFF">Tinycards_N4</h3>
-    </a>
+  <a class="collapse navbar-collapse" style="max-width:11em" routerLink="/home">
+    <h3 style="color:#FFFFFF">Tinycards_N4</h3>
+  </a>
+
+  <!-- Home icon -->
+  <a class="mx-auto d-md-none navbar-toggler icon ion-md-home" routerLink="/home" role="button" style="color:white"></a>
+  <!-- Create icon -->
+  <a class="mx-auto d-md-none navbar-toggler icon ion-md-add" routerLink="/create" role="button" style="color:white"></a>
+  <a *ngIf="logedIn" class="mx-auto d-md-none navbar-toggler icon ion-md-log-out" style="color:white; outline:none" (click)="logOut()"
+    role="button"></a>
+  <a *ngIf="!logedIn" class="mx-auto d-md-none navbar-toggler icon ion-md-log-in" routerLink="/login" style="color:white; outline:none"
+    role="button"></a>
+
+  <!-- Profile icon -->
+  <!-- </div> -->
+  <!-- Menu -->
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav float-right">
+      <li class="nav-item mx-auto active">
+        <a class="nav-link ion-ios-home-outline" routerLink="/home"> Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link ion-android-add " routerLink="/create"> Create </a>
+      </li>
+    </ul>
     
-    <!-- Home icon -->
-    <a class="mx-auto d-md-none navbar-toggler ion-ios-home-outline" routerLink="/home" role="button" id="homeIcon"></a>
-    <!-- Create icon -->
-    <a class="mx-auto d-md-none navbar-toggler ion-android-add" routerLink="/create" role="button" id="createIcon"></a>
-    <!-- Profile icon -->
-    <a class="mx-auto d-md-none navbar-toggler ion-android-contact" routerLink="/profile"  role="button" id="profileIcon"></a>
-    <!-- </div> -->
-    <!-- Menu -->
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav">
-        <li class="nav-item mx-auto active">
-          <a class="nav-link ion-ios-home-outline" routerLink="/home"> Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ion-android-add " routerLink="/create"> Create </a>
-        </li>
-      </ul>      
-    </div>
-    <button *ngIf="!logedIn" class="btn btn-primary" routerLink="/login">Đăng nhập</button>
-    <div *ngIf="logedIn" class="nav-item">{{userName}}</div>
-    <button *ngIf="logedIn" class="btn btn-primary" (click)="logOut()">Đăng xuất</button>
-    
+  </div>
+
+  <button *ngIf="!logedIn" class="d-none d-md-block btn btn-primary" routerLink="/login">Đăng nhập</button>
+    <div *ngIf="logedIn" class="d-none d-md-block nav-item">{{userName}}</div>
+    <button *ngIf="logedIn" class="d-none d-md-block btn btn-primary" (click)="logOut()">Đăng xuất</button>
+
+
 </nav>

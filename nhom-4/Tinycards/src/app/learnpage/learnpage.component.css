@@ -52,13 +52,15 @@ input {
   position: absolute; 
   left: 0; 
   top: 0; 
-  width: 135px; 
+  width: 300px; 
   height: 84px; 
   display: table; 
 }
 
 .bubble p {
-  font-size: 60px;
+  font-size: 50px;
+  max-width: 300px;
+  word-wrap: break-word;
   display: table-cell; 
   vertical-align: middle; 
   text-align: center; 

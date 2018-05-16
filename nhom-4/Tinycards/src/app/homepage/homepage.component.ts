@@ -19,24 +19,27 @@ export class HomepageComponent implements OnInit {
     this.logedIn =(getCookie("userName") != null)?true:false
     this.dataService.getListCardCollection().then(
       res => {
-        console.log(res);
+        // console.log(res);
         this.Cards= res;
       }
     )
     .catch(e => {
       this.errServer = true
     })
+    if(this.logedIn){
 
     this.dataService.getListFavoriteCollection()
     .then(
       res => {
-        console.log(res);
+        // console.log(res);
         this.FavoriteCards = res;
       }
     )
     .catch(e => {
       this.errServer = true
     })
+  }
+    
   }
 
 }

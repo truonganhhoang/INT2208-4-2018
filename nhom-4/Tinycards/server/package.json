@@ -1,10 +1,13 @@
 {
   "name": "tinycards",
   "version": "1.0.0",
-  "description": "",
+  "description": "Server bai tap lon cong nghe phan mem",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "8.9.4"
   },
   "author": "",
   "license": "ISC",

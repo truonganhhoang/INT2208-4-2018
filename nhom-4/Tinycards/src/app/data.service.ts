@@ -5,7 +5,8 @@ import { getCookie } from './Cookiee';
 
 @Injectable()
 export class DataService {
-  myWebServer = "http://localhost:9000";
+  // myWebServer = "https://tinycard-n4-server.herokuapp.com";
+  myWebServer= "http://localhost:9000";
   constructor( private http:Http) { }
   logIn(value){
     let url=this.myWebServer+"/login";
@@ -28,7 +29,7 @@ export class DataService {
   }
   getListFavoriteCollection(){
     let url = this.myWebServer+"/list/FavoriteCardCollection/userName="+getCookie("userName");
-    console.log(getCookie("userName"));
+    // console.log(getCookie("userName"));
     return this.http.get(url)
     .toPromise()
     .then( res => res.json())
@@ -51,6 +52,7 @@ export class DataService {
   }
 
   sendNewCardCollection(value){
+    console.log(value);
     let url=this.myWebServer+"/newCardCollection";
     return this.http.post(url,value)
     .toPromise()

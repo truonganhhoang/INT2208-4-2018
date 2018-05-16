@@ -14,7 +14,7 @@ export class NavigationBarComponent implements OnInit {
   constructor() { }
 
   logOut(){
-    console.log("đã logout");
+    // console.log("đã logout");
     deleteAllCookies();
     this.logedIn= false;
     window.location.reload();

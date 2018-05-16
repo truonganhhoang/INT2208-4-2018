@@ -38,7 +38,7 @@ export class CreateCardComponent implements OnInit {
 
   sendNewCardCollection() {
     var body = this.newCardCollection.value;
-    console.log(body);
+    // console.log(body);
     let input: FormData = new FormData();
     input.append("userName", getCookie("userName"));
     input.append("title", body.title);
@@ -51,8 +51,8 @@ export class CreateCardComponent implements OnInit {
         window.alert("Tạo bộ thẻ mới thành công, bộ thẻ này sẽ được tự động thêm vào mục yêu thích của bạn");
         this.newCardCollection.reset();
       }
-      else{window.alert("Đã có lỗi xảy ra, vui lòng thử lại sau");}
-    }).catch(e => window.alert("Đã có lỗi xảy ra, vui lòng thử lại sau"));
+      else{window.alert("Đã có lỗi xảy ra ở phía server, vui lòng thử lại sau");}
+    }).catch(e => window.alert("Server không phản hồi, vui lòng thử lại sau"));
   }
   constructor(private formBuilder: FormBuilder, private dataService: DataService) { }
 

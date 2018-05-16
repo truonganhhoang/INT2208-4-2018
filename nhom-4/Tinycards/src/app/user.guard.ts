@@ -5,6 +5,7 @@ import { getCookie } from './Cookiee';
 
 @Injectable()
 export class UserGuard implements CanActivate {
+  
   constructor(private router: Router) { }
   
   canActivate(

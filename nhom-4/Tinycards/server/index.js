@@ -25,6 +25,4 @@ app.post("/signup", jsonParser, (req, res) => control.signUp(req, res));
 app.post("/login", jsonParser, (req, res) => control.logIn(req, res));
 
 
-app.listen(9000, function () {
-  console.log("server dang chay");
-});
+app.listen(process.env.PORT || 9000);
