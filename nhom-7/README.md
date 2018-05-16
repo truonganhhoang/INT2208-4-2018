@@ -27,4 +27,5 @@ npm install package
 ``` 
 node index.js
 ```
-- Vào [đây](http://localhost:3000/home) hoặc nhập localhost:3000 vào url để truy cập ứng dụng
+- Vào [đây](http://localhost:3000/home) hoặc nhập localhost:3000 vào url để truy cập ứng dụng.
+- Khi muốn dừng ứng dụng thì sử dụng tổ hợp phim `Ctr + C` tại cmd hoặc git bash
