@@ -15,7 +15,6 @@
 ```
 git clone https://github.com/truonganhhoang/INT2208-4-2018
 ```
-1. Dùng dòng lệnh sau để cài những thành phần cần thiết:
 - Dẫn đến folder nhom-7 qua cmd hoặc git bash
 ``` 
 cd INT2208-4-2018/nhom-7
@@ -24,8 +23,8 @@ cd INT2208-4-2018/nhom-7
 ```
 npm install package
 ```
-1. Cuối cùng là chạy ứng dụng:
-```
+- Cuối cùng là chạy ứng dụng:
+``` 
 node index.js
 ```
-- Nhập link localhost:3000/ vào url để truy cập ứng dụng
+- Vào [đây](localhost:3000) hoặc nhập localhost:3000 vào url để truy cập ứng dụng
