@@ -1,13 +1,37 @@
+<?php
+
+require_once ("Connection.php");
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: 1.1.php');
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>1.3</title>
+    <title>1.3.1.2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/1.3.css">
+    <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table, td, th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    th {text-align: left;}
+</style>
 </head>
 <body>
     
@@ -21,11 +45,11 @@
                         <ul class='navbar-nav'>
                             <li class='nav-item dropdown active'>
                                 <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-                                Username
+                                <?php echo $_SESSION['username']; ?>
                                 </a>
                                 <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-                                    <a class='dropdown-item' href='#'>Edit Profile</a>
-                                    <a class='dropdown-item' href='#'>Log out</a>
+                                    
+                                    <a class='dropdown-item' href='1.1.php'>Log out</a>
                                 </div>
                             </li>
                         </ul>
@@ -94,118 +118,29 @@
                     <!-- top-categories -->
 
                 </div>
-                <div class="col-sm-9">
-                    <div class="cate-detail" id="english">
-                        <h2>English</h2>
-                        <div class="grid">
-                            <figure class="effect-marley">
-                                <img src="../img/1.jpg" alt="img11"/>
-                                <figcaption>
-                                    <h2>Lession 1 : <span>Animal</span></h2>
-                                    <p>Listen and read vocabulary about animals</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="../img/2.jpg" alt="img12"/>
-                                <figcaption>
-                                    <h2>Lession 2 : <span>Job</span></h2>
-                                    <p>Listen and read career vocabulary.</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                        </div>
-                    </div>
-                    <!-- cate-detail English -->
-                    <div class="cate-detail" id="french">
-                        <h2>French</h2>
-                        <div class="grid">
-                            <figure class="effect-marley">
-                                <img src="../img/3.jpg" alt="img11"/>
-                                <figcaption>
-                                    <h2>Lession 1 : <span>Animal</span></h2>
-                                    <p>Listen and read vocabulary about animals</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="../img/4.jpg" alt="img12"/>
-                                <figcaption>
-                                    <h2>Lession 2 : <span>Job</span></h2>
-                                    <p>Listen and read career vocabulary.</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                        </div>
-                    </div>
-                    <!-- cate-detail French -->
-                    <div class="cate-detail" id="japanese">
-                        <h2>Japanese</h2>
-                        <div class="grid">
-                            <figure class="effect-marley">
-                                <img src="../img/5.jpg" alt="img11"/>
-                                <figcaption>
-                                    <h2>Lession 1 : <span>Animal</span></h2>
-                                    <p>Listen and read vocabulary about animals</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="../img/6.jpg" alt="img12"/>
-                                <figcaption>
-                                    <h2>Lession 2 : <span>Job</span></h2>
-                                    <p>Listen and read career vocabulary.</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                        </div>
-                    </div>
-                    <!-- cate-detail Japanese -->
-                    <div class="cate-detail" id="german">
-                        <h2>German</h2>
-                        <div class="grid">
-                            <figure class="effect-marley">
-                                <img src="../img/7.jpg" alt="img11"/>
-                                <figcaption>
-                                    <h2>Lession 1 : <span>Animal</span></h2>
-                                    <p>Listen and read vocabulary about animals</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="../img/8.jpg" alt="img12"/>
-                                <figcaption>
-                                    <h2>Lession 2 : <span>Job</span></h2>
-                                    <p>Listen and read career vocabulary.</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                        </div>
-                    </div>
-                    <!-- cate-detail German -->
-                    <div class="cate-detail" id="korean">
-                        <h2>Korean</h2>
-                        <div class="grid">
-                            <figure class="effect-marley">
-                                <img src="../img/9.jpg" alt="img11"/>
-                                <figcaption>
-                                    <h2>Lession 1 : <span>Animal</span></h2>
-                                    <p>Listen and read vocabulary about animals</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                            <figure class="effect-marley">
-                                <img src="../img/10.jpg" alt="img12"/>
-                                <figcaption>
-                                    <h2>Lession 2 : <span>Job</span></h2>
-                                    <p>Listen and read career vocabulary.</p>
-                                    <a href="#">View more</a>
-                                </figcaption>			
-                            </figure>
-                        </div>
-                    </div>
-                    <!-- cate-detail Korean -->
+                <div class="col-sm-9" style="margin-top: 50px">
+                    
+                <?php
 
+                    $sql = "SELECT word , mean, subject FROM vocabulary";
+
+                    $result = mysqli_query($conn, $sql);
+                    echo "<table>
+                    <tr>
+                    <th>Word</th>
+                    <th>Mean</th>
+                    <th>Subject</th>
+                    </tr>";
+                    while($row = mysqli_fetch_array($result)) {
+                        echo "<tr>";
+                        echo "<td>" . $row['word'] . "</td>";
+                        echo "<td>" . $row['mean'] . "</td>";
+                        echo "<td>" . $row['subject'] . "</td>";
+                        echo "</tr>";
+                    }
+                    echo "</table>";
+                    mysqli_close($conn);
+                    ?>
                 </div>
             </div>
         </div>
