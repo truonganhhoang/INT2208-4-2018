@@ -9,3 +9,23 @@
 
 - [Tài liệu bài tập lớn](https://docs.google.com/document/d/1VsnzuqYDXdrzQ1ElvVkF0h-0LJa8-F4TEy6Nqhkr-V0/edit)
 - [Trao đổi qua facebook](/nhom-7/workImgs)
+## Hướng dẫn cài đặt ứng dụng:
+1. Cài [nodejs](https://nodejs.org/en/)
+1. Sử dụng git để clone lại repo bằng dòng lệnh(cmd hoặc git bash):
+```
+git clone https://github.com/truonganhhoang/INT2208-4-2018
+```
+1. Dùng dòng lệnh sau để cài những thành phần cần thiết:
+- Dẫn đến folder nhom-7 qua cmd hoặc git bash
+``` 
+cd INT2208-4-2018/nhom-7
+``` 
+- Dùng lệnh sau để cài các thành phần cần thiết:
+```
+npm install package
+```
+1. Cuối cùng là chạy ứng dụng:
+```
+node index.js
+```
+- Nhập link localhost:3000/ vào url để truy cập ứng dụng
