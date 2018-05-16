@@ -10,7 +10,7 @@
 - [Tài liệu bài tập lớn](https://docs.google.com/document/d/1VsnzuqYDXdrzQ1ElvVkF0h-0LJa8-F4TEy6Nqhkr-V0/edit)
 - [Trao đổi qua facebook](/nhom-7/workImgs)
 ## Hướng dẫn cài đặt ứng dụng:
-1. Cài [nodejs](https://nodejs.org/en/)
+1. Cài [nodejs](https://nodejs.org/en/) và [git](https://git-scm.com/downloads)
 1. Sử dụng git để clone lại repo bằng dòng lệnh(cmd hoặc git bash):
 ```
 git clone https://github.com/truonganhhoang/INT2208-4-2018
