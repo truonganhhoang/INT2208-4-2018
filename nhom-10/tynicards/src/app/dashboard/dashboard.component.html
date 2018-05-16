@@ -1,2 +1,4 @@
-<p>This is dashboard</p>
-<button routerLink="/logout">Log out</button>
+<p>Your decks:</p>
+<div *ngFor="let deck of decks">
+    <a routerLink="/view/{{deck._id}}">{{ deck.title }} - {{ deck.description }}</a>
+</div>

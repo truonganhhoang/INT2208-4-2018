@@ -1,3 +1,31 @@
-<p>
-  edit works!
-</p>
+<p>Edit deck info</p>
+<div>
+Title <input type="text" [(ngModel)]="title" id="title">
+<br>
+Description <input type="text" [(ngModel)]="description" id="description">
+</div>
+<button>Save</button>
+<button>Cancel</button>
+<hr>
+<p>Add a new card here:</p>
+<div>
+  Front <input [(ngModel)]="newFront" type="text" id="front">
+  <br>
+  Back <input [(ngModel)]="newBack" type="text" id="back">
+  <br>
+  <button>Add card</button>
+</div>
+<hr>
+<p>All your cards</p>
+<!--
+<div *ngFor="card of cardsToAdd">
+
+    <button>Delete</button>
+  </div>
+  -->
+  <div *ngFor="let card of cardsToEdit">
+    Front <input [(ngModel)]="newFront" type="text" id="front">
+    <br>
+    Back <input [(ngModel)]="newBack" type="text" id="back">
+    <button>Delete</button>
+  </div>

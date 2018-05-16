@@ -18,6 +18,10 @@ interface loginStatusResponse {
   status: boolean
 }
 
+interface currentUserResponse {
+  username: String
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -55,5 +59,9 @@ export class AuthService {
 
   checkLoginStatus() {
     return this.http.get<loginStatusResponse>('/api/loginstatus');
+  }
+
+  getCurrentUser() {
+    return this.http.get<currentUserResponse>('/api/currentuser');
   }
 }

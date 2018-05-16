@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -14,6 +15,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AuthService } from './auth.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthGuard } from './auth.guard';
+import { DeckService } from './deck.service';
+import { ViewComponent } from './view/view.component';
+import { LearnComponent } from './learn/learn.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +29,14 @@ import { AuthGuard } from './auth.guard';
     CreateComponent,
     ProfileComponent,
     LogoutComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewComponent,
+    LearnComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -39,17 +46,14 @@ import { AuthGuard } from './auth.guard';
       {
         path: 'login',
         component: LoginComponent,
-        
       },
       {
         path: 'logout',
         component: LogoutComponent,
-        
       },
       {
         path: 'register',
         component: RegisterComponent,
-        
       },
       {
         path: 'create',
@@ -65,10 +69,25 @@ import { AuthGuard } from './auth.guard';
         path: 'dashboard',
         component: DashboardComponent,
         canActivate: [AuthGuard]
+      },
+      {
+        path: 'view/:deckId',
+        component: ViewComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'learn/:deckId/:lesson',
+        component: LearnComponent,
+        canActivate: [AuthGuard]
+      },
+      {
+        path: 'edit/:deckId',
+        component: EditComponent,
+        canActivate: [AuthGuard]
       }
     ])
   ],
-  providers: [AuthService, AuthGuard],
+  providers: [AuthService, AuthGuard, DeckService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

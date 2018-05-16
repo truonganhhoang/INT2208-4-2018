@@ -1,8 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const app = express()
 const session = require('express-session')
 const mongoose = require('mongoose')
+
+const app = express()
 
 app.use(session({
 	secret: 'donotgentleintothatgoodnight'
@@ -14,7 +15,8 @@ mongoose.Promise = Promise
 mongoose.connect('mongodb://localhost:27017/tynicardsdb')
 .then(() => console.log('Database server up'))
 
-const User = require('./models/users')	
+const User = require('./models/users')
+const Deck = require('./models/decks')
 
 app.post('/api/login', async (req, res) => {
 	const {username, password} = req.body
@@ -78,6 +80,71 @@ app.get('/api/loginstatus', (req, res) => {
 	res.json({
 		status: true
 	})
+	
+})
+
+app.get('/api/currentuser', (req, res) => {
+	res.json({
+		username: req.session.user
+	})
+})
+
+app.get('/api/getdecks', (req, res) => {
+	Deck.find({owner: req.session.user},  function (error, decks) {
+		if(!error) {
+			res.send(decks)
+		} else {
+			console.log(error)
+		}
+	})
+})
+
+app.post('/api/getdeckbyid', (req, res) => {
+	Deck.findById(req.body.id, function(error, deck) {
+		if(!error) {
+			res.send(deck)
+		} else {
+			console.log(error)
+		}
+	})
+})
+
+app.post('/api/getlesson', (req, res) => {
+	console.log(req.body)
+	Deck.findById(req.body.deckId, function(error, deck) {
+		if(!error) {
+			for(let lesson of deck.lessons) {
+				if(lesson.orderNum == req.body.lessonOrderNum) {
+					res.send(lesson)
+				}
+			}
+		} else {
+			console.log(error)
+		}
+	})
+	
+})
+
+app.post('/api/updatelesson', (req, res) => {
+
+	json = JSON.parse(req.body.lessons);
+	
+	Deck.updateOne(
+		{ "_id" : mongoose.Types.ObjectId(req.body.deckId) },
+		{ $set: { "lessons" : json} },
+		function (error) {
+			if(error) {
+				console.log(error)
+				res.json({
+					success : false
+				})
+			} else {
+				res.json({
+					success : true
+				})
+			}
+		}
+	)
 	
 })
 
