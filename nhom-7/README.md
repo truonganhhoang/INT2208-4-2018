@@ -7,4 +7,5 @@
 
 - Đã đưa lên heroku tại link: https://nhom-7-4.herokuapp.com
 
-- [Tài liệu bài tập lớn]( https://docs.google.com/document/d/1VsnzuqYDXdrzQ1ElvVkF0h-0LJa8-F4TEy6Nqhkr-V0/edit)
+- [Tài liệu bài tập lớn](https://docs.google.com/document/d/1VsnzuqYDXdrzQ1ElvVkF0h-0LJa8-F4TEy6Nqhkr-V0/edit)
+- [Trao đổi qua facebook](/nhom-7/workImgs)
