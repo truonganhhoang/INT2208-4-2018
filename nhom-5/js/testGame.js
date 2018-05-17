@@ -1,48 +1,11 @@
 
 
 
-   
+  
 
     //Mang du lieu cho cau hoi
     // ------------------------------------------
-    var triviaBucket = [
-
-   {
-    question: 'learn',
-    trueAnswer:'học',
-    falseOne: 'gà',
-    falseTwo: 'đẹp',
-    },
-
-  {
-    question: 'chicken',
-    trueAnswer: 'gà',
-    falseOne: 'đào',
-    falseTwo: 'hát',
-    },
-
-  {
-    question: 'sing',
-    trueAnswer: 'hát',
-    falseOne: 'đẹp',
-    falseTwo: 'học',
-    },
-
-  {
-    question: 'peach',
-    trueAnswer: 'đào',
-    falseOne: 'gà',
-    falseTwo: 'đẹp',
-    },
-
-  {
-    question: 'beautiful',
-    trueAnswer: 'đẹp',
-    falseOne: 'gà',
-    falseTwo: 'đào',
-    }
-
- ];
+var bucket = [];
 
   //bien toan cuc
   //------------------------------------------
@@ -52,16 +15,56 @@
   var incorrect = 0;
   var ans;
   var started = false;
+  var arr = [];
   // var rightSong = new Audio();
   // rightSong.type = 'audio/mpeg';
   // rightSong.src = 'music/dung.mp3';
   // var wrongSong = new Audio();
   // wrongSong.type = 'audio/mpeg';
   //wrongSong.src = 'music/sai.mp3';
+
+window.onload = function(){
+  
+    fetch('/clicked', {method: 'POST'})
+        .then(function(response) {
+          if(response.ok) {
+            console.log('click was recorded');
+            return;
+          }
+          throw new Error('Request failed.');
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+
+    setInterval(function() {
+      fetch('/clicks', {method: 'GET'})
+        .then(function(response) {
+          if(response.ok) return response.json();
+          throw new Error('Request failed.');
+        })
+        .then(function(data) {
+          
+            for(var i = 0; i < data.length; i++){
+              var ele = {
+                word: data[i].word,
+                mean: data[i].mean
+              };
+              arr[i] = ele;
+            }
+            return;
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    }, 0);
+    console.log(arr);
+    
+}
   function incrementQuestion(){
     if(index==4) {
       setTimeout(function(){
-        window.location.href = "2.2.html";
+        window.location.href = "/chucmung";
       },1000);
     }else index++;
   }
@@ -69,24 +72,32 @@
   //sinh cau hoi
   //------------------------------------------
   function populateQuestionArea(){
+    var falseOne = Math.floor(Math.random()*5+1);
+    while(falseOne == index+1){
+      falseOne = Math.floor(Math.random()*5+1);
+    }
+    var falseTwo = Math.floor(Math.random()*5+1);;
+    while(falseTwo == falseOne || falseTwo == index+1){
+      falseTwo = Math.floor(Math.random()*5+1);
+    }
+
+    $(".questionArea").html(arr[index].word);
     var ran = Math.floor(Math.random()*3+1);
-    console.log(ran);
-    $(".questionArea").html(triviaBucket[index].question);
     if(ran == 1){
       ans = '1';
-      $("#1").html(triviaBucket[index].trueAnswer);
-      $("#2").html(triviaBucket[index].falseOne);
-      $("#3").html(triviaBucket[index].falseTwo);
+      $("#1").html(arr[index].mean);
+      $("#2").html(arr[falseOne-1].mean);
+      $("#3").html(arr[falseTwo-1].mean);
     }else if(ran == 2){
       ans = '2';
-      $("#2").html(triviaBucket[index].trueAnswer);
-      $("#1").html(triviaBucket[index].falseOne);
-      $("#3").html(triviaBucket[index].falseTwo);
-    }else if(ran == 3){
+      $("#2").html(arr[index].mean);
+      $("#1").html(arr[falseOne-1].mean);
+      $("#3").html(arr[falseTwo-1].mean);
+    }else{
       ans = '3';
-      $("#3").html(triviaBucket[index].trueAnswer);
-      $("#1").html(triviaBucket[index].falseOne);
-      $("#2").html(triviaBucket[index].falseTwo);
+      $("#3").html(arr[index].mean);
+      $("#2").html(arr[falseOne-1].mean);
+      $("#1").html(arr[falseTwo-1].mean);
     }
     console.log("populateQuestionArea " + ans);
   }
@@ -96,6 +107,53 @@
   //click nut Start
   //------------------------------------------
 function start(){
+    // // if(arr.length == 0){
+    //   var button = document.getElementById('startButton');
+    //   button.addEventListener('click', function(e) {
+    //     console.log('button was clicked');
+
+    //     fetch('/clicked', {method: 'POST'})
+    //       .then(function(response) {
+    //         if(response.ok) {
+    //           console.log('click was recorded');
+    //           return;
+    //         }
+    //         throw new Error('Request failed.');
+    //       })
+    //       .catch(function(error) {
+    //         console.log(error);
+    //       });
+    //   });
+
+    //   setInterval(function() {
+    //     fetch('/clicks', {method: 'GET'})
+    //       .then(function(response) {
+    //         if(response.ok) return response.json();
+    //         throw new Error('Request failed.');
+    //       })
+    //       .then(function(data) {
+            
+    //           console.log(data);
+    //           for(var i = 0; i < data.length; i++){
+    //             var bucEle = {
+    //               question: data[i].word,
+    //               trueAnswer: data[i].mean
+    //             };
+    //             bucket[i] = bucEle;
+    //             var arrEle = {
+    //               word: data[i].word,
+    //               mean: data[i].mean
+    //             };
+    //             arr[i] = arrEle;
+    //           }
+    //           return;
+    //       })
+    //       .catch(function(error) {
+    //         console.log(error);
+    //       });
+    //   }, 0);
+    // // }
+    console.log(arr);
     started = true;
     index = 0;
     correct = 0;
@@ -134,7 +192,7 @@ function answer(clickIdentifier){
         // clickSwitch = false;
         incorrect++;
         $("#losses").html("Wrong! " + incorrect);
-        console.log(incorrect + " is the number of incorrect answers");
+        // console.log(incorrect + " is the number of incorrect answers");
       }
     }
   }
