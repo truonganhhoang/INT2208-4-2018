@@ -1,12 +1,10 @@
 <?php
 
-$host="localhost";
-$username="root";
-$password="";
-$db_name="memrise";
-$table_name="account";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "memrise";
 
-@mysql_connect("{$host}", "{$username}", "{$password}") or die("Không thể kết nối database");
-@mysql_select_db("{$db_name}") or die("Không thể chọn database");
+$conn = mysqli_connect($servername, $username, $password, $dbname) or die("Failed!");
 
 ?>

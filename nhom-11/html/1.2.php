@@ -1,3 +1,9 @@
+<?php
+
+require_once ('connection.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +14,44 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+    <?php
     
+    if(isset($_POST['btn_submit']))
+    {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $email = $_POST['email'];
+
+        if($username == "" || $password == "" || $email == "")
+        {
+            echo "Please, fill up!!!";
+        }
+        else
+        {
+            $sql = "select * from account where username = '$username'";
+            $kt = mysqli_query($conn, $sql);
+            if(mysqli_num_rows($kt) > 0)
+            {
+                echo "";
+            }
+            else
+            {
+                $sql = "INSERT INTO account(
+                    username,
+                    email,
+                    password
+                    ) VALUES (
+                    '$username',
+                    '$email',
+                    '$password'
+                    )";
+                    mysqli_query($conn, $sql);
+                    header('Location: 1.1.php');
+            }
+        }
+    }
+    
+    ?>
     <div class="navbar-top container-fluid fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="./1.html"><h2>Memrise</h2></a>
@@ -18,11 +61,11 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./1.3.html">Courses<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./1.3.php">Courses<span class="sr-only">(current)</span></a>
                     </li>
                     
                     <li class="nav-item active">
-                        <a class="nav-link" href="./1.1.html">Log in</a>
+                        <a class="nav-link" href="./1.1.php">Log in</a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,7 +82,7 @@
         </nav>
     </div>
     <div class="form-sign-up container" style="margin-top: 130px;">
-        <form class="form-horizontal" role="form" method="POST" action="register.php?act=do">
+        <form class="form-horizontal" role="form" method="POST" action="1.2.php">
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
@@ -47,48 +90,7 @@
                     <hr>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 field-label-responsive">
-                    <label for="name">Name</label>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem"><i class="fas fa-user-plus"></i></div>
-                            <input type="text" name="name" class="form-control" id="name"
-                                    placeholder="Name" required autofocus>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-control-feedback">
-                            <span class="text-danger align-middle">
-                                <!-- Put name validation error messages here -->
-                            </span>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 field-label-responsive">
-                    <label for="name">Birthday</label>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem"><i class="fas fa-birthday-cake"></i></div>
-                            <input type="text" name="birthday" class="form-control" id="birthday"
-                                    placeholder="dd/mm/yyyy" required autofocus>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="form-control-feedback">
-                            <span class="text-danger align-middle">
-                                <!-- Put name validation error messages here -->
-                            </span>
-                    </div>
-                </div>
-            </div>
+            
             <div class="row">
 
                 <div class="col-md-3 field-label-responsive">
@@ -153,22 +155,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3 field-label-responsive">
-                    <label for="password">Confirm Password</label>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                            <div class="input-group-addon" style="width: 2.6rem">
-                                <i class="fa fa-repeat"></i>
-                            </div>
-                            <input type="password" name="confirmpassword" class="form-control"
-                                   id="confirmpassword" placeholder="Password" required>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
