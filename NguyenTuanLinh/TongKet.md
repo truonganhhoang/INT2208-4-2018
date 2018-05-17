@@ -27,3 +27,7 @@
  2) Tham gia làm slide thuyết trình của nhóm, tham gia làm bài tập lớn của nhóm và đã có minh chứng rõ ràng.
  
  3) Tự học thêm các kiến thức ngoài bổ trợ cho môn học.
+- Người chấm: Lê Hồng Hội
+- Điểm: 9
+- Nhận xét:-hoàn thành các khóa học online có mình chứng
+		- tham gia đóng góp thuyết trình và bài tập lớn

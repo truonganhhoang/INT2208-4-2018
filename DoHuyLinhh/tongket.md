@@ -1,4 +1,4 @@
-- Bài tập lớn: Làm phần giao diện 
+﻿- Bài tập lớn: Làm phần giao diện 
      https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-2 
      
 - Bài tập thuyết trình: https://github.com/Hantor28/INT2208-4-2018/blob/master/DoHuyLinh/pitchme.md
@@ -35,3 +35,6 @@ https://github.com/Hantor28/INT2208-4-2018/blob/master/DoHuyLinhh/Edx/Testing.pn
 		- Tự học đầy đủ và có dẫn chứng chứng minh (tuy nhiên thư mục dẫn chứng sắp xếp không hợp lý, không khoa học)
 	
 
+Người chấm: Lê Hồng Hội
+Điểm : 9
+Nhận xét: tham gia đóng góp cho bài tập lớn, bài tập thuyết trình, tự học đầy đủ và có dẫn chứng
