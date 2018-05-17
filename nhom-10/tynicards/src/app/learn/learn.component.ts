@@ -50,7 +50,6 @@ export class LearnComponent implements OnInit {
         card.box = 1;
       }
       for (let card of this.cardsToLearn) {
-        console.log('have a card');
         if (card.box === 1) {
           this.viewingCard = card;
           this.isViewing = true;
@@ -104,7 +103,6 @@ export class LearnComponent implements OnInit {
     this.mixCards(this.cardsToLearn); 
     for (let card of this.cardsToLearn) {
       if (card.box === 2) {
-        console.log('have quest!');
         this.questingCard = card;
         if (Math.round(Math.random()) === 1) {
           this.question = this.questingCard.front;
@@ -122,7 +120,6 @@ export class LearnComponent implements OnInit {
       
     }
     this.isCompleted = true;
-    console.log('no quest!');
     return;
   }
 
@@ -130,7 +127,6 @@ export class LearnComponent implements OnInit {
     this.viewingCard.box = 2;
     for (let card of this.cardsToLearn) {
       if (card.box === 1) {
-        console.log('have a card');
         this.viewingCard = card;
         return;
       }

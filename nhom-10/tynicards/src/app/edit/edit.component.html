@@ -4,8 +4,11 @@ Title <input type="text" [(ngModel)]="title" id="title">
 <br>
 Description <input type="text" [(ngModel)]="description" id="description">
 </div>
-<button>Save</button>
-<button>Cancel</button>
+<button (click)="saveChanges()">Save changes</button>
+<button routerLink="/view/{{ deckId }}">Cancel</button>
+---
+<button routerLink="/dashboard" (click)="deleteDeck()">Delete deck</button>
+<p>{{ message }}</p>
 <hr>
 <p>Add a new card here:</p>
 <div>
@@ -13,19 +16,16 @@ Description <input type="text" [(ngModel)]="description" id="description">
   <br>
   Back <input [(ngModel)]="newBack" type="text" id="back">
   <br>
-  <button>Add card</button>
+  <button (click)="addCard()">Add card</button>
 </div>
 <hr>
 <p>All your cards</p>
-<!--
-<div *ngFor="card of cardsToAdd">
-
-    <button>Delete</button>
-  </div>
-  -->
-  <div *ngFor="let card of cardsToEdit">
-    Front <input [(ngModel)]="newFront" type="text" id="front">
-    <br>
-    Back <input [(ngModel)]="newBack" type="text" id="back">
-    <button>Delete</button>
-  </div>
+<div *ngFor="let card of this.allCards">
+  Front <input [(ngModel)]="card.front" type="text" id="front">
+  <br>
+  Back <input [(ngModel)]="card.back" type="text" id="back">
+  <br>
+  <button (click)="deleteCard(card)">Delete</button>
+  <br>
+  <br>
+</div>

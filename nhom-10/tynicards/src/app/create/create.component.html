@@ -1,3 +1,29 @@
-<p>
-  create works!
-</p>
+<p>Add deck info</p>
+<div>
+Title <input type="text" [(ngModel)]="title" id="title">
+<br>
+Description <input type="text" [(ngModel)]="description" id="description">
+</div>
+<button (click)="saveDeck()">Save Deck</button>
+<button routerLink="/view/{{ deckId }}">Cancel</button>
+<p>{{ message }}</p>
+<hr>
+<p>Add a new card here:</p>
+<div>
+  Front <input [(ngModel)]="newFront" type="text" id="front">
+  <br>
+  Back <input [(ngModel)]="newBack" type="text" id="back">
+  <br>
+  <button (click)="addCard()">Add card</button>
+</div>
+<hr>
+<p>All your cards</p>
+<div *ngFor="let card of this.allCards">
+  Front <input [(ngModel)]="card.front" type="text" id="front">
+  <br>
+  Back <input [(ngModel)]="card.back" type="text" id="back">
+  <br>
+  <button (click)="deleteCard(card)">Delete</button>
+  <br>
+  <br>
+</div>

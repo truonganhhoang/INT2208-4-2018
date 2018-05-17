@@ -1,8 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-interface updateLessonResponse {
+interface updateResponse {
   success: boolean
+}
+
+interface newDeckResponse {
+  success: boolean,
+  deckId: string
 }
 
 @Injectable({
@@ -30,9 +35,32 @@ export class DeckService {
   }
 
   updateLesson(deckId, lessons) {
-    return this.http.post<updateLessonResponse>('/api/updatelesson', {
+    return this.http.post<updateResponse>('/api/updatelesson', {
       deckId,
       lessons
+    });
+  }
+
+  updateDeck(deckId, title, description, lessons) {
+    return this.http.post<updateResponse>('/api/updatedeck', {
+      deckId,
+      title,
+      description,
+      lessons
+    });
+  }
+
+  newDeck(title, description, lessons) {
+    return this.http.post<newDeckResponse>('/api/newdeck', {
+      title,
+      description,
+      lessons
+    });
+  }
+
+  deleteDeck(deckId) {
+    return this.http.post<updateResponse>('/api/deletedeck', {
+      deckId
     });
   }
 

@@ -5,15 +5,17 @@ const mongoose = require('mongoose')
 
 const app = express()
 
+
 app.use(session({
 	secret: 'donotgentleintothatgoodnight'
 }))
 
 app.use(bodyParser.json())
 
-mongoose.Promise = Promise
-mongoose.connect('mongodb://localhost:27017/tynicardsdb')
-.then(() => console.log('Database server up'))
+// mongoose.Promise = Promise
+
+var dbUrl = "mongodb+srv://admin:admin@cluster0-3t11y.mongodb.net";
+mongoose.connect(dbUrl, {dbName: 'tynicards'}).then(() => console.log('Database server up'))
 
 const User = require('./models/users')
 const Deck = require('./models/decks')
@@ -127,11 +129,11 @@ app.post('/api/getlesson', (req, res) => {
 
 app.post('/api/updatelesson', (req, res) => {
 
-	json = JSON.parse(req.body.lessons);
+	lessons = JSON.parse(req.body.lessons);
 	
 	Deck.updateOne(
 		{ "_id" : mongoose.Types.ObjectId(req.body.deckId) },
-		{ $set: { "lessons" : json} },
+		{ $set: { "lessons" : lessons} },
 		function (error) {
 			if(error) {
 				console.log(error)
@@ -145,6 +147,71 @@ app.post('/api/updatelesson', (req, res) => {
 			}
 		}
 	)
+	
+})
+
+app.post('/api/updatedeck', (req, res) => {
+	
+	lessons = JSON.parse(req.body.lessons);
+	
+	Deck.updateOne(
+		{ "_id" : mongoose.Types.ObjectId(req.body.deckId)},
+		{ $set: { "title": req.body.title, "description" : req.body.description, "lessons" : lessons } },
+		function (error) {
+			if(error) {
+				console.log(error)
+				res.json({
+					success : false
+				})
+			} else {
+				res.json({
+					success : true
+				})
+			}
+		}
+	)
+})
+
+app.post('/api/newdeck', (req, res) => {
+	
+	const deck = new Deck({
+		"title" : req.body.title,
+		"description" : req.body.description,
+		"owner" : req.session.user,
+		"lessons" : JSON.parse(req.body.lessons)
+	})
+	
+	deck.save()
+	
+	console.log('add deck', deck._id)
+	
+	IdToRes = JSON.stringify(deck._id)
+	IdToRes = IdToRes.slice(1, IdToRes.length - 1)
+	
+	console.log(IdToRes)
+	console.log(typeof IdToRes)
+	
+	res.json({
+		success: true,
+		deckId : IdToRes
+	})
+	
+})
+
+app.post('/api/deletedeck', (req, res) => {
+	Deck.deleteOne({ "_id" : mongoose.Types.ObjectId(req.body.deckId)}, function(error, deck) {
+		if (!error) {
+            res.json({
+				success : true
+			})
+        } else {
+            res.json({
+				success : false
+			})
+            console.log(error);
+        }
+	})
+	
 	
 })
 
