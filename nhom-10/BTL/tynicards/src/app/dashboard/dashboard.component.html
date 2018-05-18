@@ -1,0 +1,19 @@
+<div class="container-fluid" >
+<div class="text-center mt-4">
+    <h1 class="display-4">Các bộ thẻ của bạn</h1>
+</div>
+<div class="row justify-content-center align-self-center" >
+    <div *ngFor="let deck of decks" >
+    <div class="card text-center shadow border border-primary" style="float: left; width: 180px; height: 280px;" [ngStyle]="{'margin-top.px': '100', 'margin-right.px': '20'}">
+        <div class="card-header">
+            <h5 class="card-title">{{deck.title}}</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text">{{deck.description}}</p>
+            <a class="btn btn-primary my-5 mx-3 border border-primary rounded shadow" routerLink="/view/{{ deck._id }}">Xem</a>            
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+      

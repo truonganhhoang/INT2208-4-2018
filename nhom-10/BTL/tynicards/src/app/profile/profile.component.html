@@ -1,0 +1,36 @@
+<div class="container">
+
+    <div class="row mt-3">
+        <ngb-alert class="text-center" *ngIf="message && !changeSuccess" [dismissible]="true" (close)="message = ''">
+            <strong>Thông báo</strong> {{ message }}
+        </ngb-alert>
+    </div>
+
+    <div class="row mt-3">
+        <ngb-alert class="text-center" *ngIf="message && changeSuccess" type="success" [dismissible]="true" (close)="message = ''">
+            <strong>Thông báo</strong> {{ message }}
+        </ngb-alert>
+    </div>
+
+    <div class="row mt-5">
+        <h1 class="lead">Đổi mật khẩu</h1>
+    </div>
+
+    <div class="row mt-3">
+        <div class="input-group">
+            <input class="form-control" type="password" [(ngModel)]="oldPassword" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Mật khẩu hiện tại">
+            <input class="form-control" type="password" [(ngModel)]="newPassword" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Mật khẩu mới">
+            <input class="form-control" type="password" [(ngModel)]="newCPassword" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="Xác nhận mật khẩu mới">
+            <button (click)="changePassword()" class="btn btn-info ml-2" type="button">Thay đổi</button>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <h1 class="lead">hoặc</h1>
+    </div>
+
+    <div class="row">
+        <button class="btn btn-danger" (click)="logOut()">Đăng xuất</button>
+    </div>
+
+</div>
