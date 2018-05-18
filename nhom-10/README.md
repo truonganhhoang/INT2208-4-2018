@@ -5,9 +5,11 @@
 	- Đỗ Trung Đức
 	- Lê Văn Công
 	
-- Bài tập lớn: Phần mềm lựa chọn: Tinycards
+- Bài tập lớn: mô phỏng ứng dụng Tinycards
 	
 	- Triển khai trên Heroku: https://btl-nhom10-int2208-4-2018.herokuapp.com
+	
+		- Tên đăng nhập và mật khẩu mặc định: admin và admin (tài khoản này đã tạo sẵn một số bộ thẻ).
 	
 	- Báo cáo bài tập lớn: https://docs.google.com/document/d/1pOO9kB6Gle10ws_Mkdlmmy4RiwsRv47WF8sdzlng22s/edit?usp=sharing
 	
