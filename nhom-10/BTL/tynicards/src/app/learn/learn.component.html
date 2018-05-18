@@ -1,0 +1,54 @@
+<ng-container *ngIf="!isCompleted">
+<div class="container">
+
+    <div id="viewCards" *ngIf="isViewing">
+        <div class="row justify-content-center align-self-center">
+            <h1 class="display-4">Thẻ mới</h1>
+        </div>
+        <div class="row justify-content-center align-self-center">
+            <div class="flipable-card mt-4">
+                <div class="front card text-center shadow border border-primary mt-4" style="float: left; width: 180px; height: 280px;">
+                    <div class="card-body">
+                        <p class="card-text mx-3">{{ viewingCard.front }}</p>  
+                    </div>
+                </div>
+                <div class="back card text-center shadow border border-primary mt-4" style="float: left; width: 180px; height: 280px;">
+                    <div class="card-body">
+                        <p class="card-text mx-3">{{ viewingCard.back }}</p>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center align-self-center mt-5">
+            <button class="btn btn-danger" (click)="nextCard()">Tiếp theo</button>
+        </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="!isViewing" >
+        <ng-container id="checkCards" class="my-5">
+            <div class="row justify-content-center align-self-center my-5">
+                <h1 class="display-4">{{ question }}?</h1>
+            </div>
+            <div class="row my-5">
+                <div class="input-group mx-5 my-3 input-group-lg justify-content-center align-self-center">
+                    <input [(ngModel)]="userAnswer" type="text" aria-label="Large" class="form-control" style="width: 300px">
+                </div>
+            </div>
+            <div class="row justify-content-center align-self-center my-4">
+                <button class="btn btn-success" (click)="checkAnswer()">Trả lời</button>
+            </div>
+        </ng-container>
+</div>
+</ng-container>
+
+<ng-container id="complete" *ngIf="isCompleted" class="my-5">
+    <div class="container">
+        <div class="row justify-content-center align-self-center my-5">
+            <h1 class="display-4">Chúc mừng! Bạn đã hoàn thành bài học.</h1>
+        </div>
+        <div class="row justify-content-center align-self-center my-5">
+            <button class="btn btn-info" (click)="saveData()">Trở về bộ thẻ</button>
+        </div>
+    </div>
+</ng-container>
