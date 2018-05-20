@@ -1,0 +1,30 @@
+
+.flipable-card {
+    float: left;
+	-webkit-perspective: 600px;
+}
+
+.front, .back {
+	transition: -webkit-transform 0.8s;
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+}
+
+.front {
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+}
+
+.back {
+	-webkit-transform: rotateY(-180deg);
+}
+
+.flipable-card:hover .back {
+	-webkit-transform: rotateY(0);
+}
+
+.flipable-card:hover .front {
+	-webkit-transform: rotateY(180deg);
+}
+
