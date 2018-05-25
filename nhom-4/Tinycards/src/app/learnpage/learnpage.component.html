@@ -1,0 +1,22 @@
+<div style="background-color:whitesmoke">
+  <button class="my-3 mx-5" routerLink="/home">X</button>
+  <div class="row">
+    <div class="col col-sm-offset-3"></div>
+    <div class="col">
+      <label>
+        <input type="checkbox"/>
+        <div class="card">
+          <div class="front" >
+            <img id="imgFront" src="{{front}}">
+          </div>
+          <div class="back">
+            <h2 class="center-text">{{back}}</h2>
+          </div>
+        </div>
+        <button *ngIf="!isLast" class="btn btn-success my-3 float-left" (click)="backCard()">Back</button>
+        <button *ngIf="!isFirst" class="btn btn-success my-3 float-right" (click)="nextCard()">Next</button>
+      </label>
+    </div>
+    <div class="col col-sm-offset-3"></div>
+  </div>
+</div>

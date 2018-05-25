@@ -1,0 +1,29 @@
+﻿
+Họ và tên: Nguyễn Minh Tâm
+MSSV: 16022119.
+
+* Link bài tập nhóm: xem tại https://github.com/truonganhhoang/INT2208-4-2018/tree/master/nhom-3
+
+* Bài tập cá nhân tuần 9-12: xem tại https://github.com/truonganhhoang/INT2208-4-2018/tree/master/NguyenMinhTam 
+
+* Tự học một số ngôn ngữ web: 
+  * HTML, CSS, Javascript ở mức cơ bản trên các trang youtube, w3school.
+
+* Chấm chéo: 
+ + Người chấm: Nguyễn Viết Quân
+ + Điểm: 9
+ + Nhận xét: tham gia vào bài tập nhóm. Bài tập cá nhân hoàn thiện đầy đủ, tự học cần thêm dẫn chứng
+ 
+ * Người chấm: Vũ Xuân Quân
+ * Điểm: 8.5
+ * Nhận xét:
+  - Tham gia bài tập nhóm đầy đủ
+  - Bài tập cá nhân làm đầy đủ và có dẫn chứng.
+  - Tự hjoc có dẫn chứng nhưng chưa thuyết phục
+  
+ * Người chấm: Nguyễn Anh Phương
+ * Điểm: 9
+ * Nhận xét:
+  - Bài tập nhóm đầy đủ
+  - Bài tập cá nhân làm đầy đủ, đã có dẫn chứng.
+  - Tự học tương đối đầy đủ nhưng cần thêm dẫn chứng

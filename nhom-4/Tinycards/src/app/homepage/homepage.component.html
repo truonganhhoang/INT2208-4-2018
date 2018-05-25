@@ -1,0 +1,14 @@
+<div style="background-color:rgb(255, 255, 255)">
+    <div class="mx-4">
+        <br/>
+        <h2 class=" float-left ">Your favorites</h2>
+        <a class="btn btn-primary float-right mr-4" href="#" role="button" style="font-size:100%">SEE ALL</a>
+        <br/>
+        <br/>   
+    </div>
+    <div class="row" >
+        <div *ngFor="let card of Cards" class="col-lg-2 col-md-4 col-sx-4" >
+            <a routerLink="/learn/{{card.cardID}}"><app-card [cardTitle]="card.title" [linkToImg]="card.avatar"></app-card></a>            
+        </div>
+    </div>
+</div>

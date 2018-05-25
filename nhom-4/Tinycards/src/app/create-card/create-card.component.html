@@ -1,0 +1,33 @@
+<form class="form-group" (ngSubmit)="sendNewCardCollection()" [formGroup]="newCardCollection">
+  <div class="row">
+    <div class="col-md-4 col-sm-12 ">
+      <!-- info -->
+      <h5>Tên bộ thẻ</h5>
+      <input class="form-control" type="text" formControlName="title">
+      <br/>
+      <h5>Ảnh đại điện</h5>
+      <input type='file' (change)="readURL($event);" />
+      <canvas #avatar width="250" height="300" style="border: solid 1px; border-radius:5px"></canvas>
+
+      <button type="submit" class="btn btn-success my-5" style="width:100%">Tạo bộ thẻ này</button>
+    </div>
+    <div class="col-md-8">
+      <h5>Thêm các thẻ dưới đây:</h5>
+      <br>
+      <div formArrayName="cards">
+        <div *ngFor="let itemrow of newCardCollection.controls.cards.controls; let i=index" [formGroupName]="i" class="row">
+          <div class="col-md-5 mx-1">
+            <h6>Mặt trước</h6>
+            <input class="form-control" type="text" formControlName="front">
+          </div>
+          <div class="col-md-5 mx-1">
+            <h6>Mặt sau</h6>
+            <input class="form-control" type="text" formControlName="back">
+          </div>
+          <button type="button" class="btn btn-danger btn-sm" style="position: relative;top:35px;height:30px" (click)="deleteRow(i)">Xóa</button>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary float-right mt-3" (click)="addNewRow()">Thêm</button>
+    </div>
+  </div>
+</form>

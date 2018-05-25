@@ -1,0 +1,78 @@
+<div class="row header-top">
+  <div class="col-xs-4 col-sm-4 col-md-7 logo">
+    <%= link_to root_path do %>
+      <img src="https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/logo.png?raw=true"/>
+    <% end %>
+  </div>
+</div>
+<br><br><br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-sm-1"></div>
+    <div class="col-12 col-sm-3">
+      <div class="container bg-light "> 
+        <%= image_tag @card_set.avatar_url, alt: @card_set.title, class: "rounded" %>                   
+        <h3><%= @card_set.title %></h3>
+        <br>
+        <p><%= @card_set.description %></p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-7 bg-light">
+      <div class="bs-example bs-example-tabs">
+        <ul id="myTab" class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#home" role="tab" data-toggle="tab" class="btn btn-light active">Các bài học</a></li>
+          <li class=""><a href="#profile" role="tab" data-toggle="tab" class="btn btn-light">Một số thẻ tiêu biểu</a></li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <br>
+          <div class="tab-pane active in" id="home">
+            <div class="container-fluid">
+              <div class="row">
+                <% @card_set.collections.each do |collection| %>
+                  <%= link_to collection, class: "col-12 col-sm-2 btn btn-info border border-dark" do %>
+                    <h3><%= collection.title %></h3>
+                  <% end %>
+                  <div class="col-12 col-sm-1"></div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile">
+            <br>
+            <div class="container-fluid">
+              <div class="row">
+                <% @card_set.collections.each do |collection| %>
+                  <div class="row">
+                    <% collection.cards.each do |card| %>
+                      <div class="col-12 col-sm-3">
+                        <div class="container">
+                          <div class="row">
+                            <div class="info-card">
+                              <div class="front">
+                                <%= image_tag card.avatar_url, class: "card-image" %>
+                              </div>
+                              <div class="back">
+                                <h2><%= card.title %></h2>
+                                <p><%= card.description %></p>
+                              </div>
+                            </div> 
+                          </div>
+                          <br><br><br>
+                        </div>
+                      </div>
+                    <% end %>
+                  </div>
+                  <br>
+                <% end %>
+              </div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
