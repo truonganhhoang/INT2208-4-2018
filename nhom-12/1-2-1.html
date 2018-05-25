@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinycards - Flashcards by Duolingo</title>
+    <link href="246x0w.jpg" rel="shortcut icon" type="image"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+<body style="background-color: #f7f7f7">
+<div class="navbar">
+    <div class="navbar2">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/tiny.png" alt="logo" style="width:180px; height: 60px">
+            </a>
+            <div>
+                <input type="text" placeholder="Search.." id="myInputSearch" onkeyup="filterFunction()">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Search result</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">art</a>
+                        <a href="#">authentic</a>
+                        <a href="#">biology</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                        <a href="#">custom</a>
+                        <a href="#">dutch basics</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar3">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ol class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div class="home">
+                                <a class="nav-link" href="#">
+                                    <span class="glyphicon-class">Home</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="home">
+                                <a class="nav-link" href="#">Create</a>
+                            </div>
+                        </li>
+                    </ol>
+                    <a href="http://localhost:63342/Tynicard/1-2.html?_ijt=h8sb5lmkmquqherqenf14ti5rb" class="btn signup">
+                        sign up
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div style="width: 912px; display: flex; margin: 7em auto auto 2em">
+    <div style=" display: inline-block; flex-grow: 0; text-align: left">
+        <div class="container" style="width: 250px">
+            <!-- Tabs -->
+            <ul class="nav nav-tabs flex-column" style="text-transform: uppercase">
+                <li class="nav-item">
+                    <a class="nav-link active" style="border-left:1px solid #32cdff; background-color: #f7f7f7"
+                       href="#tab1" data-toggle="tab">Edit profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="border-left:1px solid #32cdff; background-color: #f7f7f7" href="#tab2"
+                       data-toggle="tab">Account settings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="border-left:1px solid #32cdff; background-color: #f7f7f7" href="#tab3"
+                       data-toggle="tab">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="border-left:1px solid #32cdff; background-color: #f7f7f7" href="#tab4"
+                       data-toggle="tab">Send feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="border-left:1px solid #32cdff; background-color: #f7f7f7" href="#tab5"
+                       data-toggle="modal"
+                       data-target="#Modal2"
+                       data-dismiss="modal">Sign out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel-body"
+         style="margin-left:14em; background-color: #ffffff; border-radius: 15px; box-shadow: 0 0 25px 0 rgba(0,0,0,.04); flex-grow: 1; padding: 48px; vertical-align: top;">
+        <div class="tab-content" style="text-transform: uppercase; tab-size: 18px">
+            <div class="tab-pane active" id="tab1">
+                <div>
+                    <form>
+                        <div class="form-group" style="display: inline-block">
+                            <label for="nme">Name:</label>
+                            <input type="text" class="form-control" id="nme" value="name">
+                        </div>
+                        <div class="form-group" style="display: inline-block">
+                            <label for="usr">Username:</label>
+                            <input type="text" class="form-control" id="usr" value="user">
+                        </div>
+                        <div class="form-group" style="display: inline-block">
+                            <label for="bio">Bio:</label>
+                            <input type="text" class="form-control" id="bio">
+                        </div>
+                        <div style="margin: 0 0 1em 5em">
+                            <button type="submit" class="btn btn-primary" style="width: 150px; margin-left: -6em">Save
+                                changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab2">
+                <form>
+                    <div class="form-group" style="display: inline-block">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" value="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd" style="display: inline-block">Password:</label>
+                        <div style="display: flex">
+                            <input type="password" class="form-control" id="pwd" name="pswd" value="11111111111111"
+                                   style="border: none">
+                            <button style="cursor: pointer; margin-left: -5em" type="button" class="buttonbw"
+                                    data-toggle="modal"
+                                    data-target="#Modal1"
+                                    data-dismiss="modal">
+                                Change
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group" style="display: inline-block">
+                        <label for="swi">Sounds</label>
+                        <input id="swi" class="form-control" style="border-bottom: none; background-color: #FFFFFF"
+                               placeholder="Sound effects" readonly>
+                    </div>
+                    <div class="onoffswitch" style="margin-top: -1em; margin-bottom: 2em">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch"
+                               checked>
+                        <label class="onoffswitch-label" for="myonoffswitch">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                    <div style="margin: 0 0 1em 5em">
+                        <button type="submit" class="btn btn-primary" style="width: 150px; margin-left: -6em">Save
+                            changes
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane" id="tab3">
+                <form>
+                    <div class="form-group" style="display: inline-block">
+                        <label for="daily" style="font-size: 21px">DAILY PRACTICE REMINDERS</label>
+                        <input id="daily" class="form-control" style="border-bottom: none; background-color: #FFFFFF"
+                               placeholder="Receive daily practice reminder emails" readonly>
+                    </div>
+                    <div class="onoffswitch" style="margin-top: -1em; margin-bottom: 2em">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1"
+                               checked>
+                        <label class="onoffswitch-label" for="myonoffswitch1">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                    <div style="margin: 0 0 1em 5em">
+                        <button type="submit" class="btn btn-primary" style="width: 150px; margin-left: -6em">Save
+                            changes
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane" id="tab4">
+                <form>
+                    <div class="form-group" style="display: inline-block">
+                        <label for="fb">Have feedback? We'd love to hear it!</label>
+                        <input type="text" class="form-control" id="fb" value="">
+                    </div>
+                    <div style="margin: 0 0 1em 5em">
+                        <button type="submit" class="btn btn-primary" style="width: 150px; margin-left: -6em">Send
+                            feedback
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane" id="tab5">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="foot" style="margin-top: 3em">
+    <button value="Input Button" onclick="location.href = 'https://tinycards.duolingo.com/press';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">About
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://support.duolingo.com/hc/fr';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Support
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://www.duolingo.com/terms';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Terms
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://www.duolingo.com/';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Doulingo
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://www.facebook.com/';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Facebook
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://twitter.com/tinycardsapp';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Twitter
+    </button>
+    <div class="btn-group dropup">
+        <button style="background-color: #f7f7f7" type="button" class="btn signup  dropdown-toggle-split"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+            English
+        </button>
+        <div class="dropdown-menu">
+            <div class="text-muted" style="font-size: 14px">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Espanol</a>
+                <a class="dropdown-item" href="#">Portugues</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="position: absolute; width: 90%">
+            <div class="modal-header">
+                <h6 class="modal-title" id="ModalLabel1">Change password
+                </h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="float: right">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <form method="post" id="passwordForm">
+                        <div class="form-group" style="display: inline-block">
+                            <label for="pwd1" style="font-size:  17px">Current Password:</label>
+                            <input type="password" class="form-control" id="pwd1" name="pswd" placeholder="Enter here"
+                                   style="font-size: 14px">
+                        </div>
+                        <div class="form-group" style="display: inline-block">
+                            <label for="password2" style="font-size: 17px">New password</label>
+                            <input type="password" class="form-control" name="password2" id="password2"
+                                   placeholder="New Password" autocomplete="off" style="font-size: 14px">
+                        </div>
+                        <div class="form-group" style="display: inline-block">
+                            <label for="password3" style="font-size: 17px">Confirm password</label>
+                            <input type="password" class="form-control" name="password3" id="password3"
+                                   placeholder="Enter here" autocomplete="off" style="font-size: 14px">
+                            <i id="pwmatch" class="glyphicon glyphicon-remove" style="color:#FF0004"></i>
+                            Passwords Match
+                        </div>
+                        <div style="margin: auto auto 1em auto">
+                            <button type="submit" class="btn btn-primary" style="width: 370px">Change password</button>
+                        </div>
+                        <script>
+                            $("input[type=password]").keyup(function () {
+                                if ($("#password2").val() == $("#password3").val()) {
+                                    $("#pwmatch").removeClass("glyphicon-remove");
+                                    $("#pwmatch").addClass("glyphicon-ok");
+                                    $("#pwmatch").css("color", "#00A41E");
+                                } else {
+                                    $("#pwmatch").removeClass("glyphicon-ok");
+                                    $("#pwmatch").addClass("glyphicon-remove");
+                                    $("#pwmatch").css("color", "#FF0004");
+                                }
+                            });
+                        </script>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2"
+     aria-hidden="true" style="position: absolute; margin-top: 10em">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="position: absolute; width: 90%">
+            <div class="modal-header">
+                <h6 class="modal-title" id="ModalLabel2">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            style="margin-left: 10em">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </h6>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: center; font-size: 18px">Are you want to sign out?</p>
+                <a href="http://localhost:63342/Tynicard/1.html?_ijt=a59opdcdvg584ljj3777gcg1g3"
+                   class="btn btn-primary" style="width: 150px; margin-left: 3em">Sign out
+                </a>
+                <button type="submit" class="btn btn-outline-primary"
+                        style="width: 150px; border-radius: 10px; margin-left: 2em" data-dismiss="modal">Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

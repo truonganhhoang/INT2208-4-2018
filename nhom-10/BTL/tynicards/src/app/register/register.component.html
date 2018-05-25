@@ -1,0 +1,29 @@
+<div class="container" style="margin-top: 100px">
+    <ngb-alert class="text-center" *ngIf="notification" type="danger" [dismissible]="true" (close)="notification = ''">
+        <strong>Lỗi!</strong> {{ notification }}
+    </ngb-alert>
+    <div class="border border-info rounded bg-light clearfix" >
+      <div class="row justify-content-center" style="margin-top: 50px; height: 400px ">
+        <form (submit)="register($event)">
+          <div class="form-group">
+            <label>Tài khoản</label>
+            <input type="text" id="username"  class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="form-group">
+              <label for="password">Mật khẩu</label>
+              <input type="password" id="password" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="form-group">
+              <label for="cpassword">Xác nhận mật khẩu</label>
+              <input type="password" id="cpassword" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="text-center">
+            <button type="submit" style="margin-right.px: 30" class="btn btn-info">Đăng ký</button>
+            <br>
+            <br>
+            hoặc nhấn vào đây để <button type="button" routerLink="/login" class="ml-2 btn btn-success">Đăng nhập</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

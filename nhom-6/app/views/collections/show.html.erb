@@ -1,0 +1,56 @@
+<div class="row header-top">
+  <div class="col-xs-4 col-sm-4 col-md-7 logo">
+    <%= link_to root_path do %>
+      <img src="https://github.com/truonganhhoang/INT2208-4-2018/blob/master/nhom-6/img/logo.png?raw=true"/>
+    <% end %>
+  </div>
+</div>
+<br><br>
+<div class="container bg-light">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <% @collection.cards.each_with_index do |card, index| %>
+        <div class="carousel-item <%= 'active' if index == 0 %>">
+          <button type="button" class="close" aria-label="Close">
+            <%= link_to @collection.card_set do %>
+              <span aria-hidden="true">&times;</span>
+            <% end %>
+          </button>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="<%= index * 25 %>" style="width: <%= index * 25 %>%" aria-valuemin="0" aria-valuemax="100"><%= index * 25 %>%</div>
+          </div>
+          <br><br><br>
+          <div class="container">
+            <div class="row">
+              <div class="info-card">
+                <div class="front">
+                  <%= image_tag card.avatar_url, class: "card-image" %>
+                </div>
+                <div class="back">
+                  <h2><%= card.title %></h2>
+                  <p><%= card.description %></p>
+                </div>
+              </div> 
+            </div>
+            <br><br><br>
+            <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4">
+                <% if index == (@collection.cards.count - 1) %>
+                  <%= link_to "Kết thúc", @collection.card_set, class: "col-sm-12 btn btn-primary" %>
+                <% else %>
+                  <a href="#myCarousel" data-slide="next" class="col-sm-12 btn btn-primary">Tiếp tục</a>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <br><br><br>
+</div>      
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
