@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinycards - Flashcards by Duolingo</title>
+    <link href="246x0w.jpg" rel="shortcut icon" type="image"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascript.js" type="text/javascript"></script>
+</head>
+<body style="background-color: #f7f7f7">
+<div class="navbar">
+    <div class="navbar2">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/tiny.png" alt="logo" style="width:180px; height: 60px">
+            </a>
+            <div>
+                <input type="text" placeholder="Search.." id="myInputSearch" onkeyup="filterFunction()">
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Search result</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">art</a>
+                        <a href="#">authentic</a>
+                        <a href="#">biology</a>
+                        <a href="#">blog</a>
+                        <a href="#">contact</a>
+                        <a href="#">custom</a>
+                        <a href="#">dutch basics</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar3">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ol class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <div class="home">
+                                <a class="nav-link" href="#">
+                                    <span class="glyphicon-class">Home</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="home">
+                                <a class="nav-link"
+                                   href="http://localhost:63342/Tynicard/1-1.html?_ijt=m0n2n0gmp8d2ar1n42q95dv1ec">Create</a>
+                            </div>
+                        </li>
+                    </ol>
+                    <button type="button" class="btn signup" data-toggle="modal" data-target="#Modal">
+                        sign up
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div style="width: 912px; height:500px; border-radius: 15px; box-shadow: 0 2px 20px 0 rgba(0,0,0,.1); background-color: #FFFFFF; margin-top: 5em; margin-left: 12em">
+    <div style="display: flex">
+        <button type="button" class="close" data-toggle="modal"
+                data-target="#modal"
+                data-dismiss="modal" style="float: left">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <hr style="width: 80%">
+    </div>
+    <div style="text-align: center">
+        <h3 style="color: #ffc107; padding-top: 1em">NEW CARD</h3>
+        <div class="flipcard" style="margin-left: 18em; margin-top: 2em">
+            <div class="front">
+                <img src="IMG/flag5.jpg" alt="flag4"
+                     style="width: 232px; height: 268px; border-radius: 20px; margin-top: -120px; margin-left: -40px">
+            </div>
+
+            <div class="back">
+                <div>Hungary</div>
+            </div>
+        </div>
+        <div style="margin-top: 1.5em; color: #c4c4c4; font-weight: bold">
+            <p>Click card to flip</p>
+        </div>
+    </div>
+</div>
+<div class="foot" style="margin-top: 3em">
+    <button value="Input Button" onclick="location.href = 'https://tinycards.duolingo.com/press';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">About
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://support.duolingo.com/hc/fr';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Support
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://www.duolingo.com/terms';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Terms
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://www.duolingo.com/';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Doulingo
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://www.facebook.com/';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Facebook
+    </button>
+    <button value="Input Button" onclick="location.href = 'https://twitter.com/tinycardsapp';"
+            style="font-size: 14px; text-transform: uppercase"
+            type="button" class="btn btn-outline-light text-muted">Twitter
+    </button>
+    <div class="btn-group dropup">
+        <button style="background-color: #f7f7f7" type="button" class="btn signup  dropdown-toggle-split"
+                data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+            English
+        </button>
+        <div class="dropdown-menu">
+            <div class="text-muted" style="font-size: 14px">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Espanol</a>
+                <a class="dropdown-item" href="#">Portugues</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true" style="margin-top: 10em">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content" style="position: absolute; width: 90%">
+            <div class="modal-header">
+                <h6 class="modal-title" id="ModalLabel">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            style="margin-left: 10em">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </h6>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: center; font-size: 18px">Are you want to sign quit?</p>
+                <a href="http://localhost:63342/Tynicard/1-2-3.html?_ijt=kn3pib9nsb3kdckh1ktlnevcgl"
+                   class="btn btn-primary" style="width: 150px; margin-left: 3em">Quit
+                </a>
+                <button type="button" class="btn btn-outline-primary"
+                        style="width: 150px; border-radius: 10px; margin-left: 2em" data-dismiss="modal">Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

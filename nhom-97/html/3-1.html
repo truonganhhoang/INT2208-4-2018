@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href='card.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+
+
+    
+
+
+<div class="container-fluid text-center " style="background-color: #fff; padding-top: 20px; ">    
+        
+      <div class="content1" >
+        <div class="progress" style=" height: 5px; ">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 1%; height: 10px;">
+          </div>
+        </div> 
+            <img class="tinycard-image2" 
+          src="https://d9np3dj86nsu2.cloudfront.net/image/9f499136ad667a8e1e5cd37bdd2cceda"/>
+            <div class="jkl" style="padding-top: 10px;">
+              <img  data-text='False!' class="tinycard-image1"onclick="onClick()" src="https://d9np3dj86nsu2.cloudfront.net/image/b03adde23cbf2a1dd0a1f9bb23a49b74"/>
+              <img data-text='False!' class="tinycard-image1" onclick="onClick()" src="https://d9np3dj86nsu2.cloudfront.net/image/dbb4ffc729f5272a6980da93ed7185a6"/>
+              <img data-text='True!' class="tinycard-image1" src="https://d9np3dj86nsu2.cloudfront.net/image/14a39d10ea76adf109f8d256d5b7ab10" onclick= "direct('./3-2.html')"/>
+            </div>
+      </div> 
+</div>
+
+<div class='error' style='display:none'></div>
+<script type="text/javascript">
+  
+  
+  // function onClick () {
+  //   $('.error').text($(this).data('text')).fadeIn(400).delay(700).fadeOut(400); 
+  // }
+
+  $('img').click(function () {
+    $('.error').text($(this).data('text')).fadeIn(400).delay(700).fadeOut(400); 
+
+  });
+ 
+ function direct(page){
+var timer = setTimeout(function() {
+            window.location=page
+        }, 2000);
+ }
+</script>
+  
+
+
+</body>
+</html>

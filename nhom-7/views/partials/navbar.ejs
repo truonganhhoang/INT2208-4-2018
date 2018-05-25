@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand row navbar-dark bg-primary py-0 sticky-top" style="height: 60px">
+    <div class="container h-100">
+        <a class="navbar-brand d-none d-lg-block col col-auto" href="/home">
+            <img src="/imgs/tinycard.PNG" alt="LOGO">
+        </a>
+        <!-- xem lai phan collapse -->
+        <div class="collapse navbar-collapse col-auto p-0 h-100">
+            <!-- left -->
+            <div class="navbar-nav mr-sm-auto ">
+                <form method="get" action="/search" class="form-inline d-sm-block d-none position-relative text-light">
+                    <i class="fas fa-search position-absolute" style="left: 8px; top: 11px; font-size: larger; color: inherit"></i>
+                    <input name="deck" class="form-control py-2 pl-5" style="width: 271px" id="search" type="search" placeholder="SEARCH" aria-label="Search">
+                </form>
+            </div>
+            <!-- right -->
+            <ul class="nav h-100">
+                <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
+                    <a class="nav-link" href="/home">
+                        <i class="fas fa-home"></i>
+                        <span class="d-none d-md-inline">HOME</span>
+                    </a>
+                </li>
+                <li class="media nav-item justify-content-center align-items-center p-sm-4 d-flex d-sm-none p-3">
+                    <a class="nav-link" href="#" data-target="#search">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li>
+                <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
+                    <a class="nav-link" href="/create">
+                        <i class="fas fa-plus"></i>
+                        <span class="d-none d-md-inline">CREATE</span>
+                    </a>
+                </li>
+                <% if (user) { %>
+                <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
+                    <a class="nav-link" href="/profile">
+                        <i class="far fa-user"></i>
+                        <span class="d-none d-md-inline"><%=user.toUpperCase()%></span>
+                    </a>
+                </li>
+                <% } else { %>
+                <li class="media nav-item justify-content-center align-items-center p-md-0 p-sm-4 p-3">
+                    <a class="nav-link btn btn-light" style="color: #32cdff" href="/home">
+                        <span class="d-inline">SIGN UP</span>
+                    </a>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>

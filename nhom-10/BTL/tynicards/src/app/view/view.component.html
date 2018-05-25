@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="text-center mt-4">
+    <h1 class="display-4">{{ deck.title }}</h1>
+    <p class="lead">{{ deck.description }}</p>
+    <button type="button" class="btn btn-light" routerLink="/edit/{{ deck._id }}" ><span octicon="pencil" style="margin-right: 8px;"></span>Chỉnh sửa</button>
+  </div>
+  <div class="my-4">
+    <ngb-progressbar type="warning" [value]="70" [striped]="true"></ngb-progressbar>
+  </div>
+  <ngb-tabset type="pills">
+    <ngb-tab title="Các bài học">
+      <ng-template ngbTabContent>
+          <div class="align-self-center">
+              <div *ngFor="let lesson of deck.lessons" >
+              <div class="card text-center shadow border border-primary mt-4 mr-4" style="float: left; width: 180px; height: 280px;">
+                  <div class="card-header">
+                      <h5 class="card-title">Bài {{lesson.orderNum}}</h5>
+                  </div>
+                  <div class="card-body">
+                      <a class="btn btn-primary my-4 mx-3 border border-primary rounded shadow" routerLink="/learn/{{ deck._id }}/{{ lesson.orderNum }}">Học</a>            
+                  </div>
+              </div>
+              </div>
+          </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Tất cả các thẻ">
+        <ng-template ngbTabContent>
+          <div *ngFor="let lesson of deck.lessons">
+            <div *ngFor="let card of lesson.cards">
+
+              <div class="flipable-card mt-4">
+                  <div class="front card text-center shadow border border-primary mt-4 mr-4" style="float: left; width: 180px; height: 280px;">
+                      <div class="card-body">
+                          <p class="card-text mx-3">{{ card.front }}</p>  
+                      </div>
+                  </div>
+                  <div class="back card text-center shadow border border-primary mt-4 mr-4" style="float: left; width: 180px; height: 280px;">
+                      <div class="card-body">
+                          <p class="card-text mx-3">{{ card.back }}</p>  
+                      </div>
+                  </div>
+              </div>
+              
+            </div>
+          </div>
+        </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>

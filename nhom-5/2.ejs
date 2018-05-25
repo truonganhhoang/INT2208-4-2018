@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>2</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA_Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styleLearn.css" rel="stylesheet">
+	<link href="css/styleTestGame.css" rel="stylesheet">
+	
+	<script src="js/learn.js"></script>
+</head>
+<body>
+	<div id="header">
+		<nav class="navbar navbar-default navbar-static-top" >
+	      	<div class="container">
+		        <div class="navbar-header">
+		            <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button> -->
+			        <div id="container">
+				        <a class="navbar-brand" href="/">
+			            <img src="images/tiny1.png" width="40" height="34" class="img-responsive" alt="">
+			            </a>
+			            <a class="navbar-brand" href="/">
+			            <img src="images/logo.png" width="120" height="34" class="img-responsive" alt="">
+			            </a>
+			        </div><!-- logo -->
+		        </div><!-- nav-header -->
+		        
+	        </div>
+    	</nav> 
+
+	</div>
+	
+
+	<div class ="content">
+		<div id="myProgress">
+		  <div id="myBar"></div>
+		</div>
+		<div class="learn" align="center">
+			  <div class="card" id="card" align="center" onclick="flip()">
+			    <div class="front" id="front"><%= front %></div>
+			    <div class="back" id="back"><%= back %></div>
+			  </div>
+		</div>
+		<div class="continueButton" align="center">
+			<button type="button" class="btn btn-primary" id="nextButton" onclick="next()">Next</button>
+		</div>
+		<!-- <div class="continueButton" align="center">
+			<a href="/test"><button type="button" class="btn btn-primary">Test</button></a>
+		</div> -->
+	</div>
+
+
+	<div id="footer" align="center">
+		<!-- <div class="panel">Nhom 5</div> -->
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+</body>
+</html>

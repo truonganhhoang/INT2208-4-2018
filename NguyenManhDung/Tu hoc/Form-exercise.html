@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>My Page</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+		<!-- Name -->
+		<div>
+			<label for="FirstName">First Name: </label>
+			<input id="FirstName" type="text" name="FirstName" placeholder="John" required>
+
+			<label for="LastName">Last Name: </label>
+			<input id="LastName" type="text" name="LastName" placeholder="Smith" required>
+		</div>
+		<!-- Gender -->
+		<div>
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="Gender" value="male">
+
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="Gender" value="female">
+
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="Gender" value="other">
+		</div>
+		<!-- Information -->
+		<div>
+			<label for="email">Email: </label>
+			<input id="email" type="email" name="email" placeholder="your email" required>
+
+			<label>Password: 
+				<input type="password" name="password" pattern=".{5,10}" title="Please fill this field among 5 to 10 characters" required>
+			</label>
+		</div>
+		<!-- Birthday -->
+		<div>
+			<label>Birthday: </label>
+			<select name="Month">
+				<option>Month</option>
+				<option value="1">Jan</option>
+			</select>
+			<select name="Day">
+				<option>Day</option>
+				<option>1</option>
+			</select>
+			<select name="Year">
+				<option>Year</option>
+				<option>1998</option>
+			</select>
+		</div>
+		<!-- Term -->
+		<div>
+			<label for="term">I agree to the terms and conditions</label>
+			<input id="term" type="checkbox" name="term" required>
+		</div>
+
+		<button>Submit</button>
+	</form>
+</body>
+</html>

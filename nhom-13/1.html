@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doulingo | English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://d35aaqx5ub95lt.cloudfront.net/favicon.ico"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+    <style type="text/css">
+        body {
+        	background-image: linear-gradient(#3399ff,#3399ff);
+        }
+        #box {
+        	border: 1px solid rgb(0, 300, 200); /* đường viền  */
+        	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px; /* đổ bóng */
+        	border-radius: 3px;
+        	top:50px;
+        }
+        h2 {
+        	text-align:center;
+        	color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid"> <!-- fluid căn chiều rộng bằng chiều rộng khung nhìn -->
+        <div class="row-fluid" >
+            <div class="col-md-offset-4 col-md-4" id="box"> <!-- class làm gọn form đăng nhập -->
+                <h2>Đăng nhập</h2>
+                <hr>
+                <form class="form-horizontal" action="1.1.html" method="get" id="login_form">
+                    <fieldset>
+                        <!-- Form Name -->
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <div class="col-md-12">
+                              <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input placeholder="Username" class="form-control" type="text">
+                              </div>
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <div class="col-md-12">
+                              <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input  placeholder="Password" class="form-control" type="text">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary btn-block">Đăng nhập</button>
+                          </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
