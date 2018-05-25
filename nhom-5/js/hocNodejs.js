@@ -1,1 +1,0 @@
-console.log("nodejs ne ahihi");
