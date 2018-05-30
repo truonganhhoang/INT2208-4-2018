@@ -3,7 +3,7 @@
 
 * Đóng góp thuyết trình: tìm hiểu phần đầu của APIs
 
-* Dự án nhóm (nhóm 10): Trang tạo bộ thẻ, cơ sở dữ liệu.
+* Dự án nhóm (nhóm 10 - mô phỏng ứng dụng Tinycards): Đóng góp trang tạo bộ thẻ, cơ sở dữ liệu.
 
 * Bài tập cá nhân (khóa SE Introduction trên edX)
 	- High Level Design: https://github.com/HongHoiLe/INT2208-4-2018/blob/master/LeHongHoi/BaiTapCaNhan/screencapture-courses-edx-org-courses-course-v1-UBCx-SoftEng1x-1T2018-courseware-2042a4ecd013433ab5a1c552560617f4-c002db65a816469f92fb2cb48db1eb1b-1-2018-05-08-23_02_38.png
