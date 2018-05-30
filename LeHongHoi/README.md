@@ -1,3 +1,3 @@
-Le Hong Hoi
-15021390
-K60-CC
+## Lê Hồng Hội
+* MSV: 15021390
+* Lớp khóa học: K60-CC
